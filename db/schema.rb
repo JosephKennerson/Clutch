@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151009040531) do
+ActiveRecord::Schema.define(version: 20151009225752) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "event_id"
@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 20151009040531) do
     t.string   "state"
     t.string   "zip"
     t.integer  "max_size"
-    t.integer  "user_id"
     t.datetime "time_start"
     t.datetime "time_end"
     t.string   "name"
@@ -46,13 +45,10 @@ ActiveRecord::Schema.define(version: 20151009040531) do
     t.integer  "host_id"
   end
 
-  add_index "events", ["user_id"], name: "index_events_on_user_id"
-
   create_table "ratings", force: :cascade do |t|
     t.integer  "event_id"
     t.float    "rating"
     t.text     "rating_feedback"
-    t.integer  "user_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
     t.integer  "rater_id"
@@ -60,10 +56,8 @@ ActiveRecord::Schema.define(version: 20151009040531) do
   end
 
   add_index "ratings", ["event_id"], name: "index_ratings_on_event_id"
-  add_index "ratings", ["user_id"], name: "index_ratings_on_user_id"
 
   create_table "rsvps", force: :cascade do |t|
-    t.integer  "user_id"
     t.integer  "event_id"
     t.boolean  "pending"
     t.boolean  "confirmed"
@@ -73,7 +67,6 @@ ActiveRecord::Schema.define(version: 20151009040531) do
   end
 
   add_index "rsvps", ["event_id"], name: "index_rsvps_on_event_id"
-  add_index "rsvps", ["user_id"], name: "index_rsvps_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
