@@ -5,6 +5,8 @@ RSpec.describe Rating, type: :model do
   it {should belong_to :event}
   it {should belong_to :rater}
   it {should belong_to :ratee}
+  it {should validate_presence_of(:rating)}
+  it {should validate_presence_of(:rating_feedback)}
 end
 
 end
