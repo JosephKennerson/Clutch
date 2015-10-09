@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151009040404) do
+ActiveRecord::Schema.define(version: 20151009040531) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "event_id"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20151009040404) do
     t.boolean  "approval_required"
     t.datetime "created_at",        null: false
     t.datetime "updated_at",        null: false
+    t.integer  "host_id"
   end
 
   add_index "events", ["user_id"], name: "index_events_on_user_id"
