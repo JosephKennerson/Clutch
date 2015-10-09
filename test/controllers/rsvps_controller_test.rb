@@ -18,7 +18,7 @@ class RsvpsControllerTest < ActionController::TestCase
 
   test "should create rsvp" do
     assert_difference('Rsvp.count') do
-      post :create, rsvp: { confirmed: @rsvp.confirmed, event_id: @rsvp.event_id, pending: @rsvp.pending, user_id: @rsvp.user_id }
+      post :create, rsvp: { confirmed: @rsvp.confirmed, event_id: @rsvp.event_id, pending: @rsvp.pending, guest_id: @rsvp.guest_id }
     end
 
     assert_redirected_to rsvp_path(assigns(:rsvp))
@@ -35,7 +35,7 @@ class RsvpsControllerTest < ActionController::TestCase
   end
 
   test "should update rsvp" do
-    patch :update, id: @rsvp, rsvp: { confirmed: @rsvp.confirmed, event_id: @rsvp.event_id, pending: @rsvp.pending, user_id: @rsvp.user_id }
+    patch :update, id: @rsvp, rsvp: { confirmed: @rsvp.confirmed, event_id: @rsvp.event_id, pending: @rsvp.pending, guest_id: @rsvp.guest_id }
     assert_redirected_to rsvp_path(assigns(:rsvp))
   end
 
