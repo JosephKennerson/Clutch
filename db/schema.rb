@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151009000808) do
+ActiveRecord::Schema.define(version: 20151009040404) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "event_id"
@@ -54,6 +54,8 @@ ActiveRecord::Schema.define(version: 20151009000808) do
     t.integer  "user_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.integer  "rater_id"
+    t.integer  "ratee_id"
   end
 
   add_index "ratings", ["event_id"], name: "index_ratings_on_event_id"
@@ -66,6 +68,7 @@ ActiveRecord::Schema.define(version: 20151009000808) do
     t.boolean  "confirmed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "guest_id"
   end
 
   add_index "rsvps", ["event_id"], name: "index_rsvps_on_event_id"
