@@ -1,4 +1,4 @@
-
+# random users
 200.times do
   User.create!(
         username: FFaker::Internet.user_name,
@@ -16,9 +16,11 @@
 
 end
 
+# random events
+
 100.times do
   random_size = rand(1..10)
-  random_user = User.find(rand(1..User.count))
+  random_user = rand(1..User.count)
   Event.create!(
         public_location: FFaker::Venue.name,
         address_line_1: FFaker::AddressUS.street_address,
@@ -37,3 +39,48 @@ end
     )
 
 end
+
+# random comments (public and private)
+
+200.times do
+  random_event = rand(1..Event.count)
+  random_user = rand(1..User.count)
+  Comment.create!(
+        event_id: random_event,
+        user_id: random_user,
+        body: FFaker::BaconIpsum.phrase,
+        is_private: FFaker::Boolean.sample
+    )
+
+end
+
+# random pending rsvps
+
+25.times do
+  random_guest = rand(10..User.count)
+  random_host = rand(1..9)
+  random_event = rand(1..Event.count)
+  new_event = Rsvp.create!(
+      guest_id: random_guest,
+      event_id: random_event,
+      pending: true,
+    )
+
+end
+
+# random not-pending rsvps (true and false)
+
+25.times do
+
+  random_guest = rand(10..User.count)
+  random_host = rand(1..9)
+  random_event = rand(1..Event.count)
+  new_event = Rsvp.create!(
+      guest_id: random_guest,
+      event_id: random_event,
+      pending: false,
+      confirmed: FFaker::Boolean.sample
+    )
+
+end
+
