@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  has_many :rsvps
-  has_many :events
+  has_many :rsvps, foreign_key: :guest_id
+  has_many :events, foreign_key: :host_id
   has_many :comments
   has_many :ratings
   has_many :given_ratings, through: :ratings, source: :rater

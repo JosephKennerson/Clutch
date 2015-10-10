@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>User</th>
+      <th>Guest</th>
       <th>Event</th>
       <th>Pending</th>
       <th>Confirmed</th>
@@ -16,7 +16,7 @@
   <tbody>
     <% @rsvps.each do |rsvp| %>
       <tr>
-        <td><%= rsvp.user %></td>
+        <td><%= rsvp.guest_id %></td>
         <td><%= rsvp.event %></td>
         <td><%= rsvp.pending %></td>
         <td><%= rsvp.confirmed %></td>
