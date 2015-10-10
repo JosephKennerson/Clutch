@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151009225752) do
+ActiveRecord::Schema.define(version: 20151010224122) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "event_id"
@@ -38,10 +38,10 @@ ActiveRecord::Schema.define(version: 20151009225752) do
     t.string   "name"
     t.text     "description"
     t.string   "category"
-    t.boolean  "status"
+    t.boolean  "status",            default: true
     t.boolean  "approval_required"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
     t.integer  "host_id"
   end
 
