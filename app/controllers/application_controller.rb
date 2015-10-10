@@ -4,6 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   # force the user to redirect to the login page if the user was not logged in.
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
 end
