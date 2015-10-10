@@ -16,7 +16,9 @@
       <th>City</th>
       <th>State</th>
       <th>Zip</th>
+      <th>Date start</th>
       <th>Time start</th>
+      <th>Date end</th>
       <th>Time end</th>
       <th>Status</th>
       <th>Approval required</th>
@@ -31,15 +33,17 @@
         <td><%= event.description %></td>
         <td><%= event.category %></td>
         <td><%= event.max_size %></td>
-        <td><%= event.host %></td>
+        <td><%= event.host.username %></td>
         <td><%= event.public_location %></td>
         <td><%= event.address_line_1 %></td>
         <td><%= event.address_line_2 %></td>
         <td><%= event.city %></td>
         <td><%= event.state %></td>
         <td><%= event.zip %></td>
-        <td><%= event.time_start %></td>
-        <td><%= event.time_end %></td>
+        <td><%= event.time_start.strftime('%b %-e, %Y') %></td>
+        <td><%= event.time_start.strftime('%-l:%M %p') %></td>
+        <td><%= event.time_end.strftime('%b %-e, %Y') %></td>
+        <td><%= event.time_end.strftime('%-l:%M %p') %></td>
         <td><%= event.status %></td>
         <td><%= event.approval_required %></td>
         <td><%= link_to 'Show', event %></td>
