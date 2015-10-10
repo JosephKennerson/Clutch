@@ -1,14 +1,14 @@
 # random users
 
 User.create!(
-        username: admin,
+        username: "admin",
         address_line_1: "633 Folsom",
         address_line_2: "6th Floor",
         city: "San Francisco",
         state: "CA",
-        zip: 94107,
-        email: admin@admin.com,
-        password: adminadmin,
+        zip: "94107",
+        email: "admin@admin.com",
+        password: "adminadmin",
         photo: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
         last_name: "Istrator"
