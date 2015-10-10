@@ -38,8 +38,11 @@ group :development, :test do
   gem 'byebug'
   gem 'shoulda-matchers'
   gem 'rspec-rails'
+  gem "cucumber"
+  gem "capybara"
   gem 'ffaker'
   gem 'faker'
+
 end
 
 group :development do

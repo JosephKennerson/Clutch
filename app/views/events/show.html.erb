@@ -56,13 +56,23 @@
 </p>
 
 <p>
+  <strong>Date start:</strong>
+  <%= @event.time_start.strftime('%b %-e, %Y') %>
+</p>
+
+<p>
   <strong>Time start:</strong>
-  <%= @event.time_start %>
+  <%= @event.time_start.strftime('%-l:%M %p') %>
+</p>
+
+<p>
+  <strong>Date end:</strong>
+  <%= @event.time_end.strftime('%b %-e, %Y') %>
 </p>
 
 <p>
   <strong>Time end:</strong>
-  <%= @event.time_end %>
+  <%= @event.time_end.strftime('%-l:%M %p') %>
 </p>
 
 <p>
