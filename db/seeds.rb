@@ -1,4 +1,19 @@
 # random users
+
+User.create!(
+        username: admin,
+        address_line_1: "633 Folsom",
+        address_line_2: "6th Floor",
+        city: "San Francisco",
+        state: "CA",
+        zip: 94107,
+        email: admin@admin.com,
+        password: adminadmin,
+        photo: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
+        first_name: "Admin",
+        last_name: "Istrator"
+  )
+
 200.times do
   User.create!(
         username: FFaker::Internet.user_name,
@@ -35,7 +50,8 @@ end
         description: Faker::Hacker.say_something_smart,
         category: FFaker::Sport.name,
         approval_required: FFaker::Boolean.sample,
-        host_id: random_user
+        host_id: random_user,
+        status: FFaker::Boolean.sample
     )
 
 end
