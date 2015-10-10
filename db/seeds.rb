@@ -54,7 +54,7 @@ end
 
 end
 
-# random pending rsvps
+# random pending rsvps (id # 1-25)
 
 25.times do
   random_guest = rand(10..User.count)
@@ -68,7 +68,7 @@ end
 
 end
 
-# random not-pending rsvps (true and false)
+# random not-pending rsvps (true and false; id #26-50)
 
 25.times do
 
@@ -83,4 +83,51 @@ end
     )
 
 end
+
+# random confirmed rsvps (id #51-75)
+
+25.times do
+
+  random_guest = rand(10..User.count)
+  random_host = rand(1..9)
+  random_event = rand(1..Event.count)
+  new_event = Rsvp.create!(
+      guest_id: random_guest,
+      event_id: random_event,
+      pending: false,
+      confirmed: true
+    )
+
+end
+
+# random ratings (from confirmed rsvps)
+
+# Events.each do |event|
+#   event_id = event.id
+
+#   Rating.create! (
+#       event_id: event_id,
+#       rating: rand(1.0..5.0),
+#       rating_feedback: FFaker.HipsterIpsum.phrase,
+#       rater_id: event.host.id
+#       ratee_id: event.guests.sample.id
+#     )
+
+
+# end
+
+# Events.each do |event|
+
+#   Rating.create! (
+#       event_id: event.id,
+#       rating: rand(1.0..5.0),
+#       rating_feedback: FFaker.HipsterIpsum.phrase,
+#       ratee_id: event.host.id
+#       rater_id: event.guests.sample.id
+#     )
+
+
+# end
+
+
 
