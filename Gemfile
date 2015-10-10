@@ -38,6 +38,8 @@ group :development, :test do
   gem 'byebug'
   gem 'shoulda-matchers'
   gem 'rspec-rails'
+  gem "cucumber"
+  gem "capybara"
 end
 
 group :development do
