@@ -42,9 +42,11 @@ class EventsController < ApplicationController
   def update
     respond_to do |format|
       if @event.update(event_params)
+        p 'ifffiiinngg'
         format.html { redirect_to @event, notice: 'Event was successfully updated.' }
         format.json { render :show, status: :ok, location: @event }
       else
+        p 'elsingggg'
         format.html { render :edit }
         format.json { render json: @event.errors, status: :unprocessable_entity }
       end
