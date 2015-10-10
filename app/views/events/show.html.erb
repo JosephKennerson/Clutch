@@ -1,6 +1,31 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Event name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @event.category %>
+</p>
+
+<p>
+  <strong>Max size:</strong>
+  <%= @event.max_size %>
+</p>
+
+<p>
+  <strong>Host:</strong>
+  <%= @event.host %>
+</p>
+
+<p>
   <strong>Public location:</strong>
   <%= @event.public_location %>
 </p>
@@ -31,16 +56,6 @@
 </p>
 
 <p>
-  <strong>Max size:</strong>
-  <%= @event.max_size %>
-</p>
-
-<p>
-  <strong>Host:</strong>
-  <%= @event.host %>
-</p>
-
-<p>
   <strong>Time start:</strong>
   <%= @event.time_start %>
 </p>
@@ -48,21 +63,6 @@
 <p>
   <strong>Time end:</strong>
   <%= @event.time_end %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @event.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @event.description %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @event.category %>
 </p>
 
 <p>
