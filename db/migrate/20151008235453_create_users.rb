@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :city
       t.string :state
       t.string :zip
-      t.string :photo
+      t.string :avatar
       t.string :first_name
       t.string :last_name
 
