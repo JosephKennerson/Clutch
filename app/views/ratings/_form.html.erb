@@ -1,4 +1,4 @@
-<%= form_for(@rating) do |f| %>
+<%= form_for [@user, @rating] do |f| %>
   <% if @rating.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@rating.errors.count, "error") %> prohibited this rating from being saved:</h2>
@@ -17,19 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :rating %><br>
-    <%= f.text_field :rating %>
+    <%= f.select :rating, ['1', '2', '3', '4', '5']%>
   </div>
   <div class="field">
     <%= f.label :rating_feedback %><br>
     <%= f.text_area :rating_feedback %>
-  </div>
-  <div class="field">
-    <%= f.label :rater_id %><br>
-    <%= f.text_field :rater_id %>
-  </div>
-  <div class="field">
-    <%= f.label :ratee_id %><br>
-    <%= f.text_field :ratee_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

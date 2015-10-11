@@ -55,5 +55,11 @@
   <%= @user.last_name %>
 </p>
 
+<p>
+  <strong>Average Rating:</strong>
+  <%= @ratings.average(:rating) %>
+</p>
+
+<%= link_to 'Rating', new_user_rating_path(@user, @rating) %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
