@@ -7,4 +7,9 @@ class Event < ActiveRecord::Base
   validates :public_location, :city, :state, :zip, :max_size, :time_start, :time_end, :name, :description, :category, presence: true
   validates :state, length: { is: 2 }
 
+ 	def close_event
+ 		self.status = false if self.rsvps.where(confirmed: true).length >= self.max_size || self.time_end.past? == true
+ 		self.save
+ 	end
+
 end

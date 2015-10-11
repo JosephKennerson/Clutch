@@ -28,7 +28,7 @@ class RsvpsController < ApplicationController
 
     respond_to do |format|
       if @rsvp.save
-        format.html { redirect_to @rsvp, notice: 'Rsvp was successfully created.' }
+        format.html { redirect_to events_path, notice: 'Rsvp was successfully created.' }
         format.json { render :show, status: :created, location: @rsvp }
       else
         format.html { render :new }
@@ -40,11 +40,14 @@ class RsvpsController < ApplicationController
   # PATCH/PUT /rsvps/1
   # PATCH/PUT /rsvps/1.json
   def update
+    p "hit1" * 80
     respond_to do |format|
       if @rsvp.update(rsvp_params)
-        format.html { redirect_to @rsvp, notice: 'Rsvp was successfully updated.' }
+    p "hit2" * 80
+        format.html { redirect_to events_path, notice: 'Rsvp was successfully updated.' }
         format.json { render :show, status: :ok, location: @rsvp }
       else
+    p "hit3" * 80
         format.html { render :edit }
         format.json { render json: @rsvp.errors, status: :unprocessable_entity }
       end
@@ -56,7 +59,7 @@ class RsvpsController < ApplicationController
   def destroy
     @rsvp.destroy
     respond_to do |format|
-      format.html { redirect_to rsvps_url, notice: 'Rsvp was successfully destroyed.' }
+      format.html { redirect_to events_path, notice: 'Rsvp was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

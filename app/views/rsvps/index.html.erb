@@ -17,7 +17,7 @@
     <% @rsvps.each do |rsvp| %>
       <tr>
         <td><%= rsvp.guest_id %></td>
-        <td><%= rsvp.event %></td>
+        <td><%= rsvp.event.name %></td>
         <td><%= rsvp.pending %></td>
         <td><%= rsvp.confirmed %></td>
         <td><%= link_to 'Show', rsvp %></td>

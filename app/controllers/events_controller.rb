@@ -5,6 +5,10 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    @events.each do |e|
+      e.close_event
+    end
+    @events_open = Event.where(status: true)
   end
 
   # GET /events/1
@@ -25,6 +29,7 @@ class EventsController < ApplicationController
   # POST /events.json
   def create
     @event = Event.new(event_params)
+    @event.host_id = current_user.id
 
     respond_to do |format|
       if @event.save
@@ -42,11 +47,9 @@ class EventsController < ApplicationController
   def update
     respond_to do |format|
       if @event.update(event_params)
-        p 'ifffiiinngg'
         format.html { redirect_to @event, notice: 'Event was successfully updated.' }
         format.json { render :show, status: :ok, location: @event }
       else
-        p 'elsingggg'
         format.html { render :edit }
         format.json { render json: @event.errors, status: :unprocessable_entity }
       end
