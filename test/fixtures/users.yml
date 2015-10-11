@@ -9,7 +9,7 @@ one:
   state: MyString
   zip: MyString
   encrypted_password: MyString
-  photo: MyString
+  avatar: MyString
   first_name: MyString
   last_name: MyString
 
@@ -22,6 +22,6 @@ two:
   state: MyString
   zip: MyString
   encrypted_password: MyString
-  photo: MyString
+  avatar: MyString
   first_name: MyString
   last_name: MyString
