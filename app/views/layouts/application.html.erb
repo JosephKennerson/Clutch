@@ -3,6 +3,7 @@
 <head>
   <title>Clutch</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -34,45 +35,23 @@
             <li><%= link_to "Join Events", events_path %></li>
             <li><%= link_to "Create Events", new_event_path %></li>
             <li><a href="#contact">Contact</a></li>
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li> -->
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <% if user_signed_in? %>
-            <li><%= link_to current_user.username, user_path(current_user.id) %></li>
-            <li><%= link_to image_tag(current_user.gravatar_url(size: 30)), user_path(current_user.id), :style => "padding-top: 10px; padding-bottom: 10px;" %></li>
-            <li class="active"><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-            <% else %>
-              <li><%= link_to "Sign up", new_user_registration_path  %></li>
-              <form class="navbar-form navbar-right">
-                <div class="form-group">
-                  <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                  <input type="password" placeholder="Password" class="form-control">
-                </div>
-<!--                 <div class="form-group">
- -->                <button type="submit" class="btn btn-success"><%= link_to "Login", new_user_session_path  %></button>
-<!--                 </div>
- -->              </form>
-            <% end %>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+
+
+<div class="container-narrow">
+  <div class="masthead">
+    <%= render 'layouts/user_header' %>
+    <h3 class="muted"></h3>
+    <h5 class="muted"></h5>
+  </div>
+  <hr />
+
+
+
 <div style="margin-top: 50px;" class="container">
 <%= yield %>
 </div>
 
 </body>
 </html>
+

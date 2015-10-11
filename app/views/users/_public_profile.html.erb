@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+  <%if @user.gravatar_url%>
+    <%= image_tag @user.gravatar_url %>
+  <% end %>
+</br>
