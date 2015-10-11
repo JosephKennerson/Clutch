@@ -16,9 +16,6 @@ class RatingsController < ApplicationController
 
   # GET /ratings/new
   def new
-    p "#" *20
-    current_user
-    p "#" *20
     @user = User.find(params[:user_id])
     @rating = Rating.new
   end
@@ -30,17 +27,11 @@ class RatingsController < ApplicationController
   # POST /ratings
   # POST /ratings.json
   def create
-    p "I am in create"
     @ratee = User.find_by(params[:user_id])
     p @ratee
     @rating = Rating.new(rating_params)
     @rating.rater_id = current_user.id
     @rating.ratee_id = @ratee.id
-    p "*" * 10
-    p @rating
-     p "*" * 10
-    # @rating.save
-    # redirect_to user_path(user)
 
     respond_to do |format|
       if @rating.save
