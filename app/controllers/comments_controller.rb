@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @comment = Comment.new(comment_params)
-    @comment.user_id = 5
+    @comment.user_id = current_user.id
     @comment.event_id = session[:event_id]
     @event = Event.find(@comment.event_id)
     respond_to do |format|
