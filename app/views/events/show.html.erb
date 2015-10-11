@@ -85,5 +85,27 @@
   <%= @event.approval_required %>
 </p>
 
+
+<h2>Comments</h2>
+<% @event.comments.each do |comment| %>
+  <p>
+    <b>Commenter:</b>
+    <%= comment.user.username %>
+  </p>
+
+  <p>
+    <b>Comment:</b>
+    <%= comment.body %>
+  </p>
+  <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
+
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+
