@@ -1,14 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>avatar:</strong>
-  <%= @user.avatar %>
-</p>
+  <%if @user.gravatar_url%>
+    <%= image_tag @user.gravatar_url %>
+  <% end %>
+</br>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+<% if user_signed_in? && current_user.id == @user.id%>
+</br>
+
+Hello, <%= @user.first_name %>
+</br>
 
 <p>
   <strong>Email:</strong>
@@ -40,22 +41,74 @@
   <%= @user.zip %>
 </p>
 
+<h4>Your requests:</h4>
+<% @user.rsvps.each do |rsvp| %>
+<strong><%= rsvp.event.name %></strong> with <%= link_to "#{rsvp.event.host.first_name}", user_path(rsvp.event.host.id) %> starts at <%= rsvp.event.time_start %>
+<% if rsvp.pending %>
+  <span class="label label-warning">Pending</span>
+<% elsif rsvp.confirmed %>
+  <span class="label label-success">Confirmed!</span>
+<% else rsvp.confirmed == false %>
+  <span class="label label-danger">Declined</span>
+<% end %>
+</br>
+<% end %>
+
+<h4>Your posts:</h4>
+<% @user.events.each do |event| %>
+<strong><%= link_to "#{event.name}", event_path(event.id) %></strong> has <%=event.rsvps.count %> interested folks:
+    <% event.rsvps.each do |rsvp| %>
+  </br>
+   <%= link_to "#{rsvp.guest.first_name}", user_path(rsvp.guest.id) %>
+    <% if rsvp.pending %>
+      <span class="label label-warning"><%= link_to 'Respond', edit_rsvp_path(rsvp.id) %></span>
+    <% elsif rsvp.confirmed %>
+      <span class="label label-success">Confirmed!</span>
+    <% else rsvp.confirmed == false %>
+      <span class="label label-danger">Declined</span>
+    <% end %>
+  </br>
+  <% end %>
+</br>
+<% end %>
+
+
+<% else %>
+
+<%= @user.username %>
+
 <p>
-  <strong>Password:</strong>
-  <%= @user.password %>
+  <strong>City:</strong>
+  <%= @user.city %>
 </p>
 
-
-
 <p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
+  <strong>State:</strong>
+  <%= @user.state %>
 </p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+<h4>Past events</h4>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
+<% @user.events.each do |event| %>
+  <% if event.time_start.past? %>
+    <strong><%= link_to "#{event.name}", event_path(event.id) %></strong>
+    </br>
+  <% end %>
+<% end %>
+
+<h4>Open events</h4>
+
+<% @user.events.each do |event| %>
+  <% if event.time_start.future? %>
+    <strong><%= link_to "#{event.name}", event_path(event.id) %></strong>
+    </br>
+  <% end %>
+<% end %>
+
+<% end %>
+
+
+<% if user_signed_in? && current_user.id == @user.id%>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+<% end %>
 <%= link_to 'Back', users_path %>

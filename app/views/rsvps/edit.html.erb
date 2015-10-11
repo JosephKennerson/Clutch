@@ -1,6 +1,35 @@
-<h1>Editing Rsvp</h1>
+<h1><%= @rsvp.guest.username %>'s request to join <%= @rsvp.event.name %></h1>
 
-<%= render 'form' %>
+<%= form_for(@rsvp) do |f| %>
+  <% if @rsvp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rsvp.errors.count, "error") %> prohibited this rsvp from being saved:</h2>
 
-<%= link_to 'Show', @rsvp %> |
+      <ul>
+      <% @rsvp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <%= image_tag @rsvp.guest.gravatar_url(size: 80) %>
+  </br>
+    <strong>Message</strong><br>
+    <p>We should consider a message field...</p>
+    -<%= @rsvp.guest.username %>
+  </br>
+    <%= radio_button_tag(:confirmed, "true") %>
+<%= label_tag(:confirm, "Confirm!") %>
+<%= radio_button_tag(:confirmed, false) %>
+<%= label_tag(:decline, "Decline :(") %>
+
+</div>
+</br>
+<%= f.submit "Save request status" %>
+
+<% end %>
+
+
+<%= link_to 'View request', @rsvp %> |
 <%= link_to 'Back', rsvps_path %>
