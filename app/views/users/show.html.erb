@@ -119,5 +119,5 @@ Hello, <%= @user.first_name %>
 <% if user_signed_in? && current_user.id == @user.id%>
   <%= link_to 'Edit', edit_user_path(@user) %> |
 <% end %>
->>>>>>> developer
+
 <%= link_to 'Back', users_path %>
