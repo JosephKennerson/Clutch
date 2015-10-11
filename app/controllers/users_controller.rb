@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    # @user = User.find(params[:user_id])
+    @ratings = Rating.all
   end
 
   # GET /users/new
@@ -25,7 +27,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-    @user.avatar ||= "http://img3.wikia.nocookie.net/__cb20141104213532/paw-patrol-fanon/images/4/47/Mario_Kart_64_Menu_Screen.png"
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }

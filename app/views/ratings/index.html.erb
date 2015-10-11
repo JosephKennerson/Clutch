@@ -31,5 +31,12 @@
 </table>
 
 <br>
+<p>
+  <strong>Average Rating</strong>
+  <%= @ratings.average(:rating) %>
+</p>
+
+<br>
 
 <%= link_to 'New Rating', new_rating_path %>
+<%= link_to 'User Profile', user_path(@user) %>
