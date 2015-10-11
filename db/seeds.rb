@@ -9,7 +9,7 @@ User.create!(
         zip: "94107",
         email: "admin@admin.com",
         password: "adminadmin",
-        photo: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
+        avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
         last_name: "Istrator"
   )
@@ -24,7 +24,7 @@ User.create!(
         zip: FFaker::AddressUS.zip_code,
         email: FFaker::Internet.disposable_email,
         password: FFaker::Internet.password,
-        photo: Faker::Avatar.image,
+        avatar: Faker::Avatar.image,
         first_name: FFaker::Name.first_name,
         last_name: Faker::Name.last_name
     )
