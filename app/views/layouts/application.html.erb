@@ -10,7 +10,7 @@
 
 <p class="navbar-text pull-right">
 <% if user_signed_in? %>
-  <%= link_to image_tag(current_user.gravatar_url), user_path(current_user.id) %>
+  <%= link_to image_tag(current_user.gravatar_url(size: 30)), user_path(current_user.id) %>
       |
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 <% else %>
