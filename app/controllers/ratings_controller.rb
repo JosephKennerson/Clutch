@@ -11,7 +11,8 @@ class RatingsController < ApplicationController
   # GET /ratings/1
   # GET /ratings/1.json
   def show
-     @user = User.find(params[:user_id])
+    @user = User.find(params[:id])
+    @rating = Rating.find(params[:ratee_id])
   end
 
   # GET /ratings/new
