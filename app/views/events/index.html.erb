@@ -13,8 +13,6 @@
       <th>Current / Max</th>
       <th>Host</th>
       <th>Public location</th>
-      <th>Address line 1</th>
-      <th>Address line 2</th>
       <th>City</th>
       <th>State</th>
       <th>Zip</th>
@@ -36,8 +34,6 @@
         <td><%= event.rsvps.where(confirmed: true).length %> / <%= event.max_size %></td>
         <td><%= event.host.username %></td>
         <td><%= event.public_location %></td>
-        <td><%= event.address_line_1 %></td>
-        <td><%= event.address_line_2 %></td>
         <td><%= event.city %></td>
         <td><%= event.state %></td>
         <td><%= event.zip %></td>
