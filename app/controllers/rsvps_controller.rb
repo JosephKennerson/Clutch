@@ -40,7 +40,6 @@ class RsvpsController < ApplicationController
   # PATCH/PUT /rsvps/1
   # PATCH/PUT /rsvps/1.json
   def update
-    p "hit1" * 80
     respond_to do |format|
       if params[:commit] == 'true'
         @rsvp.confirmed = true
@@ -48,11 +47,9 @@ class RsvpsController < ApplicationController
         @rsvp.confirmed = false
       end
       if @rsvp.update(rsvp_params)
-    p "hit2" * 80
         format.html { redirect_to events_path, notice: 'Rsvp was successfully updated.' }
         format.json { render :show, status: :ok, location: @rsvp }
       else
-    p "hit3" * 80
         format.html { render :edit }
         format.json { render json: @rsvp.errors, status: :unprocessable_entity }
       end
