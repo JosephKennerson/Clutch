@@ -13,8 +13,6 @@
       <th>Current / Max</th>
       <th>Host</th>
       <th>Public location</th>
-      <th>Address line 1</th>
-      <th>Address line 2</th>
       <th>City</th>
       <th>State</th>
       <th>Zip</th>
@@ -36,8 +34,6 @@
         <td><%= event.rsvps.where(confirmed: true).length %> / <%= event.max_size %></td>
         <td><%= event.host.username %></td>
         <td><%= event.public_location %></td>
-        <td><%= event.address_line_1 %></td>
-        <td><%= event.address_line_2 %></td>
         <td><%= event.city %></td>
         <td><%= event.state %></td>
         <td><%= event.zip %></td>
@@ -45,7 +41,7 @@
         <td><%= event.time_start.strftime('%-l:%M %p') %></td>
         <td><%= event.time_end.strftime('%b %-e, %Y') %></td>
         <td><%= event.time_end.strftime('%-l:%M %p') %></td>
-        <% if current_user.id != event.host_id %>
+        <% if user_signed_in? && current_user.id != event.host_id %>
           <% if !Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == false %>
             <td><%= button_to 'Join', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: false, confirmed: true} %></td>
             <td>
@@ -61,7 +57,7 @@
           <% end %>
         <% end %>
 
-        <% if Rsvp.find_by(event_id: event.id, guest_id: current_user.id, pending: true)%>
+        <% if user_signed_in? && Rsvp.find_by(event_id: event.id, guest_id: current_user.id, pending: true)%>
         <td><%= "Request pending" %></td>
         <% end %>
 
