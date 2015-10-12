@@ -1,5 +1,3 @@
-<% if user_signed_in? %>
-
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -135,7 +133,7 @@
     <br />
     <% @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
     <br />
     <% @event.guests.each do |guest| %>
       <br />
@@ -143,7 +141,7 @@
       <br />
       <%= guest.username %>
       <br />
-      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %>
+      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
       <br />
     <% end %>
 <% end %>
@@ -156,7 +154,7 @@
     <br />
     <% @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
     <br />
   <% @event.guests.each do |guest| %>
       <br />
@@ -164,7 +162,7 @@
       <br />
       <%= guest.username %>
       <br />
-      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %>
+      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
       <br />
       <% if !Rating.find_by(event_id: @event.id, rater_id: current_user.id, ratee_id: guest.id) && current_user.id != guest.id%>
         <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
@@ -215,10 +213,4 @@
   <% end %>
 <h2>Add a private comment:</h2>
 <%= render 'comments/form2', locals: {is_private: true} %>
-<% end %>
-
-<% else %>
-
-<h1>Please login to see an event</h1>
-
 <% end %>
