@@ -15,7 +15,7 @@
   <%= @event.category %>
 </p>
 
-<% if @event.host_id == current_user.id && @event.approval_required == true%>
+<% if user_signed_in? && @event.host_id == current_user.id && @event.approval_required == true%>
 <p>
   <strong># of Pending Requests:</strong>
   <%= @event.rsvps.where(pending: true).length %>
