@@ -17,6 +17,10 @@
  */
 
 /* User sign in and sign forms. */
+
+a:hover {
+  color: red;
+}
 .border-form-div {
   max-width: 300px;
   padding: 19px 29px 29px;
