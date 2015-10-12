@@ -37,15 +37,17 @@ gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # gem 'mongoid-tree', :require => 'mongoid/tree'
   gem 'pry-nav'
   gem 'rspec-rails'
   gem 'byebug'
-  gem 'database_cleaner'
+  # gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem "cucumber"
   gem "capybara"
   gem 'ffaker'
   gem 'faker'
+  gem 'mongoid-tree', :require => 'mongoid/tree'
 
 end
 
