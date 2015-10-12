@@ -4,3 +4,24 @@
     <%= image_tag @user.gravatar_url %>
   <% end %>
 </br>
+<p>
+  <strong>State:</strong>
+  <%= @user.state %>
+</p>
+
+<p>
+  <strong>Average Rating:</strong>
+  <%= @ratings.average(:rating).round(2) %>
+  <p class="blog-post-meta"><%= link_to "Detailed reviews", "/users/#{@user.id}/feedback" %></p>
+  <p class="blog-post-meta"><%= link_to "Reviews given", "/users/#{@user.id}/reviews" %></p>
+</p>
+
+
+<h4>Past events</h4>
+
+<% @user.events.each do |event| %>
+  <% if event.time_start.past? %>
+    <strong><%= link_to "#{event.name}", event_path(event.id) %></strong>
+    </br>
+  <% end %>
+<% end %>
