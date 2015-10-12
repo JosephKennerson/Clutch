@@ -53,7 +53,7 @@
             <td>
           <% elsif Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == true%>
             <td><%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event.id, guest_id: current_user.id).id}, method: :delete %></td>
-            <td>          
+            <td>
           <% end %>
         <% end %>
 
@@ -64,6 +64,6 @@
       </tr>
     <% end %>
   </tbody>
-</table>s
+</table>
 
 <br>
