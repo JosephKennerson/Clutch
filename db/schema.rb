@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010224122) do
+ActiveRecord::Schema.define(version: 20151012012001) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "event_id"
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 20151010224122) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "guest_id"
+    t.text     "message"
   end
 
   add_index "rsvps", ["event_id"], name: "index_rsvps_on_event_id"
