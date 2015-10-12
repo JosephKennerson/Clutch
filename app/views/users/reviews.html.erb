@@ -1,0 +1,6 @@
+<h1>reviews</h1>
+
+<% @user.given_ratings.each do |review| %>
+  <%= review.rating %>
+  <%= review.rating_feedback %>
+  <% end %>

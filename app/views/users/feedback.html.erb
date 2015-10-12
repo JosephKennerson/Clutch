@@ -1,1 +1,10 @@
-feedback.html.erb
+<h1>feedback</h1>
+
+      <% @user.received_ratings do |review| %>
+        <p><%= review.rating %></p>
+        <p><%= review.rating_feedback %></p>
+        <% end %>
+      <p><%= link_to 'See the feedback you have given', "/users/#{@user.id}/reviews" %></p>
+
+
+
