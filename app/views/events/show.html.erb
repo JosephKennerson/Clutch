@@ -150,16 +150,30 @@
     <b>Commenter:</b>
     <%= comment.user.username %>
   </p>
-
   <p>
     <b>Comment:</b>
     <%= comment.body %>
+    <br></br>
   </p>
+
+    <% if comment.user == current_user %>
   <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
   <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
-
+  <br></br>
+    <% end %>
 <% end %>
 
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
+    <% if user_signed_in? %>
+  <h2>Add a comment:</h2>
+  <%= render 'comments/form' %>
+  <% else %>
+    <p>**Please sign in to make a comment.**</p>
+<% end %>
+<% end %>
+
+
+
+
+
+
 
