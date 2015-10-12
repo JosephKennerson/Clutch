@@ -27,11 +27,9 @@ class RatingsController < ApplicationController
   # POST /ratings.json
   def create
     @rating = Rating.new(rating_params)
-    @rating.rater_id = current_user.id
-    @rating.event_id = session[:event_id]
     respond_to do |format|
       if @rating.save
-        format.html { redirect_to events_path, notice: 'Rating was successfully created.' }
+        format.html { redirect_to Event.find(@rating.event_id), notice: 'Rating was successfully created.' }
         format.json { render :show, status: :created, location: user_ratings_path(@ratee) }
       else
         format.html { render :new }
