@@ -25,7 +25,7 @@
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-               <%= image_tag @user.gravatar_url, class: "img-responsive", alt: "Generic placeholder thumbnail" %>
+               <%= image_tag @user.gravatar_url, class: "img-responsive", alt: "user profile picture" %>
                <% if @user.username %>
               <h4><%= @user.username %></h4>
               <% else %>
@@ -34,7 +34,7 @@
               <span class="text-muted">Joined: <%= @user.created_at %></span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              # <%= link_to '<i class="fa fa-star-o fa-5x"></i>'.html_safe, "/ratings/#{@user.id}"%>
+              <%= link_to '<i class="fa fa-star-o fa-5x"></i>'.html_safe, "/ratings/#{@user.id}"%>
               <h4>Ratings</h4>
               <span class="text-muted">See all your ratings</span>
             </div>
@@ -59,13 +59,12 @@
                   <th>Host</th>
                   <th>Start time</th>
                   <th>Status</th>
-                  <th>Header</th>
                 </tr>
               </thead>
               <tbody>
                 <% @user.rsvps.each do |rsvp| %>
-                <tr>
-                  <td><strong><%= rsvp.event.name %></strong></td>
+                <tr class="info">
+                  <td ><strong><%= rsvp.event.name %></strong></td>
                   <td><%= link_to "#{rsvp.event.host.first_name}", user_path(rsvp.event.host.id) %></td>
                   <td><%= rsvp.event.time_start %></td>
                   <% if rsvp.pending %>
@@ -75,6 +74,7 @@
                   <% else rsvp.confirmed == false %>
                     <td><span class="label label-danger">Declined</span></td>
                   <% end %>
+                  <td><%= rsvp.event.status %></td>
                 <% end %>
                 </tr>
               </tbody>
@@ -95,6 +95,10 @@
                 <% @user.events.each do |event| %>
               <tr>
                   <td><strong><%= link_to "#{event.name}", event_path(event.id) %></strong></td>
+    <!--               <td></td> -->
+                  <td><% if event.rsvps.where(confirmed: true).length >= event.max_size %>
+                    <td><span class="label label-danger">Full!</span></td>
+                  <% end %></td>
                   <% event.rsvps.each do |rsvp| %>
                 </tr>
                   <td><%= link_to "#{rsvp.guest.first_name}", user_path(rsvp.guest.id) %></td>
@@ -105,8 +109,10 @@
                   <% else rsvp.confirmed == false %>
                     <td><span class="label label-danger">Declined</span></td>
                   <% end %>
+                  <% end %>
+
                   <tr>
-                <% end %>
+
                 <% end %>
                 </tr>
               </tbody>

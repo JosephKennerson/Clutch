@@ -15,7 +15,7 @@
   <%= @event.category %>
 </p>
 
-<% if @event.approval_required == true %>
+<% if @event.host_id == current_user.id && @event.approval_required == true%>
 <p>
   <strong># of Pending Requests:</strong>
   <%= @event.rsvps.where(pending: true).length %>
@@ -36,13 +36,9 @@
 <% end %>
 
 <p>
-  <strong>Current # of Confirmed Guests:</strong>
-  <%= @event.rsvps.where(confirmed: true).length %>
-</p>
-
-<p>
-  <strong>Max size:</strong>
-  <%= @event.max_size %>
+  <strong>Current / Max</strong>
+  <br />
+  <%= @event.rsvps.where(confirmed: true).length %> / <%= @event.max_size %>
 </p>
 
 <p>
@@ -55,15 +51,19 @@
   <%= @event.public_location %>
 </p>
 
-<p>
-  <strong>Address line 1:</strong>
-  <%= @event.address_line_1 %>
-</p>
+<% if user_signed_in? && @event.host_id == current_user.id %>
 
-<p>
-  <strong>Address line 2:</strong>
-  <%= @event.address_line_2 %>
-</p>
+  <p>
+    <strong>Address line 1:</strong>
+    <%= @event.address_line_1 %>
+  </p>
+
+  <p>
+    <strong>Address line 2:</strong>
+    <%= @event.address_line_2 %>
+  </p>
+
+<% end %>
 
 <p>
   <strong>City:</strong>
@@ -120,6 +120,25 @@
   <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
 <%= link_to 'Back', events_path %>
+
+<% if user_signed_in? && @event.host.id == current_user.id && @event.status == true%>
+  <h2>Attendees</h2>
+  <% @event.guests.each do |guest| %>
+    <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
+    <br />
+    <%= guest.username %>
+  <% end %>
+<% end %>
+
+<% if user_signed_in? && @event.host.id == current_user.id && @event.status == false%>
+  <h2>People Attended</h2>
+  <% @event.guests.each do |guest| %>
+    <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
+    <br />
+    <%= guest.username %>
+    <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
+  <% end %>
+<% end %>
 
 <h2>Comments</h2>
 <% @event.comments.each do |comment| %>

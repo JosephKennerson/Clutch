@@ -1,23 +1,21 @@
 class RatingsController < ApplicationController
-  # before_action :set_rating, only: [:show, :edit, :update, :destroy]
+  before_action :set_rating, only: [:show, :edit, :update, :destroy]
 
   # GET /ratings
   # GET /ratings.json
   def index
-    @user = User.find(params[:user_id])
+    @user = User.find(current_user.id)
     @ratings = Rating.all
   end
 
   # GET /ratings/1
   # GET /ratings/1.json
   def show
-    @user = User.find(params[:id])
-    @rating = Rating.find(params[:ratee_id])
   end
 
   # GET /ratings/new
   def new
-    @user = User.find(params[:user_id])
+    @user = User.find(current_user.id)
     @rating = Rating.new
   end
 
@@ -28,15 +26,10 @@ class RatingsController < ApplicationController
   # POST /ratings
   # POST /ratings.json
   def create
-    @ratee = User.find_by(params[:user_id])
-    p @ratee
     @rating = Rating.new(rating_params)
-    @rating.rater_id = current_user.id
-    @rating.ratee_id = @ratee.id
-
     respond_to do |format|
       if @rating.save
-        format.html { redirect_to user_ratings_path(@ratee), notice: 'Rating was successfully created.' }
+        format.html { redirect_to Event.find(@rating.event_id), notice: 'Rating was successfully created.' }
         format.json { render :show, status: :created, location: user_ratings_path(@ratee) }
       else
         format.html { render :new }
@@ -47,27 +40,27 @@ class RatingsController < ApplicationController
 
   # PATCH/PUT /ratings/1
   # PATCH/PUT /ratings/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @rating.update(rating_params)
-  #       format.html { redirect_to @rating, notice: 'Rating was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @rating }
-  #     else
-  #       format.html { render :edit }
-  #       format.json { render json: @rating.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
+  def update
+    respond_to do |format|
+      if @rating.update(rating_params)
+        format.html { redirect_to @rating, notice: 'Rating was successfully updated.' }
+        format.json { render :show, status: :ok, location: @rating }
+      else
+        format.html { render :edit }
+        format.json { render json: @rating.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   # DELETE /ratings/1
   # DELETE /ratings/1.json
-  # def destroy
-  #   @rating.destroy
-  #   respond_to do |format|
-  #     format.html { redirect_to ratings_url, notice: 'Rating was successfully destroyed.' }
-  #     format.json { head :no_content }
-  #   end
-  # end
+  def destroy
+    @rating.destroy
+    respond_to do |format|
+      format.html { redirect_to ratings_url, notice: 'Rating was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
