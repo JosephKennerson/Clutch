@@ -47,11 +47,16 @@
 </p>
 
 <p>
+  <strong>Rating:</strong>
+  <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+</p>
+
+<p>
   <strong>Public location:</strong>
   <%= @event.public_location %>
 </p>
 
-<% if user_signed_in? && @event.host_id == current_user.id %>
+<% if @event.host_id == current_user.id || Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true) %>
 
   <p>
     <strong>Address line 1:</strong>
@@ -123,24 +128,27 @@
 <% if user_signed_in? && @event.host.id == current_user.id && @event.status == true%>
 
   <h2>Attendees</h2>
-  <strong>Host: </strong><%= @event.host.username %>
-  <strong>Rating:</strong><%= @ratings.average(:rating) %>
   <% @event.guests.each do |guest| %>
+    <br />
     <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
     <br />
     <%= guest.username %>
+    <br />
+    <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
+    <br />
   <% end %>
-  <%= render 'ratings/form' %>
 <% end %>
 
-<% if user_signed_in? && @event.host.id == current_user.id && @event.status == false%>
+<% if @event.host.id == current_user.id && @event.status == false%>
 
   <h2>People Attended</h2>
   <% @event.guests.each do |guest| %>
     <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
     <br />
     <%= guest.username %>
-    <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
+    <% if !Rating.find_by(event_id: @event.id, rater_id: current_user.id, ratee_id: guest.id) %>
+      <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
+    <% end %>
   <% end %>
 <% end %>
 
@@ -163,17 +171,5 @@
     <% end %>
 <% end %>
 
-    <% if user_signed_in? %>
-  <h2>Add a comment:</h2>
-  <%= render 'comments/form' %>
-  <% else %>
-    <p>**Please sign in to make a comment.**</p>
-<% end %>
-<% end %>
-
-
-
-
-
-
-
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
