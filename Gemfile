@@ -47,7 +47,7 @@ group :development, :test do
   gem "capybara"
   gem 'ffaker'
   gem 'faker'
-  gem 'mongoid-tree', :require => 'mongoid/tree'
+  # gem 'mongoid-tree', :require => 'mongoid/tree'
 
 end
 
