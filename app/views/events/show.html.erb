@@ -208,8 +208,8 @@
         <%= comment.body %>
      </p>
      <% if comment.user == current_user %>
-        <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
         <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
+        <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
      <% end %>
     <% end %>
   <% end %>
