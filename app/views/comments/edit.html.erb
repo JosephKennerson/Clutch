@@ -1,6 +1,10 @@
 <h1>Editing Comment</h1>
 
+<% if @comment.is_private == false %>
 <%= render 'form' %>
+<% else %>
+<%= render 'form2' %>
+<% end %>
 
 <%= link_to 'Show', @comment %> |
 <%= link_to 'Back', comments_path %>

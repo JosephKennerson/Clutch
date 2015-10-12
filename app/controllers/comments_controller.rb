@@ -19,6 +19,7 @@ class CommentsController < ApplicationController
 
   # GET /comments/1/edit
   def edit
+    @event = Event.find(@comment.event_id)
   end
 
   # POST /comments
