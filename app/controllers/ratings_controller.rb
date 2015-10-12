@@ -31,8 +31,8 @@ class RatingsController < ApplicationController
     @rating.event_id = session[:event_id]
     respond_to do |format|
       if @rating.save
-        format.html { redirect_to events_path, notice: 'Rating was successfully created.' }
-        format.json { render :show, status: :created, location: user_ratings_path(@ratee) }
+        format.html { redirect_to event_path(@rating.event_id), notice: 'Rating was successfully created.' }
+        format.json { render :show, status: :created, location: event_path(@rating.event_id) }
       else
         format.html { render :new }
         format.json { render json: @rating.errors, status: :unprocessable_entity }
