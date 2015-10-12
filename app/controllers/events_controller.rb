@@ -32,7 +32,7 @@ class EventsController < ApplicationController
   def create
     p params
     @event = Event.new(event_params)
-    @event.host_id = current_user.id if current_user
+    @event.host_id = current_user.id
     respond_to do |format|
       if @event.save
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
