@@ -44,7 +44,7 @@ end
         time_start: Faker::Time.between(DateTime.now - 1, DateTime.now),
         time_end: Faker::Time.forward(1),
         name: FFaker::Company.catch_phrase,
-        description: Faker::Hacker.say_something_smart,
+        description: FFaker::HipsterIpsum.phrase,
         category: FFaker::Sport.name,
         approval_required: FFaker::Boolean.sample,
         host_id: 1,
@@ -101,7 +101,8 @@ end
   new_event = Rsvp.create!(
       guest_id: random_guest,
       event_id: random_event,
-      pending: true,
+      message: Faker::Hacker.say_something_smart,
+      pending: true
     )
 
 end
@@ -117,6 +118,7 @@ end
       guest_id: random_guest,
       event_id: random_event,
       pending: false,
+      message: Faker::Hacker.say_something_smart,
       confirmed: FFaker::Boolean.sample
     )
 
@@ -133,6 +135,7 @@ end
       guest_id: random_guest,
       event_id: random_event,
       pending: false,
+      message: Faker::Hacker.say_something_smart,
       confirmed: true
     )
 

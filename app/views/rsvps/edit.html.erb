@@ -16,7 +16,7 @@
     <%= image_tag @rsvp.guest.gravatar_url(size: 80) %>
   </br>
     <strong>Message</strong><br>
-    <p>We should consider a message field...</p>
+    <p><%= @rsvp.message %></p>
     -<%= @rsvp.guest.username %>
   </br>
     <%= radio_button_tag(:confirmed, "true") %>
