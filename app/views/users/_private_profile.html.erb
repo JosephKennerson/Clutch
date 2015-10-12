@@ -31,7 +31,7 @@
               <% else %>
               <h4><%= link_to 'Please add a username', edit_user_path(@user) %></h4>
               <% end %>
-              <span class="text-muted">Joined: <%= @user.created_at %></span>
+              <span class="text-muted"><%= link_to 'Edit profile', edit_user_path(@user) %></span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
               <%= link_to '<i class="fa fa-star-o fa-5x"></i>'.html_safe, "/users/#{@user.id}/feedback" %>
@@ -39,7 +39,7 @@
               <span class="text-muted">See all your ratings</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <i class="fa fa-hand-peace-o fa-5x"></i>
+              <%= link_to '<i class="fa fa-hand-peace-o fa-5x"></i>'.html_safe, "/users/#{@user.id}/hosted_events" %>
               <h4>Hosted Events</h4>
               <span class="text-muted">See all the events you're putting on</span>
             </div>
@@ -74,7 +74,6 @@
                   <% else rsvp.confirmed == false %>
                     <td><span class="label label-danger">Declined</span></td>
                   <% end %>
-                  <td><%= rsvp.event.status %></td>
                 <% end %>
                 </tr>
               </tbody>

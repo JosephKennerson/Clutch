@@ -16,6 +16,8 @@ Rails.application.routes.draw do
     member do
       get 'feedback'
       get 'reviews'
+      get 'hosted_events'
+      get 'guest_events'
     end
   end
 
