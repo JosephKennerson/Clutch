@@ -56,7 +56,7 @@
   <%= @event.public_location %>
 </p>
 
-<% if user_signed_in? && @event.host_id == current_user.id %>
+<% if @event.host_id == current_user.id || Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true) %>
 
   <p>
     <strong>Address line 1:</strong>
@@ -146,7 +146,9 @@
     <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
     <br />
     <%= guest.username %>
-    <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
+    <% if !Rating.find_by(event_id: @event.id, rater_id: current_user.id, ratee_id: guest.id) %>
+      <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
+    <% end %>
   <% end %>
 <% end %>
 
