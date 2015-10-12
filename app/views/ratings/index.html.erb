@@ -20,8 +20,6 @@
         <td><%= rating.event %></td>
         <td><%= rating.rating %></td>
         <td><%= rating.rating_feedback %></td>
-        <td><%= User.find(rating.rater_id).username %></td>
-        <td><%= User.find(rating.ratee_id).username %></td>
         <td><%= link_to 'Show', rating %></td>
         <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
         <td><%= link_to 'Destroy', rating, method: :delete, data: { confirm: 'Are you sure?' } %></td>
