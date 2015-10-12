@@ -107,6 +107,7 @@
 <%= link_to 'Back', events_path %>
 
 <% if user_signed_in? && @event.host.id == current_user.id && @event.status == true%>
+
   <h2>Attendees</h2>
   <% @event.guests.each do |guest| %>
     <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
@@ -116,6 +117,7 @@
 <% end %>
 
 <% if user_signed_in? && @event.host.id == current_user.id && @event.status == false%>
+
   <h2>People Attended</h2>
   <% @event.guests.each do |guest| %>
     <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
@@ -136,9 +138,12 @@
     <b>Comment:</b>
     <%= comment.body %>
   </p>
-  <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
-  <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
-
+  
+  <% if comment.user == current_user %>
+    <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
+    <br></br>
+  <% end %>
 <% end %>
 
 <h2>Add a comment:</h2>
