@@ -9,7 +9,7 @@ User.create!(
         zip: "94107",
         email: "admin@admin.com",
         password: "adminadmin",
-        avatar: "http://joeydriessen.me/portfolio/Pong/Images/darthVader.jpg",
+        avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
         last_name: "Istrator"
   )
