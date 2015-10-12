@@ -114,7 +114,7 @@
   <%= @event.approval_required %>
 </p>
 
-<% if @event.host.id == current_user.id %>
+<% if user_signed_in? && @event.host.id == current_user.id %>
   <%= link_to 'Edit Event', edit_event_path(@event) %>
   <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>

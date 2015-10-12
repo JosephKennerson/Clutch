@@ -45,7 +45,7 @@
         <td><%= event.time_start.strftime('%-l:%M %p') %></td>
         <td><%= event.time_end.strftime('%b %-e, %Y') %></td>
         <td><%= event.time_end.strftime('%-l:%M %p') %></td>
-        <% if current_user.id != event.host_id %>
+        <% if user_signed_in? && current_user.id != event.host_id %>
           <% if !Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == false %>
             <td><%= button_to 'Join', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: false, confirmed: true} %></td>
             <td>
@@ -57,11 +57,11 @@
             <td>
           <% elsif Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == true%>
             <td><%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event.id, guest_id: current_user.id).id}, method: :delete %></td>
-            <td>          
+            <td>
           <% end %>
         <% end %>
 
-        <% if Rsvp.find_by(event_id: event.id, guest_id: current_user.id, pending: true)%>
+        <% if user_signed_in? && Rsvp.find_by(event_id: event.id, guest_id: current_user.id, pending: true)%>
         <td><%= "Request pending" %></td>
         <% end %>
 
