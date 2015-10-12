@@ -48,7 +48,7 @@
 
 <p>
   <strong>Rating:</strong>
-  <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+  <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
 </p>
 
 <p>
