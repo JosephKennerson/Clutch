@@ -113,7 +113,6 @@
   <strong>Approval required:</strong>
   <%= @event.approval_required %>
 </p>
-<% if %>
 
 <% if user_signed_in? && @event.host.id == current_user.id %>
   <%= link_to 'Edit Event', edit_event_path(@event) %>
@@ -122,15 +121,20 @@
 <%= link_to 'Back', events_path %>
 
 <% if user_signed_in? && @event.host.id == current_user.id && @event.status == true%>
+
   <h2>Attendees</h2>
+  <strong>Host: </strong><%= @event.host.username %>
+  <strong>Rating:</strong><%= @ratings.average(:rating) %>
   <% @event.guests.each do |guest| %>
     <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
     <br />
     <%= guest.username %>
   <% end %>
+  <%= render 'ratings/form' %>
 <% end %>
 
 <% if user_signed_in? && @event.host.id == current_user.id && @event.status == false%>
+
   <h2>People Attended</h2>
   <% @event.guests.each do |guest| %>
     <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
