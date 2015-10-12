@@ -114,7 +114,7 @@
   <%= @event.approval_required %>
 </p>
 
-<% if @event.host.id == current_user.id %>
+<% if user_signed_in? && @event.host.id == current_user.id %>
   <%= link_to 'Edit Event', edit_event_path(@event) %>
   <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>
@@ -126,16 +126,20 @@
     <b>Commenter:</b>
     <%= comment.user.username %>
   </p>
-
   <p>
     <b>Comment:</b>
     <%= comment.body %>
+    <br></br>
   </p>
+    <% if current_user == comment.user_id %>
   <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
   <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
-
+    <% end %>
 <% end %>
+    <% if user_signed_in? %>
 
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
-
+  <h2>Add a comment:</h2>
+  <%= render 'comments/form' %>
+  <% else %>
+    <p>**Please sign in to make a comment.**</p>
+<% end %>
