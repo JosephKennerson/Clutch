@@ -1,6 +1,10 @@
-<h1>reviews</h1>
+<h1 class="page-header"><%= @user.username %>'s reviews</h1>
 
 <% @user.given_ratings.each do |review| %>
-  <%= review.rating %>
-  <%= review.rating_feedback %>
+    <div class="col-xs-6 col-lg-4">
+      <h2 style="color:darkcyan"><%= review.rating.round(2) %></h2>
+      <p><%= review.rating_feedback %> </p>
+      <p class="blog-post-meta"><%= review.created_at.strftime("%d %b. %Y") %></p>
+    </div>
   <% end %>
+
