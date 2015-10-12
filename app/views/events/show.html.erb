@@ -128,48 +128,89 @@
 <% if user_signed_in? && @event.host.id == current_user.id && @event.status == true%>
 
   <h2>Attendees</h2>
-  <% @event.guests.each do |guest| %>
     <br />
-    <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
+    <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
     <br />
-    <%= guest.username %>
+    <% @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
     <br />
-  <% end %>
+    <% @event.guests.each do |guest| %>
+      <br />
+      <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
+      <br />
+      <%= guest.username %>
+      <br />
+      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
+      <br />
+    <% end %>
 <% end %>
 
-<% if @event.host.id == current_user.id && @event.status == false%>
+<% if (@event.host.id == current_user.id && @event.status == false) || (@event.status == false && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true))%>
 
   <h2>People Attended</h2>
-  <% @event.guests.each do |guest| %>
-    <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
     <br />
-    <%= guest.username %>
-    <% if !Rating.find_by(event_id: @event.id, rater_id: current_user.id, ratee_id: guest.id) %>
-      <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
+    <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
+    <br />
+    <% @event.host.username %>
+    <br />
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+    <br />
+  <% @event.guests.each do |guest| %>
+      <br />
+      <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
+      <br />
+      <%= guest.username %>
+      <br />
+      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
+      <br />
+      <% if !Rating.find_by(event_id: @event.id, rater_id: current_user.id, ratee_id: guest.id) && current_user.id != guest.id%>
+        <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
     <% end %>
   <% end %>
 <% end %>
 
-<h2>Comments</h2>
-<% @event.comments.each do |comment| %>
-  <p>
-    <b>Commenter:</b>
-    <%= comment.user.username %>
-  </p>
-  <p>
-    <b>Comment:</b>
-    <%= comment.body %>
-    <br></br>
-  </p>
 
-    <% if comment.user == current_user %>
-  <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <h2>Public Comments</h2>
+  <% @event.comments.each do |comment| %>
+    <% if comment.is_private == false %>
+    <p>
+      <b>Commenter:</b>
+      <%= comment.user.username %>
+    </p>
+   <p>
+      <b>Comment:</b>
+      <%= comment.body %>
+   </p>
+   <% if comment.user == current_user %>
   <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
-  <br></br>
+  <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
     <% end %>
 <% end %>
+    <% end %>
 
 <h2>Add a comment:</h2>
-<%= render 'comments/form' %>
+<%= render 'comments/form', locals: {is_private: false} %>
+<br>
+
+  <% if Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) || @event.host.id == current_user.id  %>
+    <h2>Private Comments</h2>
+      <% @event.comments.each do |comment| %>
+        <% if comment.is_private == true %>
+        <p>
+          <b>Commenter:</b>
+          <%= comment.user.username %>
+        </p>
+       <p>
+          <b>Comment:</b>
+          <%= comment.body %>
+       </p>
+       <% if comment.user == current_user %>
+  <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
+    <% end %>
+       <% end %>
+<% end %>
+<% end %>
+<h2>Add a private comment:</h2>
+<%= render 'comments/form2', locals: {is_private: true} %>
