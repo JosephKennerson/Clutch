@@ -22,7 +22,7 @@
   <%= @ratings.average(:rating) %>
 </p>
 
-<%= link_to 'Rating', new_user_rating_path(@user, @rating) %>
+<%= link_to 'Rating', new_rating_path(@rating) %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
 
 <h4>Past events</h4>
