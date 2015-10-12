@@ -9,12 +9,12 @@ User.create!(
         zip: "94107",
         email: "admin@admin.com",
         password: "adminadmin",
-        photo: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
+        avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
         last_name: "Istrator"
   )
 
-200.times do
+50.times do
   User.create!(
         username: FFaker::Internet.user_name,
         address_line_1: FFaker::AddressUS.street_address,
@@ -24,9 +24,31 @@ User.create!(
         zip: FFaker::AddressUS.zip_code,
         email: FFaker::Internet.disposable_email,
         password: FFaker::Internet.password,
-        photo: Faker::Avatar.image,
+        avatar: Faker::Avatar.image,
         first_name: FFaker::Name.first_name,
         last_name: Faker::Name.last_name
+    )
+
+end
+
+5.times do
+  random_size = rand(1..10)
+  Event.create!(
+        public_location: FFaker::Venue.name,
+        address_line_1: FFaker::AddressUS.street_address,
+        address_line_2: FFaker::AddressUS.secondary_address,
+        city: FFaker::AddressUS.city,
+        state: FFaker::AddressUS.state_abbr,
+        zip: FFaker::AddressUS.zip_code,
+        max_size: random_size,
+        time_start: Faker::Time.between(DateTime.now - 1, DateTime.now),
+        time_end: Faker::Time.forward(1),
+        name: FFaker::Company.catch_phrase,
+        description: Faker::Hacker.say_something_smart,
+        category: FFaker::Sport.name,
+        approval_required: FFaker::Boolean.sample,
+        host_id: 1,
+        status: FFaker::Boolean.sample
     )
 
 end
@@ -72,7 +94,7 @@ end
 
 # random pending rsvps (id # 1-25)
 
-25.times do
+100.times do
   random_guest = rand(10..User.count)
   random_host = rand(1..9)
   random_event = rand(1..Event.count)
@@ -86,7 +108,7 @@ end
 
 # random not-pending rsvps (true and false; id #26-50)
 
-25.times do
+100.times do
 
   random_guest = rand(10..User.count)
   random_host = rand(1..9)
@@ -102,7 +124,7 @@ end
 
 # random confirmed rsvps (id #51-75)
 
-25.times do
+100.times do
 
   random_guest = rand(10..User.count)
   random_host = rand(1..9)

@@ -1,29 +1,16 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+</br>
 
-<p>
-  <strong>Address line 1:</strong>
-  <%= @user.address_line_1 %>
-</p>
+<% if user_signed_in? && current_user.id == @user.id%>
 
-<p>
-  <strong>Address line 2:</strong>
-  <%= @user.address_line_2 %>
-</p>
+<%= render "private_profile" %>
 
-<p>
-  <strong>City:</strong>
-  <%= @user.city %>
-</p>
+<% else %>
+
+<%= render "public_profile"%>
+
 
 <p>
   <strong>State:</strong>
@@ -31,29 +18,28 @@
 </p>
 
 <p>
-  <strong>Zip:</strong>
-  <%= @user.zip %>
+  <strong>Average Rating:</strong>
+  <%= @ratings.average(:rating) %>
 </p>
 
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
-
-<p>
-  <strong>Photo:</strong>
-  <%= @user.photo %>
-</p>
-
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
-
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
-
+<%= link_to 'Rating', new_user_rating_path(@user, @rating) %>
 <%= link_to 'Edit', edit_user_path(@user) %> |
+
+<h4>Past events</h4>
+
+<% @user.events.each do |event| %>
+  <% if event.time_start.past? %>
+    <strong><%= link_to "#{event.name}", event_path(event.id) %></strong>
+    </br>
+  <% end %>
+<% end %>
+</br>
+
+
+
+
+<% if user_signed_in? && current_user.id == @user.id%>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+<% end %>
+
 <%= link_to 'Back', users_path %>

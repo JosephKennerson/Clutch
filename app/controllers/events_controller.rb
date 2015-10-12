@@ -14,6 +14,8 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+    @comment = Comment.new
+    session[:event_id] = params[:id]
   end
 
   # GET /events/new
@@ -28,9 +30,9 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
+    p params
     @event = Event.new(event_params)
-    @event.host_id = current_user.id
-
+    @event.host_id = current_user.id if current_user
     respond_to do |format|
       if @event.save
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
@@ -61,7 +63,7 @@ class EventsController < ApplicationController
   def destroy
     @event.destroy
     respond_to do |format|
-      format.html { redirect_to events_url, notice: 'Event was successfully destroyed.' }
+      format.html { redirect_to @event, notice: 'Event was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

@@ -1,0 +1,117 @@
+<div class="container-fluid">
+      <div class="row">
+        <!-- <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analytics</a></li>
+            <li><a href="#">Export</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
+        </div> -->
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+               <%= image_tag @user.gravatar_url, class: "img-responsive", alt: "Generic placeholder thumbnail" %>
+               <% if @user.username %>
+              <h4><%= @user.username %></h4>
+              <% else %>
+              <h4><%= link_to 'Please add a username', edit_user_path(@user) %></h4>
+              <% end %>
+              <span class="text-muted">Joined: <%= @user.created_at %></span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              # <%= link_to '<i class="fa fa-star-o fa-5x"></i>'.html_safe, "/ratings/#{@user.id}"%>
+              <h4>Ratings</h4>
+              <span class="text-muted">See all your ratings</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <i class="fa fa-hand-peace-o fa-5x"></i>
+              <h4>Hosted Events</h4>
+              <span class="text-muted">See all the events you're putting on</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <i class="fa fa-hand-spock-o fa-5x"></i>
+              <h4>Upcoming Events</h4>
+              <span class="text-muted">See all the events you're attending as a guest</span>
+            </div>
+          </div>
+
+          <h2 class="sub-header">Your requests</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Event name</th>
+                  <th>Host</th>
+                  <th>Start time</th>
+                  <th>Status</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @user.rsvps.each do |rsvp| %>
+                <tr>
+                  <td><strong><%= rsvp.event.name %></strong></td>
+                  <td><%= link_to "#{rsvp.event.host.first_name}", user_path(rsvp.event.host.id) %></td>
+                  <td><%= rsvp.event.time_start %></td>
+                  <% if rsvp.pending %>
+                    <td><span class="label label-warning">Pending</span></td>
+                  <% elsif rsvp.confirmed %>
+                    <td><span class="label label-success">Confirmed!</span></td>
+                  <% else rsvp.confirmed == false %>
+                    <td><span class="label label-danger">Declined</span></td>
+                  <% end %>
+                <% end %>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        <h2 class="sub-header">Your hosted event requests:</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Event name</th>
+                  <th>Guest</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @user.events.each do |event| %>
+              <tr>
+                  <td><strong><%= link_to "#{event.name}", event_path(event.id) %></strong></td>
+                  <% event.rsvps.each do |rsvp| %>
+                </tr>
+                  <td><%= link_to "#{rsvp.guest.first_name}", user_path(rsvp.guest.id) %></td>
+                  <% if rsvp.pending %>
+                    <td><span class="label label-warning"><%= link_to 'Respond', edit_rsvp_path(rsvp.id) %></span></td>
+                  <% elsif rsvp.confirmed %>
+                    <td><span class="label label-success">Confirmed!</span></td>
+                  <% else rsvp.confirmed == false %>
+                    <td><span class="label label-danger">Declined</span></td>
+                  <% end %>
+                  <tr>
+                <% end %>
+                <% end %>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>

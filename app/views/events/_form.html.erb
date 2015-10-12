@@ -1,3 +1,5 @@
+<% if user_signed_in? %>
+
 <%= form_for(@event) do |f| %>
   <% if @event.errors.any? %>
     <div id="error_explanation">
@@ -10,6 +12,9 @@
       </ul>
     </div>
   <% end %>
+
+
+
 
   <div class="field">
     <%= f.label :event_name %><br>
@@ -63,8 +68,13 @@
     <%= f.label :approval_required %><br>
     <%= f.check_box :approval_required %>
   </div>
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+<% end %>
+
+<% else %>
+
+<h1>Please log in to create an event</h1>
+
 <% end %>

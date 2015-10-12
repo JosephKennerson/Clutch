@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 20151010224122) do
     t.string   "city"
     t.string   "state"
     t.string   "zip"
-    t.string   "photo"
+    t.string   "avatar"
     t.string   "first_name"
     t.string   "last_name"
     t.datetime "created_at",                          null: false

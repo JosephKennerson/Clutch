@@ -42,6 +42,11 @@ class RsvpsController < ApplicationController
   def update
     p "hit1" * 80
     respond_to do |format|
+      if params[:commit] == 'true'
+        @rsvp.confirmed = true
+      else
+        @rsvp.confirmed = false
+      end
       if @rsvp.update(rsvp_params)
     p "hit2" * 80
         format.html { redirect_to events_path, notice: 'Rsvp was successfully updated.' }
@@ -72,6 +77,6 @@ class RsvpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rsvp_params
-      params.require(:rsvp).permit(:guest_id, :event_id, :pending, :confirmed)
+      params.require(:rsvp).permit(:guest_id, :event_id, :pending, :confirmed, :commit)
     end
 end
