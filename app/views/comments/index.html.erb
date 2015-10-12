@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Event</th>
-      <th>User</th>
+      <th>Host</th>
       <th>Is private</th>
       <th>Body</th>
       <th colspan="3"></th>
@@ -16,7 +16,7 @@
   <tbody>
     <% @comments.each do |comment| %>
       <tr>
-        <td><%= comment.event %></td>
+        <td><%= comment.event.name %></td>
         <td><%= comment.user.username %></td>
         <td><%= comment.is_private %></td>
         <td><%= comment.body %></td>
