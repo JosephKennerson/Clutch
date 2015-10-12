@@ -41,7 +41,7 @@ class RsvpsController < ApplicationController
   # PATCH/PUT /rsvps/1.json
   def update
     respond_to do |format|
-      if params[:commit] == 'true'
+      if params[:confirmed] == true
         @rsvp.confirmed = true
       else
         @rsvp.confirmed = false
@@ -74,6 +74,6 @@ class RsvpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rsvp_params
-      params.require(:rsvp).permit(:guest_id, :event_id, :pending, :confirmed, :commit)
+      params.require(:rsvp).permit(:guest_id, :event_id, :pending, :confirmed, :confirm)
     end
 end

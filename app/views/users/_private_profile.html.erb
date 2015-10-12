@@ -100,8 +100,9 @@
                   <td class="info"></td>
                   <td><% if event.rsvps.where(confirmed: true).length >= event.max_size %>
                     <td><span class="label label-danger">Full!</span></td>
-                  <% end %></td>
+                      <% end %></td>
                   <% end %>
+
                   <% event.rsvps.each do |rsvp| %>
                 </tr>
                   <td><%= link_to "#{rsvp.guest.first_name}", user_path(rsvp.guest.id) %></td>

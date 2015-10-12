@@ -1,3 +1,4 @@
+<% if user_signed_in? && current_user.id == @rsvp.event.host.id%>
 <h1><%= @rsvp.guest.username %>'s request to join <%= @rsvp.event.name %></h1>
 
 <%= form_for(@rsvp) do |f| %>
@@ -19,17 +20,20 @@
     <p><%= @rsvp.message %></p>
     -<%= @rsvp.guest.username %>
   </br>
-    <%= radio_button_tag(:confirmed, "true") %>
-<%= label_tag(:confirm, "Confirm!") %>
-<%= radio_button_tag(:confirmed, false) %>
-<%= label_tag(:decline, "Decline :(") %>
+<div class="btn-group">
+<%= link_to 'Accept Request to Join', {controller: "rsvps", action: "update", id: @rsvp.id, rsvp: {guest_id: @rsvp.guest_id, event_id: @rsvp.event_id, pending: false, confirmed: true}}, method: :put, class: "btn btn-success" %>
 
+<%= link_to 'Decline Request to Join', {controller: "rsvps", action: "update", id: @rsvp.id, rsvp: {guest_id: @rsvp.guest_id, event_id: @rsvp.event_id, pending: false, confirmed: false}}, method: :put, class: "btn btn-danger" %>
 </div>
-</br>
-<%= f.submit "Save request status" %>
 
 <% end %>
 
 
-<%= link_to 'View request', @rsvp %> |
-<%= link_to 'Back', rsvps_path %>
+
+<%= link_to 'Back to profile', user_path(@rsvp.event.host.id) %>
+
+<% else %>
+
+<p>Oops! This request is only available to the host of the event</p>
+
+<% end %>
