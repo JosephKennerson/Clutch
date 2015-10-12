@@ -15,6 +15,7 @@ class EventsController < ApplicationController
   # GET /events/1.json
   def show
     @comment = Comment.new
+    @rating = Rating.new
     session[:event_id] = params[:id]
   end
 
@@ -30,7 +31,6 @@ class EventsController < ApplicationController
   # POST /events
   # POST /events.json
   def create
-    p params
     @event = Event.new(event_params)
     @event.host_id = current_user.id
     respond_to do |format|
