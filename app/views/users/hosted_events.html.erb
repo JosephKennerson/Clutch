@@ -1,0 +1,19 @@
+<h1><%= @user.username %>'s upcoming events</h1>
+
+<% @user.events.each do |event| %>
+  <% if event.time_start.future? %>
+  <%= link_to "#{event.name}", event_path(event.id) %>
+    <% if event.rsvps.where(confirmed: true).length >= event.max_size %>
+    <span class="label label-danger">Full!</span>
+    <% end %>
+</br>
+  <% end %>
+<% end %>
+
+  <h1>Events they've hosted</h1>
+  <% @user.events.each do |event| %>
+  <% if event.time_start.past? %>
+    <%= link_to "#{event.name}", event_path(event.id) %>
+  </br>
+  <% end %>
+<% end %>

@@ -15,7 +15,7 @@ class EventsController < ApplicationController
   # GET /events/1.json
   def show
     @comment = Comment.new
-    session[:event_id] = params[:id]
+    @rating = Rating.new
   end
 
   # GET /events/new
