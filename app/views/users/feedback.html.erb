@@ -1,10 +1,14 @@
-<h1>feedback</h1>
+<h1>what the kids say about <%= @user.first_name %></h1>
+<p class="blog-post-meta"><%= link_to "See the feedback #{@user.username} has given", "/users/#{@user.id}/reviews" %></p>
 
-      <% @user.received_ratings do |review| %>
-        <p><%= review.rating %></p>
-        <p><%= review.rating_feedback %></p>
-        <% end %>
-      <p><%= link_to 'See the feedback you have given', "/users/#{@user.id}/reviews" %></p>
+      <% @user.received_ratings.each do |review| %>
+        <div class="col-xs-6 col-lg-4">
+        <h2 style="color:darkcyan"><strong><%= review.rating.round(2) %></strong></h2>
+        <p><%= review.rating_feedback %><p>
+        <p class="blog-post-meta"><%= review.created_at.strftime("%H:%M %d %b. %Y") %></p>
+      </div>
+      <% end %>
+
 
 
 
