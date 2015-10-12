@@ -12,11 +12,14 @@ Rails.application.routes.draw do
   resources :comments
   resources :events
   resources :ratings
-  resources :users
-  resources :ratings
+  resources :users do
+    member do
+      get 'feedback'
+      get 'reviews'
+    end
+  end
 
-   get 'user/feedback'
-   get 'user/reviews'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

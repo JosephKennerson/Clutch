@@ -63,9 +63,12 @@ class UsersController < ApplicationController
   end
 
   def feedback
+    @user = User.find(params[:id])
+
   end
 
   def reviews
+    @user = User.find(params[:id])
   end
 
   private
