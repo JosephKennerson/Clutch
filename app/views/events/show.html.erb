@@ -1,3 +1,4 @@
+<% if user_signed_in?%>
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -153,7 +154,6 @@
     <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
     <br />
     <% @event.guests.each do |guest| %>
-
     <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>
         <br />
         <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
@@ -177,7 +177,6 @@
     <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
     <br />
   <% @event.guests.each do |guest| %>
-
     <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>
         <br />
         <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
@@ -216,7 +215,7 @@
 <%= render 'comments/form', locals: {is_private: false} %>
 <br>
 
-<% if Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) || @event.host.id == current_user.id  %>
+<% if Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true) || @event.host.id == current_user.id  %>
   <h2>Private Comments</h2>
     <% @event.comments.each do |comment| %>
       <% if comment.is_private == true %>
@@ -236,4 +235,8 @@
   <% end %>
 <h2>Add a private comment:</h2>
 <%= render 'comments/form2', locals: {is_private: true} %>
+<% end %>
+
+<% else %>
+<p>Please log in to see your upcoming events</p>
 <% end %>
