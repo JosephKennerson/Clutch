@@ -1,4 +1,5 @@
-<h1 class="page-header"><%= @user.username %>'s reviews</h1>
+<h1 class="page-header"><%= @user.username %>'s given reviews</h1>
+<h1>average rating given: <%= @user.given_ratings.average(:rating).round(2) %></h1>
 
 <% @user.given_ratings.each do |review| %>
     <div class="col-xs-6 col-lg-4">
