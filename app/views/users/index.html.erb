@@ -36,8 +36,8 @@
         <td><%= user.last_name %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Rating', new_user_rating_path(user, @rating) %></td>
-       <!-- new_user_ratings_path(@user,@rating) -->
+        <td><%= link_to 'Rating', new_rating_path(@rating) %></td>
+
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
