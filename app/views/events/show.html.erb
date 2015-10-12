@@ -1,3 +1,5 @@
+<% if user_signed_in? %>
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -213,4 +215,10 @@
   <% end %>
 <h2>Add a private comment:</h2>
 <%= render 'comments/form2', locals: {is_private: true} %>
+<% end %>
+
+<% else %>
+
+<h1>Please login to see an event</h1>
+
 <% end %>
