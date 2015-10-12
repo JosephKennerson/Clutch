@@ -135,7 +135,7 @@
     <br />
     <% @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
     <br />
     <% @event.guests.each do |guest| %>
       <br />
@@ -143,7 +143,7 @@
       <br />
       <%= guest.username %>
       <br />
-      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
+      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %>
       <br />
     <% end %>
 <% end %>
@@ -156,7 +156,7 @@
     <br />
     <% @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
     <br />
   <% @event.guests.each do |guest| %>
       <br />
@@ -164,7 +164,7 @@
       <br />
       <%= guest.username %>
       <br />
-      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
+      <%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %>
       <br />
       <% if !Rating.find_by(event_id: @event.id, rater_id: current_user.id, ratee_id: guest.id) && current_user.id != guest.id%>
         <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
