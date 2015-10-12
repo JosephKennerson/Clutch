@@ -13,9 +13,9 @@ Rails.application.routes.draw do
   resources :events
   resources :ratings
   resources :users
-  # do
-    # resources :ratings
-   # end
+  resources :ratings
+
+
 
    get 'user/feedback'
    get 'user/reviews'

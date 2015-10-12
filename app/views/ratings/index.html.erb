@@ -17,7 +17,7 @@
   <tbody>
     <% @ratings.each do |rating| %>
       <tr>
-        <td><%= rating.event %></td>
+        <td><%= rating.event.name %></td>
         <td><%= rating.rating %></td>
         <td><%= rating.rating_feedback %></td>
         <td><%= link_to 'Show', rating %></td>
