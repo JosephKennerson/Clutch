@@ -34,7 +34,7 @@
               <span class="text-muted">Joined: <%= @user.created_at %></span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <%= link_to '<i class="fa fa-star-o fa-5x"></i>'.html_safe, "/ratings/#{@user.id}"%>
+              <%= link_to '<i class="fa fa-star-o fa-5x"></i>'.html_safe, "/users/#{@user.id}/feedback" %>
               <h4>Ratings</h4>
               <span class="text-muted">See all your ratings</span>
             </div>

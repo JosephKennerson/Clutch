@@ -31,6 +31,8 @@ User.create!(
 
 end
 
+#Admin events
+
 5.times do
   random_size = rand(1..10)
   Event.create!(
@@ -78,6 +80,19 @@ end
 
 end
 
+# Admin comments
+
+20.times do
+  random_event = rand(1..Event.count)
+  Comment.create!(
+        event_id: random_event,
+        user_id: 1,
+        body: FFaker::BaconIpsum.phrase,
+        is_private: FFaker::Boolean.sample
+    )
+
+end
+
 # random comments (public and private)
 
 200.times do
@@ -96,13 +111,40 @@ end
 
 100.times do
   random_guest = rand(10..User.count)
-  random_host = rand(1..9)
   random_event = rand(1..Event.count)
   new_event = Rsvp.create!(
       guest_id: random_guest,
       event_id: random_event,
       message: Faker::Hacker.say_something_smart,
       pending: true
+    )
+
+end
+
+#Admin pending rsvps
+
+10.times do
+  random_event = rand(1..Event.count)
+  new_event = Rsvp.create!(
+      guest_id: 1,
+      event_id: random_event,
+      message: Faker::Hacker.say_something_smart,
+      pending: true
+    )
+
+end
+
+# Admin (not pending) rsvps
+
+10.times do
+  random_guest = rand(10..User.count)
+  random_event = rand(1..Event.count)
+  new_event = Rsvp.create!(
+      guest_id: random_guest,
+      event_id: random_event,
+      message: Faker::Hacker.say_something_smart,
+      pending: false,
+      confirmed: FFaker::Boolean.sample
     )
 
 end
@@ -142,33 +184,33 @@ end
 end
 
 # random ratings (from confirmed rsvps)
+150.times do
+  count = 1
+  current_event = Event.find(count)
+      Rating.create!(
+          event_id: count,
+          rating: rand(1.0..5.0),
+          rating_feedback: FFaker::HipsterIpsum.phrase,
+          rater_id: current_event.host.id,
+          ratee_id: current_event.guests.sample.id
+        )
+    count += 1
+end
 
-# Events.each do |event|
-#   event_id = event.id
+# random ratings (switched roles)
 
-#   Rating.create! (
-#       event_id: event_id,
-#       rating: rand(1.0..5.0),
-#       rating_feedback: FFaker.HipsterIpsum.phrase,
-#       rater_id: event.host.id
-#       ratee_id: event.guests.sample.id
-#     )
-
-
-# end
-
-# Events.each do |event|
-
-#   Rating.create! (
-#       event_id: event.id,
-#       rating: rand(1.0..5.0),
-#       rating_feedback: FFaker.HipsterIpsum.phrase,
-#       ratee_id: event.host.id
-#       rater_id: event.guests.sample.id
-#     )
-
-
-# end
+150.times do
+  count = 1
+  current_event = Event.find(count)
+      Rating.create!(
+          event_id: count,
+          rating: rand(1.0..5.0),
+          rating_feedback: FFaker::HipsterIpsum.phrase,
+          ratee_id: current_event.host.id,
+          rater_id: current_event.guests.sample.id
+        )
+    count += 1
+end
 
 
 

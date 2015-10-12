@@ -12,4 +12,13 @@ class User < ActiveRecord::Base
   has_many :ratings
   has_many :given_ratings, through: :ratings, source: :rater
   has_many :received_ratings, through: :ratings, source: :ratee
+
+  def given_reviews
+    self.ratings.where(rater: self.id)
+  end
+
+  def received_feedback
+    self.ratings.where(ratee: self.id)
+  end
+
 end
