@@ -15,6 +15,31 @@
   <%= @event.category %>
 </p>
 
+<% if @event.approval_required == true %>
+<p>
+  <strong># of Pending Requests:</strong>
+  <%= @event.rsvps.where(pending: true).length %>
+</p>
+
+<p>
+  <strong>Pending Requests:</strong>
+  <% @event.rsvps.where(pending: true).each do |request| %>
+    <br />
+    <%= link_to image_tag(User.find(request.guest_id).gravatar_url(size: 30)), user_path(User.find(request.guest_id)) %>
+    <br />
+    <%= link_to "#{User.find(request.guest_id).username}", User.find(request.guest_id) %>
+    <br />
+    <%= button_to 'Accept Request to Join', {controller: "rsvps", action: "update", id: request.id, rsvp: {guest_id: request.guest_id, event_id: request.event_id, pending: false, confirmed: true}}, method: :put %>
+  <% end %>
+</p>
+
+<% end %>
+
+<p>
+  <strong>Current # of Confirmed Guests:</strong>
+  <%= @event.rsvps.where(confirmed: true).length %>
+</p>
+
 <p>
   <strong>Max size:</strong>
   <%= @event.max_size %>
@@ -77,7 +102,11 @@
 
 <p>
   <strong>Status:</strong>
-  <%= @event.status %>
+  <% if @event.status %>
+    <%= "Open" %>
+  <% else %>
+    <%= "Closed" %>
+  <% end %>
 </p>
 
 <p>
@@ -85,5 +114,28 @@
   <%= @event.approval_required %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
+<% if @event.host.id == current_user.id %>
+  <%= link_to 'Edit Event', edit_event_path(@event) %>
+  <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
 <%= link_to 'Back', events_path %>
+
+<h2>Comments</h2>
+<% @event.comments.each do |comment| %>
+  <p>
+    <b>Commenter:</b>
+    <%= comment.user.username %>
+  </p>
+
+  <p>
+    <b>Comment:</b>
+    <%= comment.body %>
+  </p>
+  <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
+
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
