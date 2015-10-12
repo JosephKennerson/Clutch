@@ -47,6 +47,11 @@
 </p>
 
 <p>
+  <strong>Rating:</strong>
+  <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+</p>
+
+<p>
   <strong>Public location:</strong>
   <%= @event.public_location %>
 </p>
@@ -123,17 +128,18 @@
 <% if user_signed_in? && @event.host.id == current_user.id && @event.status == true%>
 
   <h2>Attendees</h2>
-  <strong>Host: </strong><%= @event.host.username %>
-  <strong>Rating:</strong><%= @ratings.average(:rating) %>
   <% @event.guests.each do |guest| %>
+    <br />
     <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
     <br />
     <%= guest.username %>
+    <br />
+    <%= Rating.where(ratee_id: guest.id).average(:rating).to_f %>
+    <br />
   <% end %>
-  <%= render 'ratings/form' %>
 <% end %>
 
-<% if user_signed_in? && @event.host.id == current_user.id && @event.status == false%>
+<% if @event.host.id == current_user.id && @event.status == false%>
 
   <h2>People Attended</h2>
   <% @event.guests.each do |guest| %>
@@ -163,16 +169,5 @@
     <% end %>
 <% end %>
 
-    <% if user_signed_in? %>
-  <h2>Add a comment:</h2>
-  <%= render 'comments/form' %>
-  <% else %>
-    <p>**Please sign in to make a comment.**</p>
-<% end %>
-
-
-
-
-
-
-
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
