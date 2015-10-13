@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'home/index'
   get 'home/team'
+  get 'search', to: 'search#search'
 
   devise_for :users, :skip => [:sessions]
   as :user do

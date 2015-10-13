@@ -115,6 +115,9 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    kaminari (0.16.3)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -193,6 +196,10 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    searchkick (0.9.1)
+      activemodel
+      elasticsearch (>= 1)
+      hashie
     selenium-webdriver (2.48.0)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
@@ -249,11 +256,13 @@ DEPENDENCIES
   gravtastic
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   pry-nav
   rails (= 4.2.4)
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  searchkick
   selenium-webdriver
   shoulda-matchers
   spring

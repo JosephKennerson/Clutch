@@ -1,4 +1,4 @@
-# require 'elasticsearch/model'
+require 'elasticsearch/model'
 
 class Event < ActiveRecord::Base
   include Elasticsearch::Model
@@ -12,9 +12,6 @@ class Event < ActiveRecord::Base
   validates :public_location, :city, :state, :zip, :max_size, :time_start, :time_end, :name, :description, :category, presence: true
   validates :state, length: { is: 2 }
 
-  # Event.import
-
-  # @events = Event.search('')
 
  	def close_event
  		self.status = false if self.rsvps.where(confirmed: true).length >= self.max_size || self.time_end.past? == true
@@ -22,3 +19,5 @@ class Event < ActiveRecord::Base
  	end
 
 end
+
+Event.import

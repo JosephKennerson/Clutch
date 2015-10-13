@@ -187,12 +187,13 @@ end
 150.times do
   count = 1
   current_event = Event.find(count)
+  random_guest = current_event.guests.sample
       Rating.create!(
           event_id: count,
           rating: rand(1.0..5.0),
           rating_feedback: FFaker::HipsterIpsum.phrase,
           rater_id: current_event.host.id,
-          ratee_id: current_event.guests.sample.id
+          ratee_id: random_guest.id
         )
     count += 1
 end
