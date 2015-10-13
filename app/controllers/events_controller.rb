@@ -5,11 +5,17 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    @events.each do |e|
+      e.close_event
+    end
+    @events_open = Event.where(status: true)
   end
 
   # GET /events/1
   # GET /events/1.json
   def show
+    @comment = Comment.new
+    @rating = Rating.new
   end
 
   # GET /events/new
@@ -25,7 +31,7 @@ class EventsController < ApplicationController
   # POST /events.json
   def create
     @event = Event.new(event_params)
-
+    @event.host_id = current_user.id
     respond_to do |format|
       if @event.save
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
@@ -56,7 +62,7 @@ class EventsController < ApplicationController
   def destroy
     @event.destroy
     respond_to do |format|
-      format.html { redirect_to events_url, notice: 'Event was successfully destroyed.' }
+      format.html { redirect_to @event, notice: 'Event was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +75,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:public_location, :address_line_1, :address_line_2, :city, :state, :zip, :max_size, :user_id, :time_start, :time_end, :name, :description, :category, :status, :approval_required)
+      params.require(:event).permit(:public_location, :address_line_1, :address_line_2, :city, :state, :zip, :max_size, :host_id, :time_start, :time_end, :name, :description, :category, :status, :approval_required)
     end
 end

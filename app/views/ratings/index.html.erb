@@ -8,7 +8,8 @@
       <th>Event</th>
       <th>Rating</th>
       <th>Rating feedback</th>
-      <th>User</th>
+      <th>Rater</th>
+      <th>Ratee</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,10 +17,9 @@
   <tbody>
     <% @ratings.each do |rating| %>
       <tr>
-        <td><%= rating.event %></td>
+        <td><%= rating.event.name %></td>
         <td><%= rating.rating %></td>
         <td><%= rating.rating_feedback %></td>
-        <td><%= rating.user %></td>
         <td><%= link_to 'Show', rating %></td>
         <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
         <td><%= link_to 'Destroy', rating, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,5 +29,12 @@
 </table>
 
 <br>
+<p>
+  <strong>Average Rating</strong>
+  <%= @ratings.average(:rating) %>
+</p>
+
+<br>
 
 <%= link_to 'New Rating', new_rating_path %>
+<%= link_to 'User Profile', user_path(@user) %>

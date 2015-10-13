@@ -1,14 +1,34 @@
 Rails.application.routes.draw do
+  get 'home/index'
+  get 'home/team'
+
+  devise_for :users, :skip => [:sessions]
+  as :user do
+    get 'signin' => 'devise/sessions#new', :as => :new_user_session
+    post 'signin' => 'devise/sessions#create', :as => :user_session
+    delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
+
   resources :rsvps
-  resources :ratings
   resources :comments
   resources :events
-  resources :users
+  resources :ratings
+  resources :users do
+    member do
+      get 'feedback'
+      get 'reviews'
+      get 'hosted_events'
+      get 'guest_events'
+    end
+  end
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -50,7 +70,7 @@ Rails.application.routes.draw do
   #     post 'toggle'
   #   end
   #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
+  #   resources :avatars, concerns: :toggleable
 
   # Example resource route within a namespace:
   #   namespace :admin do

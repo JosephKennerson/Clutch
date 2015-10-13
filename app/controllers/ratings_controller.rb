@@ -4,6 +4,7 @@ class RatingsController < ApplicationController
   # GET /ratings
   # GET /ratings.json
   def index
+    @user = User.find(current_user.id)
     @ratings = Rating.all
   end
 
@@ -14,6 +15,7 @@ class RatingsController < ApplicationController
 
   # GET /ratings/new
   def new
+    @user = User.find(current_user.id)
     @rating = Rating.new
   end
 
@@ -25,11 +27,10 @@ class RatingsController < ApplicationController
   # POST /ratings.json
   def create
     @rating = Rating.new(rating_params)
-
     respond_to do |format|
       if @rating.save
-        format.html { redirect_to @rating, notice: 'Rating was successfully created.' }
-        format.json { render :show, status: :created, location: @rating }
+        format.html { redirect_to Event.find(@rating.event_id), notice: 'Rating was successfully created.' }
+        format.json { render :show, status: :created, location: user_ratings_path(@ratee) }
       else
         format.html { render :new }
         format.json { render json: @rating.errors, status: :unprocessable_entity }
@@ -69,6 +70,6 @@ class RatingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rating_params
-      params.require(:rating).permit(:event_id, :rating, :rating_feedback, :user_id)
+      params.require(:rating).permit(:event_id, :rating, :rating_feedback, :rater_id, :ratee_id)
     end
 end

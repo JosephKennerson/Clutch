@@ -1,6 +1,39 @@
-<h1>Editing Rsvp</h1>
+<% if user_signed_in? && current_user.id == @rsvp.event.host.id%>
+<h1><%= @rsvp.guest.username %>'s request to join <%= @rsvp.event.name %></h1>
 
-<%= render 'form' %>
+<%= form_for(@rsvp) do |f| %>
+  <% if @rsvp.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rsvp.errors.count, "error") %> prohibited this rsvp from being saved:</h2>
 
-<%= link_to 'Show', @rsvp %> |
-<%= link_to 'Back', rsvps_path %>
+      <ul>
+      <% @rsvp.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <%= image_tag @rsvp.guest.gravatar_url(size: 80) %>
+  </br>
+    <strong>Message</strong><br>
+    <p><%= @rsvp.message %></p>
+    -<%= @rsvp.guest.username %>
+  </br>
+<div class="btn-group">
+<%= link_to 'Accept Request to Join', {controller: "rsvps", action: "update", id: @rsvp.id, rsvp: {guest_id: @rsvp.guest_id, event_id: @rsvp.event_id, pending: false, confirmed: true}}, method: :put, class: "btn btn-success" %>
+
+<%= link_to 'Decline Request to Join', {controller: "rsvps", action: "update", id: @rsvp.id, rsvp: {guest_id: @rsvp.guest_id, event_id: @rsvp.event_id, pending: false, confirmed: false}}, method: :put, class: "btn btn-danger" %>
+</div>
+
+<% end %>
+
+
+
+<%= link_to 'Back to profile', user_path(@rsvp.event.host.id) %>
+
+<% else %>
+
+<p>Oops! This request is only available to the host of the event</p>
+
+<% end %>

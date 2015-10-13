@@ -2,7 +2,7 @@
 
 <p>
   <strong>Event:</strong>
-  <%= @rating.event %>
+  <%= @rating.event_id %>
 </p>
 
 <p>
@@ -16,8 +16,13 @@
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @rating.user %>
+  <strong>Rater:</strong>
+  <%= User.find(@rating.rater_id).username %>
+</p>
+
+<p>
+  <strong>Ratee:</strong>
+  <%= User.find(@rating.ratee_id).username %>
 </p>
 
 <%= link_to 'Edit', edit_rating_path(@rating) %> |

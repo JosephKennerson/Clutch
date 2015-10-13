@@ -1,3 +1,5 @@
+<% if user_signed_in? %>
+
 <%= form_for(@event) do |f| %>
   <% if @event.errors.any? %>
     <div id="error_explanation">
@@ -11,6 +13,25 @@
     </div>
   <% end %>
 
+
+
+
+  <div class="field">
+    <%= f.label :event_name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :category %><br>
+    <%= f.text_field :category %>
+  </div>
+  <div class="field">
+    <%= f.label :max_size %><br>
+    <%= f.number_field :max_size %>
+  </div>
   <div class="field">
     <%= f.label :public_location %><br>
     <%= f.text_field :public_location %>
@@ -36,14 +57,6 @@
     <%= f.text_field :zip %>
   </div>
   <div class="field">
-    <%= f.label :max_size %><br>
-    <%= f.number_field :max_size %>
-  </div>
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.text_field :user_id %>
-  </div>
-  <div class="field">
     <%= f.label :time_start %><br>
     <%= f.datetime_select :time_start %>
   </div>
@@ -52,26 +65,16 @@
     <%= f.datetime_select :time_end %>
   </div>
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br>
-    <%= f.text_field :category %>
-  </div>
-  <div class="field">
-    <%= f.label :status %><br>
-    <%= f.check_box :status %>
-  </div>
-  <div class="field">
     <%= f.label :approval_required %><br>
     <%= f.check_box :approval_required %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+<% end %>
+
+<% else %>
+
+<h1>Please log in to create an event</h1>
+
 <% end %>

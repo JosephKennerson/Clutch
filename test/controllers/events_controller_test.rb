@@ -1,6 +1,8 @@
 require 'test_helper'
 
+
 class EventsControllerTest < ActionController::TestCase
+
   setup do
     @event = events(:one)
   end
@@ -18,7 +20,7 @@ class EventsControllerTest < ActionController::TestCase
 
   test "should create event" do
     assert_difference('Event.count') do
-      post :create, event: { address_line_1: @event.address_line_1, address_line_2: @event.address_line_2, approval_required: @event.approval_required, category: @event.category, city: @event.city, description: @event.description, max_size: @event.max_size, name: @event.name, public_location: @event.public_location, state: @event.state, status: @event.status, time_end: @event.time_end, time_start: @event.time_start, user_id: @event.user_id, zip: @event.zip }
+      post :create, event: { address_line_1: @event.address_line_1, address_line_2: @event.address_line_2, approval_required: @event.approval_required, category: @event.category, city: @event.city, description: @event.description, max_size: @event.max_size, name: @event.name, public_location: @event.public_location, state: @event.state, status: @event.status, time_end: @event.time_end, time_start: @event.time_start, host_id: @event.host_id, zip: @event.zip }
     end
 
     assert_redirected_to event_path(assigns(:event))
@@ -35,7 +37,7 @@ class EventsControllerTest < ActionController::TestCase
   end
 
   test "should update event" do
-    patch :update, id: @event, event: { address_line_1: @event.address_line_1, address_line_2: @event.address_line_2, approval_required: @event.approval_required, category: @event.category, city: @event.city, description: @event.description, max_size: @event.max_size, name: @event.name, public_location: @event.public_location, state: @event.state, status: @event.status, time_end: @event.time_end, time_start: @event.time_start, user_id: @event.user_id, zip: @event.zip }
+    patch :update, id: @event, event: { address_line_1: @event.address_line_1, address_line_2: @event.address_line_2, approval_required: @event.approval_required, category: @event.category, city: @event.city, description: @event.description, max_size: @event.max_size, name: @event.name, public_location: @event.public_location, state: @event.state, status: @event.status, time_end: @event.time_end, time_start: @event.time_start, host_id: @event.host_id, zip: @event.zip }
     assert_redirected_to event_path(assigns(:event))
   end
 

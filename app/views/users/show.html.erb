@@ -1,59 +1,20 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+</br>
 
-<p>
-  <strong>Address line 1:</strong>
-  <%= @user.address_line_1 %>
-</p>
+<% if user_signed_in? && current_user.id == @user.id%>
 
-<p>
-  <strong>Address line 2:</strong>
-  <%= @user.address_line_2 %>
-</p>
+<%= render "private_profile" %>
 
-<p>
-  <strong>City:</strong>
-  <%= @user.city %>
-</p>
+<% else %>
 
-<p>
-  <strong>State:</strong>
-  <%= @user.state %>
-</p>
+<%= render "public_profile"%>
 
-<p>
-  <strong>Zip:</strong>
-  <%= @user.zip %>
-</p>
 
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
+<% end %>
 
-<p>
-  <strong>Photo:</strong>
-  <%= @user.photo %>
-</p>
+</br>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
