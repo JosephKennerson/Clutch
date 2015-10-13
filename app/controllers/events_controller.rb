@@ -67,7 +67,17 @@ class EventsController < ApplicationController
     end
   end
 
-  private
+  def map
+    @events = Event.all
+    @geojson = Array.new
+    build_geojson(@events, @geojson)
+    respond_to do |format|
+      format.html
+      format.json { render json: @geojson }
+    end
+  end
+
+    private
     # Use callbacks to share common setup or constraints between actions.
     def set_event
       @event = Event.find(params[:id])
@@ -76,5 +86,11 @@ class EventsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
       params.require(:event).permit(:public_location, :address_line_1, :address_line_2, :city, :state, :zip, :max_size, :host_id, :time_start, :time_end, :name, :description, :category, :status, :approval_required)
+    end
+
+    def build_geojson(events, geojson)
+      events.each do |event|
+        geojson << GeojsonBuilder.build_event(event)
+      end
     end
 end

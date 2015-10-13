@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'home/index'
   get 'home/team'
+  get 'events/map'
 
   devise_for :users, :skip => [:sessions]
   as :user do
