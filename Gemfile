@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'carrierwave'
+gem 'twilio-ruby'
+gem 'phonelib'
 gem 'devise'
 gem 'gravtastic'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
