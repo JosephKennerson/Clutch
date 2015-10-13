@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'elasticsearch-rails'
+gem 'elasticsearch-model'
+
 gem 'carrierwave'
 gem 'devise'
 gem 'gravtastic'
