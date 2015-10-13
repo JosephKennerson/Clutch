@@ -33,9 +33,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Join Events", events_path %></li>
-            <li><%= link_to "Create Events", new_event_path %></li>
             <li><%= link_to "Contact", "/home/team" %></li>
+            <li><%= link_to "Create Events", new_event_path %></li>
+            <li><%= link_to "Join Events", events_path %></li>
+            <%= form_tag search_events_path, method: :get, class: "navbar-form navbar-right", role: "search" do %>
+              <p>
+                <%= text_field_tag :search, params[:search], class: "form-control" %>
+                <%= submit_tag "Search events", name: nil, class: "btn btn-default" %>
+              </p>
+            <% end %>
           </ul>
 
 
