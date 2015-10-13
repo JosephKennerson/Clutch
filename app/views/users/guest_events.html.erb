@@ -1,8 +1,9 @@
 <% if user_signed_in? && current_user.id == @user.id%>
 
 <h1>Events you're attending</h1>
+<%= current_user.confirmed_events(current_user.id) %>
 
-<% @user.events.each do |event| %>
+<% @user.rsvps.each do |event| %>
   <!-- <div class="col-xs-6 col-lg-4"> -->
   <% Rsvp.where(event_id: event.id, guest_id: current_user.id, confirmed: true).each do |rsvp| %>
       <% if rsvp.event.time_start.future? %>

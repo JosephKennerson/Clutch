@@ -7,5 +7,6 @@ RSpec.describe User, type: :model do
   it {should have_many :events}
   it {should have_many :given_ratings}
   it {should have_many :received_ratings}
+  it {should have_many :events_requested_to}
   end
 end
