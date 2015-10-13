@@ -1,0 +1,20 @@
+<div class="events-search">
+  <h1>Search events</h1>
+  <%= form_for search_path, method: :get do |f| %>
+    <div class="form-group">
+      <%= f.label "Search for" %>
+      <%= text_field_tag :q, params[:q], class: 'form-control' %>
+      <%= submit_tag 'Search', class: 'btn btn-primary', name: nil %>
+    </div>
+    <% end %>
+</div>
+
+<ul>
+  <% @events.each do |event| %>
+    <li>
+      <h3>
+      <%= link_to event.name, controller: "events", action: "show", id: event._id %>
+    </h3>
+    </li>
+  <% end %>
+</ul>
