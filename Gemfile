@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'elasticsearch-rails'
-gem 'elasticsearch-model'
 gem 'kaminari'
-gem 'searchkick'
 gem 'carrierwave'
 gem 'devise'
 gem 'gravtastic'

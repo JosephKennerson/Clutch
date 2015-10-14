@@ -44,3 +44,42 @@
 [2015-10-13 19:17:28,871][INFO ][gateway                  ] [Raza] recovered [0] indices into cluster_state
 [2015-10-13 19:18:03,141][INFO ][cluster.metadata         ] [Raza] [events] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [event]
 [2015-10-13 19:18:03,750][INFO ][cluster.metadata         ] [Raza] [events] update_mapping [event] (dynamic)
+[2015-10-14 13:56:45,731][INFO ][node                     ] [Alicia Masters] version[1.7.1], pid[22381], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 13:56:45,732][INFO ][node                     ] [Alicia Masters] initializing ...
+[2015-10-14 13:56:45,909][INFO ][plugins                  ] [Alicia Masters] loaded [], sites []
+[2015-10-14 13:56:45,997][INFO ][env                      ] [Alicia Masters] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [784mb], net total_space [232.6gb], types [hfs]
+[2015-10-14 13:56:49,768][INFO ][node                     ] [Alicia Masters] initialized
+[2015-10-14 13:56:49,768][INFO ][node                     ] [Alicia Masters] starting ...
+[2015-10-14 13:56:49,993][INFO ][transport                ] [Alicia Masters] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.126:9300]}
+[2015-10-14 13:56:50,058][INFO ][discovery                ] [Alicia Masters] elasticsearch/YN-QYXl5RWu7YGNYoxPE4Q
+[2015-10-14 13:56:53,874][INFO ][cluster.service          ] [Alicia Masters] new_master [Alicia Masters][YN-QYXl5RWu7YGNYoxPE4Q][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-14 13:56:53,897][INFO ][http                     ] [Alicia Masters] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.126:9200]}
+[2015-10-14 13:56:53,897][INFO ][node                     ] [Alicia Masters] started
+[2015-10-14 13:56:53,935][INFO ][gateway                  ] [Alicia Masters] recovered [1] indices into cluster_state
+[2015-10-14 13:57:23,908][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 784.2mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:57:23,909][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 13:57:53,890][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 784.1mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:58:23,892][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 783.7mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:58:53,898][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 772.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:58:53,899][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 13:59:23,905][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 740.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:59:53,907][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 740.3mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:59:53,907][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:00:23,910][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 739.7mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:00:53,913][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 739mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:00:53,913][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:01:23,917][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 739mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:01:53,919][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 738.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:01:53,927][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:02:23,925][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 738.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:02:53,928][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 738.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:03:23,932][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 738.5mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:03:23,941][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:03:53,935][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:04:23,940][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:04:53,940][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:04:53,940][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:05:23,942][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:05:53,945][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:05:53,953][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:06:23,951][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.7mb[0.3%], shards will be relocated away from this node
