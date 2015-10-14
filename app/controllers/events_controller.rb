@@ -11,7 +11,8 @@ class EventsController < ApplicationController
     if params[:q].nil?
       @events = open_events
     else
-      @events = open_events.search(params[:q]).records
+      query = [params[:q], params[:dropq]].join(", ")
+      @events = open_events.search(query).records
     end
   end
 
