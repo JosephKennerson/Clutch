@@ -15,6 +15,11 @@ class EventsController < ApplicationController
   def show
     @comment = Comment.new
     @rating = Rating.new
+    respond_to do |format|
+      format.html {render layout: false}
+      # format.html
+      format.json
+    end
   end
 
   # GET /events/new
@@ -67,12 +72,15 @@ class EventsController < ApplicationController
   end
 
   def map
-    @events = Event.all
+    Event.where(status: false).each do |event|
+      event.close_event
+    end
+    @events = Event.where(status: true)
     @geojson = Array.new
     build_geojson(@events, @geojson)
     p @geojson.last
     respond_to do |format|
-      format.html
+      format.html {render layout: false}
       format.json { render json: @geojson }
     end
   end

@@ -1,16 +1,17 @@
 $(document).ready(function(){
-
   L.mapbox.accessToken = 'pk.eyJ1IjoieGFuZGVycHNvbiIsImEiOiJjaWZvcml2YjU1Mnc2c3ZrcTlibmxjcXJuIn0.M7QobcyaQENSoLb86fvvug';
-  var map = L.mapbox.map('map', 'xanderpson.nmn4lji0').setView([37.7846334, -90.3974137], 5),
+  var map = L.mapbox.map('map', 'xanderpson.nmn4lji0', {zoomControl: false}).setView([37.7846334, -90.3974137], 5),
       filters = document.getElementById('filters');
-
+  L.control.zoomslider().addTo(map);
   map.featureLayer.on("ready", function(event) {
     getEvents(map);
-    getFilters(map);
-    getClusters(map);
+    addEventPopups(map);
+    addTooltip(map);
+    event.target.on('mouseover', function(e){
+      e.layer.openPopup();
+    });
+    map.scrollWheelZoom.disable();
   });
-
-  map.scrollWheelZoom.disable();
 });
 
 function getEvents(map) {
@@ -19,13 +20,12 @@ function getEvents(map) {
     url: '/events/map.json',
     success: function(events) {
       var geojson = $.parseJSON(events);
-
-      addEventPopups(map);
-
       map.featureLayer.setGeoJSON({
         type: "FeatureCollection",
         features: geojson
       });
+      addFilters(map);
+      addClusters(map);
     },
     error: function() {
       alert("Could not load the events");
@@ -37,11 +37,20 @@ function addEventPopups(map) {
   map.featureLayer.on('layeradd', function(e){
     var marker = e.layer,
         properties = marker.feature.properties,
-        popupContent = '<button class="trigger">Say hi</button>' +
-                       '<a target="_blank" class="popup" href="' + properties.url + '">' +
-                       '<img src="' + properties.image + '" />' +
-                         properties.city +
-                       '</a>' + '</br>' + '<a href="localhost:3000/events/' + properties.showPage + '">' + properties.title + '</a>'+ '</br>' + properties.address;
+        popupContent =      '<div><strong>Event Name</strong> : ' + properties.name + 
+                            '<br/><strong>Description</strong> : ' + properties.description + 
+                            '<br/><strong>Category</strong> : ' + properties.category + 
+                            '<br/><strong>Current / Max</strong> : ' + properties.currently_attending + ' / ' + properties.max_size + 
+                            '<br/><strong>Host</strong> : ' + properties.host + 
+                            '<br/><strong>Location</strong> : ' + properties.public_location + 
+                            '<br/><strong>City</strong> : ' + properties.city + 
+                            '<br/><strong>State</strong> : ' + properties.state + 
+                            '<br/><strong>Zip</strong> : ' + properties.zip + 
+                            '<br/><strong>Date start</strong> : ' + properties.date_start + 
+                            '<br/><strong>Time start</strong> : ' + properties.time_start + 
+                            '<br/><strong>Date end</strong> : ' + properties.date_end + 
+                            '<br/><strong>Time end</strong> : ' + properties.time_end + '</div>'
+  ;
     marker.bindPopup(popupContent, {closeButton: false, minWidth: 320});
   });
   $('#map').on('click', '.trigger', function() {
@@ -49,13 +58,7 @@ function addEventPopups(map) {
   });
 }
 
-function getFilters(map) {
-  $.ajax({
-    dataType: 'text',
-    url: '/events/map.json',
-    success: function(events) {
-      var geojson = $.parseJSON(events);
-
+function addFilters(map) {
       var typesObj = {}, types = [];
       var features = map.featureLayer.getGeoJSON().features;
       for (var i = 0; i < features.length; i++) {
@@ -82,43 +85,42 @@ function getFilters(map) {
       }
 
       function update() {
-      var enabled = {};
-      // Run through each checkbox and record whether it is checked. If it is,
-      // add it to the object of types to display, otherwise do not.
-      for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) enabled[checkboxes[i].id] = true;
+        var enabled = {};
+        // Run through each checkbox and record whether it is checked. If it is,
+        // add it to the object of types to display, otherwise do not.
+        for (var i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i].checked) enabled[checkboxes[i].id] = true;
+        }
+        map.featureLayer.setFilter(function(feature) {
+          // If this symbol is in the list, return true. if not, return false.
+          // The 'in' operator in javascript does exactly that: given a string
+          // or number, it says if that is in a object.
+          // 2 in { 2: true } // true
+          // 2 in { } // false
+          return (feature.properties['marker-symbol'] in enabled);
+        });
       }
-      map.featureLayer.setFilter(function(feature) {
-        // If this symbol is in the list, return true. if not, return false.
-        // The 'in' operator in javascript does exactly that: given a string
-        // or number, it says if that is in a object.
-        // 2 in { 2: true } // true
-        // 2 in { } // false
-        return (feature.properties['marker-symbol'] in enabled);
-      });
-    }
-      
-    },
-    error: function() {
-      alert("Could not load the events");
-    }
-  });
 }
 
-function getClusters(map) {
-  $.ajax({
-    dataType: 'text',
-    url: '/events/map.json',
-    success: function(events) {
-      var geojson = $.parseJSON(events);
-      var clusterGroup = new L.MarkerClusterGroup();
-      map.featureLayer.eachLayer(function(layer) {
-          clusterGroup.addLayer(layer);
-      });
-      map.addLayer(clusterGroup);
-    },
-    error: function() {
-      alert("Could not load the events");
-    }
-  });
+function addClusters(map) {
+    var clusterGroup = new L.MarkerClusterGroup();
+    map.featureLayer.eachLayer(function(layer) {
+        clusterGroup.addLayer(layer);
+    });
+    map.addLayer(clusterGroup);
 }
+
+function addTooltip(map) {
+  map.featureLayer.on('mouseover',function(e) {
+  $.ajax({
+      dataType: 'text',
+      url: '/events/' + e.layer.feature.properties.id,
+      success: function(event) {
+      info.innerHTML = event;
+      },
+      error: function() {
+        alert("Could not load the events");
+      }
+    });
+  });
+} //document ready

@@ -16,9 +16,41 @@ div#map {
 .filter-ui {
 	background:#fff;
 	position:absolute;
-	top:10px;
-	right:10px;
+	top: 6em;
+	right:1em;
 	z-index:100;
 	padding:10px;
 	border-radius:3px;
+  box-shadow: 10px 10px 5px #888888;
 }
+
+.info {
+  position:absolute;
+  top:8%;
+  left:.5%;
+  height: 90%;
+  width: 27%;
+  background:#fff;
+  overflow: scroll;
+  box-shadow: 10px 10px 5px #888888;
+  padding: 1em;
+}
+
+.mapbox-logo {
+	display: none;
+}
+
+.leaflet-control-zoomslider {
+	left: 44em;
+	top: 5.705em;
+}
+
+.leaflet-control-zoomslider-knob {
+	width:14px;
+	height:6px;
+}
+.leaflet-container .leaflet-control-zoomslider-body {
+  -webkit-box-sizing:content-box;
+     -moz-box-sizing:content-box;
+          box-sizing:content-box;
+  }	
