@@ -11,7 +11,10 @@ class EventsController < ApplicationController
     if params[:q].nil?
       @events = open_events
     else
-      query = [params[:q], params[:dropq]].join(", ")
+      if params[:commit] == "Submit"
+        params[:commit] = ""
+      end
+      query = [params[:q], params[:commit]].join(", ")
       @events = open_events.search(query).records
     end
   end

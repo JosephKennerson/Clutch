@@ -45,7 +45,7 @@ def self.search(query)
   )
 end
 
-
+end
 
 Event.import
 
