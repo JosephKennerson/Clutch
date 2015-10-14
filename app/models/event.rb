@@ -18,6 +18,34 @@ class Event < ActiveRecord::Base
  		self.save
  	end
 
+  def current_count
+    self.rsvps.where(confirmed: true).length
+  end
+
+  settings index: { number_of_shards: 1 } do
+  mappings dynamic: 'false' do
+    indexes :name, analyzer: 'english'
+    indexes :description, analyzer: 'english'
+    indexes :category, analyzer: 'english'
+  end
 end
 
+def self.search(query)
+  __elasticsearch__.search(
+    {
+      highlight: {
+        pre_tags: ['<em>'],
+        post_tags: ['</em>'],
+        fields: {
+          title: {},
+          text: {}
+        }
+      }
+    }
+  )
+end
+
+
+
 Event.import
+

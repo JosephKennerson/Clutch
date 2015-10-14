@@ -4,11 +4,16 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
-    @events.each do |e|
+    Event.all.each do |e|
       e.close_event
     end
-    @events_open = Event.where(status: true)
+    open_events = Event.where(status: true)
+    if params[:q].nil?
+      @events = open_events
+    else
+      query = [params[:q], params[:dropq]].join(", ")
+      @events = open_events.search(query).records
+    end
   end
 
   # GET /events/1
