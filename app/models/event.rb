@@ -17,6 +17,10 @@ class Event < ActiveRecord::Base
  		self.save
  	end
 
+  def current_count
+    self.rsvps.where(confirmed: true).length
+  end
+
   settings index: { number_of_shards: 1 } do
   mappings dynamic: 'false' do
     indexes :name, analyzer: 'english'

@@ -2,45 +2,36 @@
 
 <%= link_to 'New Event', new_event_path %>
 
-<h1>Listing Currently Available Events</h1>
+<h1>Upcoming events</h1>
 
 <table>
   <thead>
     <tr>
       <th>Event Name</th>
-      <th>Description</th>
       <th>Category</th>
-      <th>Current / Max</th>
+      <th>Spots left</th>
       <th>Host</th>
       <th>Public location</th>
       <th>City</th>
-      <th>State</th>
-      <th>Zip</th>
       <th>Date start</th>
       <th>Time start</th>
-      <th>Date end</th>
-      <th>Time end</th>
       <th>Status pending</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @events_open.each do |event| %>
+    <% @events.each do |event| %>
       <tr>
-        <td><%= link_to "#{event.name}", event %></td>
-        <td><%= event.description %></td>
+        <td><%= link_to "#{event.name}", event_path(event.id) %></td>
         <td><%= event.category %></td>
-        <td><%= event.rsvps.where(confirmed: true).length %> / <%= event.max_size %></td>
+        <td><%= event.max_size - event.current_count %> </td>
         <td><%= event.host.username %></td>
         <td><%= event.public_location %></td>
         <td><%= event.city %></td>
-        <td><%= event.state %></td>
-        <td><%= event.zip %></td>
-        <td><%= event.time_start.strftime('%b %-e, %Y') %></td>
+        <td><%= event.time_start.strftime('%b %-e') %></td>
         <td><%= event.time_start.strftime('%-l:%M %p') %></td>
-        <td><%= event.time_end.strftime('%b %-e, %Y') %></td>
-        <td><%= event.time_end.strftime('%-l:%M %p') %></td>
+
         <% if user_signed_in? && current_user.id != event.host_id %>
           <% if !Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == false %>
             <td><%= button_to 'Join', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: false, confirmed: true} %></td>
