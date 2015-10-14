@@ -135,3 +135,5 @@
 [2015-10-14 15:04:06,521][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 948.2mb[0.3%], shards will be relocated away from this node
 [2015-10-14 15:04:06,523][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
 [2015-10-14 15:04:36,540][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 963.6mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:05:06,535][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 953.9mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:05:06,536][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
