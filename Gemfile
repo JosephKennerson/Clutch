@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'kaminari'
 gem 'carrierwave'
 gem 'twilio-ruby'
 gem 'phonelib'
@@ -36,6 +37,12 @@ gem 'font-awesome-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Search
+  # gem 'filterrific'
+  # gem 'will_paginate', '~> 3.0.7'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+  gem 'searchkick', '~> 0.9.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
