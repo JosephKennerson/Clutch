@@ -8,6 +8,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
@@ -21,7 +22,7 @@
 
 
   <nav class="navbar navbar-default">
-      <div class="container-fluid col-sm-">
+      <!-- <div class="container-fluid col-sm-"> -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -30,26 +31,42 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">Clutch</a>
-        </div>
+        <!-- </div> -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Contact", "/home/team" %></li>
             <li>
-            <div class="input-group">
-            <%= form_tag(events_path, :method => "get", id: "search-form", html: {class: 'form-group'}) do |f|%>
-                <%= text_field_tag :q, params[:q], placeholder: "Search Events", class: "form-control" %>
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%= submit_tag "Search" %><span class="caret"></span></button>
+              <div class="form-inline" method="get" action="events/search">
+              <div class="input-group">
+                <!-- <div class="input-group-btn search-panel"> -->
 
-                  <ul class="dropdown-menu dropdown-menu-right">
-      <% Event.where(status: true).each do |event| %>
-          <li class="form-control"><%= submit_tag "#{event.category}" %></li>
-          <% end %>
-        </ul>
-            </li>
-            <% end %>
+                    <select class="selectpicker" role="menu">
+                    <option value="all">All categories</option>
+                    <% Event.where(status: true).each do |event| %>
+                      <option value="event.category"><%= "#{event.category}" %></option>
+                      <% end %>
+                    </select>
+
+
+                <input type="hidden" name="category_param" value="all" id="search_param">
+                </li>
+                <li>
+                <input type="text" class="form-control" name="q" placeholder="Search term...">
+              </li>
+              <li>
+                <span class="input-group-btn">
+                    <%= link_to('Search', {controller: "/events", action: "index", page: "index"}, class: "btn btn-success") %>
+                </span>
+              </li>
+                </div>
+            </div>
           </div>
-          </ul>
+          </li>
+        </div>
+
+
+
+
 
 
 <div class="container-narrow">
@@ -58,9 +75,13 @@
     <h3 class="muted"></h3>
     <h5 class="muted"></h5>
   </div>
-  <hr />
+  <!-- <hr /> -->
+       </ul>
+         </div>
+         </div>
 
 </nav>
+
 
 <div style="margin-top: 50px;" class="container">
 <%= yield %>
@@ -68,4 +89,3 @@
 
 </body>
 </html>
-
