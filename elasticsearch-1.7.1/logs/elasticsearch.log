@@ -83,3 +83,14 @@
 [2015-10-14 14:05:53,945][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
 [2015-10-14 14:05:53,953][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
 [2015-10-14 14:06:23,951][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.7mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:16:19,426][INFO ][node                     ] [David Cannon] version[1.7.1], pid[23559], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 14:16:19,427][INFO ][node                     ] [David Cannon] initializing ...
+[2015-10-14 14:16:19,599][INFO ][plugins                  ] [David Cannon] loaded [], sites []
+[2015-10-14 14:16:19,659][INFO ][env                      ] [David Cannon] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [746mb], net total_space [232.6gb], types [hfs]
+[2015-10-14 14:16:23,350][INFO ][node                     ] [David Cannon] initialized
+[2015-10-14 14:16:23,351][INFO ][node                     ] [David Cannon] starting ...
+[2015-10-14 14:16:23,537][INFO ][transport                ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.126:9300]}
+[2015-10-14 14:16:23,585][INFO ][discovery                ] [David Cannon] elasticsearch/w2wuzrOJSJGQ0FKwvYYF4Q
+[2015-10-14 14:16:27,630][INFO ][cluster.service          ] [David Cannon] detected_master [Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], added {[Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],}, reason: zen-disco-receive(from master [[Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]]])
+[2015-10-14 14:16:27,660][INFO ][http                     ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.126:9200]}
+[2015-10-14 14:16:27,660][INFO ][node                     ] [David Cannon] started

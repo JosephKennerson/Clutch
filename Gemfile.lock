@@ -115,7 +115,6 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
-
     jwt (1.5.1)
     kaminari (0.16.3)
       actionpack (>= 3.0.0)
@@ -263,11 +262,8 @@ DEPENDENCIES
   gravtastic
   jbuilder (~> 2.0)
   jquery-rails
-
-  phonelib
-
   kaminari
-
+  phonelib
   pry-nav
   rails (= 4.2.4)
   rspec-rails
