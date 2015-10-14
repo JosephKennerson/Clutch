@@ -1,4 +1,9 @@
+require 'elasticsearch/model'
+
 class Event < ActiveRecord::Base
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
+
   belongs_to :host, class_name: "User"
   has_many :rsvps
   has_many :guests, through: :rsvps, source: :guest
@@ -12,4 +17,32 @@ class Event < ActiveRecord::Base
  		self.save
  	end
 
+  settings index: { number_of_shards: 1 } do
+  mappings dynamic: 'false' do
+    indexes :name, analyzer: 'english'
+    indexes :description, analyzer: 'english'
+    indexes :category, analyzer: 'english'
+  end
 end
+
+def self.search(query)
+  __elasticsearch__.search(
+    {
+      highlight: {
+        pre_tags: ['<em>'],
+        post_tags: ['</em>'],
+        fields: {
+          title: {},
+          text: {}
+        }
+      }
+    }
+  )
+end
+
+end
+
+# Event.reindex
+Event.import
+
+# @events = Event.search('foobar').records
