@@ -19,6 +19,9 @@ class AddDeviseToUsers < ActiveRecord::Migration
       t.string   :current_sign_in_ip
       t.string   :last_sign_in_ip
 
+      # mobile verification
+      t.string   :phone_number
+
       ## Confirmable
       # t.string   :confirmation_token
       # t.datetime :confirmed_at

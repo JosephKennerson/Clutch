@@ -11,7 +11,8 @@ User.create!(
         password: "adminadmin",
         avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
-        last_name: "Istrator"
+        last_name: "Istrator",
+        phone_number: "123-456-789"
   )
 
 50.times do
@@ -26,7 +27,8 @@ User.create!(
         password: FFaker::Internet.password,
         avatar: Faker::Avatar.image,
         first_name: FFaker::Name.first_name,
-        last_name: Faker::Name.last_name
+        last_name: Faker::Name.last_name,
+        phone_number: Faker::PhoneNumber.phone_number.to_i
     )
 
 end

@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'elasticsearch-rails'
-gem 'elasticsearch-model'
 gem 'kaminari'
-gem 'searchkick'
 gem 'carrierwave'
+gem 'twilio-ruby'
+gem 'phonelib'
 gem 'devise'
 gem 'gravtastic'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
