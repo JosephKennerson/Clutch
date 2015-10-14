@@ -23,6 +23,14 @@ class EventsController < ApplicationController
     @rating = Rating.new
   end
 
+  def search
+    if params[:search].present?
+      @events = Event.search(params[:search])
+    else
+      @events = Events.all
+    end
+  end
+
   # GET /events/new
   def new
     @event = Event.new
