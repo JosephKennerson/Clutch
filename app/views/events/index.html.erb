@@ -1,3 +1,7 @@
+<!-- <div class="video-wrapper"> -->
+  <%#= video_tag("logger2.mp4", autobuffer: true, autoplay: true, loop: true, id: "bgvid") %>
+<!-- </div> -->
+
 <p id="notice"><%= notice %></p>
 
 <%= link_to 'New Event', new_event_path %>
@@ -66,4 +70,10 @@
   </tbody>
 </table>
 
-<br>
+<!-- <h1>Events Nearby</h1> -->
+
+<!-- <ul> -->
+  <%# for event in @event.nearbys(500) %>
+  <!-- <li><%#= link_to event.name, event %></li> -->
+  <%# end %>
+<!-- </ul> -->

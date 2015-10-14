@@ -4,9 +4,8 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
-    @events.each do |e|
-      e.close_event
+    Event.where(status: false).each do |event|
+      event.close_event
     end
     @events_open = Event.where(status: true)
   end
@@ -71,6 +70,7 @@ class EventsController < ApplicationController
     @events = Event.all
     @geojson = Array.new
     build_geojson(@events, @geojson)
+    p @geojson.last
     respond_to do |format|
       format.html
       format.json { render json: @geojson }
