@@ -42,6 +42,7 @@ GEM
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-select-rails (1.6.3)
     builder (3.2.2)
     byebug (6.0.2)
     capybara (2.5.0)
@@ -78,10 +79,25 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    elasticsearch (1.0.13)
+      elasticsearch-api (= 1.0.13)
+      elasticsearch-transport (= 1.0.13)
+    elasticsearch-api (1.0.13)
+      multi_json
+    elasticsearch-model (0.1.8)
+      activesupport (> 3)
+      elasticsearch (> 0.4)
+      hashie
+    elasticsearch-rails (0.1.8)
+    elasticsearch-transport (1.0.13)
+      faraday
+      multi_json
     erubis (2.7.0)
     execjs (2.6.0)
     faker (1.5.0)
       i18n (~> 0.5)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
     ffaker (2.1.0)
     ffi (1.9.10)
     font-awesome-rails (4.4.0.0)
@@ -89,6 +105,7 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     gravtastic (3.2.6)
+    hashie (3.4.2)
     i18n (0.7.0)
     io-like (0.3.0)
     jbuilder (2.3.2)
@@ -99,6 +116,10 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.3)
+    jwt (1.5.1)
+    kaminari (0.16.3)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -108,9 +129,11 @@ GEM
     mini_portile (0.6.2)
     minitest (5.8.1)
     multi_json (1.11.2)
+    multipart-post (2.0.0)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
+    phonelib (0.5.2)
     pry (0.10.2)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -176,6 +199,10 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    searchkick (0.9.1)
+      activemodel
+      elasticsearch (>= 1)
+      hashie
     selenium-webdriver (2.48.0)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
@@ -197,6 +224,10 @@ GEM
     tilt (2.0.1)
     turbolinks (2.5.3)
       coffee-rails
+    twilio-ruby (4.4.0)
+      builder (>= 2.1.2)
+      jwt (~> 1.0)
+      multi_json (>= 1.3.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.2)
@@ -217,6 +248,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-select-rails
   byebug
   capybara
   carrierwave
@@ -224,22 +256,28 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   database_cleaner
   devise
+  elasticsearch-model
+  elasticsearch-rails
   faker
   ffaker
   font-awesome-rails
   gravtastic
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
+  phonelib
   pry-nav
   rails (= 4.2.4)
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  searchkick (~> 0.9.1)
   selenium-webdriver
   shoulda-matchers
   spring
   sqlite3
   turbolinks
+  twilio-ruby
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
 
