@@ -1,9 +1,11 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
+  # layout :resolve_layout
 
   # GET /events
   # GET /events.json
   def index
+    # Event.reindex
     Event.all.each do |e|
       e.close_event
     end
@@ -11,6 +13,13 @@ class EventsController < ApplicationController
     if params[:q].nil?
       @events = open_events
     else
+      if params[:commit] == "Submit"
+        @events = open_events.search(params[:q]).records
+      elsif params[:commit] == "All events"
+        @events = open_events
+      else
+      @events = open_events.search(params[:q]).records.where(category: params[:category_params])
+      end
       query = [params[:q], params[:dropq]].join(", ")
       @events = open_events.__elasticsearch__.search(query).records
     end
@@ -21,6 +30,14 @@ class EventsController < ApplicationController
   def show
     @comment = Comment.new
     @rating = Rating.new
+  end
+
+  def search
+    if params[:search].present?
+      @events = Event.search(params[:search])
+    else
+      @events = Events.all
+    end
   end
 
   # GET /events/new
@@ -82,4 +99,14 @@ class EventsController < ApplicationController
     def event_params
       params.require(:event).permit(:public_location, :address_line_1, :address_line_2, :city, :state, :zip, :max_size, :host_id, :time_start, :time_end, :name, :description, :category, :status, :approval_required)
     end
+
+    def resolve_layout
+      case get
+        when "index"
+          "no_wrap"
+        else
+          "application"
+        end
+    end
+
 end
