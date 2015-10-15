@@ -736,3 +736,516 @@ java.io.IOException: Operation timed out
 [2015-10-15 14:45:21,298][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
 [2015-10-15 14:45:51,096][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
 [2015-10-15 14:45:51,097][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:46:21,214][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:46:51,309][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:46:51,309][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:47:21,091][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:47:51,111][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:48:21,109][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:48:21,109][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:49:06,091][DEBUG][action.admin.cluster.node.stats] [Doctor Doom] failed to execute on node [By6iy8QiQG2RvXe_GP6aaA]
+org.elasticsearch.transport.ReceiveTimeoutTransportException: [Captain Britain][inet[/192.168.1.164:9300]][cluster:monitor/nodes/stats[n]] request_id [1348] timed out after [15005ms]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:529)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-15 14:49:21,090][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:49:36,090][DEBUG][action.admin.cluster.node.stats] [Doctor Doom] failed to execute on node [By6iy8QiQG2RvXe_GP6aaA]
+org.elasticsearch.transport.ReceiveTimeoutTransportException: [Captain Britain][inet[/192.168.1.164:9300]][cluster:monitor/nodes/stats[n]] request_id [1360] timed out after [15002ms]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:529)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-15 14:49:37,905][WARN ][transport.netty          ] [Doctor Doom] exception caught on transport layer [[id: 0xad69d8f6, /192.168.1.8:54319 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-15 14:49:37,909][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][0], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,909][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][2], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,910][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,910][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,909][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,909][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,909][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][0], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,911][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,911][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,911][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,911][INFO ][cluster.service          ] [Doctor Doom] removed {[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-node_failed([Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]), reason transport disconnected
+[2015-10-15 14:49:37,911][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,911][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][2], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,911][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][2], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,911][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,910][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][0], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,910][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,910][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][0], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@31a82043]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,910][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,910][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,910][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][2], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@52d36421]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 14:49:37,918][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [8] unassigned shards, next check in [59.9s]
+[2015-10-15 14:49:37,922][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:49:37,923][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:49:51,093][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:50:21,092][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:50:51,094][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:50:51,094][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:51:21,098][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:51:51,098][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:51:51,098][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:52:21,102][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:52:51,105][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:52:51,105][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:53:21,107][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:53:51,108][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:53:51,108][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:54:21,112][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:54:51,113][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:54:51,113][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:55:21,112][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:55:51,113][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:55:51,113][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:56:21,113][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:56:37,436][INFO ][cluster.service          ] [Doctor Doom] added {[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 14:56:37,475][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 14:56:37,484][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:56:51,118][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:56:51,118][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:56:51,302][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 14:56:51,419][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 14:56:51,814][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 14:56:52,053][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 14:56:52,580][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 14:56:52,687][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 14:56:52,725][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 14:57:21,192][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:57:51,281][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:57:51,281][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:58:21,427][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:58:51,195][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:59:21,305][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:59:21,305][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:59:51,568][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:00:21,147][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:00:51,130][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:00:51,130][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:01:21,234][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:01:51,190][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:01:51,190][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:02:21,139][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:02:51,408][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:02:51,408][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:03:21,211][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:03:33,076][INFO ][cluster.service          ] [Doctor Doom] added {[G-Force][WXpxV3arQ7KsT6nURFe7ig][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(join from node[[G-Force][WXpxV3arQ7KsT6nURFe7ig][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-15 15:03:33,223][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.4gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:03:33,223][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:03:51,151][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.4gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:03:51,151][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:04:21,478][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:04:21,478][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:04:21,478][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:04:51,230][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:04:51,230][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:05:21,156][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:05:21,156][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:05:51,458][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:05:51,458][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:05:51,458][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:06:21,232][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:06:21,232][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:06:51,318][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:06:51,318][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:07:21,616][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:07:21,616][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:07:21,616][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:07:51,220][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:07:51,220][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:08:21,355][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:08:21,355][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:08:51,168][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:08:51,169][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:08:51,169][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:09:21,266][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:09:21,267][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:09:51,363][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:09:51,363][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:09:51,363][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:10:21,203][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:10:21,203][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:10:51,274][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:10:51,274][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:11:21,178][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:11:21,178][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:11:21,178][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:11:51,373][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:11:51,373][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:12:21,277][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:12:21,278][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:12:21,278][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:12:51,176][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:12:51,176][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:13:21,460][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:13:21,460][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:13:21,460][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:13:51,286][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:13:51,287][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:14:21,567][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:14:21,567][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:14:21,567][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:14:51,188][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:14:51,188][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:15:21,191][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:15:21,192][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:16:06,178][DEBUG][action.admin.cluster.node.stats] [Doctor Doom] failed to execute on node [By6iy8QiQG2RvXe_GP6aaA]
+org.elasticsearch.transport.ReceiveTimeoutTransportException: [Captain Britain][inet[/192.168.1.164:9300]][cluster:monitor/nodes/stats[n]] request_id [4066] timed out after [15005ms]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:529)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-15 15:16:21,178][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:16:21,178][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:16:21,178][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:16:36,176][DEBUG][action.admin.cluster.node.stats] [Doctor Doom] failed to execute on node [By6iy8QiQG2RvXe_GP6aaA]
+org.elasticsearch.transport.ReceiveTimeoutTransportException: [Captain Britain][inet[/192.168.1.164:9300]][cluster:monitor/nodes/stats[n]] request_id [4108] timed out after [15004ms]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:529)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-15 15:16:51,179][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:16:51,179][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:16:51,179][WARN ][discovery.zen.publish    ] [Doctor Doom] timed out waiting for all nodes to process published state [74] (timeout [30s], pending nodes: [[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 15:16:51,180][WARN ][cluster.service          ] [Doctor Doom] cluster state update task [cluster_reroute (api)] took 30s above the warn threshold of 30s
+[2015-10-15 15:17:02,344][WARN ][transport                ] [Doctor Doom] Received response for a request that has timed out, sent [41172ms] ago, timed out [26168ms] ago, action [cluster:monitor/nodes/stats[n]], node [[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]], id [4108]
+[2015-10-15 15:17:04,884][INFO ][cluster.service          ] [Doctor Doom] removed {[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-node_failed([Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]), reason failed to ping, tried [3] times, each with maximum [30s] timeout
+[2015-10-15 15:17:05,191][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [8] unassigned shards, next check in [59.6s]
+[2015-10-15 15:17:05,199][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][0], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@5c3d5718]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,199][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@5c3d5718]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,199][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@809c62d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,199][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][0], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@5c3d5718]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,200][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@5c3d5718]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,199][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@5c3d5718]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,199][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][2], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@5c3d5718]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,199][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@5c3d5718]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,200][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2f1ad5d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,200][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2f1ad5d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,200][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2f1ad5d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,202][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@809c62d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,200][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2f1ad5d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,200][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][2], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2f1ad5d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,200][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][0], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2f1ad5d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,200][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@2f1ad5d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,202][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][2], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@809c62d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,202][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][2], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@809c62d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,201][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][0], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@809c62d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,201][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@809c62d]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:17:05,201][DEBUG][action.admin.cluster.node.stats] [Doctor Doom] failed to execute on node [By6iy8QiQG2RvXe_GP6aaA]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][cluster:monitor/nodes/stats[n]] disconnected
+[2015-10-15 15:17:05,204][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:17:05,204][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:17:08,838][INFO ][cluster.service          ] [Doctor Doom] added {[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 15:17:08,884][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:17:08,884][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:17:21,480][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:17:21,480][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:17:21,480][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:17:51,202][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:17:51,202][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:18:21,462][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:18:21,462][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:18:51,210][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:18:51,210][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:18:51,210][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:19:21,498][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:19:21,498][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:19:51,325][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:19:51,325][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:19:51,325][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:20:21,713][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:20:21,713][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:20:51,224][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:20:51,225][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:21:21,319][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:21:21,319][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:21:21,319][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:21:51,220][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:21:51,221][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:22:21,234][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:22:21,234][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:22:51,430][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:22:51,430][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:22:51,430][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:23:21,484][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:23:21,484][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:23:51,240][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:23:51,240][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:24:21,279][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:24:21,279][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:24:21,279][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:24:51,397][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:24:51,397][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:25:21,236][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:25:21,236][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:25:51,361][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:25:51,361][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:25:51,361][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:26:21,529][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:26:21,529][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:26:51,261][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:26:51,261][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:27:21,803][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:27:21,803][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:27:21,803][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:27:51,288][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:27:51,288][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:28:21,270][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:28:21,270][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:28:51,659][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:28:51,660][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:28:51,660][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:29:21,251][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:29:21,251][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:29:51,408][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:29:51,408][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:30:21,507][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:30:21,507][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:30:21,507][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:30:51,266][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:30:51,266][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:31:21,417][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:31:21,417][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:31:51,416][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:31:51,416][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:31:51,416][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:32:21,319][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:32:21,319][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:32:51,426][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:32:51,426][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:32:51,427][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:33:21,277][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:33:21,277][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:33:51,328][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:33:51,328][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:34:21,434][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:34:21,434][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:34:21,434][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:34:51,674][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:34:51,674][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:35:21,979][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:35:21,979][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:35:21,979][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:35:51,342][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:35:51,342][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:36:21,444][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:36:21,444][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:36:51,286][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:36:51,286][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:36:51,286][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:37:21,361][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:37:21,361][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:38:06,287][DEBUG][action.admin.cluster.node.stats] [Doctor Doom] failed to execute on node [By6iy8QiQG2RvXe_GP6aaA]
+org.elasticsearch.transport.ReceiveTimeoutTransportException: [Captain Britain][inet[/192.168.1.164:9300]][cluster:monitor/nodes/stats[n]] request_id [7259] timed out after [15003ms]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:529)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-15 15:38:21,287][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:38:21,287][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:38:21,287][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:38:36,285][DEBUG][action.admin.cluster.node.stats] [Doctor Doom] failed to execute on node [By6iy8QiQG2RvXe_GP6aaA]
+org.elasticsearch.transport.ReceiveTimeoutTransportException: [Captain Britain][inet[/192.168.1.164:9300]][cluster:monitor/nodes/stats[n]] request_id [7301] timed out after [14999ms]
+	at org.elasticsearch.transport.TransportService$TimeoutHandler.run(TransportService.java:529)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-15 15:38:51,287][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:38:51,288][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:38:51,288][WARN ][discovery.zen.publish    ] [Doctor Doom] timed out waiting for all nodes to process published state [105] (timeout [30s], pending nodes: [[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 15:38:51,290][WARN ][cluster.service          ] [Doctor Doom] cluster state update task [cluster_reroute (api)] took 30s above the warn threshold of 30s
+[2015-10-15 15:38:56,547][WARN ][transport.netty          ] [Doctor Doom] exception caught on transport layer [[id: 0x3733be92, /192.168.1.8:55612 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][0], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][0], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][2], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][2], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,550][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,550][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,551][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,549][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@568e034b]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,552][DEBUG][action.admin.cluster.node.stats] [Doctor Doom] failed to execute on node [By6iy8QiQG2RvXe_GP6aaA]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][cluster:monitor/nodes/stats[n]] disconnected
+[2015-10-15 15:38:56,551][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,553][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][2], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,553][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,551][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,551][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,551][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][2], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,551][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][2], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,550][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][0], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,550][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,550][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][0], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@1974edd1]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,554][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][2], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,554][INFO ][cluster.service          ] [Doctor Doom] removed {[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-node_failed([Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]), reason transport disconnected
+[2015-10-15 15:38:56,554][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,554][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][4], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,553][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][3], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,553][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,553][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][1], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,553][DEBUG][action.admin.indices.stats] [Doctor Doom] [events_development_20151014220818574][0], node[By6iy8QiQG2RvXe_GP6aaA], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,553][DEBUG][action.admin.indices.stats] [Doctor Doom] [events][0], node[By6iy8QiQG2RvXe_GP6aaA], [R], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@35199d7]
+org.elasticsearch.transport.NodeDisconnectedException: [Captain Britain][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
+[2015-10-15 15:38:56,562][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:38:56,562][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:38:56,571][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [8] unassigned shards, next check in [59.9s]
+[2015-10-15 15:39:21,650][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:39:21,650][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:39:21,650][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:39:51,834][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:39:51,834][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:40:22,551][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:40:22,551][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:40:22,551][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:40:51,300][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:40:51,300][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:41:21,583][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:41:21,583][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:41:51,340][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:41:51,340][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:41:51,340][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:42:21,302][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:42:21,302][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:42:51,306][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:42:51,306][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:43:21,390][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:43:21,390][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:43:21,390][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:43:51,534][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:43:51,534][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.3%], shards will be relocated away from this node
+[2015-10-15 15:44:21,308][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:44:21,309][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:44:51,311][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:44:51,311][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:44:51,312][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:45:21,313][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:45:21,314][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:45:51,694][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:45:51,694][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:45:51,694][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:46:21,409][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:46:21,409][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:46:51,320][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:46:51,320][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:47:21,873][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:47:21,873][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:47:21,873][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:47:51,324][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:47:51,324][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:48:21,325][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:48:21,325][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:48:51,357][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:48:51,357][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:48:51,357][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 15:49:21,425][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:49:21,425][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 15:49:30,525][INFO ][cluster.service          ] [Doctor Doom] added {[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 15:49:30,546][INFO ][cluster.routing          ] [Doctor Doom] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-15 15:49:30,552][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [WXpxV3arQ7KsT6nURFe7ig][G-Force] free: 3.3gb[1.4%], shards will be relocated away from this node
+[2015-10-15 15:49:30,552][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node

@@ -24,7 +24,7 @@ div#map {
   box-shadow: 10px 10px 5px #888888;
 }
 
-.info {
+#info {
   position:absolute;
   top:8%;
   left:.5%;
@@ -41,7 +41,8 @@ div#map {
 }
 
 .leaflet-control-zoomslider {
-	left: 44em;
+	position: fixed;
+	left: 27em;
 	top: 5.705em;
 }
 

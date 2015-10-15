@@ -12,7 +12,7 @@ User.create(
         avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
         last_name: "Istrator",
-        phone_number: "123-456-7890"
+        phone_number: "617-671-8206"
   )
 
 10.times do
