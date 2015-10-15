@@ -15,7 +15,7 @@ User.create!(
         phone_number: "123-456-789"
   )
 
-50.times do
+10.times do
   User.create!(
         username: FFaker::Internet.user_name,
         address_line_1: FFaker::AddressUS.street_address,
@@ -59,7 +59,7 @@ end
 
 # random events
 
-100.times do
+25.times do
   random_size = rand(1..10)
   random_user = rand(1..User.count)
   Event.create!(
@@ -84,7 +84,7 @@ end
 
 # Admin comments
 
-20.times do
+10.times do
   random_event = rand(1..Event.count)
   Comment.create!(
         event_id: random_event,
@@ -97,7 +97,7 @@ end
 
 # random comments (public and private)
 
-200.times do
+35.times do
   random_event = rand(1..Event.count)
   random_user = rand(1..User.count)
   Comment.create!(
@@ -111,7 +111,7 @@ end
 
 # random pending rsvps (id # 1-25)
 
-100.times do
+20.times do
   random_guest = rand(10..User.count)
   random_event = rand(1..Event.count)
   new_event = Rsvp.create!(
@@ -125,7 +125,7 @@ end
 
 #Admin pending rsvps
 
-10.times do
+5.times do
   random_event = rand(1..Event.count)
   new_event = Rsvp.create!(
       guest_id: 1,
@@ -138,7 +138,7 @@ end
 
 # Admin (not pending) rsvps
 
-10.times do
+5.times do
   random_guest = rand(10..User.count)
   random_event = rand(1..Event.count)
   new_event = Rsvp.create!(
@@ -153,7 +153,7 @@ end
 
 # random not-pending rsvps (true and false; id #26-50)
 
-100.times do
+30.times do
 
   random_guest = rand(10..User.count)
   random_host = rand(1..9)
@@ -170,7 +170,7 @@ end
 
 # random confirmed rsvps (id #51-75)
 
-100.times do
+35.times do
 
   random_guest = rand(10..User.count)
   random_host = rand(1..9)
@@ -186,7 +186,7 @@ end
 end
 
 # random ratings (from confirmed rsvps)
-150.times do
+35.times do
   count = 1
   current_event = Event.find(count)
   random_guest = current_event.guests.sample
@@ -202,7 +202,7 @@ end
 
 # random ratings (switched roles)
 
-150.times do
+35.times do
   count = 1
   current_event = Event.find(count)
       Rating.create!(
