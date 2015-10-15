@@ -455,3 +455,31 @@ java.io.IOException: Operation timed out
 [2015-10-14 22:16:30,777][INFO ][cluster.service          ] [Danger] added {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
 [2015-10-14 23:01:36,618][INFO ][cluster.service          ] [Danger] removed {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
 >>>>>>> developer
+[2015-10-15 14:14:49,760][INFO ][node                     ] [Patriot] version[1.7.1], pid[20492], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 14:14:49,760][INFO ][node                     ] [Patriot] initializing ...
+[2015-10-15 14:14:49,887][INFO ][plugins                  ] [Patriot] loaded [], sites []
+[2015-10-15 14:14:49,944][INFO ][env                      ] [Patriot] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [26.1gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 14:14:52,664][INFO ][node                     ] [Patriot] initialized
+[2015-10-15 14:14:52,665][INFO ][node                     ] [Patriot] starting ...
+[2015-10-15 14:14:52,761][INFO ][transport                ] [Patriot] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 14:14:52,786][INFO ][discovery                ] [Patriot] elasticsearch/VTJ3zgtBSqmGpvshyOEPhQ
+[2015-10-15 14:14:56,574][INFO ][cluster.service          ] [Patriot] new_master [Patriot][VTJ3zgtBSqmGpvshyOEPhQ][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 14:14:56,599][INFO ][http                     ] [Patriot] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 14:14:56,599][INFO ][node                     ] [Patriot] started
+[2015-10-15 14:14:56,634][INFO ][gateway                  ] [Patriot] recovered [2] indices into cluster_state
+[2015-10-15 14:15:26,588][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:15:26,588][INFO ][cluster.routing.allocation.decider] [Patriot] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:15:56,584][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:16:26,581][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:16:56,589][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:16:56,589][INFO ][cluster.routing.allocation.decider] [Patriot] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:17:26,586][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:17:56,588][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:17:56,588][INFO ][cluster.routing.allocation.decider] [Patriot] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:18:26,592][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:18:56,592][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:18:56,592][INFO ][cluster.routing.allocation.decider] [Patriot] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:19:16,803][INFO ][node                     ] [Patriot] stopping ...
+[2015-10-15 14:19:16,845][INFO ][node                     ] [Patriot] stopped
+[2015-10-15 14:19:16,846][INFO ][node                     ] [Patriot] closing ...
+[2015-10-15 14:19:16,851][INFO ][node                     ] [Patriot] closed
