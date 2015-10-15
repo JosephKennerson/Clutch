@@ -11,8 +11,7 @@ User.create!(
         password: "adminadmin",
         avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
-        last_name: "Istrator",
-        phone_number: "123-456-789"
+        last_name: "Istrator"
   )
 
 50.times do
@@ -27,8 +26,7 @@ User.create!(
         password: FFaker::Internet.password,
         avatar: Faker::Avatar.image,
         first_name: FFaker::Name.first_name,
-        last_name: Faker::Name.last_name,
-        phone_number: Faker::PhoneNumber.phone_number.to_i
+        last_name: Faker::Name.last_name
     )
 
 end
@@ -189,13 +187,12 @@ end
 150.times do
   count = 1
   current_event = Event.find(count)
-  random_guest = current_event.guests.sample
       Rating.create!(
           event_id: count,
           rating: rand(1.0..5.0),
           rating_feedback: FFaker::HipsterIpsum.phrase,
           rater_id: current_event.host.id,
-          ratee_id: random_guest.id
+          ratee_id: current_event.guests.sample.id
         )
     count += 1
 end

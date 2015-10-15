@@ -1,35 +1,42 @@
 <% if user_signed_in? && current_user.id == @user.id%>
 
-  <h1>Events you're attending</h1>
-  <% @user.confirmed_events(@user.id).each do |event| %>
-        <% if event.time_start.future? %>
-          <h2><%= link_to "#{event.name}", event_path(event.id) %>
-          <% if event.rsvps.where(confirmed: true).length >= event.max_size %>
-              <span class="label label-danger">Full!</span>
-          <% end %>
-          </h2>
-          <p class="blog-post-meta"><%= event.time_start.strftime("%H:%M %d %b. %Y") %></p>
+<h1>Events you're attending</h1>
 
-        <p><%= event.description %></p>
-        <% end %>
-  <% end %>
-
-  <h1>Events you've attended</h1>
-
-  <% @user.events.each do |event| %>
-      <% if event.time_start.past? %>
+<% @user.events.each do |event| %>
+  <!-- <div class="col-xs-6 col-lg-4"> -->
+  <% Rsvp.where(event_id: event.id, guest_id: current_user.id, confirmed: true).each do |rsvp| %>
+      <% if rsvp.event.time_start.future? %>
         <h2><%= link_to "#{event.name}", event_path(event.id) %></h2>
         <p class="blog-post-meta"><%= event.time_start.strftime("%H:%M %d %b. %Y") %></p>
-          <% if event.rsvps.where(confirmed: true).length >= event.max_size %>
-            <span class="label label-danger">Full!</span>
-          <% end %>
-        <p><%= event.description %></p>
+        <% if event.rsvps.where(confirmed: true).length >= event.max_size %>
+          <span class="label label-danger">Full!</span>
+        <% end %>
+      <p><%= event.description %></p>
       <% end %>
   <% end %>
   <!-- </div> -->
+<% end %>
 
+<h1>Events you've attended</h1>
+
+<% @user.events.each do |event| %>
+  <!-- <div class="col-xs-6 col-lg-4"> -->
+  <% Rsvp.where(event_id: event.id, guest_id: current_user.id, confirmed: true).each do |rsvp| %>
+    <% if rsvp.event.time_start.past? %>
+      <h2><%= link_to "#{event.name}", event_path(event.id) %></h2>
+      <p class="blog-post-meta"><%= event.time_start.strftime("%H:%M %d %b. %Y") %></p>
+        <% if event.rsvps.where(confirmed: true).length >= event.max_size %>
+          <span class="label label-danger">Full!</span>
+        <% end %>
+      <p><%= event.description %></p>
+    <% end %>
+  <% end %>
+<!-- </div> -->
+<% end %>
+
+<% elsif user_signed_in? %>
+
+<p>Whoops! Upcoming events for individual users are private. You can see your own by clicking your profile photo above</p>
 <% else %>
-
-  <p>Please log in to see your upcoming events</p>
-
+<p>Please log in to see your upcoming events</p>
 <% end %>

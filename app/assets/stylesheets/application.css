@@ -14,9 +14,6 @@
  *= require_self
  *= require bootstrap
  *= require font-awesome
- *= require social-buttons
- *= require bootstrap-select
- *= require simple-sidebar
  */
 
 /* User sign in and sign forms. */
