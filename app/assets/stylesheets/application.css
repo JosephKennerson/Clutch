@@ -14,6 +14,7 @@
  *= require_self
  *= require bootstrap
  *= require font-awesome
+ *= require mapbox
  *= require social-buttons
  *= require bootstrap-select
  *= require simple-sidebar

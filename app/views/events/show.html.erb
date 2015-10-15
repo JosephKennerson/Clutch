@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clutch</title>
+  <% favicon_link_tag %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+
 <% if user_signed_in?%>
 <p id="notice"><%= notice %></p>
 
@@ -133,22 +145,24 @@
 
 
 
-
+<div id='rsvp-button'>
 <% if current_user.id != @event.host_id && @event.time_end.past? == false%>
 
   <% if !Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == false %>
-    <%= link_to 'Join', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: @event.id, pending: false, confirmed: true}, class: "btn btn-success"%>
+    <td><%= button_to 'Join', {controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: @event.id, pending: false, confirmed: true}}, {class: "btn btn-success", id: "submit-rsvp"} %></td>
   <% elsif !Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == true %>
-    <%= button_to 'Send Request', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: @event.id, pending: true, confirmed: false, class: "btn btn-warning"} %>
+    <td><%= button_to 'Send Request', {controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: @event.id, pending: true, confirmed: false}}, {class: "btn btn-warning", id: "submit-rsvp"} %></td>
+    <%#= link_to 'Join', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: @event.id, pending: false, confirmed: true}, class: "btn btn-success"%>
+  <%# elsif !Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == true %>
+    <%#= button_to 'Send Request', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: @event.id, pending: true, confirmed: false, class: "btn btn-warning"} %>
 
   <% elsif Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == false || (@event.approval_required == true && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).confirmed == true)%>
     <td><%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
-    <td>
   <% elsif Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == true%>
     <td><%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
-    <td>
   <% end %>
 <% end %>
+</div>
 
 <% if user_signed_in? && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, pending: true)%>
 <td><%= "Request pending" %></td>
@@ -170,7 +184,7 @@
     <br />
     <%= @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
     <br />
 
 <% end %>
@@ -178,12 +192,14 @@
 <% if (@event.host.id == current_user.id && @event.time_end.past? == true) || (@event.time_end.past? == true && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true))%>
 
   <h2>People Attended</h2>
+   <br />
+    Host
     <br />
     <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
     <br />
-    <% @event.host.username %>
+    <%= @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
     <br />
   <% @event.guests.each do |guest| %>
     <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>

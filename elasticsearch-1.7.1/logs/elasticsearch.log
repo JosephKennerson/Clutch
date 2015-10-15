@@ -1,3 +1,203 @@
+<<<<<<< HEAD
+[2015-10-15 00:00:11,460][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:00:11,461][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:00:41,459][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:01:11,464][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:01:11,464][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:01:41,466][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:02:11,469][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:02:11,469][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:02:41,472][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:03:11,475][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:03:11,475][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:03:41,479][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:04:11,479][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:04:11,479][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:04:41,484][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:05:11,487][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:05:11,488][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:05:41,489][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:06:11,490][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:06:11,490][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:06:41,490][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:07:11,489][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:07:11,489][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:07:41,490][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:08:11,491][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:08:11,491][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:08:41,496][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:09:11,497][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:09:11,497][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:09:41,500][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:10:11,501][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:10:11,501][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:10:37,895][INFO ][node                     ] [Diamond Lil] stopping ...
+[2015-10-15 00:10:37,912][INFO ][node                     ] [Diamond Lil] stopped
+[2015-10-15 00:10:37,912][INFO ][node                     ] [Diamond Lil] closing ...
+[2015-10-15 00:10:37,916][INFO ][node                     ] [Diamond Lil] closed
+[2015-10-15 00:10:52,225][INFO ][node                     ] [Scimitar] version[1.7.1], pid[64222], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 00:10:52,226][INFO ][node                     ] [Scimitar] initializing ...
+[2015-10-15 00:10:52,293][INFO ][plugins                  ] [Scimitar] loaded [], sites []
+[2015-10-15 00:10:52,327][INFO ][env                      ] [Scimitar] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [25.3gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 00:10:54,277][INFO ][node                     ] [Scimitar] initialized
+[2015-10-15 00:10:54,277][INFO ][node                     ] [Scimitar] starting ...
+[2015-10-15 00:10:54,340][INFO ][transport                ] [Scimitar] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 00:10:54,358][INFO ][discovery                ] [Scimitar] elasticsearch/e3fw3_EjRvum9iWV9fTcAw
+[2015-10-15 00:10:58,136][INFO ][cluster.service          ] [Scimitar] new_master [Scimitar][e3fw3_EjRvum9iWV9fTcAw][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 00:10:58,167][INFO ][http                     ] [Scimitar] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 00:10:58,168][INFO ][node                     ] [Scimitar] started
+[2015-10-15 00:10:58,193][INFO ][gateway                  ] [Scimitar] recovered [2] indices into cluster_state
+[2015-10-15 00:11:28,147][WARN ][cluster.routing.allocation.decider] [Scimitar] high disk watermark [90%] exceeded on [e3fw3_EjRvum9iWV9fTcAw][Scimitar] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:11:28,147][INFO ][cluster.routing.allocation.decider] [Scimitar] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:11:58,144][WARN ][cluster.routing.allocation.decider] [Scimitar] high disk watermark [90%] exceeded on [e3fw3_EjRvum9iWV9fTcAw][Scimitar] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:12:28,147][WARN ][cluster.routing.allocation.decider] [Scimitar] high disk watermark [90%] exceeded on [e3fw3_EjRvum9iWV9fTcAw][Scimitar] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:12:28,147][INFO ][cluster.routing.allocation.decider] [Scimitar] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:12:50,771][DEBUG][action.index             ] [Scimitar] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2015-10-15 00:12:58,151][WARN ][cluster.routing.allocation.decider] [Scimitar] high disk watermark [90%] exceeded on [e3fw3_EjRvum9iWV9fTcAw][Scimitar] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:13:28,155][WARN ][cluster.routing.allocation.decider] [Scimitar] high disk watermark [90%] exceeded on [e3fw3_EjRvum9iWV9fTcAw][Scimitar] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:13:28,156][INFO ][cluster.routing.allocation.decider] [Scimitar] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:13:36,272][INFO ][node                     ] [Scimitar] stopping ...
+[2015-10-15 00:13:36,284][WARN ][netty.channel.DefaultChannelPipeline] An exception was thrown by an exception handler.
+java.util.concurrent.RejectedExecutionException: Worker has already been shutdown
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.registerTask(AbstractNioSelector.java:120)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:72)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:56)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannelSink.execute(AbstractNioChannelSink.java:34)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.execute(DefaultChannelPipeline.java:636)
+	at org.elasticsearch.common.netty.channel.Channels.fireExceptionCaughtLater(Channels.java:496)
+	at org.elasticsearch.common.netty.channel.AbstractChannelSink.exceptionCaught(AbstractChannelSink.java:46)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.notifyHandlerException(DefaultChannelPipeline.java:658)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:781)
+	at org.elasticsearch.common.netty.channel.Channels.write(Channels.java:725)
+	at org.elasticsearch.common.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71)
+	at org.elasticsearch.common.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.handleDownstream(HttpPipeliningHandler.java:87)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.elasticsearch.http.netty.NettyHttpChannel.sendResponse(NettyHttpChannel.java:195)
+	at org.elasticsearch.rest.action.support.RestActionListener.onFailure(RestActionListener.java:60)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.finishAsFailed(TransportShardReplicationOperationAction.java:536)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$3.onClusterServiceClose(TransportShardReplicationOperationAction.java:509)
+	at org.elasticsearch.cluster.ClusterStateObserver$ObserverClusterStateListener.onClose(ClusterStateObserver.java:217)
+	at org.elasticsearch.cluster.service.InternalClusterService.doStop(InternalClusterService.java:174)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.stop(AbstractLifecycleComponent.java:105)
+	at org.elasticsearch.node.internal.InternalNode.stop(InternalNode.java:310)
+	at org.elasticsearch.node.internal.InternalNode.close(InternalNode.java:334)
+	at org.elasticsearch.bootstrap.Bootstrap$1.run(Bootstrap.java:82)
+[2015-10-15 00:13:36,294][INFO ][node                     ] [Scimitar] stopped
+[2015-10-15 00:13:36,294][INFO ][node                     ] [Scimitar] closing ...
+[2015-10-15 00:13:36,298][INFO ][node                     ] [Scimitar] closed
+[2015-10-15 00:14:30,277][INFO ][node                     ] [Justin Hammer] version[1.7.1], pid[64862], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 00:14:30,278][INFO ][node                     ] [Justin Hammer] initializing ...
+[2015-10-15 00:14:30,343][INFO ][plugins                  ] [Justin Hammer] loaded [], sites []
+[2015-10-15 00:14:30,377][INFO ][env                      ] [Justin Hammer] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [25.3gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 00:14:32,326][INFO ][node                     ] [Justin Hammer] initialized
+[2015-10-15 00:14:32,327][INFO ][node                     ] [Justin Hammer] starting ...
+[2015-10-15 00:14:32,388][INFO ][transport                ] [Justin Hammer] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 00:14:32,404][INFO ][discovery                ] [Justin Hammer] elasticsearch/3StrIZ3CQbm8qH4vW5aBLQ
+[2015-10-15 00:14:36,183][INFO ][cluster.service          ] [Justin Hammer] new_master [Justin Hammer][3StrIZ3CQbm8qH4vW5aBLQ][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 00:14:36,216][INFO ][http                     ] [Justin Hammer] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 00:14:36,217][INFO ][node                     ] [Justin Hammer] started
+[2015-10-15 00:14:36,238][INFO ][gateway                  ] [Justin Hammer] recovered [2] indices into cluster_state
+[2015-10-15 00:15:06,196][WARN ][cluster.routing.allocation.decider] [Justin Hammer] high disk watermark [90%] exceeded on [3StrIZ3CQbm8qH4vW5aBLQ][Justin Hammer] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:15:06,196][INFO ][cluster.routing.allocation.decider] [Justin Hammer] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:15:36,191][WARN ][cluster.routing.allocation.decider] [Justin Hammer] high disk watermark [90%] exceeded on [3StrIZ3CQbm8qH4vW5aBLQ][Justin Hammer] free: 25.2gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:15:38,854][DEBUG][action.index             ] [Justin Hammer] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2015-10-15 00:16:06,196][WARN ][cluster.routing.allocation.decider] [Justin Hammer] high disk watermark [90%] exceeded on [3StrIZ3CQbm8qH4vW5aBLQ][Justin Hammer] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:16:06,196][INFO ][cluster.routing.allocation.decider] [Justin Hammer] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:16:26,266][INFO ][node                     ] [Justin Hammer] stopping ...
+[2015-10-15 00:16:26,278][WARN ][netty.channel.DefaultChannelPipeline] An exception was thrown by an exception handler.
+java.util.concurrent.RejectedExecutionException: Worker has already been shutdown
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.registerTask(AbstractNioSelector.java:120)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:72)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:56)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannelSink.execute(AbstractNioChannelSink.java:34)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.execute(DefaultChannelPipeline.java:636)
+	at org.elasticsearch.common.netty.channel.Channels.fireExceptionCaughtLater(Channels.java:496)
+	at org.elasticsearch.common.netty.channel.AbstractChannelSink.exceptionCaught(AbstractChannelSink.java:46)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.notifyHandlerException(DefaultChannelPipeline.java:658)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:781)
+	at org.elasticsearch.common.netty.channel.Channels.write(Channels.java:725)
+	at org.elasticsearch.common.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71)
+	at org.elasticsearch.common.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.handleDownstream(HttpPipeliningHandler.java:87)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.elasticsearch.http.netty.NettyHttpChannel.sendResponse(NettyHttpChannel.java:195)
+	at org.elasticsearch.rest.action.support.RestActionListener.onFailure(RestActionListener.java:60)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.finishAsFailed(TransportShardReplicationOperationAction.java:536)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$3.onClusterServiceClose(TransportShardReplicationOperationAction.java:509)
+	at org.elasticsearch.cluster.ClusterStateObserver$ObserverClusterStateListener.onClose(ClusterStateObserver.java:217)
+	at org.elasticsearch.cluster.service.InternalClusterService.doStop(InternalClusterService.java:174)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.stop(AbstractLifecycleComponent.java:105)
+	at org.elasticsearch.node.internal.InternalNode.stop(InternalNode.java:310)
+	at org.elasticsearch.node.internal.InternalNode.close(InternalNode.java:334)
+	at org.elasticsearch.bootstrap.Bootstrap$1.run(Bootstrap.java:82)
+[2015-10-15 00:16:26,287][INFO ][node                     ] [Justin Hammer] stopped
+[2015-10-15 00:16:26,288][INFO ][node                     ] [Justin Hammer] closing ...
+[2015-10-15 00:16:26,292][INFO ][node                     ] [Justin Hammer] closed
+[2015-10-15 00:52:12,116][INFO ][node                     ] [Bedlam] version[1.7.1], pid[1538], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 00:52:12,116][INFO ][node                     ] [Bedlam] initializing ...
+[2015-10-15 00:52:12,235][INFO ][plugins                  ] [Bedlam] loaded [], sites []
+[2015-10-15 00:52:12,293][INFO ][env                      ] [Bedlam] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [25.4gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 00:52:16,792][INFO ][node                     ] [Bedlam] initialized
+[2015-10-15 00:52:16,793][INFO ][node                     ] [Bedlam] starting ...
+[2015-10-15 00:52:17,239][INFO ][transport                ] [Bedlam] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 00:52:17,277][INFO ][discovery                ] [Bedlam] elasticsearch/V_X2kzZmRbejXbcvdoPnTg
+[2015-10-15 00:52:21,062][INFO ][cluster.service          ] [Bedlam] new_master [Bedlam][V_X2kzZmRbejXbcvdoPnTg][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 00:52:21,084][INFO ][http                     ] [Bedlam] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 00:52:21,085][INFO ][node                     ] [Bedlam] started
+[2015-10-15 00:52:21,122][INFO ][gateway                  ] [Bedlam] recovered [2] indices into cluster_state
+[2015-10-15 00:52:51,074][WARN ][cluster.routing.allocation.decider] [Bedlam] high disk watermark [90%] exceeded on [V_X2kzZmRbejXbcvdoPnTg][Bedlam] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:52:51,074][INFO ][cluster.routing.allocation.decider] [Bedlam] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:53:21,072][WARN ][cluster.routing.allocation.decider] [Bedlam] high disk watermark [90%] exceeded on [V_X2kzZmRbejXbcvdoPnTg][Bedlam] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:53:51,074][WARN ][cluster.routing.allocation.decider] [Bedlam] high disk watermark [90%] exceeded on [V_X2kzZmRbejXbcvdoPnTg][Bedlam] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:53:51,074][INFO ][cluster.routing.allocation.decider] [Bedlam] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 00:54:21,079][WARN ][cluster.routing.allocation.decider] [Bedlam] high disk watermark [90%] exceeded on [V_X2kzZmRbejXbcvdoPnTg][Bedlam] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-15 00:54:40,336][INFO ][node                     ] [Bedlam] stopping ...
+[2015-10-15 00:54:40,360][WARN ][netty.channel.DefaultChannelPipeline] An exception was thrown by an exception handler.
+java.util.concurrent.RejectedExecutionException: Worker has already been shutdown
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.registerTask(AbstractNioSelector.java:120)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:72)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.executeInIoThread(AbstractNioWorker.java:56)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.executeInIoThread(NioWorker.java:36)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannelSink.execute(AbstractNioChannelSink.java:34)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.execute(DefaultChannelPipeline.java:636)
+	at org.elasticsearch.common.netty.channel.Channels.fireExceptionCaughtLater(Channels.java:496)
+	at org.elasticsearch.common.netty.channel.AbstractChannelSink.exceptionCaught(AbstractChannelSink.java:46)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.notifyHandlerException(DefaultChannelPipeline.java:658)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:781)
+	at org.elasticsearch.common.netty.channel.Channels.write(Channels.java:725)
+	at org.elasticsearch.common.netty.handler.codec.oneone.OneToOneEncoder.doEncode(OneToOneEncoder.java:71)
+	at org.elasticsearch.common.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:59)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.elasticsearch.http.netty.pipelining.HttpPipeliningHandler.handleDownstream(HttpPipeliningHandler.java:87)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.elasticsearch.http.netty.NettyHttpChannel.sendResponse(NettyHttpChannel.java:195)
+	at org.elasticsearch.rest.action.support.RestActionListener.onFailure(RestActionListener.java:60)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase.finishAsFailed(TransportShardReplicationOperationAction.java:536)
+	at org.elasticsearch.action.support.replication.TransportShardReplicationOperationAction$PrimaryPhase$3.onClusterServiceClose(TransportShardReplicationOperationAction.java:509)
+	at org.elasticsearch.cluster.ClusterStateObserver$ObserverClusterStateListener.onClose(ClusterStateObserver.java:217)
+	at org.elasticsearch.cluster.service.InternalClusterService.doStop(InternalClusterService.java:174)
+	at org.elasticsearch.common.component.AbstractLifecycleComponent.stop(AbstractLifecycleComponent.java:105)
+	at org.elasticsearch.node.internal.InternalNode.stop(InternalNode.java:310)
+	at org.elasticsearch.node.internal.InternalNode.close(InternalNode.java:334)
+	at org.elasticsearch.bootstrap.Bootstrap$1.run(Bootstrap.java:82)
+[2015-10-15 00:54:40,374][INFO ][node                     ] [Bedlam] stopped
+[2015-10-15 00:54:40,374][INFO ][node                     ] [Bedlam] closing ...
+[2015-10-15 00:54:40,380][INFO ][node                     ] [Bedlam] closed
+=======
 
 [2015-10-14 14:16:27,431][INFO ][cluster.service          ] [Raza] added {[David Cannon][w2wuzrOJSJGQ0FKwvYYF4Q][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(join from node[[David Cannon][w2wuzrOJSJGQ0FKwvYYF4Q][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
 [2015-10-14 14:16:27,864][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 746mb[0.3%], shards will be relocated away from this node
@@ -455,3 +655,84 @@ java.io.IOException: Operation timed out
 [2015-10-14 22:16:30,777][INFO ][cluster.service          ] [Danger] added {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
 [2015-10-14 23:01:36,618][INFO ][cluster.service          ] [Danger] removed {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
 >>>>>>> developer
+[2015-10-15 14:14:49,760][INFO ][node                     ] [Patriot] version[1.7.1], pid[20492], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 14:14:49,760][INFO ][node                     ] [Patriot] initializing ...
+[2015-10-15 14:14:49,887][INFO ][plugins                  ] [Patriot] loaded [], sites []
+[2015-10-15 14:14:49,944][INFO ][env                      ] [Patriot] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [26.1gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 14:14:52,664][INFO ][node                     ] [Patriot] initialized
+[2015-10-15 14:14:52,665][INFO ][node                     ] [Patriot] starting ...
+[2015-10-15 14:14:52,761][INFO ][transport                ] [Patriot] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 14:14:52,786][INFO ][discovery                ] [Patriot] elasticsearch/VTJ3zgtBSqmGpvshyOEPhQ
+[2015-10-15 14:14:56,574][INFO ][cluster.service          ] [Patriot] new_master [Patriot][VTJ3zgtBSqmGpvshyOEPhQ][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 14:14:56,599][INFO ][http                     ] [Patriot] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 14:14:56,599][INFO ][node                     ] [Patriot] started
+[2015-10-15 14:14:56,634][INFO ][gateway                  ] [Patriot] recovered [2] indices into cluster_state
+[2015-10-15 14:15:26,588][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:15:26,588][INFO ][cluster.routing.allocation.decider] [Patriot] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:15:56,584][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:16:26,581][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:16:56,589][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:16:56,589][INFO ][cluster.routing.allocation.decider] [Patriot] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:17:26,586][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:17:56,588][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:17:56,588][INFO ][cluster.routing.allocation.decider] [Patriot] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:18:26,592][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:18:56,592][WARN ][cluster.routing.allocation.decider] [Patriot] high disk watermark [90%] exceeded on [VTJ3zgtBSqmGpvshyOEPhQ][Patriot] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:18:56,592][INFO ][cluster.routing.allocation.decider] [Patriot] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:19:16,803][INFO ][node                     ] [Patriot] stopping ...
+[2015-10-15 14:19:16,845][INFO ][node                     ] [Patriot] stopped
+[2015-10-15 14:19:16,846][INFO ][node                     ] [Patriot] closing ...
+[2015-10-15 14:19:16,851][INFO ][node                     ] [Patriot] closed
+>>>>>>> developer
+[2015-10-15 14:32:45,072][INFO ][node                     ] [Doctor Doom] version[1.7.1], pid[22510], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 14:32:45,072][INFO ][node                     ] [Doctor Doom] initializing ...
+[2015-10-15 14:32:45,141][INFO ][plugins                  ] [Doctor Doom] loaded [], sites []
+[2015-10-15 14:32:45,179][INFO ][env                      ] [Doctor Doom] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [26.1gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 14:32:47,191][INFO ][node                     ] [Doctor Doom] initialized
+[2015-10-15 14:32:47,191][INFO ][node                     ] [Doctor Doom] starting ...
+[2015-10-15 14:32:47,256][INFO ][transport                ] [Doctor Doom] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 14:32:47,272][INFO ][discovery                ] [Doctor Doom] elasticsearch/1ulySXLlQnKtQTyYaJsMAA
+[2015-10-15 14:32:51,048][INFO ][cluster.service          ] [Doctor Doom] new_master [Doctor Doom][1ulySXLlQnKtQTyYaJsMAA][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 14:32:51,083][INFO ][http                     ] [Doctor Doom] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 14:32:51,083][INFO ][node                     ] [Doctor Doom] started
+[2015-10-15 14:32:51,106][INFO ][gateway                  ] [Doctor Doom] recovered [2] indices into cluster_state
+[2015-10-15 14:33:21,061][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:33:21,061][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:33:51,056][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:33:59,790][INFO ][cluster.metadata         ] [Doctor Doom] [events_development_20151014220818574] update_mapping [event] (dynamic)
+[2015-10-15 14:34:21,057][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.1gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:34:51,057][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26.2gb[7.4%], shards will be relocated away from this node
+[2015-10-15 14:34:51,057][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:35:21,058][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:35:51,057][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:35:51,057][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:36:06,319][INFO ][cluster.service          ] [Doctor Doom] added {[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 14:36:06,371][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:36:21,061][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:36:51,061][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:36:51,061][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:37:21,213][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:37:51,360][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:37:51,361][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:38:21,111][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:38:51,089][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:39:21,144][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:39:21,145][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:39:51,244][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:40:21,070][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:40:51,145][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:40:51,146][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:41:21,072][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:41:51,548][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:41:51,548][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:42:21,153][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.8gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:42:51,084][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:43:21,186][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:43:21,186][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:43:51,120][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:44:21,501][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:44:21,502][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 14:44:51,195][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:45:21,298][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 26gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:45:51,096][WARN ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark [90%] exceeded on [1ulySXLlQnKtQTyYaJsMAA][Doctor Doom] free: 25.9gb[7.3%], shards will be relocated away from this node
+[2015-10-15 14:45:51,097][INFO ][cluster.routing.allocation.decider] [Doctor Doom] high disk watermark exceeded on one or more nodes, rerouting shards

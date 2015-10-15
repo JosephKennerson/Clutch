@@ -1,7 +1,7 @@
 # random users
 
-User.create!(
-        username: "admin",
+User.create(
+        username: "Admin",
         address_line_1: "633 Folsom",
         address_line_2: "6th Floor",
         city: "San Francisco",
@@ -12,7 +12,7 @@ User.create!(
         avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
         last_name: "Istrator",
-        phone_number: "123-456-789"
+        phone_number: "123-456-7890"
   )
 
 10.times do
@@ -28,12 +28,12 @@ User.create!(
         avatar: Faker::Avatar.image,
         first_name: FFaker::Name.first_name,
         last_name: Faker::Name.last_name,
-        phone_number: Faker::PhoneNumber.phone_number.to_i
+        phone_number: "617-671-8206"
     )
 
 end
 
-#Admin events
+# Admin events
 
 5.times do
   random_size = rand(1..10)
@@ -52,7 +52,9 @@ end
         category: FFaker::Sport.name,
         approval_required: FFaker::Boolean.sample,
         host_id: 1,
-        status: FFaker::Boolean.sample
+        status: FFaker::Boolean.sample,
+        longitude: rand(-122.507367...-122.389335),
+        latitude: rand(37.735722...37.807791)
     )
 
 end
@@ -77,7 +79,9 @@ end
         category: FFaker::Sport.name,
         approval_required: FFaker::Boolean.sample,
         host_id: random_user,
-        status: FFaker::Boolean.sample
+        status: FFaker::Boolean.sample,
+        longitude: rand(-122.507367...-122.389335),
+        latitude: rand(37.735722...37.807791)
     )
 
 end
@@ -96,6 +100,7 @@ end
 end
 
 # random comments (public and private)
+
 
 35.times do
   random_event = rand(1..Event.count)
@@ -170,8 +175,8 @@ end
 
 # random confirmed rsvps (id #51-75)
 
-35.times do
 
+35.times do
   random_guest = rand(10..User.count)
   random_host = rand(1..9)
   random_event = rand(1..Event.count)
@@ -186,6 +191,7 @@ end
 end
 
 # random ratings (from confirmed rsvps)
+
 35.times do
   count = 1
   current_event = Event.find(count)
@@ -201,6 +207,7 @@ end
 end
 
 # random ratings (switched roles)
+
 
 35.times do
   count = 1

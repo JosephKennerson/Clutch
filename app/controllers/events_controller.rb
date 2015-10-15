@@ -5,7 +5,6 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    # Event.reindex
     Event.all.each do |e|
       e.close_event
     end
@@ -30,6 +29,11 @@ class EventsController < ApplicationController
   def show
     @comment = Comment.new
     @rating = Rating.new
+    respond_to do |format|
+      format.html {render layout: false}
+      # format.html
+      format.json
+    end
   end
 
   def search
@@ -89,7 +93,32 @@ class EventsController < ApplicationController
     end
   end
 
-  private
+  def map
+    # Event.where(status: false).each do |event|
+    #   event.close_event
+    # end
+    open_events = Event.where(status: true)
+    if params[:q].nil?
+      @events = open_events
+    else
+      query = [params[:q], params[:dropq]].join(", ")
+      @events = open_events.search(query).records
+    end
+    # @events = Event.where(status: true)
+    @geojson = Array.new
+    p @events.length
+    p @geojson.length
+    build_geojson(@events, @geojson)
+    p "*" * 80
+    p @events.length
+    p @geojson.length
+    respond_to do |format|
+      format.html {render layout: false}
+      format.json {render json: @geojson}
+    end
+  end
+
+    private
     # Use callbacks to share common setup or constraints between actions.
     def set_event
       @event = Event.find(params[:id])
@@ -98,6 +127,12 @@ class EventsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
       params.require(:event).permit(:public_location, :address_line_1, :address_line_2, :city, :state, :zip, :max_size, :host_id, :time_start, :time_end, :name, :description, :category, :status, :approval_required)
+    end
+
+    def build_geojson(events, geojson)
+      events.each do |event|
+        geojson << GeojsonBuilder.build_event(event)
+      end
     end
 
     def resolve_layout
