@@ -12,7 +12,12 @@ Rails.application.routes.draw do
 
   resources :rsvps
   resources :comments
-  resources :events
+  resources :events do
+    collection do
+      get 'search'
+    end
+  end
+
   resources :ratings
   resources :users do
     member do

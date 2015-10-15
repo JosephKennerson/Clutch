@@ -45,7 +45,7 @@ end
         state: FFaker::AddressUS.state_abbr,
         zip: FFaker::AddressUS.zip_code,
         max_size: random_size,
-        time_start: Faker::Time.between(DateTime.now - 1, DateTime.now),
+        time_start: Faker::Time.between(DateTime.now, DateTime.now + 3),
         time_end: Faker::Time.forward(1),
         name: FFaker::Company.catch_phrase,
         description: FFaker::HipsterIpsum.phrase,

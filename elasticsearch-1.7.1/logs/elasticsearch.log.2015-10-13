@@ -1,0 +1,46 @@
+[2015-10-13 18:49:53,877][INFO ][node                     ] [Gee] version[1.7.1], pid[89101], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-13 18:49:53,877][INFO ][node                     ] [Gee] initializing ...
+[2015-10-13 18:49:54,052][INFO ][plugins                  ] [Gee] loaded [], sites []
+[2015-10-13 18:49:54,135][INFO ][env                      ] [Gee] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-13 18:49:58,374][INFO ][node                     ] [Gee] initialized
+[2015-10-13 18:49:58,375][INFO ][node                     ] [Gee] starting ...
+[2015-10-13 18:49:58,516][INFO ][transport                ] [Gee] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-13 18:49:58,550][INFO ][discovery                ] [Gee] elasticsearch/pbarfueRT1yKMg-3ogP1eQ
+[2015-10-13 18:50:02,343][INFO ][cluster.service          ] [Gee] new_master [Gee][pbarfueRT1yKMg-3ogP1eQ][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-13 18:50:02,366][INFO ][http                     ] [Gee] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-13 18:50:02,367][INFO ][node                     ] [Gee] started
+[2015-10-13 18:50:02,391][INFO ][gateway                  ] [Gee] recovered [0] indices into cluster_state
+[2015-10-13 18:51:04,857][INFO ][node                     ] [Gee] stopping ...
+[2015-10-13 18:51:04,927][INFO ][node                     ] [Gee] stopped
+[2015-10-13 18:51:04,928][INFO ][node                     ] [Gee] closing ...
+[2015-10-13 18:51:04,940][INFO ][node                     ] [Gee] closed
+[2015-10-13 19:00:36,706][INFO ][node                     ] [Arc] version[1.7.1], pid[89397], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-13 19:00:36,709][INFO ][node                     ] [Arc] initializing ...
+[2015-10-13 19:00:36,870][INFO ][plugins                  ] [Arc] loaded [], sites []
+[2015-10-13 19:00:36,956][INFO ][env                      ] [Arc] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-13 19:00:41,029][INFO ][node                     ] [Arc] initialized
+[2015-10-13 19:00:41,029][INFO ][node                     ] [Arc] starting ...
+[2015-10-13 19:00:41,200][INFO ][transport                ] [Arc] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-13 19:00:41,239][INFO ][discovery                ] [Arc] elasticsearch/HN8u2lrnSrycq6pQAqY3AA
+[2015-10-13 19:00:45,035][INFO ][cluster.service          ] [Arc] new_master [Arc][HN8u2lrnSrycq6pQAqY3AA][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-13 19:00:45,058][INFO ][http                     ] [Arc] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-13 19:00:45,058][INFO ][node                     ] [Arc] started
+[2015-10-13 19:00:45,069][INFO ][gateway                  ] [Arc] recovered [0] indices into cluster_state
+[2015-10-13 19:02:15,825][INFO ][node                     ] [Arc] stopping ...
+[2015-10-13 19:02:16,399][INFO ][node                     ] [Arc] stopped
+[2015-10-13 19:02:16,402][INFO ][node                     ] [Arc] closing ...
+[2015-10-13 19:02:16,758][INFO ][node                     ] [Arc] closed
+[2015-10-13 19:17:20,857][INFO ][node                     ] [Raza] version[1.7.1], pid[90335], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-13 19:17:20,859][INFO ][node                     ] [Raza] initializing ...
+[2015-10-13 19:17:21,015][INFO ][plugins                  ] [Raza] loaded [], sites []
+[2015-10-13 19:17:21,089][INFO ][env                      ] [Raza] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-13 19:17:24,709][INFO ][node                     ] [Raza] initialized
+[2015-10-13 19:17:24,709][INFO ][node                     ] [Raza] starting ...
+[2015-10-13 19:17:24,907][INFO ][transport                ] [Raza] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-13 19:17:24,952][INFO ][discovery                ] [Raza] elasticsearch/qCFFzUjQS12EsdxOzv8gig
+[2015-10-13 19:17:28,833][INFO ][cluster.service          ] [Raza] new_master [Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-13 19:17:28,863][INFO ][http                     ] [Raza] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-13 19:17:28,863][INFO ][node                     ] [Raza] started
+[2015-10-13 19:17:28,871][INFO ][gateway                  ] [Raza] recovered [0] indices into cluster_state
+[2015-10-13 19:18:03,141][INFO ][cluster.metadata         ] [Raza] [events] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [event]
+[2015-10-13 19:18:03,750][INFO ][cluster.metadata         ] [Raza] [events] update_mapping [event] (dynamic)

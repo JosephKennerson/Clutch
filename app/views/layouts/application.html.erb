@@ -8,6 +8,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
@@ -21,7 +22,7 @@
 
 
   <nav class="navbar navbar-default">
-      <div class="container-fluid col-sm-">
+      <!-- <div class="container-fluid col-sm-"> -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -30,13 +31,11 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">Clutch</a>
-        </div>
+        <!-- </div> -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Join Events", events_path %></li>
-            <li><%= link_to "Create Events", new_event_path %></li>
-            <li><%= link_to "Contact", "/home/team" %></li>
             <li>
+
             <div class="input-group">
             <%= form_tag("/events/", :method => "get", id: "search-form", html: {class: 'form-group'}) do |f|%>
                 <%= text_field_tag :q, params[:q], placeholder: "Search Events", class: "form-control" %>
@@ -49,8 +48,15 @@
                 <% end %>
           </div>
           </li>
+            </div>
 
-          </ul>
+            </li>
+
+        </div>
+
+
+
+
 
 
 <div class="container-narrow">
@@ -59,9 +65,13 @@
     <h3 class="muted"></h3>
     <h5 class="muted"></h5>
   </div>
-  <hr />
+  <!-- <hr /> -->
+       </ul>
+         </div>
+         </div>
 
 </nav>
+
 
 <div style="margin-top: 50px;" class="container">
 <%= yield %>
@@ -69,4 +79,3 @@
 
 </body>
 </html>
-
