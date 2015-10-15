@@ -169,12 +169,14 @@
 <% if (@event.host.id == current_user.id && @event.time_end.past? == true) || (@event.time_end.past? == true && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true))%>
 
   <h2>People Attended</h2>
+   <br />
+    Host
     <br />
     <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
     <br />
-    <% @event.host.username %>
+    <%= @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f %>
+    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
     <br />
   <% @event.guests.each do |guest| %>
     <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>

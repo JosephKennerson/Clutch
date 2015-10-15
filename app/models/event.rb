@@ -8,8 +8,8 @@ class Event < ActiveRecord::Base
   validates :state, length: { is: 2 }
 
  	def close_event
- 		self.status = false if self.time_end.past? == true || self.rsvps.where(confirmed: true).length >= self.max_size
- 		self.save if self.status == false
+ 		self.status = false if self.rsvps.where(confirmed: true).length >= self.max_size || self.time_end.past? == true
+ 		self.save
  	end
 
   geocoded_by :full_address # full_address is a method which take some model's attributes to get a formatted address for example
