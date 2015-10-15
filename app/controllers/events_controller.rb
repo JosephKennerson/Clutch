@@ -12,7 +12,7 @@ class EventsController < ApplicationController
       @events = open_events
     else
       query = [params[:q], params[:dropq]].join(", ")
-      @events = open_events.search(query).records
+      @events = open_events.__elasticsearch__.search(query).records
     end
   end
 
