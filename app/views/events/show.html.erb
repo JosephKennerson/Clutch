@@ -202,46 +202,50 @@
 <% end %>
 
 
-<h2>Public Comments</h2>
-<% @event.comments.each do |comment| %>
-  <% if comment.is_private == false %>
-    <p>
-      <b>Commenter:</b>
-      <%= comment.user.username %>
-    </p>
-    <p>
-      <b>Comment:</b>
-      <%= comment.body %>
-    </p>
-    <% if comment.user == current_user %>
-      <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
-      <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Public Comments</h3>
+  <div class="panel-body">
+    <div class="well">
+    <% @event.comments.each do |comment| %>
+      <% if comment.is_private == false %>
+        <p><%= comment.body %></p>
+        <p><strong><%= comment.user.username %></strong></p>
+        <% if comment.user == current_user %>
+        <p><%= link_to 'Edit', edit_comment_path(comment) %></p> |
+        <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
-<% end %>
+    </div>
+  </div>
+</div>
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form', locals: {is_private: false} %>
 <br>
 
 <% if Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true) || @event.host.id == current_user.id  %>
-  <h2>Private Comments</h2>
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">Private Comments</h3>
+  <div class="panel-body">
+    <div class="well">
     <% @event.comments.each do |comment| %>
       <% if comment.is_private == true %>
-      <p>
-        <b>Commenter:</b>
-        <%= comment.user.username %>
-      </p>
-     <p>
-        <b>Comment:</b>
-        <%= comment.body %>
-     </p>
-     <% if comment.user == current_user %>
-        <p><%= link_to 'Edit', edit_comment_path(comment) %></p>
+        <p><%= comment.body %></p>
+        <p><strong><%= comment.user.username %></strong></p>
+        <% if comment.user == current_user %>
+        <p><%= link_to 'Edit', edit_comment_path(comment) %></p> |
         <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
-     <% end %>
+        <% end %>
+      <% end %>
     <% end %>
-  <% end %>
+    </div>
+  </div>
+</div>
+<div class="panel-footer">Private: Visible only to guests of this event</div>
+</div>
 <h2>Add a private comment:</h2>
 <%= render 'comments/form2', locals: {is_private: true} %>
 <% end %>
