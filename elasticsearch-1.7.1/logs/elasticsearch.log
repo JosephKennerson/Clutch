@@ -1695,3 +1695,74 @@ org.elasticsearch.transport.NodeDisconnectedException: [the Renegade Watcher Aro
 [2015-10-14 21:34:23,603][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.3gb[7.1%], shards will be relocated away from this node
 [2015-10-14 21:34:23,603][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
 [2015-10-14 21:34:53,122][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.3gb[7.1%], shards will be relocated away from this node
+[2015-10-14 21:35:23,621][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:35:23,621][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:35:53,173][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:36:23,109][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:36:53,104][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.1%], shards will be relocated away from this node
+[2015-10-14 21:36:53,104][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:37:18,528][INFO ][cluster.service          ] [Vindaloo] added {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-14 21:37:18,673][INFO ][cluster.routing          ] [Vindaloo] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-14 21:37:18,698][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:37:20,280][INFO ][cluster.routing          ] [Vindaloo] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-14 21:37:20,914][INFO ][cluster.routing          ] [Vindaloo] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-14 21:37:21,042][INFO ][cluster.routing          ] [Vindaloo] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-14 21:37:21,182][INFO ][cluster.routing          ] [Vindaloo] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-14 21:37:21,247][INFO ][cluster.routing          ] [Vindaloo] delaying allocation for [0] unassigned shards, next check in [0s]
+[2015-10-14 21:37:23,319][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:37:53,115][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:37:53,115][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:38:23,340][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:38:53,117][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:38:53,117][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:39:23,189][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:39:53,341][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:39:53,341][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:40:23,346][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:40:53,119][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:41:23,353][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:41:23,354][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:41:53,124][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:42:23,260][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:42:53,229][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:42:53,229][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:43:23,361][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:43:53,267][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:43:53,267][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:44:23,143][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:44:53,377][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:44:53,377][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:45:23,279][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:45:53,161][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:46:23,181][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:46:23,181][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:46:53,159][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:47:23,286][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:47:23,286][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:47:53,258][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:48:23,303][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:48:23,303][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:48:53,307][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.1%], shards will be relocated away from this node
+[2015-10-14 21:49:23,229][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:49:53,309][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:49:53,309][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:50:23,269][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:50:53,192][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:51:23,320][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:51:23,320][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:51:53,192][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:52:23,237][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:52:53,203][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:52:53,203][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:53:23,321][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:53:53,198][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:54:23,253][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:54:23,253][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:54:53,219][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:55:23,216][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:55:53,217][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:55:53,217][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:56:23,460][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:56:53,243][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node
+[2015-10-14 21:56:53,243][INFO ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 21:57:23,265][WARN ][cluster.routing.allocation.decider] [Vindaloo] high disk watermark [90%] exceeded on [if7uzR_tRZi6vnJyi8EU0w][Vindaloo] free: 25.4gb[7.2%], shards will be relocated away from this node

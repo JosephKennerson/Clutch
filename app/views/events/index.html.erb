@@ -36,7 +36,7 @@
 
         <% if user_signed_in? && current_user.id != event.host_id %>
           <% if !Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == false %>
-            <td><%= button_to 'Join', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: false, confirmed: true} %></td>
+            <td><%= button_to 'Join', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: false, confirmed: true}, id: "booton" %></td>
             <td>
           <% elsif !Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == true %>
             <td><%= button_to 'Send Request', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: true, confirmed: false} %></td>
