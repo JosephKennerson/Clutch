@@ -1,6 +1,6 @@
 $(document).ready(function(){
   L.mapbox.accessToken = 'pk.eyJ1IjoieGFuZGVycHNvbiIsImEiOiJjaWZvcml2YjU1Mnc2c3ZrcTlibmxjcXJuIn0.M7QobcyaQENSoLb86fvvug';
-  var map = L.mapbox.map('map', 'xanderpson.nmn4lji0', {zoomControl: false}).setView([37.7846334, -90.3974137], 5),
+  var map = L.mapbox.map('map', 'xanderpson.nmn4lji0', {zoomControl: false}).setView([37.761688, -122.481385], 13),
       filters = document.getElementById('filters');
   L.control.zoomslider().addTo(map);
 
@@ -19,7 +19,6 @@ $(document).ready(function(){
   //   var path = $(this).attr('action'),
   //       method = $(this).attr('method'),
   //       formData = $(this).serialize();
-  //       console.log(formData)
   //   $.ajax({
   //     url: path,
   //     type: method,

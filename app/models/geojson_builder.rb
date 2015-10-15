@@ -5,7 +5,6 @@ class GeojsonBuilder < ActiveRecord::Base
       geometry: {
         type: "Point",
         coordinates: [event.longitude, event.latitude]
-        # coordinates: [rand(-124.58...-72.46), rand(32.71...48.81)]
       },
       properties: {
         id: event.id,

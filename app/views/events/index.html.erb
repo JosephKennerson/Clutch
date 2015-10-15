@@ -33,23 +33,17 @@
         <td><%= event.city %></td>
         <td><%= event.time_start.strftime('%b %-e') %></td>
         <td><%= event.time_start.strftime('%-l:%M %p') %></td>
-
         <% if user_signed_in? && current_user.id != event.host_id %>
           <% if !Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == false %>
-            <td><%= button_to 'Join', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: false, confirmed: true}, id: "booton" %></td>
-            <td>
+            <td><div id='rsvp-button'><%= button_to 'Join', {controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: false, confirmed: true}}, {id: "submit-rsvp"} %></div></td>
           <% elsif !Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == true %>
-            <td><%= button_to 'Send Request', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: true, confirmed: false} %></td>
-            <td>
+            <td><%= button_to 'Send Request', {controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event.id, pending: true, confirmed: false}}, {id: "submit-rsvp"} %></td>
           <% elsif Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == false || (event.approval_required == true && Rsvp.find_by(event_id: event.id, guest_id: current_user.id).confirmed == true)%>
             <td><%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event.id, guest_id: current_user.id).id}, method: :delete %></td>
-            <td>
           <% elsif Rsvp.find_by(event_id: event.id, guest_id: current_user.id) && event.approval_required == true%>
             <td><%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event.id, guest_id: current_user.id).id}, method: :delete %></td>
-            <td>
           <% end %>
         <% end %>
-
         <% if user_signed_in? && Rsvp.find_by(event_id: event.id, guest_id: current_user.id, pending: true)%>
         <td><%= "Request pending" %></td>
         <% end %>

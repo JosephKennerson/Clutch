@@ -1,7 +1,7 @@
 # random users
 
-User.create!(
-        username: "admin",
+User.create(
+        username: "Admin",
         address_line_1: "633 Folsom",
         address_line_2: "6th Floor",
         city: "San Francisco",
@@ -12,8 +12,129 @@ User.create!(
         avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
         last_name: "Istrator",
-        phone_number: "123-456-789"
+        phone_number: "123-456-7890"
   )
+
+User.create(
+        username: "XanderPSON",
+        address_line_1: "1400 26th Ave",
+        address_line_2: "Apt 6",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94122",
+        email: "xander@devbootcmap.com",
+        password: "xanderpsonxanderpson",
+        avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
+        first_name: "Xander",
+        last_name: "Peterson",
+        phone_number: "831-251-0146"
+  )
+
+User.create(
+        username: "DarthJoie",
+        address_line_1: "633 Folsom",
+        address_line_2: "6th Floor",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94107",
+        email: "jk@devbootcamp.com",
+        password: "darthjoiedarthjoie",
+        avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
+        first_name: "Joie",
+        last_name: "Kennerson",
+        phone_number: "123-456-7890"
+  )
+
+User.create(
+        username: "Maddy",
+        address_line_1: "633 Folsom",
+        address_line_2: "6th Floor",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94107",
+        email: "maddy@devootcamp.com",
+        password: "maddymaddy",
+        avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
+        first_name: "Madison",
+        last_name: "Sites",
+        phone_number: "123-456-7890"
+  )
+
+User.create(
+        username: "CodingNutty",
+        address_line_1: "633 Folsom",
+        address_line_2: "6th Floor",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94107",
+        email: "nruthya@devbootcamp.com",
+        password: "codingnuttycodingnutty",
+        avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
+        first_name: "Nruthya",
+        last_name: "LongName",
+        phone_number: "123-456-7890"
+  )
+
+
+Event.create(
+        public_location: 'San Francisco',
+        address_line_1: '275 Battery Street',
+        address_line_2: '26th Floor',
+        city: 'San Francisco',
+        state: 'CA',
+        zip: '94122',
+        max_size: 4,
+        time_start: DateTime.now - 1,
+        time_end: DateTime.now,
+        name: "Let's play basketball!",
+        description: "Looking for 4 more people to play pickup basketball with me!",
+        category: "Basketball",
+        approval_required: false,
+        host_id: 1,
+        status: true,
+        longitude: rand(-122.507367...-122.389335),
+        latitude: rand(37.735722...37.807791)
+    )
+
+Event.create(
+        public_location: 'San Francisco',
+        address_line_1: '400 Battery Street',
+        address_line_2: '8th Floor',
+        city: 'San Francisco',
+        state: 'CA',
+        zip: '94122',
+        max_size: 6,
+        time_start: DateTime.now - 1,
+        time_end: DateTime.now,
+        name: "Let's play videogames!",
+        description: "Looking for 4 more people to play Mario Kart with me!",
+        category: "Videogames",
+        approval_required: false,
+        host_id: 2,
+        status: true,
+        longitude: rand(-122.507367...-122.389335),
+        latitude: rand(37.735722...37.807791)
+    )
+
+Event.create(
+        public_location: 'San Francisco',
+        address_line_1: '500 Folsom Street',
+        address_line_2: '6th Floor',
+        city: 'San Francisco',
+        state: 'CA',
+        zip: '94122',
+        max_size: 1,
+        time_start: DateTime.now - 1,
+        time_end: DateTime.now,
+        name: "Netflix and Chill?",
+        description: "Looking for one more to N&C with me",
+        category: "Movie",
+        approval_required: false,
+        host_id: 3,
+        status: true,
+        longitude: rand(-122.507367...-122.389335),
+        latitude: rand(37.735722...37.807791)
+    )
 
 10.times do
   User.create!(
@@ -33,7 +154,7 @@ User.create!(
 
 end
 
-#Admin events
+# Admin events
 
 5.times do
   random_size = rand(1..10)
@@ -52,7 +173,9 @@ end
         category: FFaker::Sport.name,
         approval_required: FFaker::Boolean.sample,
         host_id: 1,
-        status: FFaker::Boolean.sample
+        status: FFaker::Boolean.sample,
+        longitude: rand(-122.507367...-122.389335),
+        latitude: rand(37.735722...37.807791)
     )
 
 end
@@ -77,7 +200,9 @@ end
         category: FFaker::Sport.name,
         approval_required: FFaker::Boolean.sample,
         host_id: random_user,
-        status: FFaker::Boolean.sample
+        status: FFaker::Boolean.sample,
+        longitude: rand(-122.507367...-122.389335),
+        latitude: rand(37.735722...37.807791)
     )
 
 end
