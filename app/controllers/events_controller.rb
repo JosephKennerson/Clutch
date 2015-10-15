@@ -20,6 +20,8 @@ class EventsController < ApplicationController
       else
       @events = open_events.search(params[:q]).records.where(category: params[:category_params])
       end
+      query = [params[:q], params[:dropq]].join(", ")
+      @events = open_events.__elasticsearch__.search(query).records
     end
   end
 
