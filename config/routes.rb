@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'home/team'
   get 'search', to: 'search#search'
 
-  devise_for :users, :skip => [:sessions]
+  devise_for :users, :skip => [:sessions], :controllers => { :omniauth_callbacks => "callbacks" }
   as :user do
     get 'signin' => 'devise/sessions#new', :as => :new_user_session
     post 'signin' => 'devise/sessions#create', :as => :user_session
