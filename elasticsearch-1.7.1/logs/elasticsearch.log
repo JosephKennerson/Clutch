@@ -234,6 +234,43 @@
 [2015-10-14 14:16:23,585][INFO ][discovery                ] [David Cannon] elasticsearch/w2wuzrOJSJGQ0FKwvYYF4Q
 [2015-10-14 14:16:27,630][INFO ][cluster.service          ] [David Cannon] detected_master [Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], added {[Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],}, reason: zen-disco-receive(from master [[Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]]])
 [2015-10-14 14:16:27,660][INFO ][http                     ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.126:9200]}
+<<<<<<< HEAD
+[2015-10-14 14:16:27,660][INFO ][node                     ] [David Cannon] started
+[2015-10-14 21:37:12,621][INFO ][node                     ] [Kraven the Hunter] version[1.7.1], pid[28614], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 21:37:12,623][INFO ][node                     ] [Kraven the Hunter] initializing ...
+[2015-10-14 21:37:12,700][INFO ][plugins                  ] [Kraven the Hunter] loaded [], sites []
+[2015-10-14 21:37:12,741][INFO ][env                      ] [Kraven the Hunter] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [149gb], net total_space [232.6gb], types [hfs]
+[2015-10-14 21:37:14,991][INFO ][node                     ] [Kraven the Hunter] initialized
+[2015-10-14 21:37:14,992][INFO ][node                     ] [Kraven the Hunter] starting ...
+[2015-10-14 21:37:15,081][INFO ][transport                ] [Kraven the Hunter] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-14 21:37:15,105][INFO ][discovery                ] [Kraven the Hunter] elasticsearch/SdqJ8RO3Te6hJ5PSXRkRKw
+[2015-10-14 21:37:18,558][INFO ][cluster.service          ] [Kraven the Hunter] detected_master [Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 21:37:18,603][INFO ][http                     ] [Kraven the Hunter] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-14 21:37:18,603][INFO ][node                     ] [Kraven the Hunter] started
+[2015-10-14 22:16:25,067][INFO ][discovery.zen            ] [Kraven the Hunter] master_left [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], reason [do not exists on master, act as master failure]
+[2015-10-14 22:16:25,091][WARN ][discovery.zen            ] [Kraven the Hunter] master left (reason = do not exists on master, act as master failure), current nodes: {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],}
+[2015-10-14 22:16:25,091][INFO ][cluster.service          ] [Kraven the Hunter] removed {[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-master_failed ([Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]])
+[2015-10-14 22:16:28,382][WARN ][discovery.zen.ping.multicast] [Kraven the Hunter] received ping response ping_response{node [[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]]], id[55], master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [2]
+[2015-10-14 22:16:28,383][WARN ][discovery.zen.ping.multicast] [Kraven the Hunter] received ping response ping_response{node [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], id[19], master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [2]
+[2015-10-14 22:16:30,116][INFO ][cluster.service          ] [Kraven the Hunter] detected_master [Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 23:07:50,256][INFO ][discovery.zen            ] [Kraven the Hunter] master_left [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], reason [do not exists on master, act as master failure]
+[2015-10-14 23:07:50,259][WARN ][discovery.zen            ] [Kraven the Hunter] master left (reason = do not exists on master, act as master failure), current nodes: {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],}
+[2015-10-14 23:07:50,260][INFO ][cluster.service          ] [Kraven the Hunter] removed {[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-master_failed ([Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]])
+[2015-10-14 23:07:54,611][WARN ][discovery.zen.ping.multicast] [Kraven the Hunter] received ping response ping_response{node [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], id[22], master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [3]
+[2015-10-14 23:07:54,611][WARN ][discovery.zen.ping.multicast] [Kraven the Hunter] received ping response ping_response{node [[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]]], id[61], master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [3]
+[2015-10-14 23:07:55,628][INFO ][cluster.service          ] [Kraven the Hunter] detected_master [Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 23:13:49,878][INFO ][node                     ] [Gaza] version[1.7.1], pid[30003], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 23:13:49,878][INFO ][node                     ] [Gaza] initializing ...
+[2015-10-14 23:13:49,964][INFO ][plugins                  ] [Gaza] loaded [], sites []
+[2015-10-14 23:13:50,012][INFO ][env                      ] [Gaza] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [148.8gb], net total_space [232.6gb], types [hfs]
+[2015-10-14 23:13:52,508][INFO ][node                     ] [Gaza] initialized
+[2015-10-14 23:13:52,508][INFO ][node                     ] [Gaza] starting ...
+[2015-10-14 23:13:52,609][INFO ][transport                ] [Gaza] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-14 23:13:52,637][INFO ][discovery                ] [Gaza] elasticsearch/3OXKOIagQ72TtKlDtWwhhQ
+[2015-10-14 23:13:55,849][INFO ][cluster.service          ] [Gaza] detected_master [Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 23:13:55,889][INFO ][http                     ] [Gaza] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-14 23:13:55,889][INFO ][node                     ] [Gaza] started
+=======
 [2015-10-14 14:16:27,660][INFO ][node                     ] [David Cannon] started[2015-10-14 16:21:16,525][INFO ][node                     ] [Shriker] version[1.7.1], pid[6105], build[b88f43f/2015-07-29T09:54:16Z]
 [2015-10-14 16:21:16,526][INFO ][node                     ] [Shriker] initializing ...
 [2015-10-14 16:21:16,683][INFO ][plugins                  ] [Shriker] loaded [], sites []
@@ -417,3 +454,4 @@ java.io.IOException: Operation timed out
 [2015-10-14 22:13:36,094][INFO ][cluster.service          ] [Danger] removed {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
 [2015-10-14 22:16:30,777][INFO ][cluster.service          ] [Danger] added {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
 [2015-10-14 23:01:36,618][INFO ][cluster.service          ] [Danger] removed {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+>>>>>>> developer
