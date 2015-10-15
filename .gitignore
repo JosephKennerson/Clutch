@@ -16,3 +16,9 @@
 /log/*
 !/log/.keep
 /tmp
+/logs/*
+/index/.st
+/index/.si
+/index/.cfs
+/index/.cfe
+/index/.del

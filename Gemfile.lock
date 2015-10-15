@@ -42,6 +42,7 @@ GEM
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-select-rails (1.6.3)
     builder (3.2.2)
     byebug (6.0.2)
     capybara (2.5.0)
@@ -153,7 +154,7 @@ GEM
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
     phonelib (0.5.2)
-    pry (0.10.2)
+    pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -267,6 +268,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-select-rails
   byebug
   capybara
   carrierwave
