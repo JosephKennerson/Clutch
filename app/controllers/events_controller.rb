@@ -4,10 +4,16 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    Event.where(status: false).each do |event|
-      event.close_event
+    # Event.where(status: false).each do |event|
+    #   event.close_event
+    # end
+    open_events = Event.where(status: true)
+    if params[:q].nil?
+      @events = open_events
+    else
+      query = [params[:q], params[:dropq]].join(", ")
+      @events = open_events.search(query).records
     end
-    @events_open = Event.where(status: true)
   end
 
   # GET /events/1
@@ -72,16 +78,27 @@ class EventsController < ApplicationController
   end
 
   def map
-    Event.where(status: false).each do |event|
-      event.close_event
+    # Event.where(status: false).each do |event|
+    #   event.close_event
+    # end
+    open_events = Event.where(status: true)
+    if params[:q].nil?
+      @events = open_events
+    else
+      query = [params[:q], params[:dropq]].join(", ")
+      @events = open_events.search(query).records
     end
-    @events = Event.where(status: true)
+    # @events = Event.where(status: true)
     @geojson = Array.new
+    p @events.length
+    p @geojson.length
     build_geojson(@events, @geojson)
-    p @geojson.last
+    p "*" * 80
+    p @events.length
+    p @geojson.length
     respond_to do |format|
       format.html {render layout: false}
-      format.json { render json: @geojson }
+      format.json {render json: @geojson}
     end
   end
 

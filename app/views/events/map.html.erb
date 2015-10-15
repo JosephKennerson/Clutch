@@ -6,6 +6,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
 	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
 	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
 	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js'></script>
@@ -35,6 +43,18 @@
             <li><%= link_to "Join Events", events_path %></li>
             <li><%= link_to "Create Events", new_event_path %></li>
             <li><%= link_to "Contact", "/home/team" %></li>
+            <li>
+            <div class="input-group">
+            <%= form_tag(events_map_path, :method => "get", id: "search-form", html: {class: 'form-group'}) do |f|%>
+                <%= text_field_tag :q, params[:q], placeholder: "Search Events", class: "form-control" %>
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category <span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right"></ul>
+            </div>
+            </li>
+            <li><%= submit_tag "Search", :class => 'btn btn-default',:name => nil%>
+                <% end %>
+            </li>
           </ul>
 
 

@@ -11,10 +11,11 @@ User.create!(
         password: "adminadmin",
         avatar: "https://pbs.twimg.com/profile_images/2370446440/6e2jwf7ztbr5t1yjq4c5.jpeg",
         first_name: "Admin",
-        last_name: "Istrator"
+        last_name: "Istrator",
+        phone_number: "123-456-789"
   )
 
-50.times do
+10.times do
   User.create!(
         username: FFaker::Internet.user_name,
         address_line_1: FFaker::AddressUS.street_address,
@@ -26,7 +27,8 @@ User.create!(
         password: FFaker::Internet.password,
         avatar: Faker::Avatar.image,
         first_name: FFaker::Name.first_name,
-        last_name: Faker::Name.last_name
+        last_name: Faker::Name.last_name,
+        phone_number: Faker::PhoneNumber.phone_number.to_i
     )
 
 end
@@ -57,7 +59,7 @@ end
 
 # random events
 
-100.times do
+30.times do
   random_size = rand(1..10)
   random_user = rand(1..User.count)
   Event.create!(
@@ -82,7 +84,7 @@ end
 
 # Admin comments
 
-20.times do
+10.times do
   random_event = rand(1..Event.count)
   Comment.create!(
         event_id: random_event,
@@ -95,7 +97,7 @@ end
 
 # random comments (public and private)
 
-200.times do
+50.times do
   random_event = rand(1..Event.count)
   random_user = rand(1..User.count)
   Comment.create!(
@@ -109,7 +111,7 @@ end
 
 # random pending rsvps (id # 1-25)
 
-100.times do
+25.times do
   random_guest = rand(10..User.count)
   random_event = rand(1..Event.count)
   new_event = Rsvp.create!(
@@ -151,7 +153,7 @@ end
 
 # random not-pending rsvps (true and false; id #26-50)
 
-100.times do
+30.times do
 
   random_guest = rand(10..User.count)
   random_host = rand(1..9)
@@ -168,7 +170,7 @@ end
 
 # random confirmed rsvps (id #51-75)
 
-100.times do
+30.times do
 
   random_guest = rand(10..User.count)
   random_host = rand(1..9)
@@ -184,22 +186,23 @@ end
 end
 
 # random ratings (from confirmed rsvps)
-150.times do
+25.times do
   count = 1
   current_event = Event.find(count)
+  random_guest = current_event.guests.sample
       Rating.create!(
           event_id: count,
           rating: rand(1.0..5.0),
           rating_feedback: FFaker::HipsterIpsum.phrase,
           rater_id: current_event.host.id,
-          ratee_id: current_event.guests.sample.id
+          ratee_id: random_guest.id
         )
     count += 1
 end
 
 # random ratings (switched roles)
 
-150.times do
+25.times do
   count = 1
   current_event = Event.find(count)
       Rating.create!(

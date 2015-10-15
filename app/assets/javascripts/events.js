@@ -3,16 +3,43 @@ $(document).ready(function(){
   var map = L.mapbox.map('map', 'xanderpson.nmn4lji0', {zoomControl: false}).setView([37.7846334, -90.3974137], 5),
       filters = document.getElementById('filters');
   L.control.zoomslider().addTo(map);
+
   map.featureLayer.on("ready", function(event) {
     getEvents(map);
     addEventPopups(map);
-    addTooltip(map);
+    addSidebar(map);
     event.target.on('mouseover', function(e){
       e.layer.openPopup();
     });
     map.scrollWheelZoom.disable();
   });
-});
+
+  // $('#search-form').on('submit',function(e){
+  //   e.preventDefault();
+  //   var path = $(this).attr('action'),
+  //       method = $(this).attr('method'),
+  //       formData = $(this).serialize();
+  //       console.log(formData)
+  //   $.ajax({
+  //     url: path,
+  //     type: method,
+  //     data: formData,
+  //     dataType: 'json'
+  //   })
+  //   .done(function(events){
+  //     console.log(events)
+
+  //     map.featureLayer.setGeoJSON({
+  //       type: "FeatureCollection",
+  //       features: events
+  //     });
+  //   })
+  //   .fail(function(events){
+  //     alert("Could not search");
+  //   })    
+  // }); //search-form ajax
+
+}); //document ready
 
 function getEvents(map) {
   $.ajax({
@@ -31,7 +58,7 @@ function getEvents(map) {
       alert("Could not load the events");
     }
   });
-}
+} //getEvents
 
 function addEventPopups(map) {
   map.featureLayer.on('layeradd', function(e){
@@ -53,10 +80,10 @@ function addEventPopups(map) {
   ;
     marker.bindPopup(popupContent, {closeButton: false, minWidth: 320});
   });
-  $('#map').on('click', '.trigger', function() {
-    alert('Hello from Toronto!');
-  });
-}
+  // $('#map').on('click', '.trigger', function() {
+  //   alert('Hello from Toronto!');
+  // });
+} //addEventPopups
 
 function addFilters(map) {
       var typesObj = {}, types = [];
@@ -100,7 +127,7 @@ function addFilters(map) {
           return (feature.properties['marker-symbol'] in enabled);
         });
       }
-}
+}//addFilters
 
 function addClusters(map) {
     var clusterGroup = new L.MarkerClusterGroup();
@@ -108,9 +135,9 @@ function addClusters(map) {
         clusterGroup.addLayer(layer);
     });
     map.addLayer(clusterGroup);
-}
+} //addClusters
 
-function addTooltip(map) {
+function addSidebar(map) {
   map.featureLayer.on('mouseover',function(e) {
   $.ajax({
       dataType: 'text',
@@ -119,8 +146,8 @@ function addTooltip(map) {
       info.innerHTML = event;
       },
       error: function() {
-        alert("Could not load the events");
+        alert("Could not add sidebar");
       }
     });
   });
-} //document ready
+} //addSidebar

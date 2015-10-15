@@ -98,6 +98,9 @@ ActiveRecord::Schema.define(version: 20151013233854) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
+    t.string   "phone_number"
+    t.string   "provider"
+    t.string   "uid"
     t.float    "longitude"
     t.float    "latitude"
   end

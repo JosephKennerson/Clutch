@@ -33,6 +33,18 @@
             <li><%= link_to "Join Events", events_path %></li>
             <li><%= link_to "Create Events", new_event_path %></li>
             <li><%= link_to "Contact", "/home/team" %></li>
+            <li>
+            <div class="input-group">
+            <%= form_tag(events_path, :method => "get", id: "search-form", html: {class: 'form-group'}) do |f|%>
+                <%= text_field_tag :q, params[:q], placeholder: "Search Events", class: "form-control" %>
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category <span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+            </div>
+            </li>
+            <li><%= submit_tag "Search", :class => 'btn btn-default',:name => nil%>
+                <% end %>
+            </li>
           </ul>
 
 

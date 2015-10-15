@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'kaminari'
 gem 'carrierwave'
+gem 'twilio-ruby'
+gem 'phonelib'
 gem 'devise'
 gem 'gravtastic'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -15,6 +18,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+
+# **** OmniAuth Facebook OAuth ****
+# gem 'therubyracer'
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,6 +47,14 @@ gem 'mapbox-rails'
 gem 'geocoder'
 # gem 'leaflet-rails'
 # gem 'leaflet-markercluster-rails'
+
+# Search
+  # gem 'filterrific'
+  # gem 'will_paginate', '~> 3.0.7'
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+  gem 'searchkick', '~> 0.9.1'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -28,7 +28,6 @@ class GeojsonBuilder < ActiveRecord::Base
         :"marker-color" => "#FFFFFF",
         :"marker-symbol" => ["playground", "entrance", "heart", "london-underground", "minefield", "rail-underground", "rail-above", "camera", "laundry", "car", "suitcase", "hairdresser", "chemist", "mobilephone", "scooter", "gift", "ice-cream", "dentist", "aerialway"].sample,
         :"marker-size" => "medium",
-        city: "Washington, D.C."
       }
     }
   end
