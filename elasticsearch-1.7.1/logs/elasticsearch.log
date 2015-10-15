@@ -117,3 +117,14 @@
 [2015-10-14 23:07:54,611][WARN ][discovery.zen.ping.multicast] [Kraven the Hunter] received ping response ping_response{node [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], id[22], master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [3]
 [2015-10-14 23:07:54,611][WARN ][discovery.zen.ping.multicast] [Kraven the Hunter] received ping response ping_response{node [[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]]], id[61], master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [3]
 [2015-10-14 23:07:55,628][INFO ][cluster.service          ] [Kraven the Hunter] detected_master [Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 23:13:49,878][INFO ][node                     ] [Gaza] version[1.7.1], pid[30003], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 23:13:49,878][INFO ][node                     ] [Gaza] initializing ...
+[2015-10-14 23:13:49,964][INFO ][plugins                  ] [Gaza] loaded [], sites []
+[2015-10-14 23:13:50,012][INFO ][env                      ] [Gaza] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [148.8gb], net total_space [232.6gb], types [hfs]
+[2015-10-14 23:13:52,508][INFO ][node                     ] [Gaza] initialized
+[2015-10-14 23:13:52,508][INFO ][node                     ] [Gaza] starting ...
+[2015-10-14 23:13:52,609][INFO ][transport                ] [Gaza] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-14 23:13:52,637][INFO ][discovery                ] [Gaza] elasticsearch/3OXKOIagQ72TtKlDtWwhhQ
+[2015-10-14 23:13:55,849][INFO ][cluster.service          ] [Gaza] detected_master [Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 23:13:55,889][INFO ][http                     ] [Gaza] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-14 23:13:55,889][INFO ][node                     ] [Gaza] started
