@@ -5,8 +5,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    p "*" * 100
-    p params[:q]
+    # Event.reindex
     Event.all.each do |e|
       e.close_event
     end

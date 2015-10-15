@@ -1,0 +1,19 @@
+{  
+   "name":"bootleaf",
+   "version":"0.0.0",
+   "homepage":"https: //github.com/bmcbride/bootleaf",
+   "authors":[  
+      "BryanMcBride<mcbride.bryan@gmail.com>"
+   ],
+   "description":"Template for building simple and elegant web mapping applications with Bootstrap and Leaflet",
+   "main":"assets/js/app.js",
+   "moduleType":[  
+      "globals"
+   ],
+   "keywords":[  
+      "leaflet",
+      "twitter",
+      "bootstrap"
+   ],
+   "license":"MIT"
+}

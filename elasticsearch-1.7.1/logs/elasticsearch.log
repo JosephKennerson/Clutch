@@ -234,4 +234,138 @@
 [2015-10-14 14:16:23,585][INFO ][discovery                ] [David Cannon] elasticsearch/w2wuzrOJSJGQ0FKwvYYF4Q
 [2015-10-14 14:16:27,630][INFO ][cluster.service          ] [David Cannon] detected_master [Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], added {[Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],}, reason: zen-disco-receive(from master [[Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]]])
 [2015-10-14 14:16:27,660][INFO ][http                     ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.126:9200]}
-[2015-10-14 14:16:27,660][INFO ][node                     ] [David Cannon] started
+[2015-10-14 14:16:27,660][INFO ][node                     ] [David Cannon] started[2015-10-14 16:21:16,525][INFO ][node                     ] [Shriker] version[1.7.1], pid[6105], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 16:21:16,526][INFO ][node                     ] [Shriker] initializing ...
+[2015-10-14 16:21:16,683][INFO ][plugins                  ] [Shriker] loaded [], sites []
+[2015-10-14 16:21:16,775][INFO ][env                      ] [Shriker] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.2gb], net total_space [232.6gb], types [hfs]
+[2015-10-14 16:21:21,247][INFO ][node                     ] [Shriker] initialized
+[2015-10-14 16:21:21,248][INFO ][node                     ] [Shriker] starting ...
+[2015-10-14 16:21:21,611][INFO ][transport                ] [Shriker] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-14 16:21:21,666][INFO ][discovery                ] [Shriker] elasticsearch/vU_nG2vfSC-sFsZb60bDGQ
+[2015-10-14 16:21:25,345][INFO ][cluster.service          ] [Shriker] detected_master [the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]], added {[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-14 16:21:25,462][INFO ][gateway.local.state.meta ] [Shriker] [events_development_20151014161811608] dangling index, exists on local file system, but not in cluster metadata, auto import to cluster state [YES]
+[2015-10-14 16:21:25,522][INFO ][http                     ] [Shriker] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-14 16:21:25,529][INFO ][node                     ] [Shriker] started
+[2015-10-14 16:34:52,849][INFO ][cluster.service          ] [Shriker] removed {[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-14 16:34:57,323][INFO ][cluster.service          ] [Shriker] added {[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-14 16:42:54,892][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0x4c6330b1, /192.168.1.145:61173 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 16:42:55,193][INFO ][discovery.zen            ] [Shriker] master_left [[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]], reason [transport disconnected]
+[2015-10-14 16:42:55,201][WARN ][discovery.zen            ] [Shriker] master left (reason = transport disconnected), current nodes: {[Shriker][vU_nG2vfSC-sFsZb60bDGQ][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}
+[2015-10-14 16:42:55,206][INFO ][cluster.service          ] [Shriker] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-master_failed ([the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]])
+[2015-10-14 16:43:25,413][WARN ][cluster.service          ] [Shriker] cluster state update task [zen-disco-master_failed ([the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]])] took 30.2s above the warn threshold of 30s
+[2015-10-14 16:43:25,414][INFO ][cluster.service          ] [Shriker] detected_master [Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]], reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 16:44:46,081][INFO ][cluster.service          ] [Shriker] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 16:46:54,774][INFO ][cluster.service          ] [Shriker] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 16:46:54,820][WARN ][action.index             ] [Shriker] failed to perform indices:data/write/index on remote replica [the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]][events][2]
+org.elasticsearch.transport.NodeDisconnectedException: [the Renegade Watcher Aron][inet[/192.168.1.164:9300]][indices:data/write/index[r]] disconnected
+[2015-10-14 16:49:48,047][INFO ][cluster.service          ] [Shriker] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0x25c21fd8, /192.168.1.145:51561 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0x77e16f82, /192.168.1.145:51562 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0xf6d33846, /192.168.1.145:51563 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0xe74286fc, /192.168.1.145:51565 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0x1a9bf759, /192.168.1.145:51564 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:55,948][INFO ][cluster.service          ] [Shriker] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 17:32:32,940][INFO ][cluster.service          ] [Shriker] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 17:49:56,606][INFO ][cluster.service          ] [Shriker] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 18:04:03,062][INFO ][cluster.service          ] [Shriker] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 18:34:10,739][INFO ][discovery.zen            ] [Shriker] master_left [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], reason [transport disconnected]
+[2015-10-14 18:34:10,739][INFO ][discovery.zen            ] [Shriker] master_left [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], reason [shut_down]
+[2015-10-14 18:34:10,793][WARN ][discovery.zen            ] [Shriker] master left (reason = shut_down), current nodes: {[Shriker][vU_nG2vfSC-sFsZb60bDGQ][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}
+[2015-10-14 18:34:10,802][INFO ][cluster.service          ] [Shriker] removed {[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-master_failed ([Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]])
+[2015-10-14 18:34:13,974][INFO ][cluster.service          ] [Shriker] detected_master [Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]]])

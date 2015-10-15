@@ -34,9 +34,7 @@
         <!-- </div> -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "Contact", "/home/team" %></li>
             <li>
-<% #head %>
               <div class="form-inline" method="get" action="events/search">
               <div class="input-group">
                 <!-- <div class="input-group-btn search-panel"> -->
@@ -54,27 +52,13 @@
                 <li>
                 <input type="text" class="form-control" name="q" placeholder="Search term...">
               </li>
-              <li>
-                <span class="input-group-btn">
-                    <%= link_to('Search', {controller: "/events", action: "index", page: "index"}, class: "btn btn-success") %>
-                </span>
-              </li>
-                </div>
-            </div>
-<% #dev %>
-            <div class="input-group">
-            <%= form_tag(events_path, :method => "get", id: "search-form", html: {class: 'form-group'}) do |f|%>
-                <%= text_field_tag :q, params[:q], placeholder: "Search Events", class: "form-control" %>
-                <div class="input-group-btn">
-                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category <span class="caret"></span></button>
-                  <ul class="dropdown-menu dropdown-menu-right">
-        </ul>
-            </li>
-            <li><%= submit_tag "Search", :class => 'btn btn-default',:name => nil%>
-                <% end %>
-<% #==== %>
+              <li><%= submit_tag "Search", :class => 'btn btn-default',:name => nil%>
           </div>
           </li>
+            </div>
+
+            </li>
+
         </div>
 
 
