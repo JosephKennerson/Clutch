@@ -41,7 +41,7 @@
   </div>
   <div id="navbar" class="navbar-collapse collapse">
     <ul class="nav navbar-nav">
-      <%= form_tag("/events/", :method => "get", id: "search-form", html: {class: 'form-group'}) do |f|%>
+      <%= form_tag("/events/map", :method => "get", id: "search-form", html: {class: 'form-group'}) do |f|%>
         <li class="nav-input">
           <%= text_field_tag :q, params[:q], placeholder: "Search Events", class: "form-control" %>
         </li>
