@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'home/index'
   get 'home/team'
+  get 'events/map'
+  get 'rsvps/makebutton'
   get 'search', to: 'search#search'
 
   devise_for :users, :skip => [:sessions], :controllers => { :omniauth_callbacks => "callbacks" }
@@ -34,7 +36,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  root 'events#map'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -26,6 +26,22 @@ class User < ActiveRecord::Base
   #   self.ratings.where(ratee: self.id)
   # end
 
+  # geocoded_by :ip_address
+
+  geocoded_by :full_address
+
+  # the callback to set longitude and latitude
+  after_validation :geocode, if: :full_address_changed?
+
+  # the full_address method
+  def full_address
+   "#{address_line_1}, #{address_line_2}, #{city}, #{state}, #{zip}"
+  end
+
+  def full_address_changed?
+    :address_line_1_changed? || :address_line_2_changed? || :city_changed? || :state_changed? || :zip_changed?
+  end
+
 # ***** Original Facebook Login Auth ******
   # def self.from_omniauth(auth)
   #     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
