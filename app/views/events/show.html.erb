@@ -14,8 +14,8 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.username %></p>
 
+            <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.first_name + " " + @event.host.last_name %></p>
             <p><%= @event.description %></p>
             <hr>
 
@@ -57,6 +57,7 @@
     <div class="panel-footer">Max: <%= @event.max_size %>
     </div>
   </div>
+</div>
 <% if @event.host_id == current_user.id || Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true) %>
   <div class="panel panel-danger">
     <div class="panel-heading">
@@ -71,7 +72,7 @@
     </div>
     <div class="panel-footer">Private: Visible only to guests of this event</div>
   </div>
-</div>
+<!-- </div> -->
 <% end %>
 
 
@@ -79,7 +80,7 @@
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
-            <%= link_to image_tag(User.find(@event.host_id).gravatar_url), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
+            <%= link_to image_tag(User.find(@event.host_id).gravatar_url(size: 30)), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
             <h4><%= @event.host.username %>'s rating: <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
           </div>
           <div class="sidebar-module">
@@ -99,11 +100,11 @@
             <% if @event.host.id == current_user.id %>
             <h4>Host dashboard</h4>
             <ol class="list-unstyled">
-            <li><%= link_to 'Edit Event', edit_event_path(@event.id) %></li>
-            <li><%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+            <li><%= link_to 'Edit Event', edit_event_path(@event.id), class: "btn btn-warning" %></li>
+            <li><%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></li>
             <% end %>
-            <li><%= link_to 'Back', events_path %></li>
-          </ol>
+            </ol>
+            <%= link_to 'Back', events_path, class: "btn btn-primary" %>
           </div>
           <div class="sidebar-module">
             <h4>Attendees</h4>
@@ -113,7 +114,7 @@
                 <br />
               <li><%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %></li>
                 <br />
-              <li><%= guest.username %></li>
+              <li><%= guest.first_name + " " + guest.last_name %></li>
                 <br />
               <li><%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %></li>
               <br />
@@ -128,6 +129,8 @@
 
 
 <div id='rsvp-button'>
+
+
 <% if current_user.id != @event.host_id && @event.time_end.past? == false%>
 
   <% if !Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == false %>
@@ -145,6 +148,8 @@
   <% end %>
 <% end %>
 </div>
+
+<div class="wat">
 
 <% if user_signed_in? && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, pending: true)%>
 <td><%= "Request pending" %></td>
@@ -198,20 +203,21 @@
     <% end %>
   <% end %>
 <% end %>
-
+</div>
 
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Public Comments</h3>
+  </div>
   <div class="panel-body">
     <div class="well">
     <% @event.comments.each do |comment| %>
       <% if comment.is_private == false %>
-        <p><%= comment.body %></p>
-        <p><strong><%= comment.user.username %></strong></p>
+        <p><strong>"</strong><%= comment.body %><strong>"</strong></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong>-<%= comment.user.username %></strong></p>
         <% if comment.user == current_user %>
-        <p><%= link_to 'Edit', edit_comment_path(comment) %></p> |
-        <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <p><%= link_to 'Edit', edit_comment_path(comment) %> |
+            <%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
         <% end %>
       <% end %>
     <% end %>
@@ -231,11 +237,11 @@
     <div class="well">
     <% @event.comments.each do |comment| %>
       <% if comment.is_private == true %>
-        <p><%= comment.body %></p>
-        <p><strong><%= comment.user.username %></strong></p>
+        <p><strong>"</strong><%= comment.body %><strong>"</strong></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;<strong><%= comment.user.username %></strong></p>
         <% if comment.user == current_user %>
-        <p><%= link_to 'Edit', edit_comment_path(comment) %></p> |
-        <p><%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <p><%= link_to 'Edit', edit_comment_path(comment) %> |
+            <%= link_to 'Delete', comment_path(comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
         <% end %>
       <% end %>
     <% end %>

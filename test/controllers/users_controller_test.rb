@@ -18,7 +18,7 @@ class UsersControllerTest < ActionController::TestCase
 
   test "should create user" do
     assert_difference('User.count') do
-      post :create, user: { address_line_1: @user.address_line_1, address_line_2: @user.address_line_2, city: @user.city, email: @user.email, first_name: @user.first_name, last_name: @user.last_name, password: @user.password, avatar: @user.avatar, state: @user.state, username: @user.username, zip: @user.zip }
+      post :create, user: { address_line_1: @user.address_line_1, address_line_2: @user.address_line_2, city: @user.city, email: @user.email, first_name: @user.first_name, last_name: @user.last_name, password: @user.password, avatar: @user.gravatar_url(size: 30), state: @user.state, username: @user.username, zip: @user.zip }
     end
 
     assert_redirected_to user_path(assigns(:user))
@@ -35,7 +35,7 @@ class UsersControllerTest < ActionController::TestCase
   end
 
   test "should update user" do
-    patch :update, id: @user, user: { address_line_1: @user.address_line_1, address_line_2: @user.address_line_2, city: @user.city, email: @user.email, first_name: @user.first_name, last_name: @user.last_name, password: @user.password, avatar: @user.avatar, state: @user.state, username: @user.username, zip: @user.zip }
+    patch :update, id: @user, user: { address_line_1: @user.address_line_1, address_line_2: @user.address_line_2, city: @user.city, email: @user.email, first_name: @user.first_name, last_name: @user.last_name, password: @user.password, avatar: @user.gravatar_url(size: 30), state: @user.state, username: @user.username, zip: @user.zip }
     assert_redirected_to user_path(assigns(:user))
   end
 

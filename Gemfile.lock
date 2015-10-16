@@ -51,11 +51,6 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    carrierwave (0.10.0)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      json (>= 1.7)
-      mime-types (>= 1.16)
     childprocess (0.5.6)
       ffi (~> 1.0, >= 1.0.11)
     chromedriver-helper (1.0.0)
@@ -79,19 +74,6 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
-    elasticsearch (1.0.14)
-      elasticsearch-api (= 1.0.14)
-      elasticsearch-transport (= 1.0.14)
-    elasticsearch-api (1.0.14)
-      multi_json
-    elasticsearch-model (0.1.8)
-      activesupport (> 3)
-      elasticsearch (> 0.4)
-      hashie
-    elasticsearch-rails (0.1.8)
-    elasticsearch-transport (1.0.14)
-      faraday
-      multi_json
     erubis (2.7.0)
     execjs (2.6.0)
     faker (1.5.0)
@@ -121,9 +103,6 @@ GEM
       turbolinks
     json (1.8.3)
     jwt (1.5.1)
-    kaminari (0.16.3)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -219,10 +198,6 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    searchkick (0.9.1)
-      activemodel
-      elasticsearch (>= 1)
-      hashie
     selenium-webdriver (2.48.1)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
@@ -271,13 +246,10 @@ DEPENDENCIES
   bootstrap-select-rails
   byebug
   capybara
-  carrierwave
   chromedriver-helper
   coffee-rails (~> 4.1.0)
   database_cleaner
   devise
-  elasticsearch-model
-  elasticsearch-rails
   faker
   ffaker
   font-awesome-rails
@@ -286,7 +258,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
-  kaminari
   mapbox-rails
   omniauth
   omniauth-facebook
@@ -296,7 +267,6 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  searchkick (~> 0.9.1)
   selenium-webdriver
   shoulda-matchers
   spring

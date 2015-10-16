@@ -345,6 +345,7 @@ java.io.IOException: Operation timed out
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
+<<<<<<< HEAD
 [2015-10-16 00:48:07,067][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.7gb[7.5%], shards will be relocated away from this node
 [2015-10-16 00:48:37,066][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.7gb[7.5%], shards will be relocated away from this node
 [2015-10-16 00:48:37,066][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
@@ -516,3 +517,692 @@ java.io.IOException: Operation timed out
 [2015-10-16 10:39:21,624][INFO ][node                     ] [Groundhog] stopped
 [2015-10-16 10:39:21,624][INFO ][node                     ] [Groundhog] closing ...
 [2015-10-16 10:39:21,628][INFO ][node                     ] [Groundhog] closed
+=======
+[2015-10-15 17:32:45,418][INFO ][discovery.zen            ] [Doctor Doom] master_left [[G-Force][WXpxV3arQ7KsT6nURFe7ig][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], reason [transport disconnected]
+[2015-10-15 17:32:45,418][WARN ][discovery.zen            ] [Doctor Doom] master left (reason = transport disconnected), current nodes: {[Doctor Doom][1ulySXLlQnKtQTyYaJsMAA][Beepo-Retina.local][inet[/192.168.1.8:9300]],}
+[2015-10-15 17:32:45,418][INFO ][cluster.service          ] [Doctor Doom] removed {[G-Force][WXpxV3arQ7KsT6nURFe7ig][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-master_failed ([G-Force][WXpxV3arQ7KsT6nURFe7ig][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]])
+[2015-10-15 17:33:34,721][INFO ][cluster.service          ] [Doctor Doom] detected_master [G-Force][WXpxV3arQ7KsT6nURFe7ig][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]], added {[G-Force][WXpxV3arQ7KsT6nURFe7ig][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[G-Force][WXpxV3arQ7KsT6nURFe7ig][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-15 17:33:35,046][WARN ][discovery.zen.ping.multicast] [Doctor Doom] received ping response ping_response{node [[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]], id[64], master [[Captain Britain][By6iy8QiQG2RvXe_GP6aaA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [3]
+[2015-10-15 17:46:50,007][INFO ][node                     ] [Doctor Doom] stopping ...
+[2015-10-15 17:46:50,391][INFO ][node                     ] [Doctor Doom] stopped
+[2015-10-15 17:46:50,391][INFO ][node                     ] [Doctor Doom] closing ...
+[2015-10-15 17:46:50,395][INFO ][node                     ] [Doctor Doom] closed
+[2015-10-15 19:34:48,197][INFO ][node                     ] [Kiwi Black] version[1.7.1], pid[1277], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 19:34:48,198][INFO ][node                     ] [Kiwi Black] initializing ...
+[2015-10-15 19:34:48,507][INFO ][plugins                  ] [Kiwi Black] loaded [], sites []
+[2015-10-15 19:34:48,609][INFO ][env                      ] [Kiwi Black] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [27.4gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 19:34:51,308][INFO ][node                     ] [Kiwi Black] initialized
+[2015-10-15 19:34:51,308][INFO ][node                     ] [Kiwi Black] starting ...
+[2015-10-15 19:34:51,408][INFO ][transport                ] [Kiwi Black] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 19:34:51,432][INFO ][discovery                ] [Kiwi Black] elasticsearch/2jFkYAIWRHWLukCfmqA2Ug
+[2015-10-15 19:34:55,210][INFO ][cluster.service          ] [Kiwi Black] new_master [Kiwi Black][2jFkYAIWRHWLukCfmqA2Ug][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 19:34:55,233][INFO ][http                     ] [Kiwi Black] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 19:34:55,233][INFO ][node                     ] [Kiwi Black] started
+[2015-10-15 19:34:55,276][INFO ][gateway                  ] [Kiwi Black] recovered [2] indices into cluster_state
+[2015-10-15 19:35:25,223][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:35:25,224][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:35:55,218][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:36:25,215][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:36:55,217][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:36:55,217][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:37:25,219][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:37:55,219][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:37:55,219][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:38:25,218][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:38:55,221][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:38:55,221][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:39:25,220][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:39:55,224][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:39:55,224][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:40:25,223][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:40:55,224][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:40:55,224][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:41:25,224][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:41:42,668][INFO ][cluster.service          ] [Kiwi Black] added {[Dominic Petros][Bd26-QbrSfiXdVuDlL1SsA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(join from node[[Dominic Petros][Bd26-QbrSfiXdVuDlL1SsA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-15 19:41:42,751][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [Bd26-QbrSfiXdVuDlL1SsA][Dominic Petros] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:41:42,751][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:41:55,232][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [Bd26-QbrSfiXdVuDlL1SsA][Dominic Petros] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:41:55,232][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.7%], shards will be relocated away from this node
+[2015-10-15 19:41:55,232][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:42:25,335][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [Bd26-QbrSfiXdVuDlL1SsA][Dominic Petros] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:42:25,335][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:42:55,267][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [Bd26-QbrSfiXdVuDlL1SsA][Dominic Petros] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:42:55,267][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.1gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:42:55,267][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:43:25,366][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [Bd26-QbrSfiXdVuDlL1SsA][Dominic Petros] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:43:25,366][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:43:46,557][INFO ][cluster.service          ] [Kiwi Black] removed {[Dominic Petros][Bd26-QbrSfiXdVuDlL1SsA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-node_left([Dominic Petros][Bd26-QbrSfiXdVuDlL1SsA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]])
+[2015-10-15 19:43:55,233][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:44:25,237][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:44:25,237][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:44:55,238][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:45:25,243][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:45:25,243][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:45:55,242][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:46:25,246][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:46:25,246][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:46:55,246][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:47:25,247][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:47:25,247][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:47:45,284][INFO ][cluster.service          ] [Kiwi Black] added {[Mister Sensitive][sT6msm-4TlC6PaXznxGPdQ][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(join from node[[Mister Sensitive][sT6msm-4TlC6PaXznxGPdQ][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-15 19:47:45,352][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:47:45,352][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:47:55,392][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:47:55,393][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:48:25,253][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:48:25,253][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:48:25,253][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:48:55,253][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:48:55,253][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:49:25,254][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:49:25,254][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:49:25,254][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:49:55,259][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:49:55,259][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:50:25,304][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:50:25,304][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:50:25,304][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:50:55,408][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:50:55,408][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:51:25,386][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:51:25,386][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:51:25,386][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:51:55,312][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:51:55,312][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:52:25,277][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:52:25,277][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:52:55,319][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:52:55,319][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:52:55,319][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:53:25,285][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:53:25,285][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:53:55,434][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:53:55,434][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:53:55,434][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:54:25,531][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:54:25,532][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:54:55,336][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:54:55,336][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:55:25,437][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:55:25,437][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:55:25,438][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:55:55,328][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:55:55,328][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:56:25,352][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:56:25,352][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:56:55,296][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:56:55,296][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:56:55,296][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:57:25,295][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:57:25,295][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:57:55,349][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:57:55,349][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:57:55,349][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:58:25,302][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:58:25,302][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:58:55,602][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:58:55,602][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:58:55,602][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 19:59:25,605][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:59:25,605][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 19:59:55,463][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 19:59:55,464][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:00:25,307][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:00:25,307][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:00:25,307][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:00:55,368][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:00:55,368][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:01:25,309][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:01:25,309][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:01:25,310][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:01:55,884][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:01:55,884][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:02:25,312][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:02:25,313][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:02:25,313][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:02:55,486][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:02:55,486][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:03:25,317][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:03:25,318][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:03:25,318][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:03:55,317][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:03:55,317][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:04:25,321][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:04:25,321][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:04:25,321][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:04:55,381][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:04:55,381][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:05:25,325][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:05:25,325][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:05:25,325][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:05:55,327][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:05:55,327][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:06:25,326][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:06:25,326][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:06:25,326][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:06:55,337][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:06:55,337][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:07:25,516][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:07:25,516][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:07:25,516][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:07:55,331][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:07:55,332][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:08:25,417][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:08:25,417][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:08:55,524][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:08:55,524][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:08:55,524][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:09:25,333][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:09:25,333][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:09:55,655][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:09:55,656][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:09:55,656][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:10:25,338][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:10:25,338][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:10:55,939][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:10:55,939][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:10:55,939][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:11:25,436][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:11:25,436][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:11:55,347][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:11:55,347][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:12:25,347][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:12:25,347][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.8gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:12:25,347][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:12:55,443][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:12:55,443][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:13:25,550][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:13:25,550][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:13:25,550][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:13:55,873][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:13:55,873][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:14:25,348][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:14:25,348][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:14:55,349][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:14:55,349][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:14:55,349][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:15:25,673][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:15:25,674][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:15:55,463][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:15:55,464][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:15:55,464][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:16:25,374][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:16:25,374][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:16:55,964][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:16:55,964][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:16:55,964][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:17:25,473][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:17:25,473][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:17:55,364][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:17:55,364][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:18:25,390][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:18:25,390][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:18:25,390][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:18:55,481][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:18:55,482][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:19:25,372][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:19:25,372][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:19:55,386][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:19:55,386][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:19:55,387][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:20:25,490][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:20:25,490][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:20:55,384][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:20:55,384][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:21:25,395][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:21:25,396][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:21:25,396][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:21:55,387][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:21:55,387][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:22:25,388][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:22:25,389][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:22:55,404][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:22:55,405][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:22:55,405][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:23:25,510][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:23:25,510][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:23:55,511][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:23:55,511][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:23:55,511][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:24:25,508][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:24:25,509][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:24:55,519][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:24:55,519][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:24:55,519][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:25:25,801][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:25:25,801][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:25:55,699][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:25:55,699][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:25:55,699][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:26:25,490][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:26:25,490][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:26:55,634][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:26:55,634][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:27:25,433][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:27:25,433][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:27:25,433][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:27:55,402][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:27:55,402][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:28:25,399][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:28:25,399][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:28:55,405][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:28:55,405][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:28:55,405][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:29:25,409][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:29:25,409][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:29:55,655][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:29:55,655][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:29:55,655][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:30:25,605][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:30:25,605][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:30:55,558][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:30:55,558][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:31:25,414][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:31:25,414][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:31:25,414][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:31:55,462][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:31:55,462][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:32:25,418][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:32:25,418][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:32:25,418][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:32:55,422][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:32:55,422][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:33:25,777][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:33:25,777][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:33:25,777][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:33:55,576][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:33:55,576][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:34:25,680][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:34:25,680][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:34:55,480][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:34:55,480][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:34:55,480][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:35:25,434][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:35:25,434][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:35:56,018][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:35:56,018][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:35:56,018][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:36:25,495][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:36:25,495][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:36:55,436][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:36:55,436][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:37:25,486][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:37:25,486][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:37:25,486][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:37:55,501][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:37:55,501][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:38:25,445][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:38:25,446][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:38:55,801][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:38:55,801][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:38:55,802][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:39:25,513][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:39:25,513][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:39:55,622][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:39:55,622][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:40:25,723][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.8gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:40:25,723][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:40:25,723][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:40:55,464][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:40:55,464][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:41:25,468][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:41:25,468][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:41:55,732][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:41:55,732][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:41:55,733][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:42:25,528][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:42:25,528][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:42:55,466][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:42:55,466][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:43:25,738][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.1%], shards will be relocated away from this node
+[2015-10-15 20:43:25,738][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:43:25,739][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:43:55,470][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.1%], shards will be relocated away from this node
+[2015-10-15 20:43:55,471][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:44:25,646][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.1%], shards will be relocated away from this node
+[2015-10-15 20:44:25,647][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:44:56,063][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:44:56,063][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:44:56,063][INFO ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:45:25,474][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [sT6msm-4TlC6PaXznxGPdQ][Mister Sensitive] free: 2.7gb[1.2%], shards will be relocated away from this node
+[2015-10-15 20:45:25,474][WARN ][cluster.routing.allocation.decider] [Kiwi Black] high disk watermark [90%] exceeded on [2jFkYAIWRHWLukCfmqA2Ug][Kiwi Black] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:45:49,303][INFO ][node                     ] [Kiwi Black] stopping ...
+[2015-10-15 20:45:49,345][INFO ][node                     ] [Kiwi Black] stopped
+[2015-10-15 20:45:49,346][INFO ][node                     ] [Kiwi Black] closing ...
+[2015-10-15 20:45:49,350][INFO ][node                     ] [Kiwi Black] closed
+<<<<<<< HEAD
+[2015-10-15 21:09:08,924][INFO ][node                     ] [Diamanda Nero] version[1.7.1], pid[6344], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:09:08,925][INFO ][node                     ] [Diamanda Nero] initializing ...
+[2015-10-15 21:09:09,146][INFO ][plugins                  ] [Diamanda Nero] loaded [], sites []
+[2015-10-15 21:09:09,247][INFO ][env                      ] [Diamanda Nero] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [151.1gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:09:13,393][INFO ][node                     ] [Diamanda Nero] initialized
+[2015-10-15 21:09:13,393][INFO ][node                     ] [Diamanda Nero] starting ...
+[2015-10-15 21:09:13,526][INFO ][transport                ] [Diamanda Nero] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:09:13,569][INFO ][discovery                ] [Diamanda Nero] elasticsearch/qexgsAbFQHipdW_9pWw3_A
+[2015-10-15 21:09:16,673][INFO ][cluster.service          ] [Diamanda Nero] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:09:16,707][INFO ][http                     ] [Diamanda Nero] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:09:16,708][INFO ][node                     ] [Diamanda Nero] started
+[2015-10-15 21:09:17,464][WARN ][discovery.zen.ping.multicast] [Diamanda Nero] received ping response ping_response{node [[Mister Sensitive][sT6msm-4TlC6PaXznxGPdQ][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], id[13], master [[Mister Sensitive][sT6msm-4TlC6PaXznxGPdQ][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [1]
+[2015-10-15 21:09:34,403][INFO ][node                     ] [Diamanda Nero] stopping ...
+[2015-10-15 21:09:34,478][INFO ][node                     ] [Diamanda Nero] stopped
+[2015-10-15 21:09:34,479][INFO ][node                     ] [Diamanda Nero] closing ...
+[2015-10-15 21:09:34,484][INFO ][node                     ] [Diamanda Nero] closed
+[2015-10-15 21:09:38,101][INFO ][node                     ] [Ellie Phimster] version[1.7.1], pid[6387], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:09:38,102][INFO ][node                     ] [Ellie Phimster] initializing ...
+[2015-10-15 21:09:38,174][INFO ][plugins                  ] [Ellie Phimster] loaded [], sites []
+[2015-10-15 21:09:38,214][INFO ][env                      ] [Ellie Phimster] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [151.1gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:09:40,573][INFO ][node                     ] [Ellie Phimster] initialized
+[2015-10-15 21:09:40,574][INFO ][node                     ] [Ellie Phimster] starting ...
+[2015-10-15 21:09:40,654][INFO ][transport                ] [Ellie Phimster] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:09:40,677][INFO ][discovery                ] [Ellie Phimster] elasticsearch/tr60yW-RQ92kh_J9JlsjTA
+[2015-10-15 21:09:43,971][WARN ][discovery.zen.ping.multicast] [Ellie Phimster] received ping response ping_response{node [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]], id[12], master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [1]
+[2015-10-15 21:09:44,014][INFO ][cluster.service          ] [Ellie Phimster] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:09:44,047][INFO ][http                     ] [Ellie Phimster] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:09:44,048][INFO ][node                     ] [Ellie Phimster] started
+<<<<<<< HEAD
+[2015-10-15 21:25:48,883][INFO ][node                     ] [Longneck] version[1.7.1], pid[6846], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:25:48,884][INFO ][node                     ] [Longneck] initializing ...
+[2015-10-15 21:25:48,961][INFO ][plugins                  ] [Longneck] loaded [], sites []
+[2015-10-15 21:25:49,002][INFO ][env                      ] [Longneck] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.8gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:25:51,328][INFO ][node                     ] [Longneck] initialized
+[2015-10-15 21:25:51,329][INFO ][node                     ] [Longneck] starting ...
+[2015-10-15 21:25:51,409][INFO ][transport                ] [Longneck] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:25:51,431][INFO ][discovery                ] [Longneck] elasticsearch/al5EvbfYTfqTkqu71oSLJQ
+[2015-10-15 21:25:54,795][INFO ][cluster.service          ] [Longneck] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:25:54,822][INFO ][http                     ] [Longneck] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:25:54,822][INFO ][node                     ] [Longneck] started
+[2015-10-15 21:33:56,010][INFO ][node                     ] [Longneck] stopping ...
+[2015-10-15 21:33:56,188][INFO ][node                     ] [Longneck] stopped
+[2015-10-15 21:33:56,188][INFO ][node                     ] [Longneck] closing ...
+[2015-10-15 21:33:56,192][INFO ][node                     ] [Longneck] closed
+[2015-10-15 21:38:25,607][INFO ][node                     ] [Xorn] version[1.7.1], pid[7534], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:38:25,608][INFO ][node                     ] [Xorn] initializing ...
+[2015-10-15 21:38:25,683][INFO ][plugins                  ] [Xorn] loaded [], sites []
+[2015-10-15 21:38:25,723][INFO ][env                      ] [Xorn] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.8gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:38:28,053][INFO ][node                     ] [Xorn] initialized
+[2015-10-15 21:38:28,053][INFO ][node                     ] [Xorn] starting ...
+[2015-10-15 21:38:28,140][INFO ][transport                ] [Xorn] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:38:28,169][INFO ][discovery                ] [Xorn] elasticsearch/KNl_UZncThiPnxVyPV6YdQ
+[2015-10-15 21:38:31,434][INFO ][cluster.service          ] [Xorn] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:38:31,464][INFO ][http                     ] [Xorn] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:38:31,465][INFO ][node                     ] [Xorn] started
+[2015-10-15 21:39:11,646][INFO ][node                     ] [Xorn] stopping ...
+[2015-10-15 21:39:11,995][INFO ][node                     ] [Xorn] stopped
+[2015-10-15 21:39:11,995][INFO ][node                     ] [Xorn] closing ...
+[2015-10-15 21:39:12,001][INFO ][node                     ] [Xorn] closed
+[2015-10-15 21:39:25,304][INFO ][node                     ] [Agent Zero] version[1.7.1], pid[7581], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:39:25,304][INFO ][node                     ] [Agent Zero] initializing ...
+[2015-10-15 21:39:25,383][INFO ][plugins                  ] [Agent Zero] loaded [], sites []
+[2015-10-15 21:39:25,424][INFO ][env                      ] [Agent Zero] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.8gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:39:27,682][INFO ][node                     ] [Agent Zero] initialized
+[2015-10-15 21:39:27,682][INFO ][node                     ] [Agent Zero] starting ...
+[2015-10-15 21:39:27,773][INFO ][transport                ] [Agent Zero] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:39:27,797][INFO ][discovery                ] [Agent Zero] elasticsearch/KQbilhVyRGKRa_erzNXV_A
+[2015-10-15 21:39:31,062][INFO ][cluster.service          ] [Agent Zero] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:39:31,089][INFO ][http                     ] [Agent Zero] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:39:31,090][INFO ][node                     ] [Agent Zero] started
+[2015-10-15 21:46:52,826][INFO ][node                     ] [Agent Zero] stopping ...
+[2015-10-15 21:46:53,161][INFO ][node                     ] [Agent Zero] stopped
+[2015-10-15 21:46:53,162][INFO ][node                     ] [Agent Zero] closing ...
+[2015-10-15 21:46:53,167][INFO ][node                     ] [Agent Zero] closed
+[2015-10-15 21:47:16,191][INFO ][node                     ] [Bounty Hunter] version[1.7.1], pid[7917], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:47:16,192][INFO ][node                     ] [Bounty Hunter] initializing ...
+[2015-10-15 21:47:16,279][INFO ][plugins                  ] [Bounty Hunter] loaded [], sites []
+[2015-10-15 21:47:16,325][INFO ][env                      ] [Bounty Hunter] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.7gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:47:18,566][INFO ][node                     ] [Bounty Hunter] initialized
+[2015-10-15 21:47:18,567][INFO ][node                     ] [Bounty Hunter] starting ...
+[2015-10-15 21:47:18,658][INFO ][transport                ] [Bounty Hunter] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:47:18,679][INFO ][discovery                ] [Bounty Hunter] elasticsearch/8g-3JosoTciYERM2WvvrbA
+[2015-10-15 21:47:22,132][INFO ][cluster.service          ] [Bounty Hunter] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:47:22,175][INFO ][http                     ] [Bounty Hunter] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:47:22,175][INFO ][node                     ] [Bounty Hunter] started
+[2015-10-15 21:52:37,948][INFO ][node                     ] [Bounty Hunter] stopping ...
+[2015-10-15 21:52:38,140][INFO ][node                     ] [Bounty Hunter] stopped
+[2015-10-15 21:52:38,140][INFO ][node                     ] [Bounty Hunter] closing ...
+[2015-10-15 21:52:38,144][INFO ][node                     ] [Bounty Hunter] closed
+[2015-10-15 21:52:56,364][INFO ][node                     ] [Dreamqueen] version[1.7.1], pid[8154], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:52:56,364][INFO ][node                     ] [Dreamqueen] initializing ...
+[2015-10-15 21:52:56,438][INFO ][plugins                  ] [Dreamqueen] loaded [], sites []
+[2015-10-15 21:52:56,479][INFO ][env                      ] [Dreamqueen] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.7gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:52:58,784][INFO ][node                     ] [Dreamqueen] initialized
+[2015-10-15 21:52:58,785][INFO ][node                     ] [Dreamqueen] starting ...
+[2015-10-15 21:52:58,872][INFO ][transport                ] [Dreamqueen] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:52:58,902][INFO ][discovery                ] [Dreamqueen] elasticsearch/fVru8eqcS7CXKri5GF9sAg
+[2015-10-15 21:53:02,294][INFO ][cluster.service          ] [Dreamqueen] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:53:02,323][INFO ][http                     ] [Dreamqueen] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:53:02,323][INFO ][node                     ] [Dreamqueen] started
+[2015-10-15 21:57:53,421][INFO ][node                     ] [Dreamqueen] stopping ...
+[2015-10-15 21:57:53,502][INFO ][node                     ] [Dreamqueen] stopped
+[2015-10-15 21:57:53,502][INFO ][node                     ] [Dreamqueen] closing ...
+[2015-10-15 21:57:53,506][INFO ][node                     ] [Dreamqueen] closed
+[2015-10-15 21:59:13,648][INFO ][node                     ] [Nikki] version[1.7.1], pid[8374], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:59:13,649][INFO ][node                     ] [Nikki] initializing ...
+[2015-10-15 21:59:13,741][INFO ][plugins                  ] [Nikki] loaded [], sites []
+[2015-10-15 21:59:13,786][INFO ][env                      ] [Nikki] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.6gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:59:16,320][INFO ][node                     ] [Nikki] initialized
+[2015-10-15 21:59:16,320][INFO ][node                     ] [Nikki] starting ...
+[2015-10-15 21:59:16,408][INFO ][transport                ] [Nikki] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:59:16,431][INFO ][discovery                ] [Nikki] elasticsearch/feeK6_txTjOOwwDZryudFw
+[2015-10-15 21:59:19,755][INFO ][cluster.service          ] [Nikki] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:59:19,794][INFO ][http                     ] [Nikki] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:59:19,795][INFO ][node                     ] [Nikki] started
+[2015-10-15 22:00:43,392][INFO ][node                     ] [Nikki] stopping ...
+[2015-10-15 22:00:43,485][INFO ][node                     ] [Nikki] stopped
+[2015-10-15 22:00:43,486][INFO ][node                     ] [Nikki] closing ...
+[2015-10-15 22:00:43,490][INFO ][node                     ] [Nikki] closed
+[2015-10-15 22:01:06,473][INFO ][node                     ] [Cayman] version[1.7.1], pid[8584], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 22:01:06,473][INFO ][node                     ] [Cayman] initializing ...
+[2015-10-15 22:01:06,552][INFO ][plugins                  ] [Cayman] loaded [], sites []
+[2015-10-15 22:01:06,590][INFO ][env                      ] [Cayman] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.7gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 22:01:08,912][INFO ][node                     ] [Cayman] initialized
+[2015-10-15 22:01:08,912][INFO ][node                     ] [Cayman] starting ...
+[2015-10-15 22:01:09,000][INFO ][transport                ] [Cayman] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 22:01:09,025][INFO ][discovery                ] [Cayman] elasticsearch/sWJOkNLnSfeQ8ste4rU5Fg
+[2015-10-15 22:01:12,380][INFO ][cluster.service          ] [Cayman] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:01:12,408][INFO ][http                     ] [Cayman] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 22:01:12,409][INFO ][node                     ] [Cayman] started
+[2015-10-15 22:08:18,126][INFO ][cluster.service          ] [Cayman] added {[Zuras][gYEJqTPZRf-Bu1IQJpFuFA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:09:23,905][INFO ][node                     ] [Cayman] stopping ...
+[2015-10-15 22:09:24,048][INFO ][node                     ] [Cayman] stopped
+[2015-10-15 22:09:24,048][INFO ][node                     ] [Cayman] closing ...
+[2015-10-15 22:09:24,053][INFO ][node                     ] [Cayman] closed
+[2015-10-15 22:09:41,943][INFO ][node                     ] [Karl Malus] version[1.7.1], pid[8794], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 22:09:41,944][INFO ][node                     ] [Karl Malus] initializing ...
+[2015-10-15 22:09:42,018][INFO ][plugins                  ] [Karl Malus] loaded [], sites []
+[2015-10-15 22:09:42,058][INFO ][env                      ] [Karl Malus] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.6gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 22:09:44,348][INFO ][node                     ] [Karl Malus] initialized
+[2015-10-15 22:09:44,349][INFO ][node                     ] [Karl Malus] starting ...
+[2015-10-15 22:09:44,430][INFO ][transport                ] [Karl Malus] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 22:09:44,457][INFO ][discovery                ] [Karl Malus] elasticsearch/-95w2j3hSuOqgtLNr8QjXw
+[2015-10-15 22:09:48,012][INFO ][cluster.service          ] [Karl Malus] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Zuras][gYEJqTPZRf-Bu1IQJpFuFA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:09:48,289][INFO ][http                     ] [Karl Malus] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 22:09:48,290][INFO ][node                     ] [Karl Malus] started
+[2015-10-15 22:10:59,571][INFO ][node                     ] [Karl Malus] stopping ...
+[2015-10-15 22:10:59,808][INFO ][node                     ] [Karl Malus] stopped
+[2015-10-15 22:10:59,808][INFO ][node                     ] [Karl Malus] closing ...
+[2015-10-15 22:10:59,813][INFO ][node                     ] [Karl Malus] closed
+[2015-10-15 22:11:30,796][INFO ][node                     ] [Luchino Nefaria] version[1.7.1], pid[8976], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 22:11:30,796][INFO ][node                     ] [Luchino Nefaria] initializing ...
+[2015-10-15 22:11:30,870][INFO ][plugins                  ] [Luchino Nefaria] loaded [], sites []
+[2015-10-15 22:11:30,912][INFO ][env                      ] [Luchino Nefaria] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.6gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 22:11:33,305][INFO ][node                     ] [Luchino Nefaria] initialized
+[2015-10-15 22:11:33,305][INFO ][node                     ] [Luchino Nefaria] starting ...
+[2015-10-15 22:11:33,389][INFO ][transport                ] [Luchino Nefaria] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 22:11:33,422][INFO ][discovery                ] [Luchino Nefaria] elasticsearch/XHBGRPSGSki1V9HnctULJw
+[2015-10-15 22:11:36,756][INFO ][cluster.service          ] [Luchino Nefaria] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Zuras][gYEJqTPZRf-Bu1IQJpFuFA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:11:36,795][INFO ][http                     ] [Luchino Nefaria] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 22:11:36,796][INFO ][node                     ] [Luchino Nefaria] started
+[2015-10-15 22:36:15,446][INFO ][cluster.service          ] [Luchino Nefaria] removed {[Zuras][gYEJqTPZRf-Bu1IQJpFuFA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:36:24,512][INFO ][cluster.service          ] [Luchino Nefaria] added {[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:03:30,186][INFO ][node                     ] [Luchino Nefaria] stopping ...
+[2015-10-15 23:03:30,309][INFO ][node                     ] [Luchino Nefaria] stopped
+[2015-10-15 23:03:30,310][INFO ][node                     ] [Luchino Nefaria] closing ...
+[2015-10-15 23:03:30,317][INFO ][node                     ] [Luchino Nefaria] closed
+[2015-10-15 23:03:50,452][INFO ][node                     ] [Punchout] version[1.7.1], pid[9647], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:03:50,453][INFO ][node                     ] [Punchout] initializing ...
+[2015-10-15 23:03:50,537][INFO ][plugins                  ] [Punchout] loaded [], sites []
+[2015-10-15 23:03:50,582][INFO ][env                      ] [Punchout] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:03:52,891][INFO ][node                     ] [Punchout] initialized
+[2015-10-15 23:03:52,892][INFO ][node                     ] [Punchout] starting ...
+[2015-10-15 23:03:53,005][INFO ][transport                ] [Punchout] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:03:53,033][INFO ][discovery                ] [Punchout] elasticsearch/EA3swLAZR2WkR5ZeFjyU2g
+[2015-10-15 23:03:56,708][INFO ][cluster.service          ] [Punchout] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:03:56,760][INFO ][http                     ] [Punchout] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:03:56,760][INFO ][node                     ] [Punchout] started
+[2015-10-15 23:04:54,958][INFO ][node                     ] [Punchout] stopping ...
+[2015-10-15 23:04:55,054][INFO ][node                     ] [Punchout] stopped
+[2015-10-15 23:04:55,055][INFO ][node                     ] [Punchout] closing ...
+[2015-10-15 23:04:55,060][INFO ][node                     ] [Punchout] closed
+[2015-10-15 23:05:16,905][INFO ][node                     ] [Glitch] version[1.7.1], pid[9833], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:05:16,905][INFO ][node                     ] [Glitch] initializing ...
+[2015-10-15 23:05:16,989][INFO ][plugins                  ] [Glitch] loaded [], sites []
+[2015-10-15 23:05:17,036][INFO ][env                      ] [Glitch] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:05:19,395][INFO ][node                     ] [Glitch] initialized
+[2015-10-15 23:05:19,396][INFO ][node                     ] [Glitch] starting ...
+[2015-10-15 23:05:19,476][INFO ][transport                ] [Glitch] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:05:19,501][INFO ][discovery                ] [Glitch] elasticsearch/qLVn9hnASDiRxXX96CPBew
+[2015-10-15 23:05:23,160][INFO ][cluster.service          ] [Glitch] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:05:23,205][INFO ][http                     ] [Glitch] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:05:23,205][INFO ][node                     ] [Glitch] started
+[2015-10-15 23:08:43,134][INFO ][node                     ] [Glitch] stopping ...
+[2015-10-15 23:08:43,448][INFO ][node                     ] [Glitch] stopped
+[2015-10-15 23:08:43,448][INFO ][node                     ] [Glitch] closing ...
+[2015-10-15 23:08:43,452][INFO ][node                     ] [Glitch] closed
+[2015-10-15 23:09:01,408][INFO ][node                     ] [Lockheed] version[1.7.1], pid[10003], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:09:01,408][INFO ][node                     ] [Lockheed] initializing ...
+[2015-10-15 23:09:01,481][INFO ][plugins                  ] [Lockheed] loaded [], sites []
+[2015-10-15 23:09:01,524][INFO ][env                      ] [Lockheed] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:09:03,922][INFO ][node                     ] [Lockheed] initialized
+[2015-10-15 23:09:03,923][INFO ][node                     ] [Lockheed] starting ...
+[2015-10-15 23:09:04,015][INFO ][transport                ] [Lockheed] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:09:04,045][INFO ][discovery                ] [Lockheed] elasticsearch/XFKc6oyTQ-Oaf3dPde8CeA
+[2015-10-15 23:09:07,429][INFO ][cluster.service          ] [Lockheed] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:09:07,533][INFO ][http                     ] [Lockheed] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:09:07,534][INFO ][node                     ] [Lockheed] started
+[2015-10-15 23:09:54,711][INFO ][node                     ] [Lockheed] stopping ...
+[2015-10-15 23:09:54,798][INFO ][node                     ] [Lockheed] stopped
+[2015-10-15 23:09:54,798][INFO ][node                     ] [Lockheed] closing ...
+[2015-10-15 23:09:54,808][INFO ][node                     ] [Lockheed] closed
+[2015-10-15 23:10:18,787][INFO ][node                     ] [Adrienne Frost] version[1.7.1], pid[10157], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:10:18,788][INFO ][node                     ] [Adrienne Frost] initializing ...
+[2015-10-15 23:10:18,872][INFO ][plugins                  ] [Adrienne Frost] loaded [], sites []
+[2015-10-15 23:10:18,919][INFO ][env                      ] [Adrienne Frost] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:10:21,370][INFO ][node                     ] [Adrienne Frost] initialized
+[2015-10-15 23:10:21,370][INFO ][node                     ] [Adrienne Frost] starting ...
+[2015-10-15 23:10:21,459][INFO ][transport                ] [Adrienne Frost] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:10:21,484][INFO ][discovery                ] [Adrienne Frost] elasticsearch/kfnQFY7NSPiOJH0VQhZdmQ
+[2015-10-15 23:10:24,849][INFO ][cluster.service          ] [Adrienne Frost] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:10:24,955][INFO ][http                     ] [Adrienne Frost] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:10:24,955][INFO ][node                     ] [Adrienne Frost] started
+[2015-10-15 23:13:28,958][INFO ][node                     ] [Adrienne Frost] stopping ...
+[2015-10-15 23:13:29,117][INFO ][node                     ] [Adrienne Frost] stopped
+[2015-10-15 23:13:29,117][INFO ][node                     ] [Adrienne Frost] closing ...
+[2015-10-15 23:13:29,124][INFO ][node                     ] [Adrienne Frost] closed
+[2015-10-15 23:13:56,016][INFO ][node                     ] [Deacon Frost] version[1.7.1], pid[10332], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:13:56,017][INFO ][node                     ] [Deacon Frost] initializing ...
+[2015-10-15 23:13:56,102][INFO ][plugins                  ] [Deacon Frost] loaded [], sites []
+[2015-10-15 23:13:56,144][INFO ][env                      ] [Deacon Frost] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:13:58,460][INFO ][node                     ] [Deacon Frost] initialized
+[2015-10-15 23:13:58,460][INFO ][node                     ] [Deacon Frost] starting ...
+[2015-10-15 23:13:58,546][INFO ][transport                ] [Deacon Frost] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:13:58,569][INFO ][discovery                ] [Deacon Frost] elasticsearch/nMOQjuy8QROCuvHVQQn4Pg
+[2015-10-15 23:14:02,023][INFO ][cluster.service          ] [Deacon Frost] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:14:02,136][INFO ][http                     ] [Deacon Frost] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:14:02,137][INFO ][node                     ] [Deacon Frost] started
+[2015-10-15 23:34:12,864][INFO ][cluster.service          ] [Deacon Frost] removed {[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+=======
+=======
+<<<<<<< HEAD
+[2015-10-15 20:48:30,030][INFO ][node                     ] [Ravage 2099] version[1.7.1], pid[6863], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 20:48:30,031][INFO ][node                     ] [Ravage 2099] initializing ...
+[2015-10-15 20:48:30,101][INFO ][plugins                  ] [Ravage 2099] loaded [], sites []
+[2015-10-15 20:48:30,135][INFO ][env                      ] [Ravage 2099] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [27.2gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 20:48:32,073][INFO ][node                     ] [Ravage 2099] initialized
+[2015-10-15 20:48:32,074][INFO ][node                     ] [Ravage 2099] starting ...
+[2015-10-15 20:48:32,139][INFO ][transport                ] [Ravage 2099] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 20:48:32,158][INFO ][discovery                ] [Ravage 2099] elasticsearch/lJF1zQsZQkWB3B4Au6UHCg
+[2015-10-15 20:48:35,934][INFO ][cluster.service          ] [Ravage 2099] new_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 20:48:35,967][INFO ][http                     ] [Ravage 2099] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 20:48:35,967][INFO ][node                     ] [Ravage 2099] started
+[2015-10-15 20:48:35,992][INFO ][gateway                  ] [Ravage 2099] recovered [2] indices into cluster_state
+[2015-10-15 20:49:05,954][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:49:05,954][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:49:35,948][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:50:05,951][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:50:35,949][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:50:35,949][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:51:05,953][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:51:35,954][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:51:35,954][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:52:05,954][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:52:35,955][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:52:35,955][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:53:05,957][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:53:35,961][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:53:35,961][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:54:05,962][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:54:35,961][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.1gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:54:35,961][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:55:05,961][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.1gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:55:35,965][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.1gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:55:35,966][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:56:05,964][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:56:35,965][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:56:35,965][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:57:05,964][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:57:35,968][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:57:35,968][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:58:05,970][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:58:35,969][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:58:35,969][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:59:05,968][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:59:35,968][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:59:35,968][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:00:05,970][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:00:35,970][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:00:35,970][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:01:05,974][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:01:35,975][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:01:35,975][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:02:05,979][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:02:35,978][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:02:35,979][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:03:05,979][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:03:35,979][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:03:35,979][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:04:05,982][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:04:35,981][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:04:35,981][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:05:05,981][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:05:35,983][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:05:35,983][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:06:05,985][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:06:35,987][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:06:35,987][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:07:05,991][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:07:35,995][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:07:35,995][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:08:05,995][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:08:35,998][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:08:35,998][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:09:06,001][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:09:16,509][INFO ][cluster.service          ] [Ravage 2099] added {[Diamanda Nero][qexgsAbFQHipdW_9pWw3_A][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Diamanda Nero][qexgsAbFQHipdW_9pWw3_A][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 21:09:16,567][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:09:34,305][INFO ][cluster.service          ] [Ravage 2099] removed {[Diamanda Nero][qexgsAbFQHipdW_9pWw3_A][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-node_left([Diamanda Nero][qexgsAbFQHipdW_9pWw3_A][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]])
+[2015-10-15 21:09:36,005][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:09:36,005][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:09:43,851][INFO ][cluster.service          ] [Ravage 2099] added {[Ellie Phimster][tr60yW-RQ92kh_J9JlsjTA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Ellie Phimster][tr60yW-RQ92kh_J9JlsjTA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 21:09:43,908][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:10:06,185][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:10:36,025][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:10:36,025][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:11:06,037][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:11:36,033][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:11:36,033][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:12:06,021][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+=======
+>>>>>>> developer
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
+>>>>>>> developer
+>>>>>>> developer

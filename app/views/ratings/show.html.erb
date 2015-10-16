@@ -17,12 +17,12 @@
 
 <p>
   <strong>Rater:</strong>
-  <%= User.find(@rating.rater_id).username %>
+  <%= User.find(@rating.rater_id).first_name + " " + last_name %>
 </p>
 
 <p>
   <strong>Ratee:</strong>
-  <%= User.find(@rating.ratee_id).username %>
+  <%= User.find(@rating.ratee_id).first_name + " " + last_name %>
 </p>
 
 <%= link_to 'Edit', edit_rating_path(@rating) %> |
