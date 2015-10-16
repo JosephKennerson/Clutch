@@ -1,4 +1,5 @@
 class GeojsonBuilder < ActiveRecord::Base
+
 	  def self.build_event(event)
      {
       type: "Feature",
@@ -24,8 +25,8 @@ class GeojsonBuilder < ActiveRecord::Base
         date_end: event.time_end.strftime('%b %-e, %Y'),
         time_end: event.time_end.strftime('%-l:%M %p'),
         category: event.category,
-        :"marker-color" => "#FFFFFF",
-        :"marker-symbol" => ["playground", "entrance", "heart", "london-underground", "minefield", "rail-underground", "rail-above", "camera", "laundry", "car", "suitcase", "hairdresser", "chemist", "mobilephone", "scooter", "gift", "ice-cream", "dentist", "aerialway"].sample,
+        :"marker-color" => ["#00CCFF", '#00CC66', '#FF3399', '#FFCC33', '#FFFF66'].sample,
+        :"marker-symbol" => [ "bicycle", "pitch", "soccer", "america-football", "tennis", "basketball", "baseball", "golf", "swimming", "cricket", "skiing", "beer", "restaurant", "cafe", "shop", "fast-food", "bar", "cinema"].sample,
         :"marker-size" => "medium",
       }
     }

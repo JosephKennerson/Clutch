@@ -43,6 +43,13 @@ class EventsController < ApplicationController
   # GET /events/new
   def new
     @event = Event.new
+    p "9" * 2000
+    if request.xhr?
+    p "10" * 2000
+      respond_to do |format|
+        format.html {render layout: false}
+      end
+    end
   end
 
   # GET /events/1/edit
@@ -56,9 +63,17 @@ class EventsController < ApplicationController
     @event.host_id = current_user.id
     respond_to do |format|
       if @event.save
+        if request.xhr?
+          format.html { redirect_to :root, layout: false }
+          format.json { redirect_to :root, layout: false }
+        end
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
+        if request.xhr?
+          format.html { render :new, layout: false}
+          format.json { render json: @event.errors, status: :unprocessable_entity }
+        end
         format.html { render :new }
         format.json { render json: @event.errors, status: :unprocessable_entity }
       end
@@ -93,21 +108,19 @@ class EventsController < ApplicationController
     # Event.where(status: false).each do |event|
     #   event.close_event
     # end
-    open_events = Event.where(status: true)
-    if params[:q].nil?
-      @events = open_events
-    else
-      query = [params[:q], params[:dropq]].join(", ")
-      @events = open_events.search(query).records
+    # open_events = Event.where(status: true)
+    # if params[:q].nil?
+    #   @events = open_events
+    # else
+    #   query = [params[:q], params[:dropq]].join(", ")
+    #   @events = open_events.search(query).records
+    # end
+    @events = Event.where(status: true)
+    if params[:q]
+      @events = Event.search(params[:q])
     end
-    # @events = Event.where(status: true)
     @geojson = Array.new
-    p @events.length
-    p @geojson.length
     build_geojson(@events, @geojson)
-    p "*" * 80
-    p @events.length
-    p @geojson.length
     respond_to do |format|
       format.html {render layout: false}
       format.json {render json: @geojson}
