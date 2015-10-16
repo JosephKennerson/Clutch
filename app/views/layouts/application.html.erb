@@ -42,6 +42,8 @@
         <li class="nav-input">
           <%= submit_tag "Search", :class => 'btn btn-default',:name => nil%>
         </li>
+      <li class="nav-input create-event"><%= button_to "Create event", new_event_path, class: "btn btn-primary" %>
+      </li>
       <% end %>
     </ul>
     <%= render 'layouts/user_header' %>
