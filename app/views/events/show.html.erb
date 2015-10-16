@@ -68,7 +68,7 @@
       <% if @event.rsvps.where(confirmed: true).length >= @event.max_size %>
         <span class="label label-danger">Full!</span>
       <% else %>
-        <%= @event.rsvps.where(confirmed: true).length %>
+        <%= @event.max_size - @event.rsvps.where(confirmed: true).length %>
       <% end %>
       <br><br>
       <p>
@@ -117,7 +117,7 @@
             <%= link_to 'Edit Event', edit_event_path(@event.id), class: "btn btn-warning" %>
             <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
             <% end %>
-            <%= link_to 'Back', events_path, class: "btn btn-primary" %>
+            <%#= link_to 'Back', events_path, class: "btn btn-primary" %>
           </div>
           <div>
             <h4>Attendees</h4>
@@ -284,4 +284,4 @@
 <% end %>
 </section>
 </section>
-<%= button_to 'Back', events_path, :class => "btn btn-primary" %>
+<%#= button_to 'Back', events_path, :class => "btn btn-primary" %>

@@ -233,7 +233,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "TopGirlCoder@gmail.com",
+        email: "stephanie.m.hutson@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/9794021?v=3&s=400",
         first_name: "Stephanie",
