@@ -2,7 +2,7 @@
 
 class Event < ActiveRecord::Base
   # searchkick
-  # locations: ["public_location"]
+  # # locations: ["public_location"]
   # include Elasticsearch::Model
   # include Elasticsearch::Model::Callbacks
 
@@ -61,20 +61,9 @@ class Event < ActiveRecord::Base
 #   end
 # end
 
-# def self.search(query)
-#   __elasticsearch__.search(
-#     {
-#       highlight: {
-#         pre_tags: ['<em>'],
-#         post_tags: ['</em>'],
-#         fields: {
-#           title: {},
-#           text: {}
-#         }
-#       }
-#     }
-#   )
-# end
+def self.search(query)
+    where("category LIKE ? OR name LIKE ? OR description LIKE ? AND status = ? ", "%#{query}%", "%#{query}%", "%#{query}%", true)
+end
 
 end
 

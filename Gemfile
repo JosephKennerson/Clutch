@@ -55,6 +55,7 @@ gem 'geocoder'
 # Search
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
+gem 'carrierwave'
 gem 'kaminari'
   gem 'searchkick', '~> 0.9.1'
 
