@@ -43,7 +43,9 @@ class EventsController < ApplicationController
   # GET /events/new
   def new
     @event = Event.new
+    p "9" * 2000
     if request.xhr?
+    p "10" * 2000
       respond_to do |format|
         format.html {render layout: false}
       end

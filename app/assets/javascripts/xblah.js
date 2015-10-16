@@ -22,7 +22,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		var path = $(this).attr('href');
 		$.ajax({
-	      url: path,
+	      url: '/events/new',
 	      type: 'GET',
         dataType: 'html'
 	    })
