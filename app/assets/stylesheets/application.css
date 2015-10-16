@@ -76,11 +76,20 @@ a.grav {
   width: 100%;
 }
 
-.border-form-div .btn {
+.border-form-div .btn, .sidebar-module .btn {
   margin-bottom: 10px;
   width: 100%;
   color: white;
 }
 .border-form-div .btn-facebook:hover {
   color: #ccc;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  font-size: 1.25em;
+}
+
+div.main {
+  text-align: center;
+  margin-top: 1em;
 }
