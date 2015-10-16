@@ -23,52 +23,52 @@ class RsvpsController < ApplicationController
 
   # # POST /rsvps
   # # POST /rsvps.json
-  # def create
-  #   @rsvp = Rsvp.new(rsvp_params)
-  #   @event = Event.find(@rsvp.event_id)
-  #   respond_to do |format|
-  #     if @rsvp.save
-  #       if request.xhr?
-  #       format.html { render :makebutton, layout: false }
-  #         format.json { render :show, status: :created, location: @rsvp }
-  #       end
-  #       format.html { redirect_to events_path, notice: 'Rsvp was successfully created.' }
-  #       format.json { render :show, status: :created, location: @rsvp }
-  #     else
-  #       format.html { render :new }
-  #       format.json { render json: @rsvp.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end  
+  def create
+    @rsvp = Rsvp.new(rsvp_params)
+    @event = Event.find(@rsvp.event_id)
+    respond_to do |format|
+      if @rsvp.save
+        if request.xhr?
+        format.html { render :makebutton, layout: false }
+          format.json { render :show, status: :created, location: @rsvp }
+        end
+        format.html { redirect_to events_path, notice: 'Rsvp was successfully created.' }
+        format.json { render :show, status: :created, location: @rsvp }
+      else
+        format.html { render :new }
+        format.json { render json: @rsvp.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
-  # # PATCH/PUT /rsvps/1
-  # # PATCH/PUT /rsvps/1.json
-  # def update
-  #   respond_to do |format|
-  #     if params[:confirmed] == true
-  #       @rsvp.confirmed = true
-  #     else
-  #       @rsvp.confirmed = false
-  #     end
-  #     if @rsvp.update(rsvp_params)
-  #       format.html { redirect_to events_path, notice: 'Rsvp was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @rsvp }
-  #     else
-  #       format.html { render :edit }
-  #       format.json { render json: @rsvp.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
+  # PATCH/PUT /rsvps/1
+  # PATCH/PUT /rsvps/1.json
+  def update
+    respond_to do |format|
+      if params[:confirmed] == true
+        @rsvp.confirmed = true
+      else
+        @rsvp.confirmed = false
+      end
+      if @rsvp.update(rsvp_params)
+        format.html { redirect_to events_path, notice: 'Rsvp was successfully updated.' }
+        format.json { render :show, status: :ok, location: @rsvp }
+      else
+        format.html { render :edit }
+        format.json { render json: @rsvp.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
-  # # DELETE /rsvps/1
-  # # DELETE /rsvps/1.json
-  # def destroy
-  #   @rsvp.destroy
-  #   respond_to do |format|
-  #     format.html { redirect_to events_path, notice: 'Rsvp was successfully destroyed.' }
-  #     format.json { head :no_content }
-  #   end
-  # end
+  # DELETE /rsvps/1
+  # DELETE /rsvps/1.json
+  def destroy
+    @rsvp.destroy
+    respond_to do |format|
+      format.html { redirect_to events_path, notice: 'Rsvp was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
 
   # ==========================================
   # POST /rsvps
@@ -98,7 +98,7 @@ class RsvpsController < ApplicationController
           client.account.sms.messages.create(
             from: TWILIO_CONFIG['from'],
             to: @host.phone_number,
-            body: "You have a pending request from @guest.username."
+            body: "You have a pending request from #{@guest.username}."
           )
         else
               # Instantiate a Twilio client
@@ -117,7 +117,7 @@ class RsvpsController < ApplicationController
           client.account.sms.messages.create(
             from: TWILIO_CONFIG['from'],
             to: @host.phone_number,
-            body: "@guest.username has joined your event @event.name."
+            body: "#{@guest.username} has joined your event #{@event.name}."
           )
         end
 
@@ -153,7 +153,7 @@ class RsvpsController < ApplicationController
           client.account.sms.messages.create(
             from: TWILIO_CONFIG['from'],
             to: @guest.phone_number,
-            body: "Welcome to our clutch. Your request join @event.name has been accepted."
+            body: "Welcome to our clutch. Your request join #{@event.name} has been accepted."
           )
         format.html { redirect_to events_path, notice: 'Rsvp was successfully updated.' }
         format.json { render :show, status: :ok, location: @rsvp }
@@ -166,7 +166,7 @@ class RsvpsController < ApplicationController
           client.account.sms.messages.create(
             from: TWILIO_CONFIG['from'],
             to: @guest.phone_number,
-            body: "Sorry. Your request join @event.name has been declined :-(."
+            body: "Sorry. Your request join #{@event.name} has been declined :-(."
           )
         format.html { render :edit }
         format.json { render json: @rsvp.errors, status: :unprocessable_entity }
@@ -188,7 +188,7 @@ class RsvpsController < ApplicationController
           client.account.sms.messages.create(
             from: TWILIO_CONFIG['from'],
             to: @host.phone_number,
-            body: "@guest.username has cancelled. Hence he is not a part of this clutch @event.name."
+            body: "#{@guest.username} has cancelled. Hence he is not a part of this clutch @event.name."
           )
     respond_to do |format|
       format.html { redirect_to events_path, notice: 'Rsvp was successfully destroyed.' }

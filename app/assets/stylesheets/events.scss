@@ -26,14 +26,17 @@ div#map {
 
 #info {
   position:absolute;
-  top:8%;
+  top:10%;
   left:.5%;
   height: 90%;
-  width: 27%;
-  background:#fff;
+  width: 35%;
+  background:black;
+  opacity: 0.8;
   overflow: scroll;
   box-shadow: 10px 10px 5px #888888;
   padding: 1em;
+  color: #F9FBE7;
+  text-align:center;
 }
 
 .mapbox-logo {
@@ -41,9 +44,11 @@ div#map {
 }
 
 .leaflet-control-zoomslider {
-	position: fixed;
-	left: 27em;
-	top: 5.705em;
+
+}
+
+#sidebarEvent {
+  width: 100%;
 }
 
 .leaflet-control-zoomslider-knob {
@@ -55,4 +60,10 @@ div#map {
   -webkit-box-sizing:content-box;
      -moz-box-sizing:content-box;
           box-sizing:content-box;
+ }
+
+ .blog-post {
+    margin-left: 10%;
+    margin-right:10%;
+    width: 30em;
  }
