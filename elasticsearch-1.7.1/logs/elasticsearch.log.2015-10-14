@@ -141,7 +141,11 @@
 [2015-10-14 15:05:06,536][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
 
 =======
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 [2015-10-13 18:49:53,877][INFO ][node                     ] [Gee] version[1.7.1], pid[89101], build[b88f43f/2015-07-29T09:54:16Z]
 [2015-10-13 18:49:53,877][INFO ][node                     ] [Gee] initializing ...
 [2015-10-13 18:49:54,052][INFO ][plugins                  ] [Gee] loaded [], sites []
@@ -239,6 +243,7 @@
 [2015-10-14 14:16:27,660][INFO ][http                     ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.126:9200]}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [2015-10-14 14:16:27,660][INFO ][node                     ] [David Cannon] started
 [2015-10-14 21:37:12,621][INFO ][node                     ] [Kraven the Hunter] version[1.7.1], pid[28614], build[b88f43f/2015-07-29T09:54:16Z]
 [2015-10-14 21:37:12,623][INFO ][node                     ] [Kraven the Hunter] initializing ...
@@ -275,6 +280,8 @@
 [2015-10-14 23:13:55,889][INFO ][http                     ] [Gaza] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
 [2015-10-14 23:13:55,889][INFO ][node                     ] [Gaza] started
 =======
+=======
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 [2015-10-14 14:16:27,660][INFO ][node                     ] [David Cannon] started[2015-10-14 16:21:16,525][INFO ][node                     ] [Shriker] version[1.7.1], pid[6105], build[b88f43f/2015-07-29T09:54:16Z]
 [2015-10-14 16:21:16,526][INFO ][node                     ] [Shriker] initializing ...
 [2015-10-14 16:21:16,683][INFO ][plugins                  ] [Shriker] loaded [], sites []
@@ -556,7 +563,11 @@ org.elasticsearch.transport.ReceiveTimeoutTransportException: [Shriker][inet[/19
 	at java.lang.Thread.run(Thread.java:745)
 [2015-10-14 18:42:34,651][WARN ][cluster.routing.allocation.decider] [Torrent] high disk watermark [90%] exceeded on [JnXiZrIqQuuyC3kmLYfNaQ][Torrent] free: 25.3gb[7.1%], shards will be relocated away from this node
 [2015-10-14 18:42:39,086][WARN ][transport.netty          ] [Torrent] exception caught on transport layer [[id: 0xf8768c6c, /192.168.1.8:63078 => /192.168.1.145:9300]], closing connection
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 java.io.IOException: Operation timed out
 	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
 	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
@@ -566,7 +577,11 @@ java.io.IOException: Operation timed out
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
 =======
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
@@ -1092,7 +1107,11 @@ java.io.IOException: Host is down
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannel$WriteTask.run(AbstractNioChannel.java:315)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
 	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
 	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
@@ -1125,7 +1144,11 @@ java.io.IOException: Host is down
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannel$WriteTask.run(AbstractNioChannel.java:315)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
 	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
 	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
@@ -1218,7 +1241,11 @@ java.io.IOException: Host is down
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioChannel$WriteTask.run(AbstractNioChannel.java:315)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.processTaskQueue(AbstractNioSelector.java:391)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:315)
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
 	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
 	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
@@ -1319,7 +1346,11 @@ org.elasticsearch.transport.ReceiveTimeoutTransportException: [the Renegade Watc
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 [2015-10-14 20:17:53,335][WARN ][transport.netty          ] [Torrent] exception caught on transport layer [[id: 0xcc1948e9, /192.168.1.8:63964 => /192.168.1.164:9300]], closing connection
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 java.io.IOException: Operation timed out
 	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
 	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
@@ -1329,7 +1360,11 @@ java.io.IOException: Operation timed out
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
 =======
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
@@ -1509,7 +1544,11 @@ org.elasticsearch.transport.ReceiveTimeoutTransportException: [the Renegade Watc
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 [2015-10-14 20:44:20,568][WARN ][transport.netty          ] [Torrent] exception caught on transport layer [[id: 0xa862b008, /192.168.1.8:64725 => /192.168.1.164:9300]], closing connection
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 java.io.IOException: Operation timed out
 	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
 	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
@@ -1519,7 +1558,11 @@ java.io.IOException: Operation timed out
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
 =======
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
@@ -1930,7 +1973,11 @@ org.elasticsearch.transport.ReceiveTimeoutTransportException: [the Renegade Watc
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
 [2015-10-14 21:26:48,540][WARN ][transport.netty          ] [Vindaloo] exception caught on transport layer [[id: 0x7d4a5e8d, /192.168.1.8:49271 => /192.168.1.164:9300]], closing connection
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 java.io.IOException: Operation timed out
 	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
 	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
@@ -1940,7 +1987,11 @@ java.io.IOException: Operation timed out
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
 =======
 	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
 	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
@@ -1963,7 +2014,10 @@ java.io.IOException: Operation timed out
 [2015-10-14 22:13:36,094][INFO ][cluster.service          ] [Danger] removed {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
 [2015-10-14 22:16:30,777][INFO ][cluster.service          ] [Danger] added {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
 [2015-10-14 23:01:36,618][INFO ][cluster.service          ] [Danger] removed {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+<<<<<<< HEAD
 >>>>>>> developer
+=======
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 =======
 [2015-10-14 21:26:48,545][DEBUG][action.admin.indices.stats] [Vindaloo] [events][0], node[oBzrVcBuT6KjOrdIJLrAXw], [P], s[STARTED]: failed to execute [org.elasticsearch.action.admin.indices.stats.IndicesStatsRequest@4e327863]
 org.elasticsearch.transport.NodeDisconnectedException: [the Renegade Watcher Aron][inet[/192.168.1.164:9300]][indices:monitor/stats[s]] disconnected
@@ -2248,4 +2302,8 @@ java.util.concurrent.RejectedExecutionException: Worker has already been shutdow
 [2015-10-14 23:59:11,458][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
 [2015-10-14 23:59:11,458][INFO ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark exceeded on one or more nodes, rerouting shards
 [2015-10-14 23:59:41,460][WARN ][cluster.routing.allocation.decider] [Diamond Lil] high disk watermark [90%] exceeded on [P-HVaJV0QC-QTLVeApLBWw][Diamond Lil] free: 25.3gb[7.1%], shards will be relocated away from this node
+<<<<<<< HEAD
 >>>>>>> e6762c62b3c2d79649effa5f566d167d0c6431dd
+=======
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
