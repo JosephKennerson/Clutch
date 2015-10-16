@@ -17,7 +17,7 @@
     <% @comments.each do |comment| %>
       <tr>
         <td><%= comment.event.name %></td>
-        <td><%= comment.user.username %></td>
+        <td><%= comment.user.first_name + " " +comment.user.last_name %></td>
         <td><%= comment.is_private %></td>
         <td><%= comment.body %></td>
         <td><%= link_to 'Show', comment %></td>

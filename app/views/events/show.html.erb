@@ -14,8 +14,8 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.username %></p>
 
+            <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.first_name + " " + @event.host.last_name %></p>
             <p><%= @event.description %></p>
             <hr>
 
@@ -79,7 +79,7 @@
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
           <div class="sidebar-module sidebar-module-inset">
-            <%= link_to image_tag(User.find(@event.host_id).gravatar_url), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
+            <%= link_to image_tag(User.find(@event.host_id).avatar), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
             <h4><%= @event.host.username %>'s rating: <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
           </div>
           <div class="sidebar-module">
@@ -88,7 +88,7 @@
               </h4>
               <% @event.rsvps.where(pending: true).each do |request| %>
               <ul class="list-unstyled">
-                <li><%= link_to image_tag(User.find(request.guest_id).gravatar_url(size: 30)), user_path(User.find(request.guest_id)) %></li>
+                <li><%= link_to image_tag(User.find(request.guest_id).avatar), user_path(User.find(request.guest_id)) %></li>
                 <li><%= link_to "#{User.find(request.guest_id).username}", User.find(request.guest_id) %><span class="label label-warning"><%= link_to 'Confirm', {controller: "rsvps", action: "update", id: request.id, rsvp: {guest_id: request.guest_id, event_id: request.event_id, pending: false, confirmed: true}}, method: :put %></span>
                 </li>
               </ul>
@@ -111,9 +111,9 @@
             <% @event.guests.each do |guest| %>
               <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>
                 <br />
-              <li><%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %></li>
+              <li><%= link_to image_tag(guest.avatar), user_path(guest.id) %></li>
                 <br />
-              <li><%= guest.username %></li>
+              <li><%= guest.first_name + " " + guest.last_name %></li>
                 <br />
               <li><%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %></li>
               <br />
@@ -162,7 +162,7 @@
     <br />
     Host
     <br />
-    <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
+    <%= link_to image_tag(@event.host.avatar), user_path(@event.host.id) %>
     <br />
     <%= @event.host.username %>
     <br />
@@ -177,7 +177,7 @@
    <br />
     Host
     <br />
-    <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
+    <%= link_to image_tag(@event.host.avatar), user_path(@event.host.id) %>
     <br />
     <%= @event.host.username %>
     <br />
@@ -186,7 +186,7 @@
   <% @event.guests.each do |guest| %>
     <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>
         <br />
-        <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
+        <%= link_to image_tag(guest.avatar), user_path(guest.id) %>
         <br />
         <%= guest.username %>
         <br />
