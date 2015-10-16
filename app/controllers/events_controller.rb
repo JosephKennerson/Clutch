@@ -19,10 +19,16 @@ class EventsController < ApplicationController
   def show
     @comment = Comment.new
     @rating = Rating.new
-    respond_to do |format|
+    if request.xhr?
+      respond_to do |format|
       format.html {render layout: false}
-      # format.html
       format.json
+      end
+    else
+      respond_to do |format|
+        format.html
+        format.json
+      end
     end
   end
 
