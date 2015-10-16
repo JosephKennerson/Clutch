@@ -17,8 +17,4 @@
 !/log/.keep
 /tmp
 /logs/*
-/index/.st
-/index/.si
-/index/.cfs
-/index/.cfe
-/index/.del
+/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/*

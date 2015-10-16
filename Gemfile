@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 
 gem 'kaminari'
-gem 'carrierwave'
 gem 'twilio-ruby'
 gem 'phonelib'
 gem 'devise'
@@ -57,9 +56,6 @@ gem 'geocoder'
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
 gem 'kaminari'
-gem 'carrierwave'
-gem 'devise'
-gem 'gravtastic'
   gem 'searchkick', '~> 0.9.1'
 
 

@@ -18880,3 +18880,341 @@ java.io.IOException: Host is down
 [2015-10-15 21:08:44,215][INFO ][http                     ] [Jason] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
 [2015-10-15 21:08:44,216][INFO ][node                     ] [Jason] started
 [2015-10-15 21:08:44,278][INFO ][gateway                  ] [Jason] recovered [2] indices into cluster_state
+[2015-10-15 21:43:04,278][INFO ][node                     ] [Haven] version[1.7.1], pid[21431], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:43:04,279][INFO ][node                     ] [Haven] initializing ...
+[2015-10-15 21:43:04,422][INFO ][plugins                  ] [Haven] loaded [], sites []
+[2015-10-15 21:43:04,502][INFO ][env                      ] [Haven] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [134.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:43:08,030][INFO ][node                     ] [Haven] initialized
+[2015-10-15 21:43:08,031][INFO ][node                     ] [Haven] starting ...
+[2015-10-15 21:43:08,210][INFO ][transport                ] [Haven] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-15 21:43:08,254][INFO ][discovery                ] [Haven] elasticsearch/WqjSvhhpR4mZEzs7yrxEPQ
+[2015-10-15 21:43:12,065][INFO ][cluster.service          ] [Haven] new_master [Haven][WqjSvhhpR4mZEzs7yrxEPQ][Madisons-Air][inet[/192.168.1.145:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 21:43:12,092][INFO ][http                     ] [Haven] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-15 21:43:12,093][INFO ][node                     ] [Haven] started
+[2015-10-15 21:43:12,175][INFO ][gateway                  ] [Haven] recovered [2] indices into cluster_state
+[2015-10-15 21:43:12,791][WARN ][indices.cluster          ] [Haven] [[events_development_20151014220818574][1]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][1] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][1] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_2.del, segments.gen, segments_i, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/1/index/_3q.si
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.codecs.lucene46.Lucene46SegmentInfoReader.read(Lucene46SegmentInfoReader.java:51)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,796][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][1] received shard failed for [events_development_20151014220818574][1], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events_development_20151014220818574][1] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events_development_20151014220818574][1] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_2.del, segments.gen, segments_i, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/1/index/_3q.si]; ]]
+[2015-10-15 21:43:12,797][WARN ][indices.cluster          ] [Haven] [[events_development_20151014220818574][3]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][3] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][3] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_1.del, segments.gen, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/3/index/segments_g
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:341)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,799][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][3] received shard failed for [events_development_20151014220818574][3], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events_development_20151014220818574][3] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events_development_20151014220818574][3] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_1.del, segments.gen, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/3/index/segments_g]; ]]
+[2015-10-15 21:43:12,800][WARN ][indices.cluster          ] [Haven] [[events_development_20151014220818574][0]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][0] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][0] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_1.del, segments.gen, segments_f, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/0/index/_34.si
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.codecs.lucene46.Lucene46SegmentInfoReader.read(Lucene46SegmentInfoReader.java:51)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,810][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][0] received shard failed for [events_development_20151014220818574][0], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events_development_20151014220818574][0] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events_development_20151014220818574][0] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_1.del, segments.gen, segments_f, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/0/index/_34.si]; ]]
+[2015-10-15 21:43:12,820][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][0] received shard failed for [events_development_20151014220818574][0], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [master [Haven][WqjSvhhpR4mZEzs7yrxEPQ][Madisons-Air][inet[/192.168.1.145:9300]] marked shard as initializing, but shard is marked as failed, resend shard failure]
+[2015-10-15 21:43:12,821][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][3] received shard failed for [events_development_20151014220818574][3], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [master [Haven][WqjSvhhpR4mZEzs7yrxEPQ][Madisons-Air][inet[/192.168.1.145:9300]] marked shard as initializing, but shard is marked as failed, resend shard failure]
+[2015-10-15 21:43:12,822][WARN ][indices.cluster          ] [Haven] [[events_development_20151014220818574][4]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][4] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][4] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_1.del, segments.gen, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/4/index/segments_h
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:341)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,829][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][4] received shard failed for [events_development_20151014220818574][4], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events_development_20151014220818574][4] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events_development_20151014220818574][4] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_1.del, segments.gen, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/4/index/segments_h]; ]]
+[2015-10-15 21:43:12,839][WARN ][indices.cluster          ] [Haven] [[events_development_20151014220818574][2]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][2] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events_development_20151014220818574][2] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_2.del, _2y.cfe, _2y.cfs, _2y.si, segments.gen, segments_g, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/2/index/_34.si
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.codecs.lucene46.Lucene46SegmentInfoReader.read(Lucene46SegmentInfoReader.java:51)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,857][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][2] received shard failed for [events_development_20151014220818574][2], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events_development_20151014220818574][2] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events_development_20151014220818574][2] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_0.cfe, _0.cfs, _0.si, _0_2.del, _2y.cfe, _2y.cfs, _2y.si, segments.gen, segments_g, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events_development_20151014220818574/2/index/_34.si]; ]]
+[2015-10-15 21:43:12,894][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][4] received shard failed for [events_development_20151014220818574][4], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [master [Haven][WqjSvhhpR4mZEzs7yrxEPQ][Madisons-Air][inet[/192.168.1.145:9300]] marked shard as initializing, but shard is marked as failed, resend shard failure]
+[2015-10-15 21:43:12,895][WARN ][cluster.action.shard     ] [Haven] [events_development_20151014220818574][2] received shard failed for [events_development_20151014220818574][2], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.096Z]], indexUUID [6ucWIHSFQMeNtUaKEdYxEg], reason [master [Haven][WqjSvhhpR4mZEzs7yrxEPQ][Madisons-Air][inet[/192.168.1.145:9300]] marked shard as initializing, but shard is marked as failed, resend shard failure]
+[2015-10-15 21:43:12,925][WARN ][indices.cluster          ] [Haven] [[events][3]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events][3] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events][3] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_au.cfe, _au.cfs, _au.si, _au_2.del, segments.gen, segments_1c, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events/3/index/_fe.si
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.codecs.lucene46.Lucene46SegmentInfoReader.read(Lucene46SegmentInfoReader.java:51)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,934][WARN ][cluster.action.shard     ] [Haven] [events][3] received shard failed for [events][3], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.090Z]], indexUUID [VsDJjKSvTl6Arm8h7b-nQA], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events][3] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events][3] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_au.cfe, _au.cfs, _au.si, _au_2.del, segments.gen, segments_1c, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events/3/index/_fe.si]; ]]
+[2015-10-15 21:43:12,946][WARN ][cluster.action.shard     ] [Haven] [events][3] received shard failed for [events][3], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.090Z]], indexUUID [VsDJjKSvTl6Arm8h7b-nQA], reason [master [Haven][WqjSvhhpR4mZEzs7yrxEPQ][Madisons-Air][inet[/192.168.1.145:9300]] marked shard as initializing, but shard is marked as failed, resend shard failure]
+[2015-10-15 21:43:12,959][WARN ][indices.cluster          ] [Haven] [[events][1]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events][1] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events][1] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_8z.cfe, _8z.cfs, _8z.si, _8z_1.del, _ab.cfe, _ab.cfs, _ab.si, _ab_3.del, segments.gen, segments_1d, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events/1/index/_eh.si
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.codecs.lucene46.Lucene46SegmentInfoReader.read(Lucene46SegmentInfoReader.java:51)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,961][WARN ][cluster.action.shard     ] [Haven] [events][1] received shard failed for [events][1], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.090Z]], indexUUID [VsDJjKSvTl6Arm8h7b-nQA], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events][1] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events][1] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_8z.cfe, _8z.cfs, _8z.si, _8z_1.del, _ab.cfe, _ab.cfs, _ab.si, _ab_3.del, segments.gen, segments_1d, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events/1/index/_eh.si]; ]]
+[2015-10-15 21:43:12,967][WARN ][indices.cluster          ] [Haven] [[events][0]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events][0] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events][0] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_ab.cfe, _ab.cfs, _ab.si, _ab_2.del, segments.gen, segments_1c, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events/0/index/_ey.si
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.codecs.lucene46.Lucene46SegmentInfoReader.read(Lucene46SegmentInfoReader.java:51)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,969][WARN ][cluster.action.shard     ] [Haven] [events][0] received shard failed for [events][0], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.090Z]], indexUUID [VsDJjKSvTl6Arm8h7b-nQA], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events][0] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events][0] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_ab.cfe, _ab.cfs, _ab.si, _ab_2.del, segments.gen, segments_1c, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events/0/index/_ey.si]; ]]
+[2015-10-15 21:43:12,977][WARN ][cluster.action.shard     ] [Haven] [events][0] received shard failed for [events][0], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.090Z]], indexUUID [VsDJjKSvTl6Arm8h7b-nQA], reason [master [Haven][WqjSvhhpR4mZEzs7yrxEPQ][Madisons-Air][inet[/192.168.1.145:9300]] marked shard as initializing, but shard is marked as failed, resend shard failure]
+[2015-10-15 21:43:12,978][WARN ][indices.cluster          ] [Haven] [[events][4]] marking and sending shard failed due to [failed recovery]
+org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events][4] failed to fetch index version after copying it over
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:161)
+	at org.elasticsearch.index.gateway.IndexShardGatewayService$1.run(IndexShardGatewayService.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.elasticsearch.index.gateway.IndexShardGatewayRecoveryException: [events][4] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_b8.cfe, _b8.cfs, _b8.si, _b8_3.del, segments.gen, segments_1c, write.lock]
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:135)
+	... 4 more
+Caused by: java.nio.file.NoSuchFileException: /Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events/4/index/_fm.si
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileSystemProvider.newFileChannel(UnixFileSystemProvider.java:177)
+	at java.nio.channels.FileChannel.open(FileChannel.java:287)
+	at java.nio.channels.FileChannel.open(FileChannel.java:335)
+	at org.apache.lucene.store.NIOFSDirectory.openInput(NIOFSDirectory.java:81)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:80)
+	at org.elasticsearch.index.store.Store$StoreDirectory.openInput(Store.java:733)
+	at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:113)
+	at org.apache.lucene.codecs.lucene46.Lucene46SegmentInfoReader.read(Lucene46SegmentInfoReader.java:51)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:359)
+	at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:462)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:923)
+	at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:769)
+	at org.apache.lucene.index.SegmentInfos.read(SegmentInfos.java:458)
+	at org.elasticsearch.common.lucene.Lucene.readSegmentInfos(Lucene.java:89)
+	at org.elasticsearch.index.store.Store.readSegmentsInfo(Store.java:166)
+	at org.elasticsearch.index.store.Store.readLastCommittedSegmentsInfo(Store.java:152)
+	at org.elasticsearch.index.gateway.local.LocalIndexShardGateway.recover(LocalIndexShardGateway.java:126)
+	... 4 more
+[2015-10-15 21:43:12,982][WARN ][cluster.action.shard     ] [Haven] [events][4] received shard failed for [events][4], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.090Z]], indexUUID [VsDJjKSvTl6Arm8h7b-nQA], reason [shard failure [failed recovery][IndexShardGatewayRecoveryException[[events][4] failed to fetch index version after copying it over]; nested: IndexShardGatewayRecoveryException[[events][4] shard allocated for local recovery (post api), should exist, but doesn't, current files: [_b8.cfe, _b8.cfs, _b8.si, _b8_3.del, segments.gen, segments_1c, write.lock]]; nested: NoSuchFileException[/Users/madisonsites/Desktop/finalprojectclutch/Clutch/elasticsearch-1.7.1/data/elasticsearch/nodes/0/indices/events/4/index/_fm.si]; ]]
+[2015-10-15 21:43:12,983][WARN ][cluster.action.shard     ] [Haven] [events][4] received shard failed for [events][4], node[WqjSvhhpR4mZEzs7yrxEPQ], [P], s[INITIALIZING], unassigned_info[[reason=CLUSTER_RECOVERED], at[2015-10-16T04:43:12.090Z]], indexUUID [VsDJjKSvTl6Arm8h7b-nQA], reason [master [Haven][WqjSvhhpR4mZEzs7yrxEPQ][Madisons-Air][inet[/192.168.1.145:9300]] marked shard as initializing, but shard is marked as failed, resend shard failure]
+[2015-10-15 21:46:12,265][DEBUG][action.index             ] [Haven] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2015-10-15 21:47:12,265][DEBUG][action.index             ] [Haven] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2015-10-15 21:48:54,280][INFO ][node                     ] [Haven] stopping ...
+[2015-10-15 21:48:54,331][INFO ][node                     ] [Haven] stopped
+[2015-10-15 21:48:54,331][INFO ][node                     ] [Haven] closing ...
+[2015-10-15 21:48:54,341][INFO ][node                     ] [Haven] closed
