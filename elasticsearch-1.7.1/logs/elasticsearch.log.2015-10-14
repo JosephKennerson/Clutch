@@ -1,0 +1,419 @@
+
+[2015-10-14 14:16:27,431][INFO ][cluster.service          ] [Raza] added {[David Cannon][w2wuzrOJSJGQ0FKwvYYF4Q][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(join from node[[David Cannon][w2wuzrOJSJGQ0FKwvYYF4Q][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 14:16:27,864][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 746mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:16:27,871][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:16:36,123][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 745.4mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:17:06,094][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 729.1mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:17:36,330][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 728.2mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:17:36,340][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:18:06,132][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 727.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:18:36,109][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 726.7mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:19:06,259][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 726.6mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:19:06,264][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:19:36,144][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 726.6mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:20:06,119][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 726.6mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:20:36,130][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 726.2mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:20:36,141][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:21:06,153][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 725.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:21:36,254][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 725.7mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:21:36,256][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:22:06,135][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 724.6mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:22:36,157][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 724.5mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:23:06,268][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 724.5mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:23:06,271][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:23:36,680][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 639.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:24:06,170][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 639.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:24:36,281][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 639.1mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:24:36,285][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:25:06,653][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 639.1mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:25:36,181][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 643.1mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:26:06,287][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 643.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:26:06,290][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:26:36,220][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 643.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:27:06,176][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 643.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:27:36,285][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 643.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:27:36,289][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:28:06,175][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 642.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:28:36,201][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 642.7mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:29:06,222][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:29:06,225][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:29:36,496][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:30:06,213][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:30:36,242][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.8mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:30:36,245][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:31:06,519][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.8mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:31:36,222][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.8mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:32:06,221][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.5mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:32:06,225][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:32:36,364][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.6mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:33:06,684][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.6mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:33:06,687][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:33:36,340][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 636.5mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:34:06,331][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 640.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:34:36,550][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 575.6mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:34:36,553][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:35:06,253][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 570.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:35:36,270][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 565.5mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:36:06,368][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 566.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:36:06,371][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:36:36,354][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 571.5mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:37:06,466][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 568.6mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:37:06,477][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:37:36,876][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 581.1mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:38:06,316][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 576mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:38:36,278][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 575.5mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:38:36,287][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:39:06,283][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 571.8mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:39:36,290][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 571.7mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:39:36,294][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:40:06,301][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 574.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:40:36,310][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 552.1mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:40:36,312][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:41:06,517][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 574.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:41:36,321][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 553.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:41:36,336][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:42:06,315][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 555.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:42:36,369][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 555.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:42:36,379][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:43:06,364][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 555.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:43:36,348][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 555.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:44:06,340][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 632.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:44:06,341][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:44:36,348][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 632.1mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:45:06,450][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 632.1mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:45:06,461][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:45:36,364][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 632mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:46:06,353][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 600mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:46:36,364][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 619.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:46:36,375][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:47:06,873][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 633.8mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:47:36,427][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 612.7mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:47:36,431][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:48:06,472][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 720.3mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:48:36,378][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 695.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:49:06,443][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 708.8mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:49:06,444][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:49:36,482][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 700.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:50:06,481][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 699.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:50:06,489][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:50:36,402][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 703.6mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:51:06,500][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 692.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:51:06,511][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:51:36,596][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 714.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:52:06,420][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 714.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:52:36,502][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 718mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:52:36,503][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:53:06,615][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 717.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:53:36,801][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 693.7mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:53:36,804][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:54:06,428][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 693.6mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:54:36,571][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 697.3mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:55:07,000][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 691mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:55:07,003][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:55:36,449][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 686.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:56:06,626][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 691.5mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:56:36,495][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 689.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:56:36,498][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:57:06,452][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 707.9mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:57:36,668][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 700.4mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:57:36,676][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:58:06,476][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 705.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:58:36,656][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 692.5mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:59:06,540][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 691.8mb[0.2%], shards will be relocated away from this node
+[2015-10-14 14:59:06,542][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:59:36,481][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 677.3mb[0.2%], shards will be relocated away from this node
+[2015-10-14 15:00:06,605][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 576.2mb[0.2%], shards will be relocated away from this node
+[2015-10-14 15:00:06,608][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 15:00:36,680][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 958.5mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:01:06,779][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 954.2mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:01:06,790][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 15:01:36,505][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 954.3mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:02:06,650][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 957.5mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:02:36,798][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 959.3mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:02:36,802][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 15:03:06,582][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 941.3mb[0.3%], shards will be relocated away from this node
+[2015-10-14 15:03:36,697][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 948.3mb[0.3%], shards will be relocated away from this node
+[2015-10-14 15:04:06,521][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 948.2mb[0.3%], shards will be relocated away from this node
+[2015-10-14 15:04:06,523][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 15:04:36,540][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 963.6mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:05:06,535][WARN ][cluster.routing.allocation.decider] [Raza] high disk watermark [90%] exceeded on [w2wuzrOJSJGQ0FKwvYYF4Q][David Cannon] free: 953.9mb[0.4%], shards will be relocated away from this node
+[2015-10-14 15:05:06,536][INFO ][cluster.routing.allocation.decider] [Raza] high disk watermark exceeded on one or more nodes, rerouting shards
+
+[2015-10-13 18:49:53,877][INFO ][node                     ] [Gee] version[1.7.1], pid[89101], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-13 18:49:53,877][INFO ][node                     ] [Gee] initializing ...
+[2015-10-13 18:49:54,052][INFO ][plugins                  ] [Gee] loaded [], sites []
+[2015-10-13 18:49:54,135][INFO ][env                      ] [Gee] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-13 18:49:58,374][INFO ][node                     ] [Gee] initialized
+[2015-10-13 18:49:58,375][INFO ][node                     ] [Gee] starting ...
+[2015-10-13 18:49:58,516][INFO ][transport                ] [Gee] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-13 18:49:58,550][INFO ][discovery                ] [Gee] elasticsearch/pbarfueRT1yKMg-3ogP1eQ
+[2015-10-13 18:50:02,343][INFO ][cluster.service          ] [Gee] new_master [Gee][pbarfueRT1yKMg-3ogP1eQ][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-13 18:50:02,366][INFO ][http                     ] [Gee] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-13 18:50:02,367][INFO ][node                     ] [Gee] started
+[2015-10-13 18:50:02,391][INFO ][gateway                  ] [Gee] recovered [0] indices into cluster_state
+[2015-10-13 18:51:04,857][INFO ][node                     ] [Gee] stopping ...
+[2015-10-13 18:51:04,927][INFO ][node                     ] [Gee] stopped
+[2015-10-13 18:51:04,928][INFO ][node                     ] [Gee] closing ...
+[2015-10-13 18:51:04,940][INFO ][node                     ] [Gee] closed
+[2015-10-13 19:00:36,706][INFO ][node                     ] [Arc] version[1.7.1], pid[89397], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-13 19:00:36,709][INFO ][node                     ] [Arc] initializing ...
+[2015-10-13 19:00:36,870][INFO ][plugins                  ] [Arc] loaded [], sites []
+[2015-10-13 19:00:36,956][INFO ][env                      ] [Arc] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-13 19:00:41,029][INFO ][node                     ] [Arc] initialized
+[2015-10-13 19:00:41,029][INFO ][node                     ] [Arc] starting ...
+[2015-10-13 19:00:41,200][INFO ][transport                ] [Arc] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-13 19:00:41,239][INFO ][discovery                ] [Arc] elasticsearch/HN8u2lrnSrycq6pQAqY3AA
+[2015-10-13 19:00:45,035][INFO ][cluster.service          ] [Arc] new_master [Arc][HN8u2lrnSrycq6pQAqY3AA][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-13 19:00:45,058][INFO ][http                     ] [Arc] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-13 19:00:45,058][INFO ][node                     ] [Arc] started
+[2015-10-13 19:00:45,069][INFO ][gateway                  ] [Arc] recovered [0] indices into cluster_state
+[2015-10-13 19:02:15,825][INFO ][node                     ] [Arc] stopping ...
+[2015-10-13 19:02:16,399][INFO ][node                     ] [Arc] stopped
+[2015-10-13 19:02:16,402][INFO ][node                     ] [Arc] closing ...
+[2015-10-13 19:02:16,758][INFO ][node                     ] [Arc] closed
+[2015-10-13 19:17:20,857][INFO ][node                     ] [Raza] version[1.7.1], pid[90335], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-13 19:17:20,859][INFO ][node                     ] [Raza] initializing ...
+[2015-10-13 19:17:21,015][INFO ][plugins                  ] [Raza] loaded [], sites []
+[2015-10-13 19:17:21,089][INFO ][env                      ] [Raza] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-13 19:17:24,709][INFO ][node                     ] [Raza] initialized
+[2015-10-13 19:17:24,709][INFO ][node                     ] [Raza] starting ...
+[2015-10-13 19:17:24,907][INFO ][transport                ] [Raza] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-13 19:17:24,952][INFO ][discovery                ] [Raza] elasticsearch/qCFFzUjQS12EsdxOzv8gig
+[2015-10-13 19:17:28,833][INFO ][cluster.service          ] [Raza] new_master [Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-13 19:17:28,863][INFO ][http                     ] [Raza] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-13 19:17:28,863][INFO ][node                     ] [Raza] started
+[2015-10-13 19:17:28,871][INFO ][gateway                  ] [Raza] recovered [0] indices into cluster_state
+[2015-10-13 19:18:03,141][INFO ][cluster.metadata         ] [Raza] [events] creating index, cause [auto(index api)], templates [], shards [5]/[1], mappings [event]
+[2015-10-13 19:18:03,750][INFO ][cluster.metadata         ] [Raza] [events] update_mapping [event] (dynamic)
+[2015-10-14 13:56:45,731][INFO ][node                     ] [Alicia Masters] version[1.7.1], pid[22381], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 13:56:45,732][INFO ][node                     ] [Alicia Masters] initializing ...
+[2015-10-14 13:56:45,909][INFO ][plugins                  ] [Alicia Masters] loaded [], sites []
+[2015-10-14 13:56:45,997][INFO ][env                      ] [Alicia Masters] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [784mb], net total_space [232.6gb], types [hfs]
+[2015-10-14 13:56:49,768][INFO ][node                     ] [Alicia Masters] initialized
+[2015-10-14 13:56:49,768][INFO ][node                     ] [Alicia Masters] starting ...
+[2015-10-14 13:56:49,993][INFO ][transport                ] [Alicia Masters] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.126:9300]}
+[2015-10-14 13:56:50,058][INFO ][discovery                ] [Alicia Masters] elasticsearch/YN-QYXl5RWu7YGNYoxPE4Q
+[2015-10-14 13:56:53,874][INFO ][cluster.service          ] [Alicia Masters] new_master [Alicia Masters][YN-QYXl5RWu7YGNYoxPE4Q][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-14 13:56:53,897][INFO ][http                     ] [Alicia Masters] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.126:9200]}
+[2015-10-14 13:56:53,897][INFO ][node                     ] [Alicia Masters] started
+[2015-10-14 13:56:53,935][INFO ][gateway                  ] [Alicia Masters] recovered [1] indices into cluster_state
+[2015-10-14 13:57:23,908][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 784.2mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:57:23,909][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 13:57:53,890][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 784.1mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:58:23,892][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 783.7mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:58:53,898][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 772.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:58:53,899][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 13:59:23,905][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 740.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:59:53,907][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 740.3mb[0.3%], shards will be relocated away from this node
+[2015-10-14 13:59:53,907][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:00:23,910][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 739.7mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:00:53,913][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 739mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:00:53,913][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:01:23,917][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 739mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:01:53,919][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 738.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:01:53,927][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:02:23,925][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 738.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:02:53,928][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 738.9mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:03:23,932][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 738.5mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:03:23,941][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:03:53,935][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:04:23,940][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:04:53,940][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:04:53,940][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:05:23,942][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:05:53,945][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.8mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:05:53,953][INFO ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-14 14:06:23,951][WARN ][cluster.routing.allocation.decider] [Alicia Masters] high disk watermark [90%] exceeded on [YN-QYXl5RWu7YGNYoxPE4Q][Alicia Masters] free: 737.7mb[0.3%], shards will be relocated away from this node
+[2015-10-14 14:16:19,426][INFO ][node                     ] [David Cannon] version[1.7.1], pid[23559], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 14:16:19,427][INFO ][node                     ] [David Cannon] initializing ...
+[2015-10-14 14:16:19,599][INFO ][plugins                  ] [David Cannon] loaded [], sites []
+[2015-10-14 14:16:19,659][INFO ][env                      ] [David Cannon] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [746mb], net total_space [232.6gb], types [hfs]
+[2015-10-14 14:16:23,350][INFO ][node                     ] [David Cannon] initialized
+[2015-10-14 14:16:23,351][INFO ][node                     ] [David Cannon] starting ...
+[2015-10-14 14:16:23,537][INFO ][transport                ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.126:9300]}
+[2015-10-14 14:16:23,585][INFO ][discovery                ] [David Cannon] elasticsearch/w2wuzrOJSJGQ0FKwvYYF4Q
+[2015-10-14 14:16:27,630][INFO ][cluster.service          ] [David Cannon] detected_master [Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]], added {[Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],}, reason: zen-disco-receive(from master [[Raza][qCFFzUjQS12EsdxOzv8gig][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]]])
+[2015-10-14 14:16:27,660][INFO ][http                     ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.126:9200]}
+[2015-10-14 14:16:27,660][INFO ][node                     ] [David Cannon] started[2015-10-14 16:21:16,525][INFO ][node                     ] [Shriker] version[1.7.1], pid[6105], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 16:21:16,526][INFO ][node                     ] [Shriker] initializing ...
+[2015-10-14 16:21:16,683][INFO ][plugins                  ] [Shriker] loaded [], sites []
+[2015-10-14 16:21:16,775][INFO ][env                      ] [Shriker] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.2gb], net total_space [232.6gb], types [hfs]
+[2015-10-14 16:21:21,247][INFO ][node                     ] [Shriker] initialized
+[2015-10-14 16:21:21,248][INFO ][node                     ] [Shriker] starting ...
+[2015-10-14 16:21:21,611][INFO ][transport                ] [Shriker] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-14 16:21:21,666][INFO ][discovery                ] [Shriker] elasticsearch/vU_nG2vfSC-sFsZb60bDGQ
+[2015-10-14 16:21:25,345][INFO ][cluster.service          ] [Shriker] detected_master [the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]], added {[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-14 16:21:25,462][INFO ][gateway.local.state.meta ] [Shriker] [events_development_20151014161811608] dangling index, exists on local file system, but not in cluster metadata, auto import to cluster state [YES]
+[2015-10-14 16:21:25,522][INFO ][http                     ] [Shriker] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-14 16:21:25,529][INFO ][node                     ] [Shriker] started
+[2015-10-14 16:34:52,849][INFO ][cluster.service          ] [Shriker] removed {[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-14 16:34:57,323][INFO ][cluster.service          ] [Shriker] added {[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-14 16:42:54,892][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0x4c6330b1, /192.168.1.145:61173 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 16:42:55,193][INFO ][discovery.zen            ] [Shriker] master_left [[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]], reason [transport disconnected]
+[2015-10-14 16:42:55,201][WARN ][discovery.zen            ] [Shriker] master left (reason = transport disconnected), current nodes: {[Shriker][vU_nG2vfSC-sFsZb60bDGQ][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}
+[2015-10-14 16:42:55,206][INFO ][cluster.service          ] [Shriker] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-master_failed ([the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]])
+[2015-10-14 16:43:25,413][WARN ][cluster.service          ] [Shriker] cluster state update task [zen-disco-master_failed ([the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]])] took 30.2s above the warn threshold of 30s
+[2015-10-14 16:43:25,414][INFO ][cluster.service          ] [Shriker] detected_master [Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]], reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 16:44:46,081][INFO ][cluster.service          ] [Shriker] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 16:46:54,774][INFO ][cluster.service          ] [Shriker] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 16:46:54,820][WARN ][action.index             ] [Shriker] failed to perform indices:data/write/index on remote replica [the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]][events][2]
+org.elasticsearch.transport.NodeDisconnectedException: [the Renegade Watcher Aron][inet[/192.168.1.164:9300]][indices:data/write/index[r]] disconnected
+[2015-10-14 16:49:48,047][INFO ][cluster.service          ] [Shriker] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0x25c21fd8, /192.168.1.145:51561 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0x77e16f82, /192.168.1.145:51562 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0xf6d33846, /192.168.1.145:51563 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0xe74286fc, /192.168.1.145:51565 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:16,508][WARN ][transport.netty          ] [Shriker] exception caught on transport layer [[id: 0x1a9bf759, /192.168.1.145:51564 => /192.168.1.164:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 17:28:55,948][INFO ][cluster.service          ] [Shriker] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 17:32:32,940][INFO ][cluster.service          ] [Shriker] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 17:49:56,606][INFO ][cluster.service          ] [Shriker] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 18:04:03,062][INFO ][cluster.service          ] [Shriker] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 18:34:10,739][INFO ][discovery.zen            ] [Shriker] master_left [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], reason [transport disconnected]
+[2015-10-14 18:34:10,739][INFO ][discovery.zen            ] [Shriker] master_left [[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], reason [shut_down]
+[2015-10-14 18:34:10,793][WARN ][discovery.zen            ] [Shriker] master left (reason = shut_down), current nodes: {[Shriker][vU_nG2vfSC-sFsZb60bDGQ][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}
+[2015-10-14 18:34:10,802][INFO ][cluster.service          ] [Shriker] removed {[Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-master_failed ([Hermod][ro7b4KfYTpKXH8UTfKiwIg][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]])
+[2015-10-14 18:34:13,974][INFO ][cluster.service          ] [Shriker] detected_master [Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 20:53:59,219][INFO ][node                     ] [Danger] version[1.7.1], pid[11265], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-14 20:53:59,220][INFO ][node                     ] [Danger] initializing ...
+[2015-10-14 20:53:59,395][INFO ][plugins                  ] [Danger] loaded [], sites []
+[2015-10-14 20:53:59,478][INFO ][env                      ] [Danger] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [133.1gb], net total_space [232.6gb], types [hfs]
+[2015-10-14 20:54:05,109][INFO ][node                     ] [Danger] initialized
+[2015-10-14 20:54:05,122][INFO ][node                     ] [Danger] starting ...
+[2015-10-14 20:54:05,503][INFO ][transport                ] [Danger] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-14 20:54:05,634][INFO ][discovery                ] [Danger] elasticsearch/ruyQPlLlTum_W-_UpF7a2A
+[2015-10-14 20:54:08,916][INFO ][cluster.service          ] [Danger] detected_master [Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Allatou][iO3X70YkRxGcqxwdnKdFxw][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 20:54:08,993][INFO ][http                     ] [Danger] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-14 20:54:08,994][INFO ][node                     ] [Danger] started
+[2015-10-14 20:55:23,270][DEBUG][action.index             ] [Danger] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2015-10-14 20:55:33,277][DEBUG][action.index             ] [Danger] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2015-10-14 21:01:18,027][INFO ][cluster.service          ] [Danger] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 21:03:22,474][INFO ][discovery.zen            ] [Danger] master_left [[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]]], reason [shut_down]
+[2015-10-14 21:03:22,518][WARN ][discovery.zen            ] [Danger] master left (reason = shut_down), current nodes: {[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],[Allatou][iO3X70YkRxGcqxwdnKdFxw][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}
+[2015-10-14 21:03:22,523][INFO ][cluster.service          ] [Danger] removed {[Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-master_failed ([Torrent][JnXiZrIqQuuyC3kmLYfNaQ][Beepo-Retina.local][inet[/192.168.1.8:9300]])
+[2015-10-14 21:03:25,768][INFO ][cluster.service          ] [Danger] detected_master [Allatou][iO3X70YkRxGcqxwdnKdFxw][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]], reason: zen-disco-receive(from master [[Allatou][iO3X70YkRxGcqxwdnKdFxw][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]])
+[2015-10-14 21:24:20,815][DEBUG][action.index             ] [Danger] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2015-10-14 21:24:30,828][DEBUG][action.index             ] [Danger] observer: timeout notification from cluster service. timeout setting [1m], time since start [1m]
+[2015-10-14 21:25:03,767][WARN ][transport.netty          ] [Danger] exception caught on transport layer [[id: 0xc53aca41, /192.168.1.145:63258 => /192.168.1.126:9300]], closing connection
+java.io.IOException: Operation timed out
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.read(NioWorker.java:64)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2015-10-14 21:25:03,884][INFO ][discovery.zen            ] [Danger] master_left [[Allatou][iO3X70YkRxGcqxwdnKdFxw][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], reason [transport disconnected]
+[2015-10-14 21:25:03,885][WARN ][discovery.zen            ] [Danger] master left (reason = transport disconnected), current nodes: {[Danger][ruyQPlLlTum_W-_UpF7a2A][Madisons-MacBook-Air.local][inet[/192.168.1.145:9300]],[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}
+[2015-10-14 21:25:03,886][INFO ][cluster.service          ] [Danger] removed {[Allatou][iO3X70YkRxGcqxwdnKdFxw][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-master_failed ([Allatou][iO3X70YkRxGcqxwdnKdFxw][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]])
+[2015-10-14 21:25:07,474][INFO ][cluster.service          ] [Danger] detected_master [Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 21:26:48,984][INFO ][cluster.service          ] [Danger] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 21:27:54,268][INFO ][cluster.service          ] [Danger] added {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 21:32:50,677][INFO ][cluster.service          ] [Danger] removed {[the Renegade Watcher Aron][oBzrVcBuT6KjOrdIJLrAXw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 21:37:19,076][INFO ][cluster.service          ] [Danger] added {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 22:13:36,094][INFO ][cluster.service          ] [Danger] removed {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 22:16:30,777][INFO ][cluster.service          ] [Danger] added {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-14 23:01:36,618][INFO ][cluster.service          ] [Danger] removed {[Kraven the Hunter][SdqJ8RO3Te6hJ5PSXRkRKw][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(from master [[Vindaloo][if7uzR_tRZi6vnJyi8EU0w][Beepo-Retina.local][inet[/192.168.1.8:9300]]])

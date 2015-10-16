@@ -1,4 +1,5 @@
 <% if user_signed_in?%>
+
 <p id="notice"><%= notice %></p>
 
     <div class="container">
@@ -13,7 +14,6 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-            <h2 class="blog-post-title">Sample blog post</h2>
             <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.username %></p>
 
             <p><%= @event.description %></p>
@@ -73,12 +73,7 @@
   </div>
 </div>
 <% end %>
-          <nav>
-            <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-          </nav>
+
 
         </div><!-- /.blog-main -->
 
@@ -86,7 +81,6 @@
           <div class="sidebar-module sidebar-module-inset">
             <%= link_to image_tag(User.find(@event.host_id).gravatar_url), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
             <h4><%= @event.host.username %>'s rating: <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
-            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
           </div>
           <div class="sidebar-module">
             <% if @event.host_id == current_user.id && @event.approval_required == true%>
