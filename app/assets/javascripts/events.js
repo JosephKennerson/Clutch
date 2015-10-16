@@ -35,7 +35,7 @@ $(document).ready(function(){
     })
     .fail(function(events){
       alert("Could not search");
-    })    
+    })
   }); //search-form ajax
 
 }); //document ready
@@ -63,18 +63,18 @@ function addEventPopups(map) {
   map.featureLayer.on('layeradd', function(e){
     var marker = e.layer,
         properties = marker.feature.properties,
-        popupContent =      '<div><strong>Event Name</strong> : ' + properties.name + 
+        popupContent =      '<div><strong>Event Name</strong> : ' + properties.name +
                             '<br/><strong>Description</strong> : ' + properties.description + '</div>'
-                            // '<br/><strong>Category</strong> : ' + properties.category + 
-                            // '<br/><strong>Current / Max</strong> : ' + properties.currently_attending + ' / ' + properties.max_size + 
-                            // '<br/><strong>Host</strong> : ' + properties.host + 
-                            // '<br/><strong>Location</strong> : ' + properties.public_location + 
-                            // '<br/><strong>City</strong> : ' + properties.city + 
-                            // '<br/><strong>State</strong> : ' + properties.state + 
-                            // '<br/><strong>Zip</strong> : ' + properties.zip + 
-                            // '<br/><strong>Date start</strong> : ' + properties.date_start + 
-                            // '<br/><strong>Time start</strong> : ' + properties.time_start + 
-                            // '<br/><strong>Date end</strong> : ' + properties.date_end + 
+                            // '<br/><strong>Category</strong> : ' + properties.category +
+                            // '<br/><strong>Current / Max</strong> : ' + properties.currently_attending + ' / ' + properties.max_size +
+                            // '<br/><strong>Host</strong> : ' + properties.host +
+                            // '<br/><strong>Location</strong> : ' + properties.public_location +
+                            // '<br/><strong>City</strong> : ' + properties.city +
+                            // '<br/><strong>State</strong> : ' + properties.state +
+                            // '<br/><strong>Zip</strong> : ' + properties.zip +
+                            // '<br/><strong>Date start</strong> : ' + properties.date_start +
+                            // '<br/><strong>Time start</strong> : ' + properties.time_start +
+                            // '<br/><strong>Date end</strong> : ' + properties.date_end +
                             // '<br/><strong>Time end</strong> : ' + properties.time_end + '</div>'
   ;
     marker.bindPopup(popupContent, {closeButton: false, minWidth: 320});
