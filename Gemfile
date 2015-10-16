@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 
-gem 'kaminari'
 gem 'twilio-ruby'
 gem 'phonelib'
 gem 'devise'
@@ -51,13 +50,6 @@ gem 'mapbox-rails'
 gem 'geocoder'
 # gem 'leaflet-rails'
 # gem 'leaflet-markercluster-rails'
-
-# Search
-gem 'elasticsearch-rails'
-gem 'elasticsearch-model'
-gem 'carrierwave'
-gem 'kaminari'
-  gem 'searchkick', '~> 0.9.1'
 
 
 group :development, :test do
