@@ -22,7 +22,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "amrita@google.com",
+        email: "aathwal3@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars2.githubusercontent.com/u/7738890?v=3&s=400",
         first_name: "Amrita",
@@ -37,7 +37,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "alfred@gmail.com",
+        email: "alfred.lam.42@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/12229487?v=3&s=400",
         first_name: "Alfred",
@@ -52,7 +52,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "alessandra@google.com",
+        email: "caroline.faisst@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/12245067?v=3&s=400",
         first_name: "Alessandra",
@@ -67,7 +67,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "hunter@google.com",
+        email: "bootcoder@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars1.githubusercontent.com/u/5349292?v=3&s=400",
         first_name: "Hunter",
@@ -82,7 +82,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "brick@google.com",
+        email: "brick@devbootcamp.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/1656492?v=3&s=400",
         first_name: "Brick",
@@ -97,7 +97,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "brian@google.com",
+        email: "br1anp4rk718@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/12618896?v=3&s=400",
         first_name: "Brian",
@@ -112,11 +112,11 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "ben@google.com",
+        email: "ben.t.hsieh@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/12074119?v=3&s=400",
         first_name: "Ben",
-        last_name: "Hseih",
+        last_name: "Hsieh",
         phone_number: "617-671-8206"
     )
 
@@ -128,7 +128,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Anthony@google.com",
+        email: "anthonycastelli01@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/3802248?v=3&s=400",
         first_name: "Anthony",
@@ -143,7 +143,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "anne@google.com",
+        email: "annewchen@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/12677813?v=3&s=400",
         first_name: "Anne",
@@ -158,9 +158,9 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "ana@google.com",
+        email: "anaclairnelson@gmail.com",
         password: "adminadmin",
-        avatar: "https://avatars1.githubusercontent.com/u/10505622?v=3&s=400",
+        avatar: "anaclairnelson@gmail.com",
         first_name: "Ana",
         last_name: "Nelson",
         phone_number: "617-671-8206"
@@ -173,7 +173,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Utsab@google.com",
+        email: "utsab.k.saha@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars1.githubusercontent.com/u/6780322?v=3&s=400",
         first_name: "Utsab",
@@ -203,7 +203,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Jordan@google.com",
+        email: "Jordan@devbootcamp.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/5685877?v=3&s=400",
         first_name: "Jordan",
@@ -218,7 +218,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "topher@google.com",
+        email: "topher@devbootcamp.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/2591516?v=3&s=400",
         first_name: "Topher",
@@ -233,7 +233,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Stephanie@google.com",
+        email: "TopGirlCoder@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/9794021?v=3&s=400",
         first_name: "Stephanie",
@@ -249,7 +249,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Thomas@google.com",
+        email: "tcvoegeli@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/11672765?v=3&s=400",
         first_name: "Thomas",
@@ -264,7 +264,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Scott@google.com",
+        email: "scott.stern06@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/10355544?v=3&s=400",
         first_name: "Scott",
@@ -279,7 +279,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Shambhavi@google.com",
+        email: "Shambhavi@devbootcamp.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/5216008?v=3&s=400",
         first_name: "Shambhavi",
@@ -295,7 +295,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Priyanka@google.com",
+        email: "psaigal48@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars2.githubusercontent.com/u/12552669?v=3&s=400",
         first_name: "Priyanka",
@@ -310,7 +310,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Katie@google.com",
+        email: "okdonga@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars2.githubusercontent.com/u/12257412?v=3&s=400",
         first_name: "Katie",
@@ -325,7 +325,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Max@google.com",
+        email: "mmcgeevibes@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/8016859?v=3&s=400",
         first_name: "Max",
@@ -341,7 +341,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Moses@google.com",
+        email: "MosesJung86@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars1.githubusercontent.com/u/12589043?v=3&s=400",
         first_name: "Moses",
@@ -349,14 +349,14 @@ User.create(
         phone_number: "617-671-8206"
     )
 
-                        User.create!(
+       User.create!(
         username: "lisaSwanson",
         address_line_1: "633 Folsom",
         address_line_2: "6th Floor",
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Lisa@google.com",
+        email: "lds1233@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars1.githubusercontent.com/u/11699845?v=3&s=400",
         first_name: "Lisa",
@@ -364,14 +364,14 @@ User.create(
         phone_number: "617-671-8206"
     )
 
-                                User.create!(
+          User.create!(
         username: "madisonsites",
         address_line_1: "633 Folsom",
         address_line_2: "6th Floor",
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Madison@google.com",
+        email: "madison.sites@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/8879305?v=3&s=400",
         first_name: "Madison",
@@ -379,14 +379,14 @@ User.create(
         phone_number: "617-671-8206"
     )
 
-                                    User.create!(
+      User.create!(
         username: "kkennis",
         address_line_1: "633 Folsom",
         address_line_2: "6th Floor",
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Kevin@google.com",
+        email: "kevinvkennis@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars1.githubusercontent.com/u/12480403?v=3&s=400",
         first_name: "Kevin",
@@ -402,7 +402,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Julia@google.com",
+        email: "graber.jay@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars2.githubusercontent.com/u/12245008?v=3&s=400",
         first_name: "Julia",
@@ -417,7 +417,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Jennifer@google.com",
+        email: "jenniferpoeng@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars1.githubusercontent.com/u/12090354?v=3&s=400",
         first_name: "Jennifer",
@@ -432,7 +432,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Galen@google.com",
+        email: "galenscook@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars2.githubusercontent.com/u/11188784?v=3&s=400",
         first_name: "Galen",
@@ -447,7 +447,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Gael@google.com",
+        email: "gael.bergeron@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/9904720?v=3&s=400",
         first_name: "Gael",
@@ -462,7 +462,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Gabriel@google.com",
+        email: "gabrielfirmacion@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars2.githubusercontent.com/u/11845130?v=3&s=400",
         first_name: "Gabriel",
@@ -477,41 +477,26 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Bison@google.com",
+        email: "davidbisonhubert@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/12518069?v=3&s=400",
-        first_name: "David",
-        last_name: "Bison",
+        first_name: "Bison",
+        last_name: "Hubert",
         phone_number: "617-671-8206"
     )
 
-            User.create!(
+  User.create!(
         username: "codingnutty",
         address_line_1: "633 Folsom",
         address_line_2: "6th Floor",
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Nruthya@google.com",
+        email: "nruthy2687@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars3.githubusercontent.com/u/11263123?v=3&s=400",
         first_name: "Nruthya",
         last_name: "Nruthya",
-        phone_number: "617-671-8206"
-    )
-
-                User.create!(
-        username: "AmadouSallah",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "Amadou@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars3.githubusercontent.com/u/8348320?v=3&s=400",
-        first_name: "Amadou",
-        last_name: "Sallah",
         phone_number: "617-671-8206"
     )
 
@@ -522,7 +507,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Sherif@google.com",
+        email: "Sherif@devbootcamp.com",
         password: "adminadmin",
         avatar: "https://avatars1.githubusercontent.com/u/24913?v=3&s=400",
         first_name: "Sherif",
@@ -610,16 +595,16 @@ end
 
 # # Admin comments
 
-# 10.times do
-#   random_event = rand(1..Event.count)
-#   Comment.create!(
-#         event_id: random_event,
-#         user_id: 1,
-#         body: FFaker::BaconIpsum.phrase,
-#         is_private: FFaker::Boolean.sample
-#     )
+10.times do
+  random_event = rand(1..Event.count)
+  Comment.create!(
+        event_id: random_event,
+        user_id: 1,
+        body: FFaker::BaconIpsum.phrase,
+        is_private: FFaker::Boolean.sample
+    )
 
-# end
+end
 
 # # random comments (public and private)
 
@@ -652,31 +637,31 @@ end
 
 # #Admin pending rsvps
 
-# 5.times do
-#   random_event = rand(1..Event.count)
-#   new_event = Rsvp.create!(
-#       guest_id: 1,
-#       event_id: random_event,
-#       message: Faker::Hacker.say_something_smart,
-#       pending: true
-#     )
+5.times do
+  random_event = rand(1..Event.count)
+  new_event = Rsvp.create!(
+      guest_id: 1,
+      event_id: random_event,
+      message: Faker::Hacker.say_something_smart,
+      pending: true
+    )
 
-# end
+end
 
 # # Admin (not pending) rsvps
 
-# 5.times do
-#   random_guest = rand(10..User.count)
-#   random_event = rand(1..Event.count)
-#   new_event = Rsvp.create!(
-#       guest_id: random_guest,
-#       event_id: random_event,
-#       message: Faker::Hacker.say_something_smart,
-#       pending: false,
-#       confirmed: FFaker::Boolean.sample
-#     )
+5.times do
+  random_guest = rand(10..User.count)
+  random_event = rand(1..Event.count)
+  new_event = Rsvp.create!(
+      guest_id: random_guest,
+      event_id: random_event,
+      message: Faker::Hacker.say_something_smart,
+      pending: false,
+      confirmed: FFaker::Boolean.sample
+    )
 
-# end
+end
 
 # # random not-pending rsvps (true and false; id #26-50)
 
