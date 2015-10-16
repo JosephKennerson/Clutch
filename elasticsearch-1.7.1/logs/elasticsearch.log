@@ -443,3 +443,76 @@ java.io.IOException: Operation timed out
 [2015-10-16 10:06:36,565][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
 [2015-10-16 10:07:06,564][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
 [2015-10-16 10:07:06,564][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:20:03,418][INFO ][node                     ] [Groundhog] version[1.7.1], pid[30776], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-16 10:20:03,419][INFO ][node                     ] [Groundhog] initializing ...
+[2015-10-16 10:20:03,484][INFO ][plugins                  ] [Groundhog] loaded [], sites []
+[2015-10-16 10:20:03,518][INFO ][env                      ] [Groundhog] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [26.9gb], net total_space [352.9gb], types [hfs]
+[2015-10-16 10:20:05,494][INFO ][node                     ] [Groundhog] initialized
+[2015-10-16 10:20:05,494][INFO ][node                     ] [Groundhog] starting ...
+[2015-10-16 10:20:05,557][INFO ][transport                ] [Groundhog] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-16 10:20:05,573][INFO ][discovery                ] [Groundhog] elasticsearch/tmQsU0XiTTy1gwZdslPoaA
+[2015-10-16 10:20:09,357][INFO ][cluster.service          ] [Groundhog] new_master [Groundhog][tmQsU0XiTTy1gwZdslPoaA][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-16 10:20:09,390][INFO ][http                     ] [Groundhog] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-16 10:20:09,390][INFO ][node                     ] [Groundhog] started
+[2015-10-16 10:20:09,414][INFO ][gateway                  ] [Groundhog] recovered [2] indices into cluster_state
+[2015-10-16 10:20:39,378][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:20:39,378][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:21:09,369][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:21:39,373][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:22:09,382][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:22:09,382][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:22:39,381][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:23:09,381][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:23:09,381][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:23:39,382][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:24:09,383][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:24:09,383][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:24:39,383][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:25:09,387][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:25:09,388][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:25:39,389][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:26:09,393][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:26:09,394][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:26:39,398][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:27:09,398][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:27:09,398][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:27:39,403][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:28:09,404][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:28:09,404][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:28:39,405][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:29:09,406][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:29:09,406][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:29:39,411][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:30:09,414][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:30:09,414][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:30:39,417][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:31:09,421][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:31:09,421][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:31:39,423][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:32:09,428][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:32:09,428][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:32:39,432][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:33:09,437][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:33:09,437][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:33:39,438][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:34:09,442][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:34:09,443][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:34:39,444][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:35:09,449][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:35:09,449][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:35:39,449][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:36:09,451][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:36:09,452][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:36:39,456][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:37:09,461][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:37:09,461][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:37:39,465][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:38:09,470][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:38:09,470][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:38:39,474][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:39:09,479][WARN ][cluster.routing.allocation.decider] [Groundhog] high disk watermark [90%] exceeded on [tmQsU0XiTTy1gwZdslPoaA][Groundhog] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:39:09,479][INFO ][cluster.routing.allocation.decider] [Groundhog] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:39:21,580][INFO ][node                     ] [Groundhog] stopping ...
+[2015-10-16 10:39:21,624][INFO ][node                     ] [Groundhog] stopped
+[2015-10-16 10:39:21,624][INFO ][node                     ] [Groundhog] closing ...
+[2015-10-16 10:39:21,628][INFO ][node                     ] [Groundhog] closed
