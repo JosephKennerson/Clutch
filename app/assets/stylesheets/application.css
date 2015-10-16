@@ -47,3 +47,23 @@
   margin-bottom: 15px;
   padding: 7px 9px;
 }
+
+.nav-input {
+  display: inline-block;
+  margin: 8px 4px;
+}
+
+div.navbar-header {
+  position: absolute;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+.navbar-brand {
+  font-weight: bolder;
+  font-size: 1.75em;
+  text-transform: lowercase;
+}
+
+a.grav {
+  padding: 10px !important;
+}

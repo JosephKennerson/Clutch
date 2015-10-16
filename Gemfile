@@ -1,8 +1,6 @@
 source 'https://rubygems.org'
 
 
-gem 'kaminari'
-gem 'carrierwave'
 gem 'twilio-ruby'
 gem 'phonelib'
 gem 'devise'
@@ -52,12 +50,6 @@ gem 'mapbox-rails'
 gem 'geocoder'
 # gem 'leaflet-rails'
 # gem 'leaflet-markercluster-rails'
-
-# Search
-gem 'elasticsearch-rails'
-gem 'elasticsearch-model'
-gem 'searchkick', '~> 0.9.1'
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

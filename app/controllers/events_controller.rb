@@ -1,6 +1,5 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
-  # layout :resolve_layout
 
   # GET /events
   # GET /events.json
@@ -8,19 +7,10 @@ class EventsController < ApplicationController
     # Event.all.each do |e|
     #   e.close_event
     # end
-    open_events = Event.where(status: true)
-    if params[:q].nil?
-      @events = open_events
+    if params[:q]
+      @events = Event.search(params[:q])
     else
-      if params[:commit] == "Submit"
-        @events = open_events.search(params[:q]).records
-      elsif params[:commit] == "All events"
-        @events = open_events
-      else
-      @events = open_events.search(params[:q]).records.where(category: params[:category_params])
-      end
-      query = [params[:q], params[:dropq]].join(", ")
-      @events = open_events.__elasticsearch__.search(query).records
+      @events = Event.all
     end
   end
 
