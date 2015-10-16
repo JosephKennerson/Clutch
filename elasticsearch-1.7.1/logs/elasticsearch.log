@@ -443,3 +443,6 @@ java.io.IOException: Operation timed out
 [2015-10-16 10:06:36,565][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
 [2015-10-16 10:07:06,564][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
 [2015-10-16 10:07:06,564][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-16 10:07:36,568][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:08:06,573][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-16 10:08:06,573][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
