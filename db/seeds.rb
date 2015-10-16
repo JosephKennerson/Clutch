@@ -188,7 +188,7 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "Xander@google.com",
+        email: "xwpeterson@gmail.com",
         password: "adminadmin",
         avatar: "https://avatars0.githubusercontent.com/u/12554540?v=3&s=400",
         first_name: "Xander",
