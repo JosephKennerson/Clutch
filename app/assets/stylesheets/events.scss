@@ -44,6 +44,16 @@ div#map {
 	width: 100%;
 }
 
+#sign-in-ajax {
+	height: 10em;
+	width: 10em;
+	left: 50em;
+	top: 17em;
+	background: red;
+	position: fixed;
+	display: none;
+}
+
 .leaflet-control-zoomslider {
 }
 

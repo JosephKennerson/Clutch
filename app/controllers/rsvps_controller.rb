@@ -98,7 +98,7 @@ class RsvpsController < ApplicationController
           client.account.sms.messages.create(
             from: TWILIO_CONFIG['from'],
             to: @host.phone_number,
-            body: "You have a pending request from @guest.username."
+            body: "You have a pending request from #{@guest.username}."
           )
         else
               # Instantiate a Twilio client
@@ -117,14 +117,12 @@ class RsvpsController < ApplicationController
           client.account.sms.messages.create(
             from: TWILIO_CONFIG['from'],
             to: @host.phone_number,
-            body: "@guest.username has joined your event @event.name."
+            body: "#{@guest.username} has joined your event #{@event.name}."
           )
         end
         if request.xhr?
-          format.html { render :makebutton, layout: false }
-            format.html { render :show, status: :created, location: @rsvp }
+          format.html { redirect_to @event }
         end
-
         format.html { redirect_to events_path, notice: 'Rsvp was successfully created.' }
         format.json { render :show, status: :created, location: @rsvp }
       else
@@ -191,10 +189,10 @@ class RsvpsController < ApplicationController
           client.account.sms.messages.create(
             from: TWILIO_CONFIG['from'],
             to: @host.phone_number,
-            body: "@guest.username has cancelled. Hence he is not a part of this clutch @event.name."
+            body: "#{@guest.username} has cancelled. Hence they is not a part of this clutch #{@event.name}."
           )
     respond_to do |format|
-      format.html { redirect_to events_path, notice: 'Rsvp was successfully destroyed.' }
+      format.html { redirect_to @event, status: 303 }
       format.json { head :no_content }
     end
   end

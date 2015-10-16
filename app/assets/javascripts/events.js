@@ -11,7 +11,7 @@ $(document).ready(function(){
     event.target.on('mouseover', function(e){
       e.layer.openPopup();
     });
-    map.scrollWheelZoom.disable();
+    // map.scrollWheelZoom.disable();
   });
 
   $('#search-form').on('submit',function(e){
@@ -26,8 +26,6 @@ $(document).ready(function(){
       dataType: 'json'
     })
     .done(function(events){
-      console.log(events)
-
       map.featureLayer.setGeoJSON({
         type: "FeatureCollection",
         features: events
@@ -37,6 +35,30 @@ $(document).ready(function(){
       alert("Could not search");
     })    
   }); //search-form ajax
+
+  $('body').on('submit', '#event-form', function(e){
+  e.preventDefault();
+  var path = $(this).attr('action'),
+      method = $(this).attr('method'),
+      formData = $(this).serialize();
+  $.ajax({
+      url: path,
+      type: method,
+      data: formData,
+      dataType: 'json'
+    })
+    .done(function(response){
+      $('#info').html('');
+      console.log(response)
+      map.featureLayer.setGeoJSON({
+        type: "FeatureCollection",
+        features: response
+      });
+    })
+    .fail(function(response){
+      console.log('fail')
+    })    
+  })
 
 }); //document ready
 
@@ -51,7 +73,7 @@ function getEvents(map) {
         features: geojson
       });
       addFilters(map);
-      addClusters(map);
+      // addClusters(map);
     },
     error: function() {
       alert("Could not load the events");

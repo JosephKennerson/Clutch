@@ -26,6 +26,7 @@
 	<nav id='filters' class='filter-ui'></nav>
 	<div id='map' class='map'></div>
 	<div id='info' class='info'></div>
+  <div id='sign-in-ajax' class='sign-in-ajax'></div>
 
 	<nav class="navbar navbar-default">
       <div class="container-fluid col-sm-">
@@ -41,7 +42,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Join Events", events_path %></li>
-            <li><%= link_to "Create Events", new_event_path %></li>
+            <li><%= link_to "Create Events", new_event_path, class: "create-event" %></li>
             <li><%= link_to "Contact", "/home/team" %></li>
             <li>
             <div class="input-group">

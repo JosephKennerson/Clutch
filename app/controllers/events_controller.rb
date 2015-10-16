@@ -47,6 +47,11 @@ class EventsController < ApplicationController
   # GET /events/new
   def new
     @event = Event.new
+    if request.xhr?
+      respond_to do |format|
+        format.html {render layout: false}
+      end
+    end
   end
 
   # GET /events/1/edit
@@ -60,9 +65,17 @@ class EventsController < ApplicationController
     @event.host_id = current_user.id
     respond_to do |format|
       if @event.save
+        if request.xhr?
+          format.html { redirect_to :root, layout: false }
+          format.json { redirect_to :root, layout: false }
+        end
         format.html { redirect_to @event, notice: 'Event was successfully created.' }
         format.json { render :show, status: :created, location: @event }
       else
+        if request.xhr?
+          format.html { render :new, layout: false}
+          format.json { render json: @event.errors, status: :unprocessable_entity }
+        end
         format.html { render :new }
         format.json { render json: @event.errors, status: :unprocessable_entity }
       end
@@ -106,12 +119,7 @@ class EventsController < ApplicationController
     end
     # @events = Event.where(status: true)
     @geojson = Array.new
-    p @events.length
-    p @geojson.length
     build_geojson(@events, @geojson)
-    p "*" * 80
-    p @events.length
-    p @geojson.length
     respond_to do |format|
       format.html {render layout: false}
       format.json {render json: @geojson}

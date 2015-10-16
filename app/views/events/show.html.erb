@@ -139,9 +139,9 @@
     <%#= button_to 'Send Request', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: @event.id, pending: true, confirmed: false, class: "btn btn-warning"} %>
 
   <% elsif Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == false || (@event.approval_required == true && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).confirmed == true)%>
-    <td><%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
+    <td class="delete-button"><%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
   <% elsif Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == true%>
-    <td><%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
+    <td class="delete-button"><%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
   <% end %>
 <% end %>
 </div>
