@@ -14,7 +14,7 @@
 
           <div class="blog-post">
             <h2 class="blog-post-title">Sample blog post</h2>
-            <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.username %></p>
+            <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.first_name + " " + @event.host.last_name %></p>
 
             <p><%= @event.description %></p>
             <hr>
@@ -119,7 +119,7 @@
                 <br />
               <li><%= link_to image_tag(guest.avatar), user_path(guest.id) %></li>
                 <br />
-              <li><%= guest.username %></li>
+              <li><%= guest.first_name + " " + guest.last_name %></li>
                 <br />
               <li><%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %></li>
               <br />

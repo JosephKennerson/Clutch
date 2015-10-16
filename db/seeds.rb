@@ -76,22 +76,6 @@ User.create(
     )
 
     User.create!(
-        username: "aathwal3",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "amrita@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars2.githubusercontent.com/u/7738890?v=3&s=400",
-        first_name: "Amrita",
-        last_name: "Athwal",
-        phone_number: "617-671-8206"
-    )
-
-
-    User.create!(
         username: "brickthorn",
         address_line_1: "633 Folsom",
         address_line_2: "6th Floor",
@@ -189,26 +173,11 @@ User.create(
         city: "San Francisco",
         state: "CA",
         zip: "94107",
-        email: "amrita@google.com",
+        email: "Utsab@google.com",
         password: "adminadmin",
         avatar: "https://avatars1.githubusercontent.com/u/6780322?v=3&s=400",
         first_name: "Utsab",
         last_name: "Saha",
-        phone_number: "617-671-8206"
-    )
-
-     User.create!(
-        username: "aathwal3",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "amrita@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars2.githubusercontent.com/u/7738890?v=3&s=400",
-        first_name: "Amrita",
-        last_name: "Athwal",
         phone_number: "617-671-8206"
     )
 
@@ -272,20 +241,6 @@ User.create(
         phone_number: "617-671-8206"
     )
 
-     User.create!(
-        username: "aathwal3",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "amrita@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars2.githubusercontent.com/u/7738890?v=3&s=400",
-        first_name: "Amrita",
-        last_name: "Athwal",
-        phone_number: "617-671-8206"
-    )
 
           User.create!(
         username: "Thomas-C-Voegeli",
@@ -299,21 +254,6 @@ User.create(
         avatar: "https://avatars3.githubusercontent.com/u/11672765?v=3&s=400",
         first_name: "Thomas",
         last_name: "Voegeli",
-        phone_number: "617-671-8206"
-    )
-
-               User.create!(
-        username: "aathwal3",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "amrita@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars2.githubusercontent.com/u/7738890?v=3&s=400",
-        first_name: "Amrita",
-        last_name: "Athwal",
         phone_number: "617-671-8206"
     )
 
@@ -393,35 +333,6 @@ User.create(
         phone_number: "617-671-8206"
     )
 
-            User.create!(
-        username: "aathwal3",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "amrita@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars2.githubusercontent.com/u/7738890?v=3&s=400",
-        first_name: "Amrita",
-        last_name: "Athwal",
-        phone_number: "617-671-8206"
-    )
-
-                User.create!(
-        username: "aathwal3",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "amrita@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars2.githubusercontent.com/u/7738890?v=3&s=400",
-        first_name: "Amrita",
-        last_name: "Athwal",
-        phone_number: "617-671-8206"
-    )
 
                     User.create!(
         username: "MosesJung86",
@@ -450,21 +361,6 @@ User.create(
         avatar: "https://avatars1.githubusercontent.com/u/11699845?v=3&s=400",
         first_name: "Lisa",
         last_name: "Swanson",
-        phone_number: "617-671-8206"
-    )
-
-                            User.create!(
-        username: "aathwal3",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "amrita@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars2.githubusercontent.com/u/7738890?v=3&s=400",
-        first_name: "Amrita",
-        last_name: "Athwal",
         phone_number: "617-671-8206"
     )
 
@@ -498,20 +394,6 @@ User.create(
         phone_number: "617-671-8206"
     )
 
-    User.create!(
-        username: "juliagra",
-        address_line_1: "633 Folsom",
-        address_line_2: "6th Floor",
-        city: "San Francisco",
-        state: "CA",
-        zip: "94107",
-        email: "Julia@google.com",
-        password: "adminadmin",
-        avatar: "https://avatars2.githubusercontent.com/u/12245008?v=3&s=400",
-        first_name: "Julia",
-        last_name: "Graber",
-        phone_number: "617-671-8206"
-    )
 
         User.create!(
         username: "juliagra",
@@ -699,7 +581,7 @@ User.create(
         latitude: rand(37.735722...37.807791)
     )
 
-# end
+end
 
 # # Admin comments
 
