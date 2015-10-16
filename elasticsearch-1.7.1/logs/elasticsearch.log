@@ -2387,3 +2387,31 @@ java.io.IOException: Host is down
 [2015-10-15 20:45:49,345][INFO ][node                     ] [Kiwi Black] stopped
 [2015-10-15 20:45:49,346][INFO ][node                     ] [Kiwi Black] closing ...
 [2015-10-15 20:45:49,350][INFO ][node                     ] [Kiwi Black] closed
+[2015-10-15 21:09:08,924][INFO ][node                     ] [Diamanda Nero] version[1.7.1], pid[6344], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:09:08,925][INFO ][node                     ] [Diamanda Nero] initializing ...
+[2015-10-15 21:09:09,146][INFO ][plugins                  ] [Diamanda Nero] loaded [], sites []
+[2015-10-15 21:09:09,247][INFO ][env                      ] [Diamanda Nero] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [151.1gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:09:13,393][INFO ][node                     ] [Diamanda Nero] initialized
+[2015-10-15 21:09:13,393][INFO ][node                     ] [Diamanda Nero] starting ...
+[2015-10-15 21:09:13,526][INFO ][transport                ] [Diamanda Nero] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:09:13,569][INFO ][discovery                ] [Diamanda Nero] elasticsearch/qexgsAbFQHipdW_9pWw3_A
+[2015-10-15 21:09:16,673][INFO ][cluster.service          ] [Diamanda Nero] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:09:16,707][INFO ][http                     ] [Diamanda Nero] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:09:16,708][INFO ][node                     ] [Diamanda Nero] started
+[2015-10-15 21:09:17,464][WARN ][discovery.zen.ping.multicast] [Diamanda Nero] received ping response ping_response{node [[Mister Sensitive][sT6msm-4TlC6PaXznxGPdQ][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], id[13], master [[Mister Sensitive][sT6msm-4TlC6PaXznxGPdQ][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [1]
+[2015-10-15 21:09:34,403][INFO ][node                     ] [Diamanda Nero] stopping ...
+[2015-10-15 21:09:34,478][INFO ][node                     ] [Diamanda Nero] stopped
+[2015-10-15 21:09:34,479][INFO ][node                     ] [Diamanda Nero] closing ...
+[2015-10-15 21:09:34,484][INFO ][node                     ] [Diamanda Nero] closed
+[2015-10-15 21:09:38,101][INFO ][node                     ] [Ellie Phimster] version[1.7.1], pid[6387], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:09:38,102][INFO ][node                     ] [Ellie Phimster] initializing ...
+[2015-10-15 21:09:38,174][INFO ][plugins                  ] [Ellie Phimster] loaded [], sites []
+[2015-10-15 21:09:38,214][INFO ][env                      ] [Ellie Phimster] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [151.1gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:09:40,573][INFO ][node                     ] [Ellie Phimster] initialized
+[2015-10-15 21:09:40,574][INFO ][node                     ] [Ellie Phimster] starting ...
+[2015-10-15 21:09:40,654][INFO ][transport                ] [Ellie Phimster] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:09:40,677][INFO ][discovery                ] [Ellie Phimster] elasticsearch/tr60yW-RQ92kh_J9JlsjTA
+[2015-10-15 21:09:43,971][WARN ][discovery.zen.ping.multicast] [Ellie Phimster] received ping response ping_response{node [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]], id[12], master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [1]
+[2015-10-15 21:09:44,014][INFO ][cluster.service          ] [Ellie Phimster] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:09:44,047][INFO ][http                     ] [Ellie Phimster] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:09:44,048][INFO ][node                     ] [Ellie Phimster] started

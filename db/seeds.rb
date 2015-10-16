@@ -15,19 +15,18 @@ User.create(
         phone_number: "617-671-8206"
   )
 
-10.times do
   User.create!(
-        username: FFaker::Internet.user_name,
-        address_line_1: FFaker::AddressUS.street_address,
-        address_line_2: FFaker::AddressUS.secondary_address,
-        city: FFaker::AddressUS.city,
-        state: FFaker::AddressUS.state_abbr,
-        zip: FFaker::AddressUS.zip_code,
-        email: FFaker::Internet.disposable_email,
-        password: FFaker::Internet.password,
-        avatar: Faker::Avatar.image,
-        first_name: FFaker::Name.first_name,
-        last_name: Faker::Name.last_name,
+        username: "aathwal3",
+        address_line_1: "633 Folsom",
+        address_line_2: "6th Floor",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94107",
+        email: "aathwal3@gmail.com",
+        password: "adminadmin",
+        avatar: != Gravatar,
+        first_name: "Admin",
+        last_name: "Istrator",
         phone_number: "617-671-8206"
     )
 
