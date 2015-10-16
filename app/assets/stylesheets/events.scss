@@ -14,26 +14,30 @@ div#map {
  }
 
 .filter-ui {
-	background:#fff;
 	position:absolute;
 	top: 6em;
 	right:1em;
 	z-index:100;
 	padding:10px;
 	border-radius:3px;
-  box-shadow: 10px 10px 5px #888888;
+	background:black;
+  opacity: 0.8;
+  color: #F9FBE7;
 }
 
 #info {
   position:absolute;
-  top:8%;
-  left:.5%;
-  height: 90%;
-  width: 35%;
-  background:#fff;
+  top:6.5%;
+  left:.1%;
+  height: 92%;
+  width: 30%;
+
+  background:black;
+  opacity: 0.8;
   overflow: auto;
-  box-shadow: 10px 10px 5px #888888;
   padding: 1em;
+  color: #F9FBE7;
+  text-align:center;
 }
 
 .mapbox-logo {
@@ -55,6 +59,13 @@ div#map {
 }
 
 .leaflet-control-zoomslider {
+
+
+}
+
+#sidebarEvent {
+  width: 100%;
+
 }
 
 .leaflet-control-zoomslider-knob {
@@ -66,4 +77,10 @@ div#map {
   -webkit-box-sizing:content-box;
      -moz-box-sizing:content-box;
           box-sizing:content-box;
+ }
+
+ .blog-post {
+    margin-left: 10%;
+    margin-right:10%;
+    width: 30em;
  }
