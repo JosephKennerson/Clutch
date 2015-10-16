@@ -532,6 +532,31 @@ User.create(
 
 # # Admin events
 
+100.times do
+  random_size = rand(1..10)
+  random_user = rand(1..User.count)
+  Event.create!(
+        public_location: FFaker::Venue.name,
+        address_line_1: FFaker::AddressUS.street_address,
+        address_line_2: FFaker::AddressUS.secondary_address,
+        city: "San Francisco",
+        state: "CA",
+        zip: "94107",
+        max_size: random_size,
+        time_start: Faker::Time.between(DateTime.now - 1, DateTime.now),
+        time_end: Faker::Time.forward(1),
+        name: FFaker::Company.catch_phrase,
+        description: Faker::Hacker.say_something_smart,
+        category: FFaker::Sport.name,
+        approval_required: FFaker::Boolean.sample,
+        host_id: random_user,
+        status: FFaker::Boolean.sample,
+        longitude: rand(-122.507367...-122.389335),
+        latitude: rand(37.735722...37.807791)
+    )
+
+end
+
 # 5.times do
 #   random_size = rand(1..10)
 #   Event.create!(
@@ -558,7 +583,7 @@ User.create(
 
 # # random events
 
-50.times do
+100.times do
   random_size = rand(1..10)
   random_user = rand(1..User.count)
   Event.create!(
@@ -599,7 +624,7 @@ end
 # # random comments (public and private)
 
 
-100.times do
+250.times do
   random_event = rand(1..Event.count)
   random_user = rand(1..User.count)
   Comment.create!(
@@ -614,7 +639,7 @@ end
 # # random pending rsvps (id # 1-25)
 
 100.times do
-  random_guest = rand(10..User.count)
+  random_guest = rand(1..User.count)
   random_event = rand(1..Event.count)
   new_event = Rsvp.create!(
       guest_id: random_guest,
@@ -658,7 +683,7 @@ end
 100.times do
 
   random_guest = rand(10..User.count)
-  random_host = rand(1..9)
+  random_host = rand(1..User.count)
   random_event = rand(1..Event.count)
   new_event = Rsvp.create!(
       guest_id: random_guest,
@@ -675,7 +700,7 @@ end
 
 100.times do
   random_guest = rand(10..User.count)
-  random_host = rand(1..9)
+  random_host = rand(1..User.count)
   random_event = rand(1..Event.count)
   new_event = Rsvp.create!(
       guest_id: random_guest,
@@ -706,7 +731,7 @@ end
 # # random ratings (switched roles)
 
 
-150.times do
+200.times do
   count = 1
   current_event = Event.find(count)
       Rating.create!(
