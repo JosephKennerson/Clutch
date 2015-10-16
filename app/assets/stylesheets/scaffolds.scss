@@ -1,3 +1,5 @@
+$clutch-blue: #0e74b6;
+
 body {
   background-color: #fff;
   color: #333;
@@ -27,7 +29,14 @@ a {
 
   &:hover {
     color: #fff;
-    background-color: #000;
+  }
+}
+
+/*large icons*/
+.ico a {
+  &:hover {
+    display: block;
+    color: $clutch-blue;
   }
 }
 
