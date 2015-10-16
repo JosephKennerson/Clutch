@@ -2,7 +2,7 @@ $(document).ready(function(){
   L.mapbox.accessToken = 'pk.eyJ1IjoieGFuZGVycHNvbiIsImEiOiJjaWZvcml2YjU1Mnc2c3ZrcTlibmxjcXJuIn0.M7QobcyaQENSoLb86fvvug';
   var map = L.mapbox.map('map', 'xanderpson.nmn4lji0', {zoomControl: false}).setView([37.761688, -122.481385], 13),
       filters = document.getElementById('filters');
-  L.control.zoomslider().addTo(map);
+  L.control.zoomslider({position: 'bottomright'}).addTo(map);
 
   map.featureLayer.on("ready", function(event) {
     getEvents(map);

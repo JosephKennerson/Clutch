@@ -29,9 +29,9 @@ div#map {
   top:8%;
   left:.5%;
   height: 90%;
-  width: 27%;
+  width: 35%;
   background:#fff;
-  overflow: scroll;
+  overflow: auto;
   box-shadow: 10px 10px 5px #888888;
   padding: 1em;
 }
@@ -41,9 +41,6 @@ div#map {
 }
 
 .leaflet-control-zoomslider {
-	position: fixed;
-	left: 27em;
-	top: 5.705em;
 }
 
 .leaflet-control-zoomslider-knob {
