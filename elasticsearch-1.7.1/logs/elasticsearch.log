@@ -18777,4 +18777,94 @@ java.io.IOException: Host is down
 [2015-10-15 20:45:49,345][INFO ][node                     ] [Kiwi Black] stopped
 [2015-10-15 20:45:49,346][INFO ][node                     ] [Kiwi Black] closing ...
 [2015-10-15 20:45:49,350][INFO ][node                     ] [Kiwi Black] closed
+<<<<<<< HEAD
+[2015-10-15 20:48:30,030][INFO ][node                     ] [Ravage 2099] version[1.7.1], pid[6863], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 20:48:30,031][INFO ][node                     ] [Ravage 2099] initializing ...
+[2015-10-15 20:48:30,101][INFO ][plugins                  ] [Ravage 2099] loaded [], sites []
+[2015-10-15 20:48:30,135][INFO ][env                      ] [Ravage 2099] using [1] data paths, mounts [[/ (/dev/disk0s2)]], net usable_space [27.2gb], net total_space [352.9gb], types [hfs]
+[2015-10-15 20:48:32,073][INFO ][node                     ] [Ravage 2099] initialized
+[2015-10-15 20:48:32,074][INFO ][node                     ] [Ravage 2099] starting ...
+[2015-10-15 20:48:32,139][INFO ][transport                ] [Ravage 2099] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.8:9300]}
+[2015-10-15 20:48:32,158][INFO ][discovery                ] [Ravage 2099] elasticsearch/lJF1zQsZQkWB3B4Au6UHCg
+[2015-10-15 20:48:35,934][INFO ][cluster.service          ] [Ravage 2099] new_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 20:48:35,967][INFO ][http                     ] [Ravage 2099] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.8:9200]}
+[2015-10-15 20:48:35,967][INFO ][node                     ] [Ravage 2099] started
+[2015-10-15 20:48:35,992][INFO ][gateway                  ] [Ravage 2099] recovered [2] indices into cluster_state
+[2015-10-15 20:49:05,954][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:49:05,954][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:49:35,948][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:50:05,951][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:50:35,949][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:50:35,949][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:51:05,953][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:51:35,954][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:51:35,954][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:52:05,954][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:52:35,955][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:52:35,955][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:53:05,957][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:53:35,961][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:53:35,961][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:54:05,962][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.2gb[7.7%], shards will be relocated away from this node
+[2015-10-15 20:54:35,961][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.1gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:54:35,961][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:55:05,961][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.1gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:55:35,965][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27.1gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:55:35,966][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:56:05,964][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:56:35,965][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:56:35,965][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:57:05,964][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:57:35,968][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:57:35,968][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:58:05,970][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:58:35,969][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:58:35,969][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 20:59:05,968][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:59:35,968][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 20:59:35,968][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:00:05,970][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:00:35,970][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:00:35,970][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:01:05,974][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:01:35,975][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:01:35,975][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:02:05,979][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:02:35,978][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:02:35,979][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:03:05,979][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:03:35,979][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:03:35,979][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:04:05,982][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:04:35,981][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:04:35,981][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:05:05,981][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:05:35,983][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:05:35,983][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:06:05,985][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:06:35,987][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:06:35,987][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:07:05,991][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:07:35,995][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:07:35,995][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:08:05,995][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 26.9gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:08:35,998][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:08:35,998][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:09:06,001][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:09:16,509][INFO ][cluster.service          ] [Ravage 2099] added {[Diamanda Nero][qexgsAbFQHipdW_9pWw3_A][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Diamanda Nero][qexgsAbFQHipdW_9pWw3_A][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 21:09:16,567][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:09:34,305][INFO ][cluster.service          ] [Ravage 2099] removed {[Diamanda Nero][qexgsAbFQHipdW_9pWw3_A][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-node_left([Diamanda Nero][qexgsAbFQHipdW_9pWw3_A][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]])
+[2015-10-15 21:09:36,005][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:09:36,005][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:09:43,851][INFO ][cluster.service          ] [Ravage 2099] added {[Ellie Phimster][tr60yW-RQ92kh_J9JlsjTA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]],}, reason: zen-disco-receive(join from node[[Ellie Phimster][tr60yW-RQ92kh_J9JlsjTA][Joies-MacBook-Pro.local][inet[/192.168.1.164:9300]]])
+[2015-10-15 21:09:43,908][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:10:06,185][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:10:36,025][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:10:36,025][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:11:06,037][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:11:36,033][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:11:36,033][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:12:06,021][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+=======
+>>>>>>> developer
 >>>>>>> developer
