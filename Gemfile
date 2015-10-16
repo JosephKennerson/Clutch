@@ -56,11 +56,7 @@ gem 'geocoder'
 # Search
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
-gem 'kaminari'
-gem 'carrierwave'
-gem 'devise'
-gem 'gravtastic'
-  gem 'searchkick', '~> 0.9.1'
+gem 'searchkick', '~> 0.9.1'
 
 
 group :development, :test do

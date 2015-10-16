@@ -1,6 +1,6 @@
 <ul class="nav nav-pills pull-right">
   <% if user_signed_in? %>
-    <li><%= link_to image_tag(current_user.gravatar_url(size: 30)), user_path(current_user.id) %></li>
+    <li><%= link_to image_tag(current_user.avatar_url(size: 30)), user_path(current_user.id) %></li>
     <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
   <% else %>
     <li><%= link_to "Sign in", new_user_session_path %></li>

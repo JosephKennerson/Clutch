@@ -18778,6 +18778,248 @@ java.io.IOException: Host is down
 [2015-10-15 20:45:49,346][INFO ][node                     ] [Kiwi Black] closing ...
 [2015-10-15 20:45:49,350][INFO ][node                     ] [Kiwi Black] closed
 <<<<<<< HEAD
+[2015-10-15 21:09:08,924][INFO ][node                     ] [Diamanda Nero] version[1.7.1], pid[6344], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:09:08,925][INFO ][node                     ] [Diamanda Nero] initializing ...
+[2015-10-15 21:09:09,146][INFO ][plugins                  ] [Diamanda Nero] loaded [], sites []
+[2015-10-15 21:09:09,247][INFO ][env                      ] [Diamanda Nero] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [151.1gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:09:13,393][INFO ][node                     ] [Diamanda Nero] initialized
+[2015-10-15 21:09:13,393][INFO ][node                     ] [Diamanda Nero] starting ...
+[2015-10-15 21:09:13,526][INFO ][transport                ] [Diamanda Nero] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:09:13,569][INFO ][discovery                ] [Diamanda Nero] elasticsearch/qexgsAbFQHipdW_9pWw3_A
+[2015-10-15 21:09:16,673][INFO ][cluster.service          ] [Diamanda Nero] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:09:16,707][INFO ][http                     ] [Diamanda Nero] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:09:16,708][INFO ][node                     ] [Diamanda Nero] started
+[2015-10-15 21:09:17,464][WARN ][discovery.zen.ping.multicast] [Diamanda Nero] received ping response ping_response{node [[Mister Sensitive][sT6msm-4TlC6PaXznxGPdQ][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], id[13], master [[Mister Sensitive][sT6msm-4TlC6PaXznxGPdQ][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [1]
+[2015-10-15 21:09:34,403][INFO ][node                     ] [Diamanda Nero] stopping ...
+[2015-10-15 21:09:34,478][INFO ][node                     ] [Diamanda Nero] stopped
+[2015-10-15 21:09:34,479][INFO ][node                     ] [Diamanda Nero] closing ...
+[2015-10-15 21:09:34,484][INFO ][node                     ] [Diamanda Nero] closed
+[2015-10-15 21:09:38,101][INFO ][node                     ] [Ellie Phimster] version[1.7.1], pid[6387], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:09:38,102][INFO ][node                     ] [Ellie Phimster] initializing ...
+[2015-10-15 21:09:38,174][INFO ][plugins                  ] [Ellie Phimster] loaded [], sites []
+[2015-10-15 21:09:38,214][INFO ][env                      ] [Ellie Phimster] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [151.1gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:09:40,573][INFO ][node                     ] [Ellie Phimster] initialized
+[2015-10-15 21:09:40,574][INFO ][node                     ] [Ellie Phimster] starting ...
+[2015-10-15 21:09:40,654][INFO ][transport                ] [Ellie Phimster] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:09:40,677][INFO ][discovery                ] [Ellie Phimster] elasticsearch/tr60yW-RQ92kh_J9JlsjTA
+[2015-10-15 21:09:43,971][WARN ][discovery.zen.ping.multicast] [Ellie Phimster] received ping response ping_response{node [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]], id[12], master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]], hasJoinedOnce [true], cluster_name[elasticsearch]} with no matching id [1]
+[2015-10-15 21:09:44,014][INFO ][cluster.service          ] [Ellie Phimster] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:09:44,047][INFO ][http                     ] [Ellie Phimster] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:09:44,048][INFO ][node                     ] [Ellie Phimster] started
+<<<<<<< HEAD
+[2015-10-15 21:25:48,883][INFO ][node                     ] [Longneck] version[1.7.1], pid[6846], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:25:48,884][INFO ][node                     ] [Longneck] initializing ...
+[2015-10-15 21:25:48,961][INFO ][plugins                  ] [Longneck] loaded [], sites []
+[2015-10-15 21:25:49,002][INFO ][env                      ] [Longneck] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.8gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:25:51,328][INFO ][node                     ] [Longneck] initialized
+[2015-10-15 21:25:51,329][INFO ][node                     ] [Longneck] starting ...
+[2015-10-15 21:25:51,409][INFO ][transport                ] [Longneck] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:25:51,431][INFO ][discovery                ] [Longneck] elasticsearch/al5EvbfYTfqTkqu71oSLJQ
+[2015-10-15 21:25:54,795][INFO ][cluster.service          ] [Longneck] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:25:54,822][INFO ][http                     ] [Longneck] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:25:54,822][INFO ][node                     ] [Longneck] started
+[2015-10-15 21:33:56,010][INFO ][node                     ] [Longneck] stopping ...
+[2015-10-15 21:33:56,188][INFO ][node                     ] [Longneck] stopped
+[2015-10-15 21:33:56,188][INFO ][node                     ] [Longneck] closing ...
+[2015-10-15 21:33:56,192][INFO ][node                     ] [Longneck] closed
+[2015-10-15 21:38:25,607][INFO ][node                     ] [Xorn] version[1.7.1], pid[7534], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:38:25,608][INFO ][node                     ] [Xorn] initializing ...
+[2015-10-15 21:38:25,683][INFO ][plugins                  ] [Xorn] loaded [], sites []
+[2015-10-15 21:38:25,723][INFO ][env                      ] [Xorn] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.8gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:38:28,053][INFO ][node                     ] [Xorn] initialized
+[2015-10-15 21:38:28,053][INFO ][node                     ] [Xorn] starting ...
+[2015-10-15 21:38:28,140][INFO ][transport                ] [Xorn] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:38:28,169][INFO ][discovery                ] [Xorn] elasticsearch/KNl_UZncThiPnxVyPV6YdQ
+[2015-10-15 21:38:31,434][INFO ][cluster.service          ] [Xorn] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:38:31,464][INFO ][http                     ] [Xorn] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:38:31,465][INFO ][node                     ] [Xorn] started
+[2015-10-15 21:39:11,646][INFO ][node                     ] [Xorn] stopping ...
+[2015-10-15 21:39:11,995][INFO ][node                     ] [Xorn] stopped
+[2015-10-15 21:39:11,995][INFO ][node                     ] [Xorn] closing ...
+[2015-10-15 21:39:12,001][INFO ][node                     ] [Xorn] closed
+[2015-10-15 21:39:25,304][INFO ][node                     ] [Agent Zero] version[1.7.1], pid[7581], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:39:25,304][INFO ][node                     ] [Agent Zero] initializing ...
+[2015-10-15 21:39:25,383][INFO ][plugins                  ] [Agent Zero] loaded [], sites []
+[2015-10-15 21:39:25,424][INFO ][env                      ] [Agent Zero] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.8gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:39:27,682][INFO ][node                     ] [Agent Zero] initialized
+[2015-10-15 21:39:27,682][INFO ][node                     ] [Agent Zero] starting ...
+[2015-10-15 21:39:27,773][INFO ][transport                ] [Agent Zero] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:39:27,797][INFO ][discovery                ] [Agent Zero] elasticsearch/KQbilhVyRGKRa_erzNXV_A
+[2015-10-15 21:39:31,062][INFO ][cluster.service          ] [Agent Zero] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:39:31,089][INFO ][http                     ] [Agent Zero] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:39:31,090][INFO ][node                     ] [Agent Zero] started
+[2015-10-15 21:46:52,826][INFO ][node                     ] [Agent Zero] stopping ...
+[2015-10-15 21:46:53,161][INFO ][node                     ] [Agent Zero] stopped
+[2015-10-15 21:46:53,162][INFO ][node                     ] [Agent Zero] closing ...
+[2015-10-15 21:46:53,167][INFO ][node                     ] [Agent Zero] closed
+[2015-10-15 21:47:16,191][INFO ][node                     ] [Bounty Hunter] version[1.7.1], pid[7917], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:47:16,192][INFO ][node                     ] [Bounty Hunter] initializing ...
+[2015-10-15 21:47:16,279][INFO ][plugins                  ] [Bounty Hunter] loaded [], sites []
+[2015-10-15 21:47:16,325][INFO ][env                      ] [Bounty Hunter] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.7gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:47:18,566][INFO ][node                     ] [Bounty Hunter] initialized
+[2015-10-15 21:47:18,567][INFO ][node                     ] [Bounty Hunter] starting ...
+[2015-10-15 21:47:18,658][INFO ][transport                ] [Bounty Hunter] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:47:18,679][INFO ][discovery                ] [Bounty Hunter] elasticsearch/8g-3JosoTciYERM2WvvrbA
+[2015-10-15 21:47:22,132][INFO ][cluster.service          ] [Bounty Hunter] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:47:22,175][INFO ][http                     ] [Bounty Hunter] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:47:22,175][INFO ][node                     ] [Bounty Hunter] started
+[2015-10-15 21:52:37,948][INFO ][node                     ] [Bounty Hunter] stopping ...
+[2015-10-15 21:52:38,140][INFO ][node                     ] [Bounty Hunter] stopped
+[2015-10-15 21:52:38,140][INFO ][node                     ] [Bounty Hunter] closing ...
+[2015-10-15 21:52:38,144][INFO ][node                     ] [Bounty Hunter] closed
+[2015-10-15 21:52:56,364][INFO ][node                     ] [Dreamqueen] version[1.7.1], pid[8154], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:52:56,364][INFO ][node                     ] [Dreamqueen] initializing ...
+[2015-10-15 21:52:56,438][INFO ][plugins                  ] [Dreamqueen] loaded [], sites []
+[2015-10-15 21:52:56,479][INFO ][env                      ] [Dreamqueen] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.7gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:52:58,784][INFO ][node                     ] [Dreamqueen] initialized
+[2015-10-15 21:52:58,785][INFO ][node                     ] [Dreamqueen] starting ...
+[2015-10-15 21:52:58,872][INFO ][transport                ] [Dreamqueen] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:52:58,902][INFO ][discovery                ] [Dreamqueen] elasticsearch/fVru8eqcS7CXKri5GF9sAg
+[2015-10-15 21:53:02,294][INFO ][cluster.service          ] [Dreamqueen] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:53:02,323][INFO ][http                     ] [Dreamqueen] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:53:02,323][INFO ][node                     ] [Dreamqueen] started
+[2015-10-15 21:57:53,421][INFO ][node                     ] [Dreamqueen] stopping ...
+[2015-10-15 21:57:53,502][INFO ][node                     ] [Dreamqueen] stopped
+[2015-10-15 21:57:53,502][INFO ][node                     ] [Dreamqueen] closing ...
+[2015-10-15 21:57:53,506][INFO ][node                     ] [Dreamqueen] closed
+[2015-10-15 21:59:13,648][INFO ][node                     ] [Nikki] version[1.7.1], pid[8374], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:59:13,649][INFO ][node                     ] [Nikki] initializing ...
+[2015-10-15 21:59:13,741][INFO ][plugins                  ] [Nikki] loaded [], sites []
+[2015-10-15 21:59:13,786][INFO ][env                      ] [Nikki] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.6gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:59:16,320][INFO ][node                     ] [Nikki] initialized
+[2015-10-15 21:59:16,320][INFO ][node                     ] [Nikki] starting ...
+[2015-10-15 21:59:16,408][INFO ][transport                ] [Nikki] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 21:59:16,431][INFO ][discovery                ] [Nikki] elasticsearch/feeK6_txTjOOwwDZryudFw
+[2015-10-15 21:59:19,755][INFO ][cluster.service          ] [Nikki] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 21:59:19,794][INFO ][http                     ] [Nikki] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 21:59:19,795][INFO ][node                     ] [Nikki] started
+[2015-10-15 22:00:43,392][INFO ][node                     ] [Nikki] stopping ...
+[2015-10-15 22:00:43,485][INFO ][node                     ] [Nikki] stopped
+[2015-10-15 22:00:43,486][INFO ][node                     ] [Nikki] closing ...
+[2015-10-15 22:00:43,490][INFO ][node                     ] [Nikki] closed
+[2015-10-15 22:01:06,473][INFO ][node                     ] [Cayman] version[1.7.1], pid[8584], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 22:01:06,473][INFO ][node                     ] [Cayman] initializing ...
+[2015-10-15 22:01:06,552][INFO ][plugins                  ] [Cayman] loaded [], sites []
+[2015-10-15 22:01:06,590][INFO ][env                      ] [Cayman] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.7gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 22:01:08,912][INFO ][node                     ] [Cayman] initialized
+[2015-10-15 22:01:08,912][INFO ][node                     ] [Cayman] starting ...
+[2015-10-15 22:01:09,000][INFO ][transport                ] [Cayman] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 22:01:09,025][INFO ][discovery                ] [Cayman] elasticsearch/sWJOkNLnSfeQ8ste4rU5Fg
+[2015-10-15 22:01:12,380][INFO ][cluster.service          ] [Cayman] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:01:12,408][INFO ][http                     ] [Cayman] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 22:01:12,409][INFO ][node                     ] [Cayman] started
+[2015-10-15 22:08:18,126][INFO ][cluster.service          ] [Cayman] added {[Zuras][gYEJqTPZRf-Bu1IQJpFuFA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:09:23,905][INFO ][node                     ] [Cayman] stopping ...
+[2015-10-15 22:09:24,048][INFO ][node                     ] [Cayman] stopped
+[2015-10-15 22:09:24,048][INFO ][node                     ] [Cayman] closing ...
+[2015-10-15 22:09:24,053][INFO ][node                     ] [Cayman] closed
+[2015-10-15 22:09:41,943][INFO ][node                     ] [Karl Malus] version[1.7.1], pid[8794], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 22:09:41,944][INFO ][node                     ] [Karl Malus] initializing ...
+[2015-10-15 22:09:42,018][INFO ][plugins                  ] [Karl Malus] loaded [], sites []
+[2015-10-15 22:09:42,058][INFO ][env                      ] [Karl Malus] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.6gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 22:09:44,348][INFO ][node                     ] [Karl Malus] initialized
+[2015-10-15 22:09:44,349][INFO ][node                     ] [Karl Malus] starting ...
+[2015-10-15 22:09:44,430][INFO ][transport                ] [Karl Malus] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 22:09:44,457][INFO ][discovery                ] [Karl Malus] elasticsearch/-95w2j3hSuOqgtLNr8QjXw
+[2015-10-15 22:09:48,012][INFO ][cluster.service          ] [Karl Malus] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Zuras][gYEJqTPZRf-Bu1IQJpFuFA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:09:48,289][INFO ][http                     ] [Karl Malus] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 22:09:48,290][INFO ][node                     ] [Karl Malus] started
+[2015-10-15 22:10:59,571][INFO ][node                     ] [Karl Malus] stopping ...
+[2015-10-15 22:10:59,808][INFO ][node                     ] [Karl Malus] stopped
+[2015-10-15 22:10:59,808][INFO ][node                     ] [Karl Malus] closing ...
+[2015-10-15 22:10:59,813][INFO ][node                     ] [Karl Malus] closed
+[2015-10-15 22:11:30,796][INFO ][node                     ] [Luchino Nefaria] version[1.7.1], pid[8976], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 22:11:30,796][INFO ][node                     ] [Luchino Nefaria] initializing ...
+[2015-10-15 22:11:30,870][INFO ][plugins                  ] [Luchino Nefaria] loaded [], sites []
+[2015-10-15 22:11:30,912][INFO ][env                      ] [Luchino Nefaria] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.6gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 22:11:33,305][INFO ][node                     ] [Luchino Nefaria] initialized
+[2015-10-15 22:11:33,305][INFO ][node                     ] [Luchino Nefaria] starting ...
+[2015-10-15 22:11:33,389][INFO ][transport                ] [Luchino Nefaria] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 22:11:33,422][INFO ][discovery                ] [Luchino Nefaria] elasticsearch/XHBGRPSGSki1V9HnctULJw
+[2015-10-15 22:11:36,756][INFO ][cluster.service          ] [Luchino Nefaria] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Zuras][gYEJqTPZRf-Bu1IQJpFuFA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:11:36,795][INFO ][http                     ] [Luchino Nefaria] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 22:11:36,796][INFO ][node                     ] [Luchino Nefaria] started
+[2015-10-15 22:36:15,446][INFO ][cluster.service          ] [Luchino Nefaria] removed {[Zuras][gYEJqTPZRf-Bu1IQJpFuFA][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 22:36:24,512][INFO ][cluster.service          ] [Luchino Nefaria] added {[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:03:30,186][INFO ][node                     ] [Luchino Nefaria] stopping ...
+[2015-10-15 23:03:30,309][INFO ][node                     ] [Luchino Nefaria] stopped
+[2015-10-15 23:03:30,310][INFO ][node                     ] [Luchino Nefaria] closing ...
+[2015-10-15 23:03:30,317][INFO ][node                     ] [Luchino Nefaria] closed
+[2015-10-15 23:03:50,452][INFO ][node                     ] [Punchout] version[1.7.1], pid[9647], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:03:50,453][INFO ][node                     ] [Punchout] initializing ...
+[2015-10-15 23:03:50,537][INFO ][plugins                  ] [Punchout] loaded [], sites []
+[2015-10-15 23:03:50,582][INFO ][env                      ] [Punchout] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:03:52,891][INFO ][node                     ] [Punchout] initialized
+[2015-10-15 23:03:52,892][INFO ][node                     ] [Punchout] starting ...
+[2015-10-15 23:03:53,005][INFO ][transport                ] [Punchout] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:03:53,033][INFO ][discovery                ] [Punchout] elasticsearch/EA3swLAZR2WkR5ZeFjyU2g
+[2015-10-15 23:03:56,708][INFO ][cluster.service          ] [Punchout] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:03:56,760][INFO ][http                     ] [Punchout] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:03:56,760][INFO ][node                     ] [Punchout] started
+[2015-10-15 23:04:54,958][INFO ][node                     ] [Punchout] stopping ...
+[2015-10-15 23:04:55,054][INFO ][node                     ] [Punchout] stopped
+[2015-10-15 23:04:55,055][INFO ][node                     ] [Punchout] closing ...
+[2015-10-15 23:04:55,060][INFO ][node                     ] [Punchout] closed
+[2015-10-15 23:05:16,905][INFO ][node                     ] [Glitch] version[1.7.1], pid[9833], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:05:16,905][INFO ][node                     ] [Glitch] initializing ...
+[2015-10-15 23:05:16,989][INFO ][plugins                  ] [Glitch] loaded [], sites []
+[2015-10-15 23:05:17,036][INFO ][env                      ] [Glitch] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:05:19,395][INFO ][node                     ] [Glitch] initialized
+[2015-10-15 23:05:19,396][INFO ][node                     ] [Glitch] starting ...
+[2015-10-15 23:05:19,476][INFO ][transport                ] [Glitch] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:05:19,501][INFO ][discovery                ] [Glitch] elasticsearch/qLVn9hnASDiRxXX96CPBew
+[2015-10-15 23:05:23,160][INFO ][cluster.service          ] [Glitch] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:05:23,205][INFO ][http                     ] [Glitch] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:05:23,205][INFO ][node                     ] [Glitch] started
+[2015-10-15 23:08:43,134][INFO ][node                     ] [Glitch] stopping ...
+[2015-10-15 23:08:43,448][INFO ][node                     ] [Glitch] stopped
+[2015-10-15 23:08:43,448][INFO ][node                     ] [Glitch] closing ...
+[2015-10-15 23:08:43,452][INFO ][node                     ] [Glitch] closed
+[2015-10-15 23:09:01,408][INFO ][node                     ] [Lockheed] version[1.7.1], pid[10003], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:09:01,408][INFO ][node                     ] [Lockheed] initializing ...
+[2015-10-15 23:09:01,481][INFO ][plugins                  ] [Lockheed] loaded [], sites []
+[2015-10-15 23:09:01,524][INFO ][env                      ] [Lockheed] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:09:03,922][INFO ][node                     ] [Lockheed] initialized
+[2015-10-15 23:09:03,923][INFO ][node                     ] [Lockheed] starting ...
+[2015-10-15 23:09:04,015][INFO ][transport                ] [Lockheed] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:09:04,045][INFO ][discovery                ] [Lockheed] elasticsearch/XFKc6oyTQ-Oaf3dPde8CeA
+[2015-10-15 23:09:07,429][INFO ][cluster.service          ] [Lockheed] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:09:07,533][INFO ][http                     ] [Lockheed] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:09:07,534][INFO ][node                     ] [Lockheed] started
+[2015-10-15 23:09:54,711][INFO ][node                     ] [Lockheed] stopping ...
+[2015-10-15 23:09:54,798][INFO ][node                     ] [Lockheed] stopped
+[2015-10-15 23:09:54,798][INFO ][node                     ] [Lockheed] closing ...
+[2015-10-15 23:09:54,808][INFO ][node                     ] [Lockheed] closed
+[2015-10-15 23:10:18,787][INFO ][node                     ] [Adrienne Frost] version[1.7.1], pid[10157], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:10:18,788][INFO ][node                     ] [Adrienne Frost] initializing ...
+[2015-10-15 23:10:18,872][INFO ][plugins                  ] [Adrienne Frost] loaded [], sites []
+[2015-10-15 23:10:18,919][INFO ][env                      ] [Adrienne Frost] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:10:21,370][INFO ][node                     ] [Adrienne Frost] initialized
+[2015-10-15 23:10:21,370][INFO ][node                     ] [Adrienne Frost] starting ...
+[2015-10-15 23:10:21,459][INFO ][transport                ] [Adrienne Frost] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:10:21,484][INFO ][discovery                ] [Adrienne Frost] elasticsearch/kfnQFY7NSPiOJH0VQhZdmQ
+[2015-10-15 23:10:24,849][INFO ][cluster.service          ] [Adrienne Frost] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:10:24,955][INFO ][http                     ] [Adrienne Frost] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:10:24,955][INFO ][node                     ] [Adrienne Frost] started
+[2015-10-15 23:13:28,958][INFO ][node                     ] [Adrienne Frost] stopping ...
+[2015-10-15 23:13:29,117][INFO ][node                     ] [Adrienne Frost] stopped
+[2015-10-15 23:13:29,117][INFO ][node                     ] [Adrienne Frost] closing ...
+[2015-10-15 23:13:29,124][INFO ][node                     ] [Adrienne Frost] closed
+[2015-10-15 23:13:56,016][INFO ][node                     ] [Deacon Frost] version[1.7.1], pid[10332], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 23:13:56,017][INFO ][node                     ] [Deacon Frost] initializing ...
+[2015-10-15 23:13:56,102][INFO ][plugins                  ] [Deacon Frost] loaded [], sites []
+[2015-10-15 23:13:56,144][INFO ][env                      ] [Deacon Frost] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [150.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 23:13:58,460][INFO ][node                     ] [Deacon Frost] initialized
+[2015-10-15 23:13:58,460][INFO ][node                     ] [Deacon Frost] starting ...
+[2015-10-15 23:13:58,546][INFO ][transport                ] [Deacon Frost] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.164:9300]}
+[2015-10-15 23:13:58,569][INFO ][discovery                ] [Deacon Frost] elasticsearch/nMOQjuy8QROCuvHVQQn4Pg
+[2015-10-15 23:14:02,023][INFO ][cluster.service          ] [Deacon Frost] detected_master [Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]], added {[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]],[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+[2015-10-15 23:14:02,136][INFO ][http                     ] [Deacon Frost] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.164:9200]}
+[2015-10-15 23:14:02,137][INFO ][node                     ] [Deacon Frost] started
+[2015-10-15 23:34:12,864][INFO ][cluster.service          ] [Deacon Frost] removed {[Hag][ylfi59GGSaKmvq3SmmXCew][Nruthyas-MacBook-Air.local][inet[/192.168.1.126:9300]],}, reason: zen-disco-receive(from master [[Ravage 2099][lJF1zQsZQkWB3B4Au6UHCg][Beepo-Retina.local][inet[/192.168.1.8:9300]]])
+=======
+=======
+<<<<<<< HEAD
 [2015-10-15 20:48:30,030][INFO ][node                     ] [Ravage 2099] version[1.7.1], pid[6863], build[b88f43f/2015-07-29T09:54:16Z]
 [2015-10-15 20:48:30,031][INFO ][node                     ] [Ravage 2099] initializing ...
 [2015-10-15 20:48:30,101][INFO ][plugins                  ] [Ravage 2099] loaded [], sites []
@@ -18867,4 +19109,6 @@ java.io.IOException: Host is down
 [2015-10-15 21:12:06,021][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
 =======
 >>>>>>> developer
+>>>>>>> developer
+>>>>>>> b575d13e1e122e8b7a8a15ebb2db45d73b5398e8
 >>>>>>> developer
