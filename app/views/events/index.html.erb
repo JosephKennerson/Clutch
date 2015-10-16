@@ -1,6 +1,7 @@
-
 <p id="notice"><%= notice %></p>
- <%#= render 'searchside' %>
+
+<%#= render 'searchside' %>
+
 <!-- <div id="wrapper"> -->
 
                     <!-- <div class="col-md-12"> -->
@@ -32,9 +33,9 @@
               <% elsif !Rsvp.find_by(event_id: event1.id, guest_id: current_user.id) && event1.approval_required == true %>
                 <%= button_to 'Send Request', {controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event1.id, pending: true, confirmed: false}}, class: "btn btn-info" %>
               <% elsif Rsvp.find_by(event_id: event1.id, guest_id: current_user.id) && event1.approval_required == false || (event1.approval_required == true && Rsvp.find_by(event_id: event1.id, guest_id: current_user.id).confirmed == true)%>
-                <%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event1.id, guest_id: current_user.id).id}, method: :delete, class: "btn btn-danger" %>
+                <%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event1.id, guest_id: current_user.id).id}, method: :delete%>
               <% elsif Rsvp.find_by(event_id: event1.id, guest_id: current_user.id) && event1.approval_required == true%>
-                <%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event1.id, guest_id: current_user.id).id, method: :delete}, class: "btn btn-danger" %>
+                <%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event1.id, guest_id: current_user.id).id}, method: :delete %>
               <% else %>
                 <span class="badge"><%= event1.max_size - event1.current_count %></span>
               <% end %>
@@ -61,9 +62,9 @@
               <% elsif !Rsvp.find_by(event_id: event2.id, guest_id: current_user.id) && event2.approval_required == true %>
                 <%= button_to 'Send Request', {controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: event2.id, pending: true, confirmed: false}}, class: "btn btn-info" %>
               <% elsif Rsvp.find_by(event_id: event2.id, guest_id: current_user.id) && event2.approval_required == false || (event2.approval_required == true && Rsvp.find_by(event_id: event2.id, guest_id: current_user.id).confirmed == true)%>
-                <%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event2.id, guest_id: current_user.id).id, method: :delete}, class: "btn btn-danger" %>
+                <%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event2.id, guest_id: current_user.id).id}, method: :delete%>
               <% elsif Rsvp.find_by(event_id: event2.id, guest_id: current_user.id) && event2.approval_required == true%>
-                <%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event2.id, guest_id: current_user.id).id, method: :delete}, class: "btn btn-danger" %>
+                <%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: event2.id, guest_id: current_user.id).id}, method: :delete %>
               <% else %>
                 <span class="badge"><%= event2.max_size - event2.current_count %></span>
               <% end %>
@@ -77,6 +78,8 @@
 
       </div>
     <% end %>
+<!--   </tbody>
+</table> -->
 
     <% end %>
   </div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151013210743) do
+ActiveRecord::Schema.define(version: 20151013233854) do
 
   create_table "comments", force: :cascade do |t|
     t.integer  "event_id"
@@ -43,6 +43,13 @@ ActiveRecord::Schema.define(version: 20151013210743) do
     t.datetime "created_at",                       null: false
     t.datetime "updated_at",                       null: false
     t.integer  "host_id"
+    t.float    "longitude"
+    t.float    "latitude"
+  end
+
+  create_table "geojson_builders", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "ratings", force: :cascade do |t|
@@ -94,6 +101,8 @@ ActiveRecord::Schema.define(version: 20151013210743) do
     t.string   "phone_number"
     t.string   "provider"
     t.string   "uid"
+    t.float    "longitude"
+    t.float    "latitude"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
