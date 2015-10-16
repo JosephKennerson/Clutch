@@ -1,19 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clutch</title>
+  <% favicon_link_tag %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+
+<section class="events_show">
+
 <% if user_signed_in?%>
 
 <p id="notice"><%= notice %></p>
 
     <div class="container" id="sidebarEvent">
 
-      <div class="blog-header">
+<!--       <div class="blog-header">
         <h1 class="blog-title"><%= @event.name %></h1>
         <p class="lead blog-description"><%= @event.public_location %></p>
-      </div>
+      </div> -->
 
       <div class="row">
 
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
+            <h2 class="blog-post-title"><%= @event.name %></h2>
+            <p class="lead blog-description"><%= @event.public_location %></p>
 
             <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.first_name + " " + @event.host.last_name %></p>
             <p><%= @event.description %></p>
@@ -23,7 +40,7 @@
     <div class="panel-heading">
       <h3 class="panel-title">Category</h3>
     </div>
-    <div class="panel-body">
+    <div class="comments_body">
       <%= @event.category %>
     </div>
   </div>
@@ -31,7 +48,7 @@
     <div class="panel-heading">
       <h3 class="panel-title">Starts at:</h3>
     </div>
-    <div class="panel-body">
+    <div class="comments_body" >
       <%= @event.time_start.strftime('%-l:%M %p') %> <%= @event.time_start.strftime('%b %-e, %Y') %>
     </div>
   </div>
@@ -39,7 +56,7 @@
     <div class="panel-heading">
       <h3 class="panel-title">Ends at:</h3>
     </div>
-    <div class="panel-body">
+    <div class="comments_body">
       <%= @event.time_end.strftime('%-l:%M %p') %> <%= @event.time_end.strftime('%b %-e, %Y') %>
     </div>
   </div>
@@ -47,86 +64,81 @@
     <div class="panel-heading">
       <h3 class="panel-title">Remaining spots:</h3>
     </div>
-    <div class="panel-body">
+    <div class="comments_body">
       <% if @event.rsvps.where(confirmed: true).length >= @event.max_size %>
         <span class="label label-danger">Full!</span>
       <% else %>
         <%= @event.rsvps.where(confirmed: true).length %>
       <% end %>
-    </div>
-    <div class="panel-footer">Max: <%= @event.max_size %>
+      <br><br>
+      <p>
+      Max: <%= @event.max_size %>
+    </p>
     </div>
   </div>
-</div>
 <% if @event.host_id == current_user.id || Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true) %>
   <div class="panel panel-danger">
     <div class="panel-heading">
       <h3 class="panel-title">Location information</h3>
     </div>
-    <div class="panel-body">
+    <div class="comments_body">
       <%= @event.address_line_1 %>
     </br>
       <%= @event.address_line_2 %>
     </br>
       <%= @event.city %>, <%= @event.state %> <%= @event.zip %>
     </div>
-    <div class="panel-footer">Private: Visible only to guests of this event</div>
+    <div class="footer-panel">Private: Visible only to guests of this event</div>
   </div>
 <!-- </div> -->
 <% end %>
-
-
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <%= link_to image_tag(User.find(@event.host_id).gravatar_url(size: 30)), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
-            <h4><%= @event.host.username %>'s rating: <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
+</div><!-- /.blog-main -->
+<section class="host-attendees">
+          <div>
+                <%= link_to image_tag(User.find(@event.host_id).gravatar_url), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
+                  <h4><%= @event.host.username %>'s <i class="fa fa-star-o fa-2x"></i>
+                 : <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
           </div>
-          <div class="sidebar-module">
+          <!-- <div class="sidebar-modsiule"> -->
             <% if @event.host_id == current_user.id && @event.approval_required == true%>
               <h4>Pending Requests<span class="badge"><%= @event.rsvps.where(pending: true).length %></span>
               </h4>
               <% @event.rsvps.where(pending: true).each do |request| %>
-              <ul class="list-unstyled">
-                <li><%= link_to image_tag(User.find(request.guest_id).gravatar_url(size: 30)), user_path(User.find(request.guest_id)) %></li>
-                <li><%= link_to "#{User.find(request.guest_id).username}", User.find(request.guest_id) %><span class="label label-warning"><%= link_to 'Confirm', {controller: "rsvps", action: "update", id: request.id, rsvp: {guest_id: request.guest_id, event_id: request.event_id, pending: false, confirmed: true}}, method: :put %></span>
-                </li>
-              </ul>
+                <%= link_to image_tag(User.find(request.guest_id).gravatar_url(size: 30)), user_path(User.find(request.guest_id)) %>
+                  <%= link_to "#{User.find(request.guest_id).username}", User.find(request.guest_id) %><span class="label label-warning"><%= link_to 'Confirm', {controller: "rsvps", action: "update", id: request.id, rsvp: {guest_id: request.guest_id, event_id: request.event_id, pending: false, confirmed: true}}, method: :put %></span>
               <% end %>
             <% end %>
-          </div>
-          <div class="sidebar-module">
+         <!--  </div> -->
+
+          <div>
             <% if @event.host.id == current_user.id %>
-            <h4>Host dashboard</h4>
-            <ol class="list-unstyled">
-            <li><%= link_to 'Edit Event', edit_event_path(@event.id), class: "btn btn-warning" %></li>
-            <li><%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></li>
+            <h4>Host dashboard</h4>=
+
+            <%= link_to 'Edit Event', edit_event_path(@event.id), class: "btn btn-warning" %>
+            <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
             <% end %>
-            </ol>
             <%= link_to 'Back', events_path, class: "btn btn-primary" %>
           </div>
-          <div class="sidebar-module">
+          <div>
             <h4>Attendees</h4>
-            <ol class="list-unstyled">
             <% @event.guests.each do |guest| %>
               <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>
                 <br />
-              <li><%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %></li>
+              <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
                 <br />
-              <li><%= guest.first_name + " " + guest.last_name %></li>
+              <%= guest.username %>
                 <br />
-              <li><%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %></li>
+                <i class="fa fa-star-o fa-2x"></i>
+                <p id = "rating_number">
+                <%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %>
+              </p>
+
               <br />
               <% end %>
             <% end %>
-            </ol>
+
           </div>
-        </div><!-- /.blog-sidebar -->
-      </div><!-- /.row -->
-    </div><!-- /.container -->
-
-
+</section>
 
 <div id='rsvp-button'>
 
@@ -142,9 +154,9 @@
     <%#= button_to 'Send Request', controller: "rsvps", action: "create", method: :post, rsvp: {guest_id: current_user.id, event_id: @event.id, pending: true, confirmed: false, class: "btn btn-warning"} %>
 
   <% elsif Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == false || (@event.approval_required == true && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).confirmed == true)%>
-    <td><%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
+    <td class="delete-button"><%= button_to 'Unjoin', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
   <% elsif Rsvp.find_by(event_id: @event.id, guest_id: current_user.id) && @event.approval_required == true%>
-    <td><%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
+    <td class="delete-button"><%= button_to 'Cancel Request', {controller: "rsvps", action: "destroy", id: Rsvp.find_by(event_id: @event.id, guest_id: current_user.id).id}, method: :delete %></td>
   <% end %>
 <% end %>
 </div>
@@ -160,7 +172,7 @@
 
 
 
-
+<section class="host-attendees">
 
 <% if (@event.host.id == current_user.id && @event.time_end.past? == false) || (@event.time_end.past? == false && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true))%>
   <h2></h2>
@@ -171,7 +183,8 @@
     <br />
     <%= @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
+
+    <i class="fa fa-star-o fa-2x"></i><%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
     <br />
 
 <% end %>
@@ -184,10 +197,11 @@
     <br />
     <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
     <br />
-    <%= @event.host.username %>
+   <%= @event.host.username %>
     <br />
-    <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
+    <i class="fa fa-star-o fa-2x"></i><%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
     <br />
+  <div class="people-attended">
   <% @event.guests.each do |guest| %>
     <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>
         <br />
@@ -195,7 +209,7 @@
         <br />
         <%= guest.username %>
         <br />
-        <%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %>
+        <i class="fa fa-star-o fa-2x"></i><%= Rating.where(ratee_id: guest.id).average(:rating).to_f.round(2) %>
         <br />
         <% if !Rating.find_by(event_id: @event.id, rater_id: current_user.id, ratee_id: guest.id) && current_user.id != guest.id%>
           <%= render partial: 'ratings/form', locals: {ratee_id: guest.id} %>
@@ -204,12 +218,23 @@
   <% end %>
 <% end %>
 </div>
-
+<!-- <<<<<<< HEAD -->
+</section>
+<br />
+<br />
+<section = "comments-section"
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Public Comments</h3>
+     <div class="comments_body">
+<!-- ======= -->
+
+<!-- <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Public Comments</h3>
   </div>
-  <div class="panel-body">
+  <div class="panel-body"> -->
+<!-- >>>>>>> developer -->
     <div class="well">
     <% @event.comments.each do |comment| %>
       <% if comment.is_private == false %>
@@ -225,7 +250,7 @@
   </div>
 </div>
 
-<h2>Add a comment:</h2>
+<h2 class="add-comment">Add a comment:</h2>
 <%= render 'comments/form', locals: {is_private: false} %>
 <br>
 
@@ -233,7 +258,7 @@
 <div class="panel panel-danger">
   <div class="panel-heading">
     <h3 class="panel-title">Private Comments</h3>
-  <div class="panel-body">
+  <div class="comments_body">
     <div class="well">
     <% @event.comments.each do |comment| %>
       <% if comment.is_private == true %>
@@ -250,10 +275,13 @@
 </div>
 <div class="panel-footer">Private: Visible only to guests of this event</div>
 </div>
-<h2>Add a private comment:</h2>
+<h2 class="add-comment">Add a private comment:</h2>
 <%= render 'comments/form2', locals: {is_private: true} %>
 <% end %>
 
 <% else %>
 <p>Please log in to see event details</p>
 <% end %>
+</section>
+</section>
+<%= button_to 'Back', events_path, :class => "btn btn-primary" %>
