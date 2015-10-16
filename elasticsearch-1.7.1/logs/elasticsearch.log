@@ -2470,3 +2470,7 @@ java.io.IOException: Host is down
 [2015-10-15 21:10:06,185][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
 [2015-10-15 21:10:36,025][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
 [2015-10-15 21:10:36,025][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:11:06,037][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:11:36,033][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
+[2015-10-15 21:11:36,033][INFO ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark exceeded on one or more nodes, rerouting shards
+[2015-10-15 21:12:06,021][WARN ][cluster.routing.allocation.decider] [Ravage 2099] high disk watermark [90%] exceeded on [lJF1zQsZQkWB3B4Au6UHCg][Ravage 2099] free: 27gb[7.6%], shards will be relocated away from this node
