@@ -64,6 +64,23 @@ div.navbar-header {
   text-transform: lowercase;
 }
 
+a {
+  color: #333;
+}
+
 a.grav {
   padding: 10px !important;
+}
+
+#new_user input {
+  width: 100%;
+}
+
+.border-form-div .btn {
+  margin-bottom: 10px;
+  width: 100%;
+  color: white;
+}
+.border-form-div .btn-facebook:hover {
+  color: #ccc;
 }
