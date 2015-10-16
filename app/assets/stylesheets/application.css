@@ -47,7 +47,6 @@
   margin-bottom: 15px;
   padding: 7px 9px;
 }
-<<<<<<< HEAD
 .navbar {
 background-color: black;
 opacity: 0.8;
@@ -85,7 +84,6 @@ margin-top: -10px;
 
 .host-attendees{
   display:inline-block;
-=======
 
 .nav-input {
   display: inline-block;
@@ -131,5 +129,8 @@ a.grav {
 div.main {
   text-align: center;
   margin-top: 1em;
->>>>>>> developer
+}
+
+.comments-section {
+  width: 80%;
 }

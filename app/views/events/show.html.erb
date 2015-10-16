@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +13,6 @@
 
 <section class="events_show">
 
-=======
->>>>>>> developer
 <% if user_signed_in?%>
 
 <p id="notice"><%= notice %></p>
@@ -31,12 +29,8 @@
         <div class="col-sm-8 blog-main">
 
           <div class="blog-post">
-<<<<<<< HEAD
             <h2 class="blog-post-title"><%= @event.name %></h2>
             <p class="lead blog-description"><%= @event.public_location %></p>
-            <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.username %></p>
-=======
->>>>>>> developer
 
             <p class="blog-post-meta"><%= @event.time_start.strftime('%b %-e, %Y') %> by <%= @event.host.first_name + " " + @event.host.last_name %></p>
             <p><%= @event.description %></p>
@@ -82,11 +76,6 @@
     </p>
     </div>
   </div>
-<<<<<<< HEAD
-
-=======
-</div>
->>>>>>> developer
 <% if @event.host_id == current_user.id || Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true) %>
   <div class="panel panel-danger">
     <div class="panel-heading">
@@ -103,23 +92,12 @@
   </div>
 <!-- </div> -->
 <% end %>
-<<<<<<< HEAD
 </div><!-- /.blog-main -->
 <section class="host-attendees">
           <div>
                 <%= link_to image_tag(User.find(@event.host_id).gravatar_url), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
                   <h4><%= @event.host.username %>'s <i class="fa fa-star-o fa-2x"></i>
                  : <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
-=======
-
-
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <%= link_to image_tag(User.find(@event.host_id).gravatar_url(size: 30)), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
-            <h4><%= @event.host.username %>'s rating: <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
->>>>>>> developer
           </div>
           <!-- <div class="sidebar-modsiule"> -->
             <% if @event.host_id == current_user.id && @event.approval_required == true%>
@@ -134,19 +112,12 @@
 
           <div>
             <% if @event.host.id == current_user.id %>
-            <h4>Host dashboard</h4>
-<<<<<<< HEAD
-            <%= link_to 'Edit Event', edit_event_path(@event.id) %>
-            <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <h4>Host dashboard</h4>=
+
+            <%= link_to 'Edit Event', edit_event_path(@event.id), class: "btn btn-warning" %>
+            <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
             <% end %>
-=======
-            <ol class="list-unstyled">
-            <li><%= link_to 'Edit Event', edit_event_path(@event.id), class: "btn btn-warning" %></li>
-            <li><%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></li>
-            <% end %>
-            </ol>
             <%= link_to 'Back', events_path, class: "btn btn-primary" %>
->>>>>>> developer
           </div>
           <div>
             <h4>Attendees</h4>
@@ -155,11 +126,7 @@
                 <br />
               <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
                 <br />
-<<<<<<< HEAD
               <%= guest.username %>
-=======
-              <li><%= guest.first_name + " " + guest.last_name %></li>
->>>>>>> developer
                 <br />
                 <i class="fa fa-star-o fa-2x"></i>
                 <p id = "rating_number">
@@ -251,22 +218,23 @@
   <% end %>
 <% end %>
 </div>
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
 </section>
 <br />
 <br />
+<section = "comments-section"
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Public Comments</h3>
-  <div class="comments_body">
-=======
+     <div class="comments_body">
+<!-- ======= -->
 
-<div class="panel panel-primary">
+<!-- <div class="panel panel-primary">
   <div class="panel-heading">
     <h3 class="panel-title">Public Comments</h3>
   </div>
-  <div class="panel-body">
->>>>>>> developer
+  <div class="panel-body"> -->
+<!-- >>>>>>> developer -->
     <div class="well">
     <% @event.comments.each do |comment| %>
       <% if comment.is_private == false %>
@@ -314,5 +282,6 @@
 <% else %>
 <p>Please log in to see event details</p>
 <% end %>
+</section>
 </section>
 <%= button_to 'Back', events_path, :class => "btn btn-primary" %>
