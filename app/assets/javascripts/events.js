@@ -2,7 +2,7 @@ $(document).ready(function(){
   L.mapbox.accessToken = 'pk.eyJ1IjoieGFuZGVycHNvbiIsImEiOiJjaWZvcml2YjU1Mnc2c3ZrcTlibmxjcXJuIn0.M7QobcyaQENSoLb86fvvug';
   var map = L.mapbox.map('map', 'xanderpson.nmn4lji0', {zoomControl: false}).setView([37.761688, -122.481385], 13),
       filters = document.getElementById('filters');
-  L.control.zoomslider().addTo(map);
+  L.control.zoomslider({position: 'bottomright'}).addTo(map);
 
   map.featureLayer.on("ready", function(event) {
     getEvents(map);
@@ -14,29 +14,29 @@ $(document).ready(function(){
     map.scrollWheelZoom.disable();
   });
 
-  // $('#search-form').on('submit',function(e){
-  //   e.preventDefault();
-  //   var path = $(this).attr('action'),
-  //       method = $(this).attr('method'),
-  //       formData = $(this).serialize();
-  //   $.ajax({
-  //     url: path,
-  //     type: method,
-  //     data: formData,
-  //     dataType: 'json'
-  //   })
-  //   .done(function(events){
-  //     console.log(events)
+  $('#search-form').on('submit',function(e){
+    e.preventDefault();
+    var path = $(this).attr('action'),
+        method = $(this).attr('method'),
+        formData = $(this).serialize();
+    $.ajax({
+      url: path,
+      type: method,
+      data: formData,
+      dataType: 'json'
+    })
+    .done(function(events){
+      console.log(events)
 
-  //     map.featureLayer.setGeoJSON({
-  //       type: "FeatureCollection",
-  //       features: events
-  //     });
-  //   })
-  //   .fail(function(events){
-  //     alert("Could not search");
-  //   })    
-  // }); //search-form ajax
+      map.featureLayer.setGeoJSON({
+        type: "FeatureCollection",
+        features: events
+      });
+    })
+    .fail(function(events){
+      alert("Could not search");
+    })    
+  }); //search-form ajax
 
 }); //document ready
 
@@ -64,18 +64,18 @@ function addEventPopups(map) {
     var marker = e.layer,
         properties = marker.feature.properties,
         popupContent =      '<div><strong>Event Name</strong> : ' + properties.name + 
-                            '<br/><strong>Description</strong> : ' + properties.description + 
-                            '<br/><strong>Category</strong> : ' + properties.category + 
-                            '<br/><strong>Current / Max</strong> : ' + properties.currently_attending + ' / ' + properties.max_size + 
-                            '<br/><strong>Host</strong> : ' + properties.host + 
-                            '<br/><strong>Location</strong> : ' + properties.public_location + 
-                            '<br/><strong>City</strong> : ' + properties.city + 
-                            '<br/><strong>State</strong> : ' + properties.state + 
-                            '<br/><strong>Zip</strong> : ' + properties.zip + 
-                            '<br/><strong>Date start</strong> : ' + properties.date_start + 
-                            '<br/><strong>Time start</strong> : ' + properties.time_start + 
-                            '<br/><strong>Date end</strong> : ' + properties.date_end + 
-                            '<br/><strong>Time end</strong> : ' + properties.time_end + '</div>'
+                            '<br/><strong>Description</strong> : ' + properties.description + '</div>'
+                            // '<br/><strong>Category</strong> : ' + properties.category + 
+                            // '<br/><strong>Current / Max</strong> : ' + properties.currently_attending + ' / ' + properties.max_size + 
+                            // '<br/><strong>Host</strong> : ' + properties.host + 
+                            // '<br/><strong>Location</strong> : ' + properties.public_location + 
+                            // '<br/><strong>City</strong> : ' + properties.city + 
+                            // '<br/><strong>State</strong> : ' + properties.state + 
+                            // '<br/><strong>Zip</strong> : ' + properties.zip + 
+                            // '<br/><strong>Date start</strong> : ' + properties.date_start + 
+                            // '<br/><strong>Time start</strong> : ' + properties.time_start + 
+                            // '<br/><strong>Date end</strong> : ' + properties.date_end + 
+                            // '<br/><strong>Time end</strong> : ' + properties.time_end + '</div>'
   ;
     marker.bindPopup(popupContent, {closeButton: false, minWidth: 320});
   });

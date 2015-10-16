@@ -1,6 +1,6 @@
 $(document).ready(function(){
   console.log('hi')
-	$('#rsvp-button').on('click', '.button_to', function(e){
+	$('body').on('click', '.button_to', function(e){
 		e.preventDefault();
 		var path = $(this).attr('action'),
 			  method = $(this).attr('method'),

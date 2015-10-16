@@ -5,9 +5,9 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    Event.all.each do |e|
-      e.close_event
-    end
+    # Event.all.each do |e|
+    #   e.close_event
+    # end
     open_events = Event.where(status: true)
     if params[:q].nil?
       @events = open_events
