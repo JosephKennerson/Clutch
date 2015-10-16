@@ -30,9 +30,14 @@ div#map {
   left:.5%;
   height: 90%;
   width: 35%;
+<<<<<<< HEAD
   background:black;
   opacity: 0.8;
   overflow: scroll;
+=======
+  background:#fff;
+  overflow: auto;
+>>>>>>> developer
   box-shadow: 10px 10px 5px #888888;
   padding: 1em;
   color: #F9FBE7;
@@ -43,12 +48,19 @@ div#map {
 	display: none;
 }
 
+#sidebarEvent {
+	width: 100%;
+}
+
 .leaflet-control-zoomslider {
+<<<<<<< HEAD
 
 }
 
 #sidebarEvent {
   width: 100%;
+=======
+>>>>>>> developer
 }
 
 .leaflet-control-zoomslider-knob {

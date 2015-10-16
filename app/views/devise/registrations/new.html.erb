@@ -13,5 +13,12 @@
   <% end %>
   <%= render "devise/shared/links" %>
 
-  <button class="btn btn-facebook"><i class="fa fa-facebook"></i> | Connect with Facebook</button>
+<%- if devise_mapping.omniauthable? %>
+  <%- resource_class.omniauth_providers.each do |provider| %>
+    <%= link_to '<i class="fa fa-facebook"></i> | Connect with Facebook'.html_safe, omniauth_authorize_path(resource_name, provider), class: "btn btn-facebook" %>
+  <% end -%>
+<% end -%>
+
+
+
 </div>

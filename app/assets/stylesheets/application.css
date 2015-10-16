@@ -47,6 +47,7 @@
   margin-bottom: 15px;
   padding: 7px 9px;
 }
+<<<<<<< HEAD
 .navbar {
 background-color: black;
 opacity: 0.8;
@@ -84,4 +85,51 @@ margin-top: -10px;
 
 .host-attendees{
   display:inline-block;
+=======
+
+.nav-input {
+  display: inline-block;
+  margin: 8px 4px;
+}
+
+div.navbar-header {
+  position: absolute;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+.navbar-brand {
+  font-weight: bolder;
+  font-size: 1.75em;
+  text-transform: lowercase;
+}
+
+a {
+  color: #333;
+}
+
+a.grav {
+  padding: 10px !important;
+}
+
+#new_user input {
+  width: 100%;
+}
+
+.border-form-div .btn, .sidebar-module .btn {
+  margin-bottom: 10px;
+  width: 100%;
+  color: white;
+}
+.border-form-div .btn-facebook:hover {
+  color: #ccc;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  font-size: 1.25em;
+}
+
+div.main {
+  text-align: center;
+  margin-top: 1em;
+>>>>>>> developer
 }

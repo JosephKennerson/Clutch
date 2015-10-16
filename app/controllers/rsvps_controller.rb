@@ -120,7 +120,10 @@ class RsvpsController < ApplicationController
             body: "#{@guest.username} has joined your event #{@event.name}."
           )
         end
-
+        if request.xhr?
+          format.html { render :makebutton, layout: false }
+            format.html { render :show, status: :created, location: @rsvp }
+        end
 
         format.html { redirect_to events_path, notice: 'Rsvp was successfully created.' }
         format.json { render :show, status: :created, location: @rsvp }
