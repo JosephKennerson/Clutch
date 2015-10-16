@@ -18778,3 +18778,15 @@ java.io.IOException: Host is down
 [2015-10-15 20:45:49,346][INFO ][node                     ] [Kiwi Black] closing ...
 [2015-10-15 20:45:49,350][INFO ][node                     ] [Kiwi Black] closed
 >>>>>>> developer
+[2015-10-15 21:08:36,299][INFO ][node                     ] [Jason] version[1.7.1], pid[20466], build[b88f43f/2015-07-29T09:54:16Z]
+[2015-10-15 21:08:36,300][INFO ][node                     ] [Jason] initializing ...
+[2015-10-15 21:08:36,470][INFO ][plugins                  ] [Jason] loaded [], sites []
+[2015-10-15 21:08:36,555][INFO ][env                      ] [Jason] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [135.4gb], net total_space [232.6gb], types [hfs]
+[2015-10-15 21:08:40,080][INFO ][node                     ] [Jason] initialized
+[2015-10-15 21:08:40,080][INFO ][node                     ] [Jason] starting ...
+[2015-10-15 21:08:40,317][INFO ][transport                ] [Jason] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.145:9300]}
+[2015-10-15 21:08:40,375][INFO ][discovery                ] [Jason] elasticsearch/YTtdZehgSFm57qdyXr5DHQ
+[2015-10-15 21:08:44,174][INFO ][cluster.service          ] [Jason] new_master [Jason][YTtdZehgSFm57qdyXr5DHQ][Madisons-Air][inet[/192.168.1.145:9300]], reason: zen-disco-join (elected_as_master)
+[2015-10-15 21:08:44,215][INFO ][http                     ] [Jason] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.145:9200]}
+[2015-10-15 21:08:44,216][INFO ][node                     ] [Jason] started
+[2015-10-15 21:08:44,278][INFO ][gateway                  ] [Jason] recovered [2] indices into cluster_state
