@@ -76,7 +76,7 @@ a.grav {
   width: 100%;
 }
 
-.border-form-div .btn {
+.border-form-div .btn, .sidebar-module .btn {
   margin-bottom: 10px;
   width: 100%;
   color: white;

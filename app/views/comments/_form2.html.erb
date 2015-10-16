@@ -14,12 +14,12 @@
 
   <div class="field">
     <%= f.label :body %><br>
-    <%= f.text_area :body %>
+    <%= f.text_area :body, class: "form-control" %>
   </div>
   <%= f.hidden_field :event_id, value: @event.id %>
   <%= f.hidden_field :user_id, value: current_user.id %>
   <%= f.hidden_field :is_private, value: true %>
   <div class="actions">
-    <%= f.submit %>
+    <%= submit_tag "Add a comment", class: "btn btn-primary" %>
   </div>
 <% end %>
