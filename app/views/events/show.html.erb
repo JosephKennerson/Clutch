@@ -95,16 +95,16 @@
 </div><!-- /.blog-main -->
 <section class="host-attendees">
           <div>
-                <%= link_to image_tag(User.find(@event.host_id).gravatar_url), user_path(User.find(@event.host_id)), class: "img-circle", width: "140", height: "140" %>
-                  <h4><%= @event.host.username %>'s <i class="fa fa-star-o fa-2x"></i>
-                 : <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
+                <%= link_to image_tag(User.find(@event.host_id).gravatar_url(size: 150)), user_path(User.find(@event.host_id)), class: "img-circle", width: "300", height: "300" %>
+                  <h4><%= @event.host.username %>
+                  <i class="fa fa-star-o fa-2x"></i> : <%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %></h4>
           </div>
           <!-- <div class="sidebar-modsiule"> -->
             <% if @event.host_id == current_user.id && @event.approval_required == true%>
               <h4>Pending Requests<span class="badge"><%= @event.rsvps.where(pending: true).length %></span>
               </h4>
               <% @event.rsvps.where(pending: true).each do |request| %>
-                <%= link_to image_tag(User.find(request.guest_id).gravatar_url(size: 30)), user_path(User.find(request.guest_id)) %>
+                <%= link_to image_tag(User.find(request.guest_id).gravatar_url(size: 100)), user_path(User.find(request.guest_id)) %>
                   <%= link_to "#{User.find(request.guest_id).username}", User.find(request.guest_id) %><span class="label label-warning"><%= link_to 'Confirm', {controller: "rsvps", action: "update", id: request.id, rsvp: {guest_id: request.guest_id, event_id: request.event_id, pending: false, confirmed: true}}, method: :put %></span>
               <% end %>
             <% end %>
@@ -112,7 +112,6 @@
 
           <div>
             <% if @event.host.id == current_user.id %>
-            <h4>Host dashboard</h4>=
 
             <%= link_to 'Edit Event', edit_event_path(@event.id), class: "btn btn-warning" %>
             <%= link_to 'Delete Event', @event, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
@@ -124,7 +123,7 @@
             <% @event.guests.each do |guest| %>
               <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>
                 <br />
-              <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
+              <%= link_to image_tag(guest.gravatar_url(size: 100)), user_path(guest.id) %>
                 <br />
               <%= guest.username %>
                 <br />
@@ -174,28 +173,13 @@
 
 <section class="host-attendees">
 
-<% if (@event.host.id == current_user.id && @event.time_end.past? == false) || (@event.time_end.past? == false && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true))%>
-  <h2></h2>
-    <br />
-    Host
-    <br />
-    <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
-    <br />
-    <%= @event.host.username %>
-    <br />
-
-    <i class="fa fa-star-o fa-2x"></i><%= Rating.where(ratee_id: @event.host.id).average(:rating).to_f.round(2) %>
-    <br />
-
-<% end %>
-
 <% if (@event.host.id == current_user.id && @event.time_end.past? == true) || (@event.time_end.past? == true && Rsvp.find_by(event_id: @event.id, guest_id: current_user.id, confirmed: true))%>
 
   <h2>People Attended</h2>
    <br />
     Host
     <br />
-    <%= link_to image_tag(@event.host.gravatar_url(size: 30)), user_path(@event.host.id) %>
+    <%= link_to image_tag(@event.host.gravatar_url(size: 100)), user_path(@event.host.id) %>
     <br />
    <%= @event.host.username %>
     <br />
@@ -205,7 +189,7 @@
   <% @event.guests.each do |guest| %>
     <% if Rsvp.find_by(event_id: @event.id, guest_id: guest.id, confirmed: true) %>
         <br />
-        <%= link_to image_tag(guest.gravatar_url(size: 30)), user_path(guest.id) %>
+        <%= link_to image_tag(guest.gravatar_url(size: 100)), user_path(guest.id) %>
         <br />
         <%= guest.username %>
         <br />

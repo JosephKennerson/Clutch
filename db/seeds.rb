@@ -517,7 +517,7 @@ User.create(
 
 # # Admin events
 
-100.times do
+30.times do
   random_size = rand(1..10)
   random_user = rand(1..User.count)
   Event.create!(
@@ -534,7 +534,7 @@ User.create(
         description: Faker::Hacker.say_something_smart,
         category: FFaker::Sport.name,
         approval_required: FFaker::Boolean.sample,
-        host_id: random_user,
+        host_id: 1,
         status: FFaker::Boolean.sample,
         longitude: rand(-122.507367...-122.389335),
         latitude: rand(37.735722...37.807791)
@@ -568,7 +568,7 @@ end
 
 # # random events
 
-100.times do
+30.times do
   random_size = rand(1..10)
   random_user = rand(1..User.count)
   Event.create!(
