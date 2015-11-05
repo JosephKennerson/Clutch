@@ -1,27 +1,27 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Clutch
+A Ruby on Rails app to make friends with micro-events.
 
-Things you may want to cover:
+The Solution - Allow people to quickly and easily connect with each other in smaller groups.
 
-* Ruby version
+Technologies
 
-* System dependencies
+* Rails -4, Mapbox, Twilio, Facebook Oauth, SQLlite
 
-* Configuration
+How to get it up and running
 
-* Database creation
+* clone this repo using git clone
 
-* Database initialization
+* bundle install
 
-* How to run the test suite
+* be rake db:create && rake db:migrate && rake db:seed
 
-* Services (job queues, cache servers, search engines, etc.)
+* start rails server using rails s
 
-* Deployment instructions
+This app will be up and running
 
-* ...
+
 
 
 Please feel free to use a different markup language if you do not plan to run
