@@ -4,25 +4,24 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
+development:
   adapter: postgresql
-  encoding: unicode
+  encoding: utf8
+  database: clutch_development
+  host: localhost
   pool: 5
   timeout: 5000
 
-development:
-  <<: *default
-  database: clutch_pg_development
-
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: clutch_pg_test
+  adapter: postgresql
+  encoding: utf8
+  database: clutch_test
+  pool: 5
+  timeout: 5000
 
 production:
-  <<: *default
-  database: clutch_pg_production
-  username: clutch
-  password: <%= ENV['CLUTCH_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: utf8
+  database: clutch_production
+  pool: 5
+  timeout: 5000
