@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20151013233854) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "comments", force: :cascade do |t|
     t.integer  "event_id"
     t.integer  "user_id"
@@ -22,8 +25,8 @@ ActiveRecord::Schema.define(version: 20151013233854) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "comments", ["event_id"], name: "index_comments_on_event_id"
-  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
+  add_index "comments", ["event_id"], name: "index_comments_on_event_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
 
   create_table "events", force: :cascade do |t|
     t.string   "public_location"
@@ -62,7 +65,7 @@ ActiveRecord::Schema.define(version: 20151013233854) do
     t.integer  "ratee_id"
   end
 
-  add_index "ratings", ["event_id"], name: "index_ratings_on_event_id"
+  add_index "ratings", ["event_id"], name: "index_ratings_on_event_id", using: :btree
 
   create_table "rsvps", force: :cascade do |t|
     t.integer  "event_id"
@@ -74,7 +77,7 @@ ActiveRecord::Schema.define(version: 20151013233854) do
     t.text     "message"
   end
 
-  add_index "rsvps", ["event_id"], name: "index_rsvps_on_event_id"
+  add_index "rsvps", ["event_id"], name: "index_rsvps_on_event_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username"
@@ -105,7 +108,11 @@ ActiveRecord::Schema.define(version: 20151013233854) do
     t.float    "latitude"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "comments", "events"
+  add_foreign_key "comments", "users"
+  add_foreign_key "ratings", "events"
+  add_foreign_key "rsvps", "events"
 end
