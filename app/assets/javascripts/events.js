@@ -1,6 +1,6 @@
 $(document).ready(function(){
   L.mapbox.accessToken = 'pk.eyJ1IjoieGFuZGVycHNvbiIsImEiOiJjaWZvcml2YjU1Mnc2c3ZrcTlibmxjcXJuIn0.M7QobcyaQENSoLb86fvvug';
-  var map = L.mapbox.map('map', 'xanderpson.nmn4lji0', {zoomControl: false}).setView([37.761688, -122.481385], 13),
+  var map = L.mapbox.map('map', 'xanderpson.o0la4oio', {zoomControl: false}).setView([37.761688, -122.481385], 13),
       filters = document.getElementById('filters');
   L.control.zoomslider({position: 'bottomright'}).addTo(map);
 
@@ -11,7 +11,7 @@ $(document).ready(function(){
     event.target.on('mouseover', function(e){
       e.layer.openPopup();
     });
-    // map.scrollWheelZoom.disable();
+    map.scrollWheelZoom.disable();
   });
 
   $('#search-form').on('submit',function(e){
